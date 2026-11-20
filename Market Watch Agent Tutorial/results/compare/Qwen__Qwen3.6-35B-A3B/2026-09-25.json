@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-25",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 4086,
+ "output_tokens": 442,
+ "cost_usd": 0.000802,
+ "model_seconds": 3.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-25",
+   "form": "SD",
+   "items": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526402798/d44118dsd.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:50:36.069888-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-50-42.md"
+}

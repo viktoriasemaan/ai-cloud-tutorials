@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-14",
+ "ideal": "A brief one-line alert: Amazon filed an 8-K (current-events report) under 'other events' (item 8.01) with exhibits. The report doesn't say what it covers and shows no unusual price move. Include the link.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Short and accurate: it explains the filing type, names item 8.01, admits the content is unknown, notes there was no price move, and links the filing.",
+   "answer": "Amazon filed an 8-K (a current-events report) on Sep 14, flagging item 8.01 \"other events\" \u2014 no price move accompanied it and the summary gives no detail: https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Correct and minimal, but it gives no hint of the item type or that the content is unknown.",
+   "answer": "Amazon filed an 8\u2011K (current\u2011events report) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 2,
+   "note": "She explicitly asked for 8-K filings on her watchlist, so staying silent misses something she wants.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate and plain, but a bit wordy for a Telegram line.",
+   "answer": "Amazon filed an 8-K, a report companies file when something important happens. It's listed under \"other events\" and comes with attached documents. The data I got doesn't say what the news is, so check the filing for details: https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 3,
+   "note": "It overstates the item codes: 9.01 doesn't necessarily mean financial statements are attached, and 8.01 isn't necessarily material.",
+   "answer": "Amazon (AMZN) filed an 8-K today (items 8.01, 9.01) \u2014 9.01 means financial statements were attached, 8.01 covers other material events worth flagging: https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2417,
+  "output": 903
+ }
+}

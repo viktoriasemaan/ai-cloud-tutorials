@@ -1,0 +1,37 @@
+{
+ "day": "2026-08-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA filed its quarterly report (10-Q) and a current-events 8-K (items 2.02 results, 9.01 exhibits) on 2026-08-26 \u2014 that's the earnings release: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm and https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm\nNo unusual price move versus the S&P 500 was flagged for the watchlist that day.",
+ "silent": false,
+ "run_seconds": 8.7,
+ "model_calls": 2,
+ "input_tokens": 8841,
+ "output_tokens": 723,
+ "cost_usd": 0.001554,
+ "model_seconds": 4.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-26",
+   "form": "10-Q",
+   "items": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-26",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:32:19.557042-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-32-28.md"
+}

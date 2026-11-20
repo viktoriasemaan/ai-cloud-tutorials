@@ -1,0 +1,37 @@
+{
+ "day": "2026-09-02",
+ "model": "claude-opus-5-5",
+ "answer": "Broadcom: filed an 8-K (a current-events report) that includes its quarterly earnings results (item 2.02). https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm\nMicrosoft: filed an 8-K (a current-events report) with a public disclosure under Regulation FD, the rule for sharing news with all investors at once (item 7.01). The report doesn't say what it covers. https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm",
+ "silent": false,
+ "run_seconds": 8.7,
+ "model_calls": 1,
+ "input_tokens": 4617,
+ "output_tokens": 365,
+ "cost_usd": 0.025768,
+ "model_seconds": 4.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "2.02,8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:39:01.158434-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-39-09.md"
+}

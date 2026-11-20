@@ -1,0 +1,130 @@
+{
+ "day": "2026-10-29",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Amazon fell\u202f4.25% while the S&P\u202f500 fell\u202f0.38% \u2013 8\u2011K earnings report (https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm)  \nAlphabet fell\u202f12.64% while the S&P\u202f500 fell\u202f0.38% \u2013 10\u2011Q quarterly report (https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm)  \nEli\u202fLilly rose\u202f6.63% while the S&P\u202f500 fell\u202f0.38% \u2013 8\u2011K earnings report (https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/lly-20261029.htm)  \nMeta Platforms filed an 8\u2011K detailing a material agreement, shareholder\u2011rights change and bylaws amendment (https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm)",
+ "silent": false,
+ "run_seconds": 10.5,
+ "model_calls": 1,
+ "input_tokens": 4586,
+ "output_tokens": 1019,
+ "cost_usd": 0.000311,
+ "model_seconds": 7.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-10-29",
+   "close": 243.79,
+   "stock_pct": -4.25,
+   "index_pct": -0.38,
+   "vs_index_pts": -3.86,
+   "threshold_pts": 2.85,
+   "typical_daily_gap_pts": 1.42
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-10-29",
+   "close": 283.82,
+   "stock_pct": -12.64,
+   "index_pct": -0.38,
+   "vs_index_pts": -12.26,
+   "threshold_pts": 2.61,
+   "typical_daily_gap_pts": 1.3
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-29",
+   "close": 1373.7,
+   "stock_pct": 6.63,
+   "index_pct": -0.38,
+   "vs_index_pts": 7.01,
+   "threshold_pts": 3.89,
+   "typical_daily_gap_pts": 1.95
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-10-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-10-29",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-10-29",
+   "form": "8-A12B",
+   "items": "",
+   "what_it_is": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438111/d184794d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-10-29",
+   "form": "8-K",
+   "items": "1.01,3.03,5.03,9.01",
+   "what_it_is": "entered a material agreement; change to shareholder rights; bylaws or charter amended",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-29",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/lly-20261029.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-29",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (93afdf9e33ef)\n  Next run: 2029-08-13T18:26:47.666691-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/93afdf9e33ef/2026-11-17_18-26-57.md"
+}

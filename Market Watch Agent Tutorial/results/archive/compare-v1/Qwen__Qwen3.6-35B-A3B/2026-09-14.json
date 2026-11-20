@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-14",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Amazon (AMZN) filed an 8-K today (items 8.01, 9.01) \u2014 9.01 means financial statements were attached, 8.01 covers other material events worth flagging: https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm",
+ "silent": false,
+ "run_seconds": 10.9,
+ "model_calls": 3,
+ "input_tokens": 13164,
+ "output_tokens": 753,
+ "cost_usd": 0.001987,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:47:19.701920-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-47-30.md"
+}

@@ -1,0 +1,29 @@
+{
+ "day": "2026-08-27",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "**NVIDIA** rose 8.74% while the S&P 500 rose 0.66% \u2014 a swing of 8.08 points well above its threshold. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 7.2,
+ "model_calls": 1,
+ "input_tokens": 4091,
+ "output_tokens": 366,
+ "cost_usd": 0.000735,
+ "model_seconds": 2.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-27",
+   "close": 227.98,
+   "stock_pct": 8.74,
+   "index_pct": 0.66,
+   "vs_index_pts": 8.08,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:33:17.190555-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-33-23.md"
+}

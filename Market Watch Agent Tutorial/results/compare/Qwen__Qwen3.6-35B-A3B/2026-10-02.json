@@ -1,0 +1,27 @@
+{
+ "day": "2026-10-02",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Tesla 8-K filed 2026-10-02 (items 2.02, 9.01 \u2014 results of operations / financial condition). No price move recorded for Tesla on this day, so I cannot assess whether the filing coincided with an unusual move. There is no S&P 500 context or other events to report.\n\nNothing beyond this single filing qualifies as worth an alert.\n\n[SILENT]",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 4107,
+ "output_tokens": 408,
+ "cost_usd": 0.000774,
+ "model_seconds": 3.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:52:55.842614-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-53-02.md"
+}

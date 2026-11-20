@@ -1,0 +1,29 @@
+{
+ "day": "2026-10-14",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Eli\u202fLilly rose\u202f3.62% vs S&P\u202f500 fell\u202f1.08% \u2013 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 3561,
+ "output_tokens": 400,
+ "cost_usd": 0.000175,
+ "model_seconds": 3.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-14",
+   "close": 1208.74,
+   "stock_pct": 3.62,
+   "index_pct": -1.08,
+   "vs_index_pts": 4.7,
+   "threshold_pts": 3.98,
+   "typical_daily_gap_pts": 1.99
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:54:31.685810-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-54-38.md"
+}

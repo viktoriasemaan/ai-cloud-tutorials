@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-27",
+ "ideal": "A one-line alert: Broadcom filed an 8-K (current-events report) under Item 2.03, meaning it took on a new direct financial obligation such as debt, with the link. Skip the Microsoft proxy filing and the Tesla 13G/A holding report.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Correct pick and link, but it is terse and never says what the filing is about or why it matters.",
+   "answer": "Broadcom 8-K current-events report https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Accurate and plain, but it leaves out the Item 2.03 meaning, so she doesn't learn why the filing matters.",
+   "answer": "Broadcom filed a current\u2011events report (8\u2011K) \u2013 https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly explains Item 2.03 as a new financial obligation such as debt, in plain words, with the link.",
+   "answer": "Broadcom: filed an 8-K (a current-events report) under Item 2.03, which means it took on a new direct financial obligation such as debt. https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "It misdescribes Item 2.03 as a material agreement or financial results, which is wrong, and adds a filler line about no price move.",
+   "answer": "Broadcom filed an 8-K today (item 2.03 \u2014 material agreement or financial results): https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm. No price move recorded for Broadcom today."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Good explanation, though 'i.e. new debt' slightly overstates it, since Item 2.03 can also cover off-balance-sheet obligations.",
+   "answer": "Broadcom: filed an 8-K (current-events report, item 2.03) \u2014 it has taken on a new direct financial obligation, i.e. new debt. https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2747,
+  "output": 859
+ }
+}

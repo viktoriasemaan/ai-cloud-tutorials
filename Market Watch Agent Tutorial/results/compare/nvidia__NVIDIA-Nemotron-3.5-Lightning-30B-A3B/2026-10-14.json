@@ -1,0 +1,29 @@
+{
+ "day": "2026-10-14",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Eli Lilly rose 3.62% vs S&P 500 fell 1.08%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 8.8,
+ "model_calls": 1,
+ "input_tokens": 3327,
+ "output_tokens": 788,
+ "cost_usd": 0.00039,
+ "model_seconds": 5.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-14",
+   "close": 1208.74,
+   "stock_pct": 3.62,
+   "index_pct": -1.08,
+   "vs_index_pts": 4.7,
+   "threshold_pts": 3.98,
+   "typical_daily_gap_pts": 1.99
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:54:43.409248-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-54-51.md"
+}

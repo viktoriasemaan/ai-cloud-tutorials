@@ -1,0 +1,29 @@
+{
+ "day": "2026-08-27",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.8,
+ "model_calls": 1,
+ "input_tokens": 3510,
+ "output_tokens": 348,
+ "cost_usd": 0.000164,
+ "model_seconds": 2.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-27",
+   "close": 227.98,
+   "stock_pct": 8.74,
+   "index_pct": 0.66,
+   "vs_index_pts": 8.08,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:37:07.925855-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-37-14.md"
+}

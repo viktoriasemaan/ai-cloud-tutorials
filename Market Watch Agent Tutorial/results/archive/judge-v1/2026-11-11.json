@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-11",
+ "ideal": "Alert: Microsoft fell 2.26% while the S&P 500 rose 1.32% (a 3.58-point gap, well above its usual ~1.24-point daily gap); no filing explains it yet.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate and complete, but citing the 'threshold' is internal jargon and doesn't help her see why the move matters.",
+   "answer": "Microsoft fell 2.26% while the S&P 500 rose 1.32% \u2014 a 3.58-point divergence that cleared the 2.48-point threshold. No filing explains it yet."
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is accurate and gives the index comparison, and the usual daily gap explains in plain words why the move is unusual.",
+   "answer": "Microsoft fell 2.26% while the S&P 500 rose 1.32% (Nov 11). That's a gap of 3.58 points, well past its usual 1.24-point daily gap. No filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is correct and concise, with the index comparison and the no-reason note, but lacks context on how unusual the move is.",
+   "answer": "Microsoft fell 2.26% while the S&P\u202f500 rose 1.32% \u2013 no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is correct and includes the date, but gives no context on the size of the move.",
+   "answer": "Microsoft fell 2.26% on Nov 11 while the S&P 500 rose 1.32% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "It is accurate but omits that no filing explains the move, which the rules require when the reason is unknown.",
+   "answer": "Microsoft fell 2.26% while the S&P 500 rose 1.32%"
+  }
+ ],
+ "judge_usage": {
+  "input": 2275,
+  "output": 536
+ }
+}

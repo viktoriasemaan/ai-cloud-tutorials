@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-01",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 4112,
+ "output_tokens": 327,
+ "cost_usd": 0.000702,
+ "model_seconds": 2.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-09-01",
+   "form": "8-K/A",
+   "items": "5.02",
+   "description": "8-K/A",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:37:01.055935-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-37-07.md"
+}

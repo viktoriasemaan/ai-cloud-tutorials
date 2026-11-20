@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-18",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.6,
+ "model_calls": 1,
+ "input_tokens": 4096,
+ "output_tokens": 365,
+ "cost_usd": 0.000734,
+ "model_seconds": 2.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-18",
+   "form": "EFFECT",
+   "items": ",,",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/999999999526003011/xslEFFECTX01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:46:56.362334-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-47-02.md"
+}

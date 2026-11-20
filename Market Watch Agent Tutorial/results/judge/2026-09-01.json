@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-01",
+ "ideal": "A brief alert that Apple filed an amended current-events report (8-K/A) under item 5.02, which covers officer or director changes, with the link. It should note the report doesn't say what changed and should not invent details.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "claude-opus-5-5",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Explains the amendment and item 5.02 in plain words, honestly says the details aren't known, and links the filing; slightly wordy.",
+   "answer": "Apple: filed an 8-K/A, a correction or update to an earlier current-events report. It's under Item 5.02, which covers directors or top officers leaving or joining, and can include their pay. This report doesn't say what changed: https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Clear and plain with the link, but it asserts there was a change and calls the filing 'the whole story', which goes beyond the evidence.",
+   "answer": "Apple \u2014 new filing: an amended current-events report (8-K/A) covering item 5.02, a change to its officers or directors. No unusual price move flagged that day, so the filing is the whole story. https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 3,
+   "note": "Accurate and linked, but it never explains what an 8-K/A or item 5.02 means or why it matters.",
+   "answer": "Apple filed an 8\u2011K amendment (item\u202f5.02) \u2013 https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Stays silent on an 8-K about officer or director changes, a filing type she said she wants.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Stays silent on an 8-K about officer or director changes, a filing type she said she wants.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 2590,
+  "output": 1016
+ }
+}

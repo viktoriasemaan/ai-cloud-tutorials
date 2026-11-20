@@ -1,0 +1,53 @@
+{
+ "day": "2026-10-26",
+ "model": "qwen3.5:4b",
+ "answer": "Tesla rose 5.21% vs 0.71% for S&P 500\u20144.5 pts above",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 41.4,
+ "usage": {
+  "prompt_tokens": 3453,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 643,
+  "total_tokens": 4096
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-26",
+   "close": 391.62,
+   "stock_pct": 5.21,
+   "index_pct": 0.71,
+   "vs_index_pts": 4.5,
+   "threshold_pts": 4.23,
+   "typical_daily_gap_pts": 2.12
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-26",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926013218/b1026263px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-10-26",
+   "form": "S-3ASR",
+   "items": "",
+   "description": "S-3ASR",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431009/d127909ds3asr.htm"
+  }
+ ],
+ "cloud_answer": "Tesla rose 5.21% vs S&P 500 0.71%, outperformed by 4.5pts no filing explains it yet",
+ "cloud_seconds": 10.6
+}

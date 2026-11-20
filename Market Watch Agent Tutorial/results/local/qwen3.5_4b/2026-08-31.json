@@ -1,0 +1,31 @@
+{
+ "day": "2026-08-31",
+ "model": "qwen3.5:4b",
+ "answer": "[SILENT]",
+ "tool_calls": [],
+ "silent": true,
+ "seconds": 26.0,
+ "usage": {
+  "prompt_tokens": 3174,
+  "prompt_tokens_details": {
+   "cached_tokens": 2655
+  },
+  "completion_tokens": 422,
+  "total_tokens": 3596
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-31",
+   "form": "N-PX",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000110465926103913/xslN-PX_X01/primary_doc.xml"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 2.5
+}

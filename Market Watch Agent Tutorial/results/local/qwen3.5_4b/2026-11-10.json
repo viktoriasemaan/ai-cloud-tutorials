@@ -1,0 +1,33 @@
+{
+ "day": "2026-11-10",
+ "model": "qwen3.5:4b",
+ "answer": "NVIDIA fell 5.47%, while S&P 500 fell only 0.37%",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 23.2,
+ "usage": {
+  "prompt_tokens": 3160,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 368,
+  "total_tokens": 3528
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-10",
+   "close": 168.89,
+   "stock_pct": -5.47,
+   "index_pct": -0.37,
+   "vs_index_pts": -5.11,
+   "threshold_pts": 4.42,
+   "typical_daily_gap_pts": 2.21
+  }
+ ],
+ "cloud_answer": "NVIDIA fell 5.47% versus S&P 500 fell 0.37%, no filing explains it yet",
+ "cloud_seconds": 3.6
+}

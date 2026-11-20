@@ -1,0 +1,29 @@
+{
+ "day": "2026-11-10",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Nov 10: **NVIDIA** fell 5.47% while the S&P 500 fell only 0.37% (a 5.1-point gap vs. its usual 2.2) \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.4,
+ "model_calls": 1,
+ "input_tokens": 4014,
+ "output_tokens": 775,
+ "cost_usd": 0.00055,
+ "model_seconds": 4.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-10",
+   "close": 168.89,
+   "stock_pct": -5.47,
+   "index_pct": -0.37,
+   "vs_index_pts": -5.11,
+   "threshold_pts": 4.42,
+   "typical_daily_gap_pts": 2.21
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:14:02.575802-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-14-10.md"
+}

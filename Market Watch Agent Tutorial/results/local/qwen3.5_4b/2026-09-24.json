@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-24",
+ "model": "qwen3.5:4b",
+ "answer": "[SILENT]",
+ "tool_calls": [],
+ "silent": true,
+ "seconds": 38.6,
+ "usage": {
+  "prompt_tokens": 3195,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 639,
+  "total_tokens": 3834
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-24",
+   "form": "8-A12B",
+   "items": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926110227/tm2625860d1_8a12b.htm"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 4.9
+}

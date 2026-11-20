@@ -1,0 +1,87 @@
+{
+ "day": "2026-10-19",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 4.3,
+ "model_calls": 1,
+ "input_tokens": 4593,
+ "output_tokens": 119,
+ "cost_usd": 0.000674,
+ "model_seconds": 1.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-19",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000031601126000036/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116948/tm267596d7_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "ARS",
+   "items": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116716/tm267596d6_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116713/tm267596d5_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116707/tm267596d3_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEF 14A",
+   "items": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:59:51.913220-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-59-56.md"
+}

@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-29",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Tesla filed an 8-K (current-events report) covering four material items: entering a material definitive agreement (1.01), terminating a material definitive agreement (1.02), creating a direct financial obligation (2.03), and filing financial statements (9.01). No price move data in the report. [https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm](https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm)",
+ "silent": false,
+ "run_seconds": 10.8,
+ "model_calls": 2,
+ "input_tokens": 8637,
+ "output_tokens": 967,
+ "cost_usd": 0.001724,
+ "model_seconds": 6.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-09-29",
+   "form": "8-K",
+   "items": "1.01,1.02,2.03,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:53:53.977369-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-54-04.md"
+}

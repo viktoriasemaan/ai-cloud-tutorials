@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-10",
+ "ideal": "Alert: Apple rose 3.56% while the S&P 500 fell 0.6%, with no filing explaining it yet. Broadcom filed its 10-Q quarterly report and an S-4 registering securities, which is often tied to a deal, with links to both.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "claude-opus-5-5",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Complete and accurate with a hedged S-4 explanation, but 'worth a look' leans slightly toward advice and adds wordiness.",
+   "answer": "Apple rose 3.56% while the S&P 500 fell 0.6%, no filing explains it yet.\nBroadcom filed its 10-Q, the quarterly report: https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm\nBroadcom also filed an S-4, which registers new shares or securities, often for a merger or an exchange offer. Worth a look to see what deal it covers: https://www.sec.gov/Archives/edgar/data/1730168/000119312526387881/d154803ds4.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 4,
+   "note": "It covers everything, but it states as fact that the S-4 is for a business combination, which the evidence doesn't show, and it crams everything into one dense paragraph.",
+   "answer": "Apple rose 3.56% while the S&P 500 fell 0.6% \u2014 no filing explains it yet. Broadcom filed a 10-Q quarterly report (https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm) and an S-4 registration statement for securities to be issued in a business combination (https://www.sec.gov/Archives/edgar/data/1730168/000119312526387881/d154803ds4.htm)."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 2,
+   "note": "It omits Broadcom's 10-Q and S-4, which are material filings, and the line itself is awkwardly worded.",
+   "answer": "Apple rose 3.56% vs S&P 500 fell 0.6% no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Clear, complete and short; the parenthetical 'stock being issued in a deal' is a reasonable plain-words gloss of an S-4, though slightly assertive.",
+   "answer": "Apple rose 3.56% while the S&P 500 fell 0.6% \u2014 no filing explains it yet.\nBroadcom filed its quarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm\nBroadcom also filed an S-4 registration statement (stock being issued in a deal): https://www.sec.gov/Archives/edgar/data/1730168/000119312526387881/d154803ds4.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate and complete, but it doesn't explain why the S-4 matters.",
+   "answer": "Apple rose\u202f3.56% while S&P\u202f500 fell\u202f0.6%; no filing explains it yet  \nBroadcom filed a 10\u2011Q (quarterly report)\u202fhttps://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm  \nBroadcom filed an S\u20114 (registration statement)\u202fhttps://www.sec.gov/Archives/edgar/data/1730168/000119312526387881/d154803ds4.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3262,
+  "output": 603
+ }
+}

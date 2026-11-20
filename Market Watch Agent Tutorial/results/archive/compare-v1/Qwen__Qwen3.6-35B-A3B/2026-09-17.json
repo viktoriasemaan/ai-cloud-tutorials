@@ -1,0 +1,29 @@
+{
+ "day": "2026-09-17",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Berkshire Hathaway fell 2.04% while the S&P 500 rose 1.13%. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.9,
+ "model_calls": 2,
+ "input_tokens": 8762,
+ "output_tokens": 657,
+ "cost_usd": 0.001461,
+ "model_seconds": 5.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-17",
+   "close": 509.2,
+   "stock_pct": -2.04,
+   "index_pct": 1.13,
+   "vs_index_pts": -3.17,
+   "threshold_pts": 2.19,
+   "typical_daily_gap_pts": 1.09
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:48:25.845720-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-48-34.md"
+}

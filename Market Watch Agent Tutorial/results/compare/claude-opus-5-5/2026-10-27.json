@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-27",
+ "model": "claude-opus-5-5",
+ "answer": "Broadcom: filed an 8-K (a current-events report) under Item 2.03, which means it took on a new direct financial obligation such as debt. https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4753,
+ "output_tokens": 283,
+ "cost_usd": 0.024672,
+ "model_seconds": 3.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-27",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926013276/y1027263px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-10-27",
+   "form": "8-K",
+   "items": "2.03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-27",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:02:58.048243-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-03-04.md"
+}

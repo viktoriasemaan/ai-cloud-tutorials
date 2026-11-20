@@ -1,0 +1,27 @@
+{
+ "day": "2026-08-31",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 7.7,
+ "model_calls": 1,
+ "input_tokens": 3561,
+ "output_tokens": 214,
+ "cost_usd": 0.000143,
+ "model_seconds": 2.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-31",
+   "form": "N-PX",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000110465926103913/xslN-PX_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:35:35.923702-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-35-43.md"
+}

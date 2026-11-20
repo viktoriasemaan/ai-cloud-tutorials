@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-30",
+ "ideal": "Alert with two lines: Eli Lilly rose 3.19% while the S&P 500 fell 1.77%, a much bigger gap than usual, and no filing explains it yet; Amazon filed its 10-Q quarterly report, with the link.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers both events cleanly; the Sept 30 quarter end is supported by the filing URL.",
+   "answer": "Eli Lilly rose 3.19% while the S&P 500 fell 1.77% \u2014 no filing explains it yet.\nAmazon filed its quarterly report (10-Q) for the quarter ended Sept 30: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 2,
+   "note": "Leaves out the Amazon 10-Q and rounds 4.96 to an unreported '5-point' figure.",
+   "answer": "Eli Lilly rose 3.19% while the S&P 500 fell 1.77% \u2014 a 5-point outperformance versus the index with no filing explaining the move yet."
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers both events, explains why the Lilly gap is unusual and links the 10-Q, all in plain words.",
+   "answer": "Eli Lilly rose 3.19% while the S&P 500 fell 1.77%, a much bigger gap from the index than usual. No filing explains it yet.\nAmazon filed its 10-Q, the quarterly report: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers both events, but 'fell -1.77%' is a confusing double negative and it never says whether anything explains the move.",
+   "answer": "Eli Lilly rose\u202f3.19% while the S&P\u202f500 fell\u202f-1.77%  \nAmazon filed a 10\u2011Q (quarterly report): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 2,
+   "accuracy": 4,
+   "clarity": 1,
+   "overall": 2,
+   "note": "Shows its internal reasoning and raw data fields instead of a short, clean alert.",
+   "answer": "Looking at the market report from 2026-10-30, there are two notable events:\n\n1. **LLY (Eli Lilly)**: stock_pct = 3.19, index_pct = -1.77, vs_index_pts = 4.96 (exceeds threshold of 4.08). LLY rose 3.19% while the S&P 500 fell 1.77%, an outperformance of 4.96 points.\n\n2. **AMZN (Amazon)**: 10-Q filing for the quarter ended 2026-09-30. The user explicitly wants 10-Q earnings and material news.\n\nBoth events are worth alerting on \u2014 the price move significantly diverged from the index, and the 10-Q is the material quarterly filing the user tracks.\n\n[LLY rose 3.19% while the S&P 500 fell 1.77%]\n[Amazon filed a 10-Q (quarterly report) https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm]"
+  }
+ ],
+ "judge_usage": {
+  "input": 2863,
+  "output": 808
+ }
+}

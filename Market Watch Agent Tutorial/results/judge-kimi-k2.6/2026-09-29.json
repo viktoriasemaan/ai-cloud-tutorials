@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-29",
+ "ideal": "B",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate and concise, but omits the 'current-events report' plain-words translation required by the style rules.",
+   "answer": "Tesla (TSLA): filed an 8-K reporting entry and termination of material agreements, plus creation of a direct financial obligation. https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Perfect: translates 8-K to 'current-events report', states the material events plainly, links, and stays within one short line.",
+   "answer": "Tesla: 8-K current-events report filed Sept 29 \u2014 a new material agreement, a terminated agreement, and a new financial obligation.\nhttps://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 2,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Adds unsupported speculation ('possibly a new loan or credit deal replacing an old one') that is not in the evidence\u2014violates the rule never to invent a reason.",
+   "answer": "Tesla: filed an 8-K (a current-events report) on 2026-09-29 saying it signed a major agreement, ended another one and took on a new debt or financial obligation. That's material news, possibly a new loan or credit deal replacing an old one. https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Names the form and links it, but fails to say what happened in the filing, leaving the user without the material news she asked for.",
+   "answer": "Tesla: 8-K - current events report https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "E",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 1,
+   "clarity": 5,
+   "overall": 1,
+   "note": "This is material news: items 1.01, 1.02, and 2.03 cover material agreements and a direct financial obligation. Silence misses a filing the user explicitly wants to know about.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1156,
+  "output": 7894
+ }
+}

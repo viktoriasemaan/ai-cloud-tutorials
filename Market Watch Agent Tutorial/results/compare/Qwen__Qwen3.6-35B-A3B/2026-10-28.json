@@ -1,0 +1,67 @@
+{
+ "day": "2026-10-28",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Microsoft reported quarterly results (10-Q, with results-of-operations 8-K); Alphabet did too (8-K with results items). No price moves or index comparison data in the report to contextualize.\n\nMicrosoft: filed 10-Q quarterly report and 8-K with results-of-operations (items 2.02, 9.01) [10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm), [8-K](https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm)\n\nAlphabet: filed 8-K with results-of-operations (items 2.02, 9.01) [link](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm)\n\nNo price move data was included in the report for this day, so no comparison to the S&P 500 is possible.",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4666,
+ "output_tokens": 570,
+ "cost_usd": 0.000974,
+ "model_seconds": 4.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000092189526002869/px14a6g14098012_10282026.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "10-Q",
+   "items": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:03:30.307241-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-03-38.md"
+}

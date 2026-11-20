@@ -1,0 +1,39 @@
+{
+ "day": "2026-10-30",
+ "model": "claude-opus-5-5",
+ "answer": "Eli Lilly rose 3.19% while the S&P 500 fell 1.77%, a much bigger gap from the index than usual. No filing explains it yet.\nAmazon filed its 10-Q, the quarterly report: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+ "silent": false,
+ "run_seconds": 6.4,
+ "model_calls": 1,
+ "input_tokens": 4553,
+ "output_tokens": 202,
+ "cost_usd": 0.022252,
+ "model_seconds": 2.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-30",
+   "close": 1417.54,
+   "stock_pct": 3.19,
+   "index_pct": -1.77,
+   "vs_index_pts": 4.96,
+   "threshold_pts": 4.08,
+   "typical_daily_gap_pts": 2.04
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-10-30",
+   "form": "10-Q",
+   "items": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:10:00.745794-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-10-06.md"
+}

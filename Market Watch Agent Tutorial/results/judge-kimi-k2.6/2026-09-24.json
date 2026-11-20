@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-24",
+ "ideal": "The evidence contains no price moves. The only filing is an AMZN 8-A12B, which is a routine securities registration / listing notice, not material earnings/news (8-K/10-Q/10-K) and falls under the paperwork she explicitly does not want. Therefore [SILENT] is the correct response.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "claude-opus-5-5",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silent was correct.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silent was correct.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silent was correct.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silent was correct.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silent was correct.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 919,
+  "output": 2256
+ }
+}

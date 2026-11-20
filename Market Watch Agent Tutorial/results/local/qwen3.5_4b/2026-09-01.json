@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-01",
+ "model": "qwen3.5:4b",
+ "answer": "Apple - 8-K/A (amended current events report) filed for item 5.02",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 38.5,
+ "usage": {
+  "prompt_tokens": 3191,
+  "prompt_tokens_details": {
+   "cached_tokens": 2662
+  },
+  "completion_tokens": 660,
+  "total_tokens": 3851
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-09-01",
+   "form": "8-K/A",
+   "items": "5.02",
+   "description": "8-K/A",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 5.0
+}

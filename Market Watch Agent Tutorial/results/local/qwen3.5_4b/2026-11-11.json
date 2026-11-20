@@ -1,0 +1,33 @@
+{
+ "day": "2026-11-11",
+ "model": "qwen3.5:4b",
+ "answer": "Microsoft fell 2.26% while S&P 500 rose 1.32%; significant divergence with no filing explains it yet.",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 18.3,
+ "usage": {
+  "prompt_tokens": 3150,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 279,
+  "total_tokens": 3429
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-11",
+   "close": 521.12,
+   "stock_pct": -2.26,
+   "index_pct": 1.32,
+   "vs_index_pts": -3.58,
+   "threshold_pts": 2.48,
+   "typical_daily_gap_pts": 1.24
+  }
+ ],
+ "cloud_answer": "Microsoft fell 2.26% while S&P 500 rose 1.32% no filing explains it yet",
+ "cloud_seconds": 4.6
+}

@@ -1,0 +1,37 @@
+{
+ "day": "2026-09-02",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Broadcom filed an 8-K with Item 2.02 (results of operations/financial condition) on September 2 \u2014 earnings-related, no price move recorded to compare. Microsoft also filed an 8-K (Reg FD disclosure) same day.",
+ "silent": false,
+ "run_seconds": 10.9,
+ "model_calls": 3,
+ "input_tokens": 14125,
+ "output_tokens": 1072,
+ "cost_usd": 0.002366,
+ "model_seconds": 7.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "2.02,8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:42:04.594172-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-42-15.md"
+}

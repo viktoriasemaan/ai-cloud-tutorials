@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-22",
+ "ideal": "Alert: Meta fell 6.98% while the S&P 500 fell 1.18%, and its quarterly report (10-Q) came out the same day (link). Berkshire rose 1.48% against the index's 1.18% drop, and no filing explains it yet. Tesla filed its quarterly report (10-Q) (link).",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 2,
+   "note": "It is accurate, but it leaves out Berkshire's big move and Tesla's 10-Q, and the wording is clipped.",
+   "answer": "Meta Platforms fell 6.98% vs S&P 500 fell 1.18%, 10-Q filing: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is complete, accurate and plain, with links, and it doesn't claim the 10-Q caused Meta's drop.",
+   "answer": "**Meta Platforms** fell 6.98% while the S&P 500 fell 1.18%. Meta filed its quarterly report (10-Q) the same day: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm\n\n**Berkshire Hathaway** rose 1.48% while the S&P 500 fell 1.18%. No filing explains it yet.\n\n**Tesla** filed its quarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is complete, accurate and concise; the extra close price comes from the report, and it notes that Tesla had no unusual move.",
+   "answer": "Meta fell 6.98% while the S&P 500 fell 1.18% \u2014 its quarterly report (10-Q) landed the same day: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm\nTesla filed its quarterly report (10-Q) with no unusual move that day: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm\nBerkshire Hathaway rose 1.48% against the S&P 500's 1.18% drop (546.97 close); no filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It covers everything accurately but is terse and never says in plain words that a 10-Q is the quarterly report.",
+   "answer": "Meta Platforms fell 6.98% (S&P\u202f500 fell 1.18%); 10\u2011Q filing https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm  \nBerkshire Hathaway rose 1.48% (S&P\u202f500 fell 1.18%); no filing explains it yet  \nTesla 10\u2011Q filing https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "The moves are accurate with the index next to them, but it leaves out Tesla's 10-Q and has no filing links.",
+   "answer": "META fell 6.98% while the S&P 500 fell 1.18% (underperformed by 5.8 pts); Meta filed a 10-Q that day.\nBerkshire Hathaway rose 1.48% while the S&P 500 fell 1.18% (outperformed by 2.66 pts); no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 3272,
+  "output": 928
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "day": "2026-10-14",
+ "model": "qwen3.5:4b",
+ "answer": "Eli Lilly up 3.62% while S&P 500 down 1.08% \u2014 +4.7 pt divergence exceeds the unusual move threshold; no filing explains it yet",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 40.5,
+ "usage": {
+  "prompt_tokens": 3161,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 668,
+  "total_tokens": 3829
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-14",
+   "close": 1208.74,
+   "stock_pct": 3.62,
+   "index_pct": -1.08,
+   "vs_index_pts": 4.7,
+   "threshold_pts": 3.98,
+   "typical_daily_gap_pts": 1.99
+  }
+ ],
+ "cloud_answer": "Eli Lilly rose 3.62% vs S&P 500 fell 1.08%, no filing explains it yet",
+ "cloud_seconds": 5.3
+}

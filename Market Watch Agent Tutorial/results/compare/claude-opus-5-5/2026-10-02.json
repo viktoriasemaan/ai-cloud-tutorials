@@ -1,0 +1,27 @@
+{
+ "day": "2026-10-02",
+ "model": "claude-opus-5-5",
+ "answer": "Tesla filed an 8-K, a current-events report, on 2026-10-02. It includes item 2.02, which is used to report business results or financial condition, so it may be material: https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+ "silent": false,
+ "run_seconds": 6.8,
+ "model_calls": 1,
+ "input_tokens": 4479,
+ "output_tokens": 268,
+ "cost_usd": 0.023276,
+ "model_seconds": 3.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:53:23.236456-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-53-29.md"
+}

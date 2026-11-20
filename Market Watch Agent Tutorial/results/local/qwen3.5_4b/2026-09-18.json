@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-18",
+ "model": "qwen3.5:4b",
+ "answer": "[SILENT]",
+ "tool_calls": [],
+ "silent": true,
+ "seconds": 40.2,
+ "usage": {
+  "prompt_tokens": 3175,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 641,
+  "total_tokens": 3816
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-18",
+   "form": "EFFECT",
+   "items": ",,",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/999999999526003011/xslEFFECTX01/primary_doc.xml"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 4.5
+}

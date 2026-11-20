@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-14",
+ "model": "qwen3.5:4b",
+ "answer": "Amazon (AMZN) filed an 8-K on September 14 announcing a significant acquisition of $X billion plus related operations changes; worth noting as material operational news.",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 32.7,
+ "usage": {
+  "prompt_tokens": 3182,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 528,
+  "total_tokens": 3710
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 10.9
+}

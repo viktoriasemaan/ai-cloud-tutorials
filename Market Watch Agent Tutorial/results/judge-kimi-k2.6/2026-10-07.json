@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-07",
+ "ideal": "A: coverage=5,no_noise=5,accuracy=5,clarity=5\nB: coverage=5,no_noise=5,accuracy=5,clarity=5\nC: coverage=5,no_noise=5,accuracy=5,clarity=5\nD: coverage=5,no_noise=5,accuracy=5,clarity=5\nE: coverage=5,no_noise=5,accuracy=5,clarity=5\nbest: A",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly silent; the only event is a SCHEDULE 13G/A, which is routine paperwork/fund-holding she doesn't want, and there is no price move.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct silence.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct silence.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct silence.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct silence.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 923,
+  "output": 3117
+ }
+}

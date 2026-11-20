@@ -1,0 +1,91 @@
+{
+ "day": "2026-10-19",
+ "model": "qwen3.5:4b",
+ "answer": "",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 13.5,
+ "usage": {
+  "prompt_tokens": 4021,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 75,
+  "total_tokens": 4096
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-19",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000031601126000036/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116948/tm267596d7_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "ARS",
+   "items": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116718/tm2626016d2_ars.pdf"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116716/tm267596d6_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116713/tm267596d5_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116707/tm267596d3_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-19",
+   "form": "DEF 14A",
+   "items": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 6.2
+}

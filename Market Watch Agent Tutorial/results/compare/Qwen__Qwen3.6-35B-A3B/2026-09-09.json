@@ -1,0 +1,49 @@
+{
+ "day": "2026-09-09",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "META rose 6.55% while the S&P 500 fell 0.46% \u2014 no filing explains it yet. Amazon filed an 8-K (item 5.02, departure of officers/directors or similar event) [link](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm).",
+ "silent": false,
+ "run_seconds": 8.8,
+ "model_calls": 1,
+ "input_tokens": 4387,
+ "output_tokens": 576,
+ "cost_usd": 0.000951,
+ "model_seconds": 4.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-09-09",
+   "close": 653.69,
+   "stock_pct": 6.55,
+   "index_pct": -0.46,
+   "vs_index_pts": 7.02,
+   "threshold_pts": 5.59,
+   "typical_daily_gap_pts": 2.79
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-09-09",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926011511/o91268px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-09",
+   "form": "8-K",
+   "items": "5.02",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:41:21.244625-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-41-29.md"
+}

@@ -1,0 +1,69 @@
+{
+ "day": "2026-11-12",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Broadcom rose 5.54% while the S&P 500 fell 0.35% \u2014 no filing explains it yet.\nNVIDIA filed a current-events report (8-K, item 5.02 \u2014 director/officer change): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\nMeta filed a current-events report (8-K, item 8.01 \u2014 other events): https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm\nAmazon's 13G and Meta's 8-A12B were routine filing paperwork, so skipped.",
+ "silent": false,
+ "run_seconds": 16.4,
+ "model_calls": 1,
+ "input_tokens": 4397,
+ "output_tokens": 2653,
+ "cost_usd": 0.001821,
+ "model_seconds": 13.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-12",
+   "close": 364.36,
+   "stock_pct": 5.54,
+   "index_pct": -0.35,
+   "vs_index_pts": 5.9,
+   "threshold_pts": 4.83,
+   "typical_daily_gap_pts": 2.41
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-11-12",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926126255/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-A12B",
+   "items": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458695/d193866d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:20:06.533699-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-20-22.md"
+}

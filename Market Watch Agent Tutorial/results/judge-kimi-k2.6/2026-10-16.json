@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-16",
+ "ideal": "the user wants 5 verdicts: A, B, C, D, E each scored 1-5, and best designated",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 1,
+   "accuracy": 1,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Includes unwanted 13D filing and invents a reason/description not in evidence.",
+   "answer": "Berkshire Hathaway (BRK-B) rose 1.21% while the S&P 500 fell 1.11% (divergence of 2.31 pts); no filing explains it yet. Eli Lilly (LLY) filed a Schedule 13D, indicating a change in significant ownership stake (see https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml)."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 2,
+   "accuracy": 2,
+   "clarity": 1,
+   "overall": 4,
+   "note": "Captures the BRK move and index cleanly, but uses ticker instead of company name and slightly awkward phrasing.",
+   "answer": "BRK-B rose 1.21% vs S&P 500 fell 1.11%, no filing explains it yet"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 1,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 3,
+   "note": "Accurate but includes extra date and typical-gap numbers she didn't ask for, making it less short than desired.",
+   "answer": "Berkshire Hathaway: rose 1.21% on Oct 16 while the S&P 500 fell 1.11%. That's a gap of 2.31 points, about twice its typical daily gap of 1.12. No filing explains it yet."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 1,
+   "accuracy": 1,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Includes the move correctly but adds unwanted LLY filing with invented parenthetical detail unsupported by evidence.",
+   "answer": "Berkshire Hathaway rose 1.21% while the S&P 500 fell 1.11% \u2014 the move ran about 2.31 points against the index, above its 2.25-point trigger, and no filing explains it yet.\nEli Lilly: a Schedule 13D beneficial-ownership filing (an outside investor disclosing a large stake) \u2014 https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 2,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 5,
+   "note": "Short, plain, names the company, pairs the stock move with the S&P 500 move, ends with required exact phrase, no unwanted noise.",
+   "answer": "Berkshire Hathaway rose 1.21% (S&P fell 1.11%); no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1327,
+  "output": 7495
+ }
+}

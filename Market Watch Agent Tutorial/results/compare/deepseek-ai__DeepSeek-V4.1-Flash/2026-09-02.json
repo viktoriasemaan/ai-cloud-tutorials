@@ -1,0 +1,37 @@
+{
+ "day": "2026-09-02",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Sept 2 filings on your watchlist:\n\n- Broadcom filed an 8-K (current-events report) with results of operations \u2014 its quarterly numbers: https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm\n- Microsoft filed an 8-K (current-events report) with a Regulation FD disclosure: https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm\n\nNo unusual price moves for either versus the S&P 500 that day. Form 4 and 144 paperwork was routine and skipped.",
+ "silent": false,
+ "run_seconds": 12.7,
+ "model_calls": 3,
+ "input_tokens": 15266,
+ "output_tokens": 2424,
+ "cost_usd": 0.001806,
+ "model_seconds": 9.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "2.02,8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:38:43.517413-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-38-55.md"
+}

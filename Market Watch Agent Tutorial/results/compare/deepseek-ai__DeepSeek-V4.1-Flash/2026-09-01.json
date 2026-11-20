@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-01",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple \u2014 new filing: an amended current-events report (8-K/A) covering item 5.02, a change to its officers or directors. No unusual price move flagged that day, so the filing is the whole story. https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+ "silent": false,
+ "run_seconds": 14.8,
+ "model_calls": 3,
+ "input_tokens": 12690,
+ "output_tokens": 2118,
+ "cost_usd": 0.001486,
+ "model_seconds": 9.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-09-01",
+   "form": "8-K/A",
+   "items": "5.02",
+   "description": "8-K/A",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:37:12.651852-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-37-27.md"
+}

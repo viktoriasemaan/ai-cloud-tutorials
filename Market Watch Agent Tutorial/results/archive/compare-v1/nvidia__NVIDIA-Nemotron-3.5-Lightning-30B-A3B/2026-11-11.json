@@ -1,0 +1,29 @@
+{
+ "day": "2026-11-11",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft fell 2.26% while the S&P 500 rose 1.32%",
+ "silent": false,
+ "run_seconds": 6.4,
+ "model_calls": 1,
+ "input_tokens": 3259,
+ "output_tokens": 834,
+ "cost_usd": 0.000395,
+ "model_seconds": 3.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-11",
+   "close": 521.12,
+   "stock_pct": -2.26,
+   "index_pct": 1.32,
+   "vs_index_pts": -3.58,
+   "threshold_pts": 2.48,
+   "typical_daily_gap_pts": 1.24
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:18:36.463633-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-18-42.md"
+}

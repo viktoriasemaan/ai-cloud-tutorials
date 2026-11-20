@@ -1,0 +1,29 @@
+{
+ "day": "2026-09-17",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "BRK-B fell 2.04% while the S&P 500 rose 1.13% \u2014 moved 3.17 points against the index, exceeding the 2.19-point threshold. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.9,
+ "model_calls": 1,
+ "input_tokens": 3281,
+ "output_tokens": 574,
+ "cost_usd": 0.000344,
+ "model_seconds": 2.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-17",
+   "close": 509.2,
+   "stock_pct": -2.04,
+   "index_pct": 1.13,
+   "vs_index_pts": -3.17,
+   "threshold_pts": 2.19,
+   "typical_daily_gap_pts": 1.09
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:48:14.253779-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-48-20.md"
+}

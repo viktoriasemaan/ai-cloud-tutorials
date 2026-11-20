@@ -1,0 +1,69 @@
+{
+ "day": "2026-11-12",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Broadcom (AVGO) up\u202f5.5% while the S&P\u202f500 fell\u202f0.35% (move exceeds usual gap).  \nNVIDIA filed an\u202f8\u2011K (current\u2011events report)\u202fhttps://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm  \nMeta Platforms filed an\u202f8\u2011K\u202fhttps://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
+ "silent": false,
+ "run_seconds": 8.4,
+ "model_calls": 1,
+ "input_tokens": 3894,
+ "output_tokens": 884,
+ "cost_usd": 0.000267,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-12",
+   "close": 364.36,
+   "stock_pct": 5.54,
+   "index_pct": -0.35,
+   "vs_index_pts": 5.9,
+   "threshold_pts": 4.83,
+   "typical_daily_gap_pts": 2.41
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-11-12",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926126255/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-A12B",
+   "items": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458695/d193866d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:28:05.273945-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-28-13.md"
+}

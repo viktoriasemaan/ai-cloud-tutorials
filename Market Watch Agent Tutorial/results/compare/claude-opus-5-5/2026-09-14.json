@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-14",
+ "model": "claude-opus-5-5",
+ "answer": "Amazon filed an 8-K, a current-events report, on 2026-09-14. It's listed under \"other events\" (item 8.01) with attachments (item 9.01). The report doesn't say what the event is, so check the filing: https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm",
+ "silent": false,
+ "run_seconds": 8.7,
+ "model_calls": 1,
+ "input_tokens": 4478,
+ "output_tokens": 351,
+ "cost_usd": 0.024932,
+ "model_seconds": 4.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:44:57.937419-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-45-06.md"
+}

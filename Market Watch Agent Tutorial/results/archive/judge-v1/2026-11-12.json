@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-12",
+ "ideal": "A short alert: Broadcom rose 5.54% while the S&P 500 fell 0.35%, with no filing explaining it yet. It should also flag NVIDIA's 8-K (item 5.02, a director or officer change) and Meta's 8-K (item 8.01, other events) with links, and skip Amazon's 13G and Meta's 8-A12B.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 1,
+   "clarity": 2,
+   "overall": 1,
+   "note": "It says Broadcom fell when it rose, writes the awkward 'rose -0.35%', and gives no reason for either 8-K.",
+   "answer": "Broadcom fell 5.54% while the S&P 500 rose -0.35%\nNVIDIA 8-K: current-events report https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\nMeta Platforms 8-K: current-events report https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "The directions are correct, both 8-Ks are explained in plain words, and the routine filings are skipped, though the line mentioning them is slightly unnecessary.",
+   "answer": "Broadcom rose 5.54% while the S&P 500 fell 0.35% \u2014 no filing explains it yet.\nNVIDIA filed a current-events report (8-K, item 5.02 \u2014 director/officer change): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\nMeta filed a current-events report (8-K, item 8.01 \u2014 other events): https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm\nAmazon's 13G and Meta's 8-A12B were routine filing paperwork, so skipped."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "The direction is right, but 'fell -0.35%' is a double negative, the threshold jargon adds noise, and neither 8-K is explained.",
+   "answer": "Broadcom rose\u202f5.54% while the S&P\u202f500 fell\u202f-0.35% (vs\u2011index\u202f5.9\u202fpts\u202f>\u202fthreshold\u202f4.83).  \nNVIDIA filed an 8\u2011K (current\u2011events report)\u202fhttps://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm  \nMeta Platforms filed an 8\u2011K (current\u2011events report)\u202fhttps://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate and complete, but it leans on item numbers and form names rather than fully plain words.",
+   "answer": "Broadcom rose 5.54% while the S&P 500 fell 0.35% \u2014 no filing explains it yet.\n\nNVIDIA filed an 8-K (items 5.02, 9.01 \u2014 departures/appointments of officers and financial statements): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\n\nMeta Platforms filed an 8-K (items 8.01, 9.01 \u2014 other events and financial statements): https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is accurate and plain, puts the move in context against Broadcom's usual gap, and honestly says what is unknown about Meta's 8-K.",
+   "answer": "Broadcom rose 5.54% while the S&P 500 fell 0.35% (Nov 12), well beyond its usual gap with the index. No filing explains it yet.\nNVIDIA filed an 8-K (a current-events report) about a change in its directors or officers, or their pay: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\nMeta filed an 8-K (a current-events report) under \"other events.\" The report doesn't say what it covers, and Meta filed a securities listing form the same day: https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3530,
+  "output": 999
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "day": "2026-10-14",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Eli Lilly rose 3.62% while the S&P 500 fell 1.08% \u2014 a 4.7-point gap versus its typical 1.99-point daily spread. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 10.4,
+ "model_calls": 3,
+ "input_tokens": 13220,
+ "output_tokens": 799,
+ "cost_usd": 0.001255,
+ "model_seconds": 6.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-14",
+   "close": 1208.74,
+   "stock_pct": 3.62,
+   "index_pct": -1.08,
+   "vs_index_pts": 4.7,
+   "threshold_pts": 3.98,
+   "typical_daily_gap_pts": 1.99
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:57:31.785436-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-57-42.md"
+}

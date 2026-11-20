@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-29",
+ "model": "qwen3.5:4b",
+ "answer": "[TSLA: filed 8-K with items 1.01, 1.02, 2.03, 9.01 (potential executive change and/or material agreements), no price move reported today.]",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 33.0,
+ "usage": {
+  "prompt_tokens": 3187,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 539,
+  "total_tokens": 3726
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-09-29",
+   "form": "8-K",
+   "items": "1.01,1.02,2.03,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  }
+ ],
+ "cloud_answer": "Tesla: 8-K - current events report https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+ "cloud_seconds": 11.5
+}

@@ -1,0 +1,37 @@
+{
+ "day": "2026-08-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA filed its quarterly report (10-Q) \u2014 the quarter's detailed financials:\nhttps://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm\n\nIt also filed an 8-K current-events report (item 2.02) carrying the quarterly results release:\nhttps://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm\n\nThat's the earnings-day pair for the watchlist's biggest AI name; no unusual price move versus the S&P 500 flagged that day.",
+ "silent": false,
+ "run_seconds": 14.8,
+ "model_calls": 4,
+ "input_tokens": 18530,
+ "output_tokens": 1432,
+ "cost_usd": 0.002735,
+ "model_seconds": 10.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-26",
+   "form": "10-Q",
+   "items": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-26",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:36:37.291079-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-36-51.md"
+}

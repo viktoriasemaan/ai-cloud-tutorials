@@ -1,0 +1,39 @@
+{
+ "day": "2026-10-30",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Looking at the market report from 2026-10-30, there are two notable events:\n\n1. **LLY (Eli Lilly)**: stock_pct = 3.19, index_pct = -1.77, vs_index_pts = 4.96 (exceeds threshold of 4.08). LLY rose 3.19% while the S&P 500 fell 1.77%, an outperformance of 4.96 points.\n\n2. **AMZN (Amazon)**: 10-Q filing for the quarter ended 2026-09-30. The user explicitly wants 10-Q earnings and material news.\n\nBoth events are worth alerting on \u2014 the price move significantly diverged from the index, and the 10-Q is the material quarterly filing the user tracks.\n\n[LLY rose 3.19% while the S&P 500 fell 1.77%]\n[Amazon filed a 10-Q (quarterly report) https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm]",
+ "silent": false,
+ "run_seconds": 18.4,
+ "model_calls": 1,
+ "input_tokens": 3413,
+ "output_tokens": 6146,
+ "cost_usd": 0.001468,
+ "model_seconds": 14.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-30",
+   "close": 1417.54,
+   "stock_pct": 3.19,
+   "index_pct": -1.77,
+   "vs_index_pts": 4.96,
+   "threshold_pts": 4.08,
+   "typical_daily_gap_pts": 2.04
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-10-30",
+   "form": "10-Q",
+   "items": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:09:14.614536-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-09-32.md"
+}

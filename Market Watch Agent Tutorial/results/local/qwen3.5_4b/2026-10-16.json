@@ -1,0 +1,43 @@
+{
+ "day": "2026-10-16",
+ "model": "qwen3.5:4b",
+ "answer": "",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 50.2,
+ "usage": {
+  "prompt_tokens": 3301,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 795,
+  "total_tokens": 4096
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-10-16",
+   "close": 532.02,
+   "stock_pct": 1.21,
+   "index_pct": -1.11,
+   "vs_index_pts": 2.31,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.12
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-16",
+   "form": "SCHEDULE 13D",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  }
+ ],
+ "cloud_answer": "BRK-B rose 1.21% vs S&P 500 fell 1.11%, no filing explains it yet",
+ "cloud_seconds": 11.6
+}

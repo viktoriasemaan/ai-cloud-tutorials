@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-25",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 4.7,
+ "model_calls": 1,
+ "input_tokens": 3496,
+ "output_tokens": 168,
+ "cost_usd": 0.000133,
+ "model_seconds": 1.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-25",
+   "form": "SD",
+   "items": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526402798/d44118dsd.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:52:20.203644-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-52-24.md"
+}

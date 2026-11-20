@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-29",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Tesla filed an 8\u2011K (current\u2011events report)\u202fhttps://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+ "silent": false,
+ "run_seconds": 7.0,
+ "model_calls": 1,
+ "input_tokens": 3512,
+ "output_tokens": 364,
+ "cost_usd": 0.000167,
+ "model_seconds": 2.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-09-29",
+   "form": "8-K",
+   "items": "1.01,1.02,2.03,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:53:20.940526-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-53-27.md"
+}

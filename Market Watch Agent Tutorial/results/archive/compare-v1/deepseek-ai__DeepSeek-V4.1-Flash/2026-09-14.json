@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-14",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Amazon filed an 8-K (a current-events report) on Sep 14, flagging item 8.01 \"other events\" \u2014 no price move accompanied it and the summary gives no detail: https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm",
+ "silent": false,
+ "run_seconds": 11.1,
+ "model_calls": 1,
+ "input_tokens": 3961,
+ "output_tokens": 1486,
+ "cost_usd": 0.001481,
+ "model_seconds": 7.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:47:35.435901-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-47-46.md"
+}

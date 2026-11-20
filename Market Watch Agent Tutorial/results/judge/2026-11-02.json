@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-02",
+ "ideal": "Three lines: Microsoft fell 2.83% vs the S&P 500 down 0.48%, and Berkshire rose 2.51% vs the S&P 500 down 0.48%, each with 'no filing explains it yet'; plus Apple's 8-K current-events report under item 2.02 (results/earnings), with the link. Meta's and Tesla's proxy and information-statement filings should be left out.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "It has the right content and correct numbers, but it is one dense paragraph and leaves the 8-K as bare item codes without saying it is an earnings release.",
+   "answer": "Microsoft fell 2.83% (S&P 500 fell 0.48%), underperforming by 2.35 pts \u2014 no filing explains it yet. Berkshire Hathaway rose 2.51% (S&P 500 fell 0.48%), outperforming by 2.99 pts \u2014 no filing explains it yet. Apple filed an 8-K (items 2.02, 9.01) \u2014 [link](https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm)."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is clean and accurate, gives the index next to each move, and explains the 8-K in plain words as results of operations.",
+   "answer": "Microsoft fell 2.83% on 2026-11-02 while the S&P 500 fell 0.48% \u2014 no filing explains it yet.\nBerkshire Hathaway rose 2.51% against an S&P 500 down 0.48% \u2014 no filing explains it yet.\nApple filed an 8-K (current-events report) with results of operations and exhibits \u2014 https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate and concise but never says the Apple 8-K carries results, so she can't see why it matters.",
+   "answer": "Microsoft fell\u202f2.83% (S&P\u202f500\u202f\u20110.48%) \u2014 big move versus index, no filing explains it yet  \nBerkshire Hathaway rose\u202f2.51% (S&P\u202f500\u202f\u20110.48%) \u2014 big move versus index, no filing explains it yet  \nApple filed an 8\u2011K current\u2011events report\u202f\u2013\u202fhttps://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "It leaves out Apple's 8-K results filing, which is material news she wants.",
+   "answer": "MSFT fell 2.83% vs S&P 500 fell 0.48%, no filing explains it yet\nBRK-B rose 2.51% vs S&P 500 fell 0.48%, no filing explains it yet"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It covers everything with correct numbers and explains plainly that item 2.02 means quarterly results; the 'bigger gap than usual' line is backed by the threshold.",
+   "answer": "MSFT: Microsoft fell 2.83% while the S&P 500 fell 0.48%. That is a bigger gap than usual, and no filing explains it yet.\nBRK-B: Berkshire Hathaway rose 2.51% while the S&P 500 fell 0.48%. No filing explains it yet.\nAAPL: Apple filed an 8-K, a current-events report. It carries item 2.02, which is its quarterly results: https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3718,
+  "output": 1009
+ }
+}

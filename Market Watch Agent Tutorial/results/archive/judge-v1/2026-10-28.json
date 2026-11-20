@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-28",
+ "ideal": "A short alert that Microsoft (8-K item 2.02 earnings release plus 10-Q quarterly report) and Alphabet (8-K item 2.02 earnings release) posted quarterly results, with links. It could also note Microsoft's separate 8.01 'other events' 8-K, should skip the proxy-related PX14A6G, and should invent no price moves.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Clean, correct links for both companies' earnings filings and the 10-Q; it only omits the minor 8.01 8-K.",
+   "answer": "Microsoft: quarterly results out \u2014 10-Q (quarterly report) plus an 8-K earnings release. https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm\nMicrosoft earnings 8-K (results of operations): https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm\nAlphabet: quarterly results out \u2014 8-K earnings release (results of operations). https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 1,
+   "note": "Stays silent on a day with two watchlist earnings releases, which she explicitly wants.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 3,
+   "note": "It links Microsoft's 8.01 'other events' 8-K as though it were the results filing and omits the actual 2.02 earnings 8-K link.",
+   "answer": "Microsoft filed an 8\u2011K (results of operations and other events) and a 10\u2011Q quarterly report; see https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm and https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm  \nAlphabet filed an 8\u2011K reporting results of operations and financial statements; see https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Accurate summary, but it has no links, which the rules require for filings.",
+   "answer": "Microsoft filed a quarterly report (10-Q) and released quarterly earnings results (8-K, items 2.02). Alphabet also released quarterly earnings results (8-K, items 2.02, 9.01)."
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Complete and accurate, with correct links, plain explanations of the filing types, and an honest note on the unexplained 8.01 filing; it is slightly wordy.",
+   "answer": "Microsoft: posted quarterly earnings in a current-events report (8-K, item 2.02 = results) and filed its quarterly report (10-Q). No unusual price move versus the S&P 500 in the report. 8-K: https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm \u00b7 10-Q: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm\nMicrosoft: a second 8-K under \"other events\" (item 8.01). The report doesn't say what it covers: https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm\nAlphabet: posted quarterly earnings in a current-events report (8-K, item 2.02). No unusual price move versus the S&P 500 in the report. https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3345,
+  "output": 954
+ }
+}

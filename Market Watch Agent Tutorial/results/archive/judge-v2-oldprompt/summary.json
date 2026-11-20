@@ -1,0 +1,62 @@
+[
+ {
+  "model": "claude-opus-5-5",
+  "days": 38,
+  "right_decision": "38/38",
+  "picked_best": 18,
+  "overall": 4.84,
+  "coverage": 4.97,
+  "no_noise": 4.87,
+  "accuracy": 4.92,
+  "clarity": 4.76,
+  "accuracy_below_4": 1
+ },
+ {
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "days": 38,
+  "right_decision": "38/38",
+  "picked_best": 12,
+  "overall": 4.55,
+  "coverage": 4.84,
+  "no_noise": 4.74,
+  "accuracy": 4.61,
+  "clarity": 4.61,
+  "accuracy_below_4": 3
+ },
+ {
+  "model": "openai/gpt-oss-120b",
+  "days": 38,
+  "right_decision": "31/38",
+  "picked_best": 0,
+  "overall": 3.68,
+  "coverage": 3.63,
+  "no_noise": 5,
+  "accuracy": 5,
+  "clarity": 3.92,
+  "accuracy_below_4": 0
+ },
+ {
+  "model": "Qwen/Qwen3.6-35B-A3B",
+  "days": 38,
+  "right_decision": "31/38",
+  "picked_best": 4,
+  "overall": 3.61,
+  "coverage": 3.95,
+  "no_noise": 4.37,
+  "accuracy": 4.53,
+  "clarity": 3.63,
+  "accuracy_below_4": 4
+ },
+ {
+  "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+  "days": 38,
+  "right_decision": "35/38",
+  "picked_best": 4,
+  "overall": 3.42,
+  "coverage": 3.39,
+  "no_noise": 5,
+  "accuracy": 4.82,
+  "clarity": 3.68,
+  "accuracy_below_4": 2
+ }
+]

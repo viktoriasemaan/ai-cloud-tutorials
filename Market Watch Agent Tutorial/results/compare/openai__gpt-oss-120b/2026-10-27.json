@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-27",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Broadcom filed a current\u2011events report (8\u2011K) \u2013 https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm",
+ "silent": false,
+ "run_seconds": 8.4,
+ "model_calls": 1,
+ "input_tokens": 3763,
+ "output_tokens": 504,
+ "cost_usd": 0.000199,
+ "model_seconds": 5.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-27",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926013276/y1027263px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-10-27",
+   "form": "8-K",
+   "items": "2.03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-27",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:01:51.383420-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-01-59.md"
+}

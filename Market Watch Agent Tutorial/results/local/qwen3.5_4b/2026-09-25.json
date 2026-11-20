@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-25",
+ "model": "qwen3.5:4b",
+ "answer": "[SILENT]",
+ "tool_calls": [],
+ "silent": true,
+ "seconds": 33.7,
+ "usage": {
+  "prompt_tokens": 3165,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 542,
+  "total_tokens": 3707
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-25",
+   "form": "SD",
+   "items": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526402798/d44118dsd.htm"
+  }
+ ],
+ "cloud_answer": "[SILENT]",
+ "cloud_seconds": 3.3
+}

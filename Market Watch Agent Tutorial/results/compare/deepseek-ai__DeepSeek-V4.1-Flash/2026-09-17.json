@@ -1,0 +1,29 @@
+{
+ "day": "2026-09-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Berkshire Hathaway (BRK-B) fell 2.04% on 2026-09-17 while the S&P 500 rose 1.13% \u2014 3.17 points behind the index, well past its usual daily gap. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 4025,
+ "output_tokens": 512,
+ "cost_usd": 0.000856,
+ "model_seconds": 3.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-17",
+   "close": 509.2,
+   "stock_pct": -2.04,
+   "index_pct": 1.13,
+   "vs_index_pts": -3.17,
+   "threshold_pts": 2.12,
+   "typical_daily_gap_pts": 1.06
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:46:07.960573-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-46-14.md"
+}

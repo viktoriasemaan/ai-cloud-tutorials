@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-21",
+ "ideal": "Alert: Meta filed an 8-K with quarterly results (item 2.02) plus a material agreement (1.01) and other news (8.01); Tesla filed an 8-K with quarterly results; links included. Skip Microsoft proxy/annual report and Meta PRE 14C.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Correct filings and links, but it doesn't say they contain earnings or a material agreement, so it never explains why they matter.",
+   "answer": "META 8-K (current-events report): https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm\nTSLA 8-K (current-events report): https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Concise, says both are quarterly results and flags Meta's material agreement, with links; it omits only the minor 8.01 item.",
+   "answer": "Meta Platforms: 8-K current-events report \u2014 quarterly results and a new material agreement \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm\nTesla: 8-K current-events report \u2014 quarterly results \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate, with results and the agreement flagged, but wordier and loaded with item numbers.",
+   "answer": "Meta (Oct 21): filed an 8-K, a current-events report. It covers financial results (item 2.02) and says Meta signed a major agreement (item 1.01). The filing has the details. https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm\nTesla (Oct 21): filed an 8-K, a current-events report, with financial results (item 2.02). https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Gives the filings and links but says nothing about earnings, so the reader doesn't learn why they matter.",
+   "answer": "Meta Platforms filed an 8\u2011K (material events) https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm  \nTesla filed an 8\u2011K (material events) https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Misstates Meta's items as only 2.02 and 9.01, missing the material agreement, and adds a confusing line about 'other moves' when the report has no price data.",
+   "answer": "META filed an 8-K with items 2.02 and 9.01 (earnings results) on 10/21. [Link](https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm)\n\nTesla filed an 8-K with items 2.02 and 9.01 (earnings results) on 10/21. [Link](https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm)\n\nNo price moves on your watchlist that day. No filing explains any other moves."
+  }
+ ],
+ "judge_usage": {
+  "input": 3686,
+  "output": 593
+ }
+}

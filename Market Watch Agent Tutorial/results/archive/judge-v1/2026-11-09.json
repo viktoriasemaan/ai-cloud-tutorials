@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-09",
+ "ideal": "Alert: NVIDIA fell 4.27% while the S&P 500 rose 2.37%, and Broadcom rose 8.78% against the same 2.37%, with no filing explaining either yet. It should also note Berkshire's quarterly earnings (8-K item 2.02 plus the 10-Q) and Apple's 8-K 'other events', with links, and skip the proxy filings.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "claude-opus-5-5",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "It covers both moves with the index alongside, says no filing explains them, ties Berkshire's two filings to earnings and links Apple's 8-K, all within 4 lines.",
+   "answer": "NVIDIA fell 4.27% while the S&P 500 rose 2.37%. No filing explains it yet.\nBroadcom rose 8.78% while the S&P 500 rose 2.37%. No filing explains it yet.\nBerkshire Hathaway posted its quarterly earnings in an 8-K (current-events report) and its 10-Q (quarterly report): https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-20261107.htm \u00b7 https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm\nApple filed an 8-K (current-events report) marked \"other events\". The report doesn't say what it covers: https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Everything is accurate and linked, but it never says why the moves happened or that none is known, and it doesn't flag Berkshire's 8-K as earnings.",
+   "answer": "NVIDIA fell 4.27% while the S&P 500 rose 2.37%  \nBroadcom rose 8.78% while the S&P 500 rose 2.37%  \nApple filed an 8\u2011K (current\u2011events report) https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm  \nBerkshire Hathaway filed a 10\u2011Q (quarterly report) https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm  \nBerkshire Hathaway filed an 8\u2011K (material event) https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-20261107.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 4,
+   "note": "The content is as good as A, but the extra note about skipped items mentions listing/ownership notices that aren't in the report.",
+   "answer": "NVIDIA fell 4.27% while the S&P 500 rose 2.37% \u2014 no filing explains it yet.\nBroadcom rose 8.78% while the S&P 500 rose 2.37% \u2014 no filing explains it yet.\nBerkshire Hathaway filed an 8-K current-events report on quarterly results plus its quarterly 10-Q: https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-20261107.htm and https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm\nApple filed an 8-K current-events report (item 8.01, other events) with no description attached: https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm\n\n(Skipped as routine: Microsoft and Tesla proxy statements, plus the listing/ownership notices.)"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 2,
+   "note": "It leaves out Apple's 8-K and Berkshire's earnings 8-K, and gives no reason or 'no filing explains it' for the moves.",
+   "answer": "NVIDIA fell 4.27% while the S&P 500 rose 2.37%\nBroadcom rose 8.78% while the S&P 500 rose 2.37%\nBerkshire Hathaway 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 2,
+   "overall": 3,
+   "note": "It is one dense paragraph with no links, uses raw item numbers instead of plain words, and calls Apple's 'other events' 8-K 'material events'.",
+   "answer": "NVIDIA fell 4.27% while the S&P 500 rose 2.37% \u2014 a 6.64-point divergence with no filing explaining it yet. Broadcom surged 8.78% vs. the index's 2.37% gain (6.41-point spread). Apple filed an 8-K covering material events (items 8.01, 9.01). Berkshire Hathaway filed both an 8-K (items 2.02, 9.01) and a 10-Q quarterly report."
+  }
+ ],
+ "judge_usage": {
+  "input": 3963,
+  "output": 1010
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-18",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 10.8,
+ "model_calls": 1,
+ "input_tokens": 3281,
+ "output_tokens": 1619,
+ "cost_usd": 0.000553,
+ "model_seconds": 6.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-18",
+   "form": "EFFECT",
+   "items": ",,",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/999999999526003011/xslEFFECTX01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:49:22.033387-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-49-32.md"
+}

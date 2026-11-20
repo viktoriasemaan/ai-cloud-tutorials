@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-24",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 9.5,
+ "model_calls": 1,
+ "input_tokens": 3356,
+ "output_tokens": 1430,
+ "cost_usd": 0.000521,
+ "model_seconds": 4.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-24",
+   "form": "8-A12B",
+   "items": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926110227/tm2625860d1_8a12b.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:49:19.044555-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-49-28.md"
+}

@@ -1,0 +1,107 @@
+{
+ "day": "2026-11-05",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Nov 5 was a heavy down day for the index (S&P 500 \u22124.4%), and three watchlist names fell much harder:\n\n\u2022 NVIDIA \u22129.3%, Broadcom \u221210.4%, Tesla \u221210.8% \u2014 all far below the index; no filing from any of them explains it yet.\n\u2022 Apple \u22121.5% and Berkshire Hathaway \u22121.2% held up much better than the index.\n\u2022 Microsoft filed an 8-K (current-events report) on an officer/director change: https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
+ "silent": false,
+ "run_seconds": 24.8,
+ "model_calls": 2,
+ "input_tokens": 11972,
+ "output_tokens": 2632,
+ "cost_usd": 0.002792,
+ "model_seconds": 20.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-05",
+   "close": 344.17,
+   "stock_pct": -1.53,
+   "index_pct": -4.41,
+   "vs_index_pts": 2.88,
+   "threshold_pts": 2.73,
+   "typical_daily_gap_pts": 1.37
+  },
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-05",
+   "close": 181.6,
+   "stock_pct": -9.26,
+   "index_pct": -4.41,
+   "vs_index_pts": -4.85,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-05",
+   "close": 291.53,
+   "stock_pct": -10.43,
+   "index_pct": -4.41,
+   "vs_index_pts": -6.02,
+   "threshold_pts": 4.31,
+   "typical_daily_gap_pts": 2.15
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-05",
+   "close": 572.33,
+   "stock_pct": -1.17,
+   "index_pct": -4.41,
+   "vs_index_pts": 3.24,
+   "threshold_pts": 2.35,
+   "typical_daily_gap_pts": 1.17
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-11-05",
+   "close": 343.69,
+   "stock_pct": -10.77,
+   "index_pct": -4.41,
+   "vs_index_pts": -6.36,
+   "threshold_pts": 4.62,
+   "typical_daily_gap_pts": 2.31
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "5.02",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:32:43.696603-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-33-08.md"
+}

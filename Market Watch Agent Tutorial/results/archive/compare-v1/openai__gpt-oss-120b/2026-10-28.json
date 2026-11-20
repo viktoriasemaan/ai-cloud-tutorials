@@ -1,0 +1,67 @@
+{
+ "day": "2026-10-28",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft filed an 8\u2011K (results of operations and other events) and a 10\u2011Q quarterly report; see https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm and https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm  \nAlphabet filed an 8\u2011K reporting results of operations and financial statements; see https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm",
+ "silent": false,
+ "run_seconds": 10.6,
+ "model_calls": 1,
+ "input_tokens": 3912,
+ "output_tokens": 879,
+ "cost_usd": 0.000267,
+ "model_seconds": 7.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000092189526002869/px14a6g14098012_10282026.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "10-Q",
+   "items": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:05:52.297908-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-06-02.md"
+}

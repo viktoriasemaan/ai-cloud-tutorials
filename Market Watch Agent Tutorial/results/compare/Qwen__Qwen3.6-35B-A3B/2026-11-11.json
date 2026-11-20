@@ -1,0 +1,29 @@
+{
+ "day": "2026-11-11",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Microsoft (MSFT) fell 2.26% while the S&P 500 rose 1.32% \u2014 a 3.58-pt underperformance, above the 2.48-pt threshold. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4071,
+ "output_tokens": 433,
+ "cost_usd": 0.000792,
+ "model_seconds": 2.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-11",
+   "close": 521.12,
+   "stock_pct": -2.26,
+   "index_pct": 1.32,
+   "vs_index_pts": -3.58,
+   "threshold_pts": 2.48,
+   "typical_daily_gap_pts": 1.24
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:14:42.905706-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-14-49.md"
+}

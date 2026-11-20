@@ -1,0 +1,29 @@
+{
+ "day": "2026-08-27",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA rose 8.74% on 2026-08-27 while the S&P 500 rose 0.66% \u2014 that's 8.08 points ahead of the index, well past the 3.93-point alert threshold. No filing explains it yet; the only filings that day were routine Form 4s and one Form 144.",
+ "silent": false,
+ "run_seconds": 8.8,
+ "model_calls": 1,
+ "input_tokens": 3966,
+ "output_tokens": 876,
+ "cost_usd": 0.001085,
+ "model_seconds": 5.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-27",
+   "close": 227.98,
+   "stock_pct": 8.74,
+   "index_pct": 0.66,
+   "vs_index_pts": 8.08,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:37:44.081375-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-37-52.md"
+}

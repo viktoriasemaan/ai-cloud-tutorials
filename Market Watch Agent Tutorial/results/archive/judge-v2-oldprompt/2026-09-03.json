@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-03",
+ "ideal": "A one-line alert: NVIDIA filed an 8-K (current-events report) under item 8.01 'other events', with the link. It should note the report doesn't say what the event is, and it should not invent a reason or a price move.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Correct and linked, but terse: it uses the ticker and 'Item 8.01' without plain-word explanation.",
+   "answer": "NVDA: 8-K filing (Item 8.01) - current events report. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate, plain line that explains item 8.01 as 'other events' and gives the link.",
+   "answer": "NVIDIA filed an 8-K current-events report (item 8.01, \"other events\") \u2014 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate and short, but it drops the item number and gives no hint of what kind of event it is.",
+   "answer": "NVIDIA: 8\u2011K filing (current\u2011events report) https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Plain, accurate, and honest that the event's content is unknown, with the link.",
+   "answer": "NVIDIA: filed an 8-K (current-events report) under item 8.01, \"other events\". The report doesn't say what the event is. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 2,
+   "accuracy": 4,
+   "clarity": 1,
+   "overall": 1,
+   "note": "Stays silent on an 8-K she explicitly wants, and puts reasoning text before [SILENT], which breaks the required silent format.",
+   "answer": "The only event for the checked day (2026-09-03) is an NVIDIA 8-K (item 8.01 \u2014 \"Other Events\"). No price move events are in the data. Item 8.01 is a catch-all that could be material or routine; without being able to read the filing, I can't confirm. Given that most filings aren't worth alerting and there's no price movement to anchor materiality here, I'll hold.\n\n[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 2512,
+  "output": 785
+ }
+}

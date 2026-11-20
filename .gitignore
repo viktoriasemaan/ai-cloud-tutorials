@@ -1,0 +1,18 @@
+# local environments
+.venv*/
+__pycache__/
+
+# local state and caches (re-created by the scripts)
+**/data/cache/
+**/data/state.json
+**/data/spend.json
+
+# raw call log: full prompts and answers; publish a cleaned extract instead
+**/data/calls.jsonl
+
+# never commit keys
+.env
+*.key
+
+# run logs (may contain local paths)
+*.log

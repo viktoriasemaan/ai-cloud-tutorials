@@ -1,0 +1,107 @@
+{
+ "day": "2026-11-05",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[CRON_FAILURE]\nThe provided data is for 2026-11-05 but the current run time is 2026-11-17. This is a replay-mode report of a past trading day. I will process it as given and produce the alert.",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 5050,
+ "output_tokens": 534,
+ "cost_usd": 0.00098,
+ "model_seconds": 3.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-05",
+   "close": 344.17,
+   "stock_pct": -1.53,
+   "index_pct": -4.41,
+   "vs_index_pts": 2.88,
+   "threshold_pts": 2.73,
+   "typical_daily_gap_pts": 1.37
+  },
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-05",
+   "close": 181.6,
+   "stock_pct": -9.26,
+   "index_pct": -4.41,
+   "vs_index_pts": -4.85,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-05",
+   "close": 291.53,
+   "stock_pct": -10.43,
+   "index_pct": -4.41,
+   "vs_index_pts": -6.02,
+   "threshold_pts": 4.31,
+   "typical_daily_gap_pts": 2.15
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-05",
+   "close": 572.33,
+   "stock_pct": -1.17,
+   "index_pct": -4.41,
+   "vs_index_pts": 3.24,
+   "threshold_pts": 2.35,
+   "typical_daily_gap_pts": 1.17
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-11-05",
+   "close": 343.69,
+   "stock_pct": -10.77,
+   "index_pct": -4.41,
+   "vs_index_pts": -6.36,
+   "threshold_pts": 4.62,
+   "typical_daily_gap_pts": 2.31
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "5.02",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:10:40.803368-08:00\n  Ran now: failed.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-10-46.md"
+}

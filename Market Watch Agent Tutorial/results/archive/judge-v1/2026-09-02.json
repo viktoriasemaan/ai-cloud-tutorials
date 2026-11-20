@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-02",
+ "ideal": "A short alert: Broadcom filed an 8-K (current-events report) with its earnings results (item 2.02), with the link; Microsoft filed an 8-K Regulation FD disclosure whose content isn't described, with the link. No price moves to report.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 2,
+   "note": "It is correct and linked, but it never says Broadcom's filing is earnings, so she can't tell why it matters.",
+   "answer": "Microsoft 8-K current-events report https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm\nBroadcom 8-K current-events report https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 2,
+   "note": "It gives raw item codes instead of plain words and never explains that Broadcom's filing is its earnings release.",
+   "answer": "Microsoft filed an 8\u2011K (items 7.01,9.01) \u2013 https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm  \nBroadcom filed an 8\u2011K (items 2.02,8.01,9.01) \u2013 https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 4,
+   "overall": 3,
+   "note": "It explains both filings well, but it invents 'remaining filings were routine ownership forms', which the evidence doesn't contain.",
+   "answer": "Broadcom filed a current-events report (8-K) with its quarterly results (item 2.02) \u2014 its earnings release: https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm\nMicrosoft filed a current-events report (8-K), a Regulation FD disclosure (items 7.01, 9.01); no further detail in the filing summary: https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm\nNothing else on the watchlist for 2026-09-02 \u2014 no unusual price moves, and the remaining filings were routine ownership forms."
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate and flags Broadcom's earnings and Microsoft's Reg FD filing, but it omits the links the rules require.",
+   "answer": "Broadcom filed an 8-K with Item 2.02 (results of operations/financial condition) on September 2 \u2014 earnings-related, no price move recorded to compare. Microsoft also filed an 8-K (Reg FD disclosure) same day."
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "It uses plain words, links both filings, flags Broadcom's earnings and is honest that Microsoft's content is unknown.",
+   "answer": "Broadcom filed an 8-K (a current-events report) with its earnings results, plus other news and attachments: https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm\nMicrosoft filed an 8-K (a current-events report) to share information publicly, with attachments. The report doesn't say what it covers: https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2863,
+  "output": 896
+ }
+}

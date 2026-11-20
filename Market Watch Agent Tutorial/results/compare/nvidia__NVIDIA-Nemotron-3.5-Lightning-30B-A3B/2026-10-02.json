@@ -1,0 +1,27 @@
+{
+ "day": "2026-10-02",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Tesla 8-K: Current events report filed on 2026-10-02. Items 2.02 and 9.01. https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+ "silent": false,
+ "run_seconds": 8.7,
+ "model_calls": 1,
+ "input_tokens": 3348,
+ "output_tokens": 1478,
+ "cost_usd": 0.00053,
+ "model_seconds": 4.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:52:42.155913-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-52-50.md"
+}

@@ -1,0 +1,49 @@
+{
+ "day": "2026-10-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Tesla rose 5.21% while the S&P 500 rose 0.71% \u2014 4.5 points ahead of the index; no filing explains it yet.\nMeta filed an automatic shelf registration (S-3ASR), a standing registration it could sell stock or debt under later: https://www.sec.gov/Archives/edgar/data/1326801/000119312526431009/d127909ds3asr.htm\nMicrosoft's PX14A6G is proxy-related paperwork, not worth a line.",
+ "silent": false,
+ "run_seconds": 13.1,
+ "model_calls": 2,
+ "input_tokens": 10377,
+ "output_tokens": 1945,
+ "cost_usd": 0.002138,
+ "model_seconds": 9.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-26",
+   "close": 391.62,
+   "stock_pct": 5.21,
+   "index_pct": 0.71,
+   "vs_index_pts": 4.5,
+   "threshold_pts": 4.23,
+   "typical_daily_gap_pts": 2.12
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-26",
+   "form": "PX14A6G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926013218/b1026263px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-10-26",
+   "form": "S-3ASR",
+   "items": "",
+   "description": "S-3ASR",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431009/d127909ds3asr.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:01:19.205517-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-01-32.md"
+}

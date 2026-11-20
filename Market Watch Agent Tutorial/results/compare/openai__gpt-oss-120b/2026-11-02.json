@@ -1,0 +1,81 @@
+{
+ "day": "2026-11-02",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft fell\u202f2.83% (S&P\u202f500\u202f\u20110.48%) \u2014 big move versus index, no filing explains it yet  \nBerkshire Hathaway rose\u202f2.51% (S&P\u202f500\u202f\u20110.48%) \u2014 big move versus index, no filing explains it yet  \nApple filed an 8\u2011K current\u2011events report\u202f\u2013\u202fhttps://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4092,
+ "output_tokens": 696,
+ "cost_usd": 0.000241,
+ "model_seconds": 4.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-02",
+   "close": 507.12,
+   "stock_pct": -2.83,
+   "index_pct": -0.48,
+   "vs_index_pts": -2.35,
+   "threshold_pts": 2.11,
+   "typical_daily_gap_pts": 1.06
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-02",
+   "close": 556.11,
+   "stock_pct": 2.51,
+   "index_pct": -0.48,
+   "vs_index_pts": 2.99,
+   "threshold_pts": 2.29,
+   "typical_daily_gap_pts": 1.14
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-02",
+   "form": "DEFA14C",
+   "items": "",
+   "description": "DEFA14C",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026068939/meta2026informationstateme.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-02",
+   "form": "DEF 14C",
+   "items": "",
+   "description": "DEF 14C",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026068935/meta-20261102.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-11-02",
+   "form": "DEFA14A",
+   "items": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926121458/tm267596d9_defa14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:06:44.355673-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-06-52.md"
+}

@@ -1,0 +1,21 @@
+{
+  "_source": "The 10 largest companies in the S&P 500 by index weight, from SPY daily holdings as of 2026-11-16 (Alphabet's two share classes counted once).",
+  "baseline": {"symbol": "SPY", "name": "S&P 500 (SPY ETF)"},
+  "companies": [
+    {"symbol": "AAPL",  "name": "Apple",              "sec_ticker": "AAPL"},
+    {"symbol": "MSFT",  "name": "Microsoft",          "sec_ticker": "MSFT"},
+    {"symbol": "NVDA",  "name": "NVIDIA",             "sec_ticker": "NVDA"},
+    {"symbol": "AMZN",  "name": "Amazon",             "sec_ticker": "AMZN"},
+    {"symbol": "GOOGL", "name": "Alphabet",           "sec_ticker": "GOOGL"},
+    {"symbol": "AVGO",  "name": "Broadcom",           "sec_ticker": "AVGO"},
+    {"symbol": "META",  "name": "Meta Platforms",     "sec_ticker": "META"},
+    {"symbol": "LLY",   "name": "Eli Lilly",          "sec_ticker": "LLY"},
+    {"symbol": "BRK-B", "name": "Berkshire Hathaway", "sec_ticker": "BRK-B"},
+    {"symbol": "TSLA",  "name": "Tesla",              "sec_ticker": "TSLA"}
+  ],
+  "rules": {
+    "price_move_min_pct": 2.0,
+    "price_move_sigma": 2.0,
+    "routine_forms_skipped": ["3", "4", "5", "144", "3/A", "4/A", "5/A", "144/A", "SC 13G", "SC 13G/A", "11-K", "S-8", "S-8 POS", "FWP", "424B2", "424B3", "424B5", "25-NSE", "CERT", "IRANNOTICE"]
+  }
+}

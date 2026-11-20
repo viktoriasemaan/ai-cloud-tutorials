@@ -1,0 +1,39 @@
+{
+ "day": "2026-10-16",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Berkshire Hathaway (BRK-B) rose 1.21% while the S&P 500 fell 1.11% (divergence of 2.31 pts); no filing explains it yet. Eli Lilly (LLY) filed a Schedule 13D, indicating a change in significant ownership stake (see https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml).",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 4222,
+ "output_tokens": 541,
+ "cost_usd": 0.000904,
+ "model_seconds": 3.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-10-16",
+   "close": 532.02,
+   "stock_pct": 1.21,
+   "index_pct": -1.11,
+   "vs_index_pts": 2.31,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.12
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-16",
+   "form": "SCHEDULE 13D",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:56:08.549047-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-56-14.md"
+}

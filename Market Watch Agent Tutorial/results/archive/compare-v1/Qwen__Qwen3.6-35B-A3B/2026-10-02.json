@@ -1,0 +1,27 @@
+{
+ "day": "2026-10-02",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Tesla filed an 8-K (current-events report) on 2026-10-02 with items 2.02 and 9.01 (results of operations and financial condition, plus financial statements). No SEC filing explains a price move yet. https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+ "silent": false,
+ "run_seconds": 24.8,
+ "model_calls": 9,
+ "input_tokens": 52418,
+ "output_tokens": 2993,
+ "cost_usd": 0.007906,
+ "model_seconds": 20.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:55:00.948649-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-55-25.md"
+}

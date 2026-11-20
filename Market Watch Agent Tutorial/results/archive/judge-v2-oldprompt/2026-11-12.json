@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-12",
+ "ideal": "Alert: Broadcom rose 5.54% while the S&P 500 fell 0.35%, with no filing explaining it yet; NVIDIA 8-K item 5.02 (officer/director change) with link; Meta 8-K item 8.01 (other events) with link. Skip the 13G and the 8-A12B.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Correct Broadcom line, but it leaves out the NVIDIA and Meta 8-Ks and the wording is clumsy.",
+   "answer": "Broadcom rose 5.54% vs S&P 500 fell 0.35% no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers all three items, explains the 8-K item numbers in plain words, links both filings and skips the routine paperwork.",
+   "answer": "Broadcom rose 5.54% while the S&P 500 fell 0.35% \u2014 no filing explains it yet.\nNVIDIA filed a current-events report (8-K) on a change in its officers or directors (item 5.02): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\nMeta filed a current-events report (8-K) on other events (item 8.01): https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Complete and accurate, but it doesn't say what the 8-Ks are about, so she can't tell why they matter.",
+   "answer": "Broadcom rose 5.54% while S&P fell 0.35%; no filing explains it yet  \nNVIDIA filed an 8\u2011K (current\u2011events report) \u2013 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm  \nMeta Platforms filed an 8\u2011K (current\u2011events report) \u2013 https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Clean and accurate, but the 8-K lines don't say what each filing covers.",
+   "answer": "- Broadcom: rose 5.54% while the S&P 500 fell 0.35% \u2014 no filing explains it yet\n- NVIDIA: filed an 8-K (current-events report) \u2014 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\n- Meta Platforms: filed an 8-K (current-events report) \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Complete and accurate, and it adds that the move is well beyond Broadcom's usual gap with the index; slightly wordier than B.",
+   "answer": "Broadcom rose 5.54% while the S&P 500 fell 0.35% (Nov 12), well beyond its usual gap with the index. No filing explains it yet.\nNVIDIA filed an 8-K (a current-events report) with item 5.02, which covers a change among its directors or top officers: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm\nMeta filed an 8-K (a current-events report) under \"other events\", with attached documents: https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3405,
+  "output": 596
+ }
+}

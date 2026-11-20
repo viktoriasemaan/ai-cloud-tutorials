@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-10",
+ "ideal": "A one-line alert that NVIDIA fell 5.47% while the S&P 500 fell 0.37%, a gap of 5.11 points against a usual 2.21, and that no filing explains it yet.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "claude-opus-5-5",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It uses exact report numbers and shows why the move matters: a 5.11-point gap is more than double the usual 2.21, which is correct.",
+   "answer": "NVIDIA fell 5.47% on Nov 10 while the S&P 500 fell 0.37%. That's 5.11 points worse than the index, more than double its usual daily gap of 2.21 points. No filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate and short, but the phrasing is clunky and it doesn't say how unusual the move is.",
+   "answer": "NVIDIA fell 5.47% versus S&P 500 fell 0.37%, no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is accurate and clear and gives the 5.11-point gap, but it lacks the comparison to the usual daily gap.",
+   "answer": "NVIDIA fell 5.47% while the S&P 500 fell 0.37%, underperforming the index by 5.11 percentage points. No filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate, but 'large under-performance' is vague where a number was available.",
+   "answer": "NVIDIA fell 5.47% while S&P\u202f500 fell 0.37% \u2013 a large under\u2011performance; no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 5,
+   "overall": 4,
+   "note": "It is clear and gives good context, but it rounds 5.11 and 2.21 to numbers that don't appear exactly in the report.",
+   "answer": "Nov 10: **NVIDIA** fell 5.47% while the S&P 500 fell only 0.37% (a 5.1-point gap vs. its usual 2.2) \u2014 no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 2584,
+  "output": 801
+ }
+}

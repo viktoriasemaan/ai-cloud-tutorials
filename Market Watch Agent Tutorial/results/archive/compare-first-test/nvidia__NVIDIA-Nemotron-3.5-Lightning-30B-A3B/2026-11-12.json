@@ -1,0 +1,69 @@
+{
+ "day": "2026-11-12",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Broadcom rose 5.54% while the S&P 500 was down 0.35%.\nNVIDIA filed 8-K reporting section 5.02 (departure of director or certain officer).\nMeta Platforms filed 8-A12B (material change in corporate governance).",
+ "silent": false,
+ "run_seconds": 22.4,
+ "model_calls": 1,
+ "input_tokens": 3780,
+ "output_tokens": 7720,
+ "cost_usd": 0.001809,
+ "model_seconds": 19.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-12",
+   "close": 364.36,
+   "stock_pct": 5.54,
+   "index_pct": -0.35,
+   "vs_index_pts": 5.9,
+   "threshold_pts": 4.83,
+   "typical_daily_gap_pts": 2.41
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-11-12",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926126255/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-A12B",
+   "items": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458695/d193866d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:28:17.242673-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-28-39.md"
+}

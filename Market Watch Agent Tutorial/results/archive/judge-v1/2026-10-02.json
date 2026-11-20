@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-02",
+ "ideal": "A short alert: Tesla filed an 8-K (current-events report) under item 2.02, the item for results of operations and financial condition, with the link. It should not claim more than the items show, and there was no price move to report.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 1,
+   "note": "It stayed silent on an item 2.02 results filing, which is exactly the earnings-type material news she asked for.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It is short and accurate, explains the filing as the results and financial condition item in plain words, and links it.",
+   "answer": "Tesla filed an 8-K, a current-events report, under the item companies use for results and financial condition: https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "It is accurate, but it calls this a generic 8-K and doesn't say it carries results, so she can't tell why it matters.",
+   "answer": "Tesla filed an 8-K current-events report with the SEC on 2026-10-02. SEC filing: https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 4,
+   "note": "It explains the items correctly, but the line about a price move is confusing, since no price move was reported.",
+   "answer": "Tesla filed an 8-K (current-events report) on 2026-10-02 with items 2.02 and 9.01 (results of operations and financial condition, plus financial statements). No SEC filing explains a price move yet. https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 3,
+   "note": "It flags the results item, but calling it a 'quarterly results/earnings release' goes beyond what item 2.02 alone shows.",
+   "answer": "Tesla filed an 8-K (current-events report) on 2026-10-02 carrying item 2.02 \u2014 that's a quarterly results/earnings release, worth a look: https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2390,
+  "output": 976
+ }
+}

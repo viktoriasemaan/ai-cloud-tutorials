@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-05",
+ "ideal": "Alert that Tesla (fell 10.77%), Broadcom (fell 10.43%) and NVIDIA (fell 9.26%) dropped far more than the S&P 500 (fell 4.41%) with no filing explaining it yet. It should also flag Microsoft's 8-K on a director/officer change with its link, and could note that Apple and Berkshire fell much less than the index.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "The three big drops are correct and tight, but it leaves out Microsoft's officer-change 8-K and the other filings.",
+   "answer": "Tesla fell 10.77% vs S&P 500 fell 4.41%, no filing explains it yet\nBroadcom fell 10.43% vs S&P 500 fell 4.41%, no filing explains it yet\nNVIDIA fell 9.26% vs S&P 500 fell 4.41%, no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It covers the big drops and explains the 8-K items accurately within five lines, though it omits Apple and Berkshire falling much less than the index.",
+   "answer": "Tesla fell 10.77% versus the S&P 500's 4.41% fall \u2014 no filing explains it yet.\nBroadcom fell 10.43% versus the S&P 500's 4.41% fall \u2014 no filing explains it yet.\nNVIDIA fell 9.26% versus the S&P 500's 4.41% fall \u2014 no filing explains it yet.\nMicrosoft filed an 8-K (current-events report) on an officer or director change (item 5.02): https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm\nAlphabet and Meta each filed 8-Ks (current-events reports) on other events: https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm \u00b7 https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 2,
+   "accuracy": 2,
+   "clarity": 1,
+   "overall": 1,
+   "note": "It sends a confusing internal error message instead of an alert on a day with major moves.",
+   "answer": "[CRON_FAILURE]\nThe provided data is for 2026-11-05 but the current run time is 2026-11-17. This is a replay-mode report of a past trading day. I will process it as given and produce the alert."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "The moves are correct, but it drops Meta's filing and doesn't say what the Microsoft 8-K is about.",
+   "answer": "NVIDIA fell 9.26% (S&P\u202f500 fell 4.41%); no filing explains it yet  \nBroadcom fell 10.43% (S&P\u202f500 fell 4.41%); no filing explains it yet  \nTesla fell 10.77% (S&P\u202f500 fell 4.41%); no filing explains it yet  \nMicrosoft filed a current\u2011events report (8\u2011K) \u2013 https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm  \nAlphabet filed a current\u2011events report (8\u2011K) \u2013 https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "It covers the big drops and filings with clear plain-word item explanations, though it misses Apple and Berkshire falling much less than the index.",
+   "answer": "NVIDIA fell 9.26% while the S&P 500 fell 4.41% on Nov 5, no filing explains it yet.\nBroadcom fell 10.43% while the S&P 500 fell 4.41%, no filing explains it yet.\nTesla fell 10.77% while the S&P 500 fell 4.41%, no filing explains it yet.\nMicrosoft filed a current-events report (8-K) about a change in its directors or senior officers: https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm\nAlphabet and Meta each filed a current-events report (8-K) listed as \"other events\": https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm \u00b7 https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 4277,
+  "output": 999
+ }
+}

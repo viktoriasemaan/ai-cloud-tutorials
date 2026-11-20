@@ -1,0 +1,29 @@
+{
+ "day": "2026-08-27",
+ "model": "openai/gpt-oss-120b",
+ "answer": "NVIDIA rose 8.74% vs S&P\u00a0500 rose 0.66% \u2013 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 8.8,
+ "model_calls": 1,
+ "input_tokens": 3566,
+ "output_tokens": 444,
+ "cost_usd": 0.000182,
+ "model_seconds": 3.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-27",
+   "close": 227.98,
+   "stock_pct": 8.74,
+   "index_pct": 0.66,
+   "vs_index_pts": 8.08,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:32:47.108061-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-32-55.md"
+}

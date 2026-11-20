@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-14",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Based on the report for 2026-09-14: there are no price move events, only one Amazon 8-K filing (items 8.01 and 9.01). An 8-K with 8.01 (other events) and 9.01 (financial statements and exhibits) is a material current-events filing worth flagging.\n\nAmazon (AMZN) filed an 8-K (current-events report) on 2026-09-14 with items 8.01 (other events) and 9.01 (financial statements and exhibits): https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm",
+ "silent": false,
+ "run_seconds": 18.7,
+ "model_calls": 3,
+ "input_tokens": 15048,
+ "output_tokens": 2156,
+ "cost_usd": 0.003423,
+ "model_seconds": 13.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:44:05.582108-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-44-24.md"
+}

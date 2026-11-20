@@ -1,0 +1,33 @@
+{
+ "day": "2026-09-17",
+ "model": "qwen3.5:4b",
+ "answer": "Berkshire Hathaway fell 2.04% while S&P 500 rose 1.13%, diverging -3.17 points versus its typical 1.06 gap; no filing explains it yet",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 38.8,
+ "usage": {
+  "prompt_tokens": 3173,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 631,
+  "total_tokens": 3804
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-17",
+   "close": 509.2,
+   "stock_pct": -2.04,
+   "index_pct": 1.13,
+   "vs_index_pts": -3.17,
+   "threshold_pts": 2.12,
+   "typical_daily_gap_pts": 1.06
+  }
+ ],
+ "cloud_answer": "Berkshire Hathaway fell 2.04% vs S&P 500 rose 1.13%, no filing explains it yet",
+ "cloud_seconds": 3.8
+}

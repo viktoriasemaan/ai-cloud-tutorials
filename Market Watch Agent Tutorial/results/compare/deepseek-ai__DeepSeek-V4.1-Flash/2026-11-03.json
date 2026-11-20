@@ -1,0 +1,49 @@
+{
+ "day": "2026-11-03",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Microsoft rose 2.74% while the S&P 500 rose 0.30% \u2014 no filing explains it yet.\nApple filed its annual report (10-K): https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4228,
+ "output_tokens": 488,
+ "cost_usd": 0.000392,
+ "model_seconds": 2.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-03",
+   "close": 520.99,
+   "stock_pct": 2.74,
+   "index_pct": 0.3,
+   "vs_index_pts": 2.44,
+   "threshold_pts": 2.2,
+   "typical_daily_gap_pts": 1.1
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-03",
+   "form": "10-K",
+   "items": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-11-03",
+   "form": "13F-HR",
+   "items": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926122014/xslForm13F_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T14:08:25.591599-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_14-08-31.md"
+}

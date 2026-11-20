@@ -1,0 +1,41 @@
+{
+ "day": "2026-09-21",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "\u2022 Meta Platforms rose 11.34% (S&P 500 +1.55%), no filing explains it yet\n\u2022 Berkshire Hathaway fell 1.52% (S&P 500 +1.55%), no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.8,
+ "model_calls": 1,
+ "input_tokens": 4229,
+ "output_tokens": 349,
+ "cost_usd": 0.000734,
+ "model_seconds": 2.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-09-21",
+   "close": 741.25,
+   "stock_pct": 11.34,
+   "index_pct": 1.55,
+   "vs_index_pts": 9.79,
+   "threshold_pts": 5.64,
+   "typical_daily_gap_pts": 2.82
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-21",
+   "close": 502.01,
+   "stock_pct": -1.52,
+   "index_pct": 1.55,
+   "vs_index_pts": -3.07,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.13
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T13:48:22.944770-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_13-48-29.md"
+}

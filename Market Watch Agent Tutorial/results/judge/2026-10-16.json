@@ -1,0 +1,71 @@
+{
+ "day": "2026-10-16",
+ "ideal": "One line: Berkshire Hathaway rose 1.21% while the S&P 500 fell 1.11% (2.31-point gap, about twice its usual), and no filing explains it yet. Leave out the Lilly Schedule 13D, which is a stake-holding report she counts as routine.",
+ "best_model": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 3,
+   "note": "The Berkshire line is correct, but it adds the routine 13D and reads 'a change in significant ownership stake' into a filing whose description is empty.",
+   "answer": "Berkshire Hathaway (BRK-B) rose 1.21% while the S&P 500 fell 1.11% (divergence of 2.31 pts); no filing explains it yet. Eli Lilly (LLY) filed a Schedule 13D, indicating a change in significant ownership stake (see https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml)."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Accurate and lean, but it uses only the ticker, is grammatically awkward and gives no sense of how big the gap is.",
+   "answer": "BRK-B rose 1.21% vs S&P 500 fell 1.11%, no filing explains it yet"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It reports only the Berkshire move, gives the gap against its typical daily gap so she sees why it matters, and leaves out the routine 13D.",
+   "answer": "Berkshire Hathaway: rose 1.21% on Oct 16 while the S&P 500 fell 1.11%. That's a gap of 2.31 points, about twice its typical daily gap of 1.12. No filing explains it yet."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 3,
+   "note": "The Berkshire line is good, but it adds the ownership-report 13D and describes the filer as an outside investor, which the evidence doesn't show.",
+   "answer": "Berkshire Hathaway rose 1.21% while the S&P 500 fell 1.11% \u2014 the move ran about 2.31 points against the index, above its 2.25-point trigger, and no filing explains it yet.\nEli Lilly: a Schedule 13D beneficial-ownership filing (an outside investor disclosing a large stake) \u2014 https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Clean and correct, though it doesn't convey how unusual the 2.31-point gap is.",
+   "answer": "Berkshire Hathaway rose 1.21% (S&P fell 1.11%); no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 2927,
+  "output": 1064
+ }
+}

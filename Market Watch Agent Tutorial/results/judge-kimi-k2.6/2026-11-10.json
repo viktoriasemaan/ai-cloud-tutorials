@@ -1,0 +1,71 @@
+{
+ "day": "2026-11-10",
+ "ideal": "NVIDIA fell 5.47% while the S&P 500 fell 0.37%, underperforming the index by 5.11 percentage points. No filing explains it yet.",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Short and accurate, but stops short of stating the exact under-performance (5.11 points) she tracks.",
+   "answer": "NVIDIA fell 5.47% versus S&P 500 fell 0.37%, no filing explains it yet"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 2,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Too verbose: adds redundant date and typical-gap commentary she didn\u2019t ask for; dilutes the signal.",
+   "answer": "NVIDIA fell 5.47% on Nov 10 while the S&P 500 fell 0.37%. That's 5.11 points worse than the index, more than double its usual daily gap of 2.21 points. No filing explains it yet."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Rounds 5.11 to 5.1 and 2.21 to 2.2, violating the rule to use only numbers from the report; uses bold formatting against her plain style.",
+   "answer": "Nov 10: **NVIDIA** fell 5.47% while the S&P 500 fell only 0.37% (a 5.1-point gap vs. its usual 2.2) \u2014 no filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Vague ('large under-performance') when a precise vs-index number (5.11) is available; misses the explicit delta she wants.",
+   "answer": "NVIDIA fell 5.47% while S&P\u202f500 fell 0.37% \u2013 a large under\u2011performance; no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Short, plain, gives both moves and the exact under-performance, and closes with the required 'no filing explains it yet'.",
+   "answer": "NVIDIA fell 5.47% while the S&P 500 fell 0.37%, underperforming the index by 5.11 percentage points. No filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 1099,
+  "output": 4869
+ }
+}

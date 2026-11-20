@@ -1,0 +1,45 @@
+{
+ "day": "2026-09-21",
+ "model": "qwen3.5:4b",
+ "answer": "Meta Platforms surged 11.34% while S&P 500 gained only 1.55% (outperformed by 9.79 pts, threshold 5.64 pts) \u2014 no filing explains it yet. Berkshire Hathaway fell 1.52% as index rose 1.55% (underperformed by 3.07 pts, threshold 2.25 pts) \u2014 no filing explains it yet.",
+ "tool_calls": [],
+ "silent": false,
+ "seconds": 41.2,
+ "usage": {
+  "prompt_tokens": 3308,
+  "prompt_tokens_details": {
+   "cached_tokens": 2912
+  },
+  "completion_tokens": 667,
+  "total_tokens": 3975
+ },
+ "error": null,
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-09-21",
+   "close": 741.25,
+   "stock_pct": 11.34,
+   "index_pct": 1.55,
+   "vs_index_pts": 9.79,
+   "threshold_pts": 5.64,
+   "typical_daily_gap_pts": 2.82
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-21",
+   "close": 502.01,
+   "stock_pct": -1.52,
+   "index_pct": 1.55,
+   "vs_index_pts": -3.07,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.13
+  }
+ ],
+ "cloud_answer": "Meta Platforms rose 11.34% while the S&P 500 rose 1.55%, no filing explains it yet\nBerkshire Hathaway fell 1.52% while the S&P 500 rose 1.55%, no filing explains it yet",
+ "cloud_seconds": 9.8
+}

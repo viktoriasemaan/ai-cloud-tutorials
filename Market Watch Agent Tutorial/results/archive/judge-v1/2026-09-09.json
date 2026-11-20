@@ -1,0 +1,71 @@
+{
+ "day": "2026-09-09",
+ "ideal": "Alert: Meta rose 6.55% while the S&P 500 fell 0.46%, and no filing explains it yet; Amazon filed an 8-K under item 5.02 (a director or officer change), with the link. Skip the Microsoft PX14A6G proxy material.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "claude-opus-5-5",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers both items with correct numbers, says no filing explains the Meta move, explains what Item 5.02 means in plain words, and leaves out the proxy filing.",
+   "answer": "Meta rose 6.55% while the S&P 500 fell 0.46%. That's a much bigger gap than usual, and no filing explains it yet.\nAmazon filed an 8-K, a report on a current event. It's under Item 5.02, which covers a director or senior officer joining or leaving: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 1,
+   "note": "Stays silent despite a 7-point Meta gap against the index and a material Amazon 8-K.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Numbers are correct, but it doesn't say no filing explains the Meta move and doesn't explain what item 5.02 means.",
+   "answer": "Meta Platforms rose 6.55% while the S&P 500 fell 0.46% (outperformed by 7.02 points).\nAmazon filed an 8-K (current-events report, item 5.02): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Numbers are correct, but it omits the item 5.02 context and the 'no filing explains it yet' note.",
+   "answer": "Meta Platforms rose 6.55% while the S&P 500 fell 0.46%. Amazon filed an 8-K current-events report: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "E",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Complete, accurate and concise, with the leadership-change meaning of item 5.02 explained.",
+   "answer": "Meta rose 6.55% while the S&P 500 fell 0.46% \u2014 no filing explains it yet.\nAmazon filed an 8-K (current-events report) covering a change of officers or directors (item 5.02): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2739,
+  "output": 585
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "day": "2026-09-02",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft 8-K current-events report https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm\nBroadcom 8-K current-events report https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm",
+ "silent": false,
+ "run_seconds": 14.9,
+ "model_calls": 1,
+ "input_tokens": 3425,
+ "output_tokens": 4419,
+ "cost_usd": 0.001124,
+ "model_seconds": 10.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-09-02",
+   "form": "8-K",
+   "items": "2.02,8.01,9.01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-20260902.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:41:44.871191-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-41-59.md"
+}

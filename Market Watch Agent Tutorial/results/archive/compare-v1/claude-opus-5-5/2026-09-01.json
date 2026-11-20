@@ -1,0 +1,27 @@
+{
+ "day": "2026-09-01",
+ "model": "claude-opus-5-5",
+ "answer": "Apple filed an amended 8-K (an update to an earlier current-events report). It falls under item 5.02, which covers executives or board members joining or leaving, or how they're paid. The report doesn't show what changed. Filing: https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm",
+ "silent": false,
+ "run_seconds": 8.9,
+ "model_calls": 1,
+ "input_tokens": 4413,
+ "output_tokens": 396,
+ "cost_usd": 0.025572,
+ "model_seconds": 4.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-09-01",
+   "form": "8-K/A",
+   "items": "5.02",
+   "description": "8-K/A",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  }
+ ],
+ "run_log": "Triggered job: bakeoff (4bc53cef1e81)\n  Next run: 2029-08-13T12:41:19.910741-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/4bc53cef1e81/2026-11-17_12-41-28.md"
+}
