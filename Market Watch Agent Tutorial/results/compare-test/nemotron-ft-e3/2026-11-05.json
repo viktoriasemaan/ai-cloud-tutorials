@@ -1,0 +1,112 @@
+{
+ "day": "2026-11-05",
+ "model": "nemotron-ft-e3",
+ "answer": "Apple fell 1.53% while S&P\u202f500 fell 4.41% \u2014 no filing explains it yet.\nNVIDIA fell 9.26% (S&P\u202f500 fell 4.41%) \u2014 no filing explains it yet.\nBroadcom fell 10.43% (S&P\u202f500 fell 4.41%) \u2014 no filing explains it yet.\nBerkshire Hathaway fell 1.17% while S&P\u202f500 fell 4.41% \u2014 no filing explains it yet.\nTesla fell 10.77% (S&P\u202f500 fell 4.41%) \u2014 no filing explains it yet.\nMicrosoft filed a current\u2011events 8\u2011K reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm\nAlphabet filed a current\u2011events 8\u2011K (other events): https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm\nMeta filed a current\u2011events 8\u2011K (other events): https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
+ "silent": false,
+ "run_seconds": 7.7,
+ "model_calls": 2,
+ "input_tokens": 4272,
+ "output_tokens": 359,
+ "cost_usd": 0.000371,
+ "model_seconds": 3.0,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-dfba0c79-653f-4c6d-bb2b-354f5d3e6c05\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"N\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666672,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-05",
+   "close": 344.17,
+   "stock_pct": -1.53,
+   "index_pct": -4.41,
+   "vs_index_pts": 2.88,
+   "threshold_pts": 2.73,
+   "typical_daily_gap_pts": 1.37
+  },
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-05",
+   "close": 181.6,
+   "stock_pct": -9.26,
+   "index_pct": -4.41,
+   "vs_index_pts": -4.85,
+   "threshold_pts": 3.93,
+   "typical_daily_gap_pts": 1.97
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-05",
+   "close": 291.53,
+   "stock_pct": -10.43,
+   "index_pct": -4.41,
+   "vs_index_pts": -6.02,
+   "threshold_pts": 4.31,
+   "typical_daily_gap_pts": 2.15
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-05",
+   "close": 572.33,
+   "stock_pct": -1.17,
+   "index_pct": -4.41,
+   "vs_index_pts": 3.24,
+   "threshold_pts": 2.35,
+   "typical_daily_gap_pts": 1.17
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-11-05",
+   "close": 343.69,
+   "stock_pct": -10.77,
+   "index_pct": -4.41,
+   "vs_index_pts": -6.36,
+   "threshold_pts": 4.62,
+   "typical_daily_gap_pts": 2.31
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:17:51.003276-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-17-58.md"
+}

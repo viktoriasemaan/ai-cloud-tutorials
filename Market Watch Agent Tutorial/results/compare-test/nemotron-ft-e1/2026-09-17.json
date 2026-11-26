@@ -1,0 +1,31 @@
+{
+ "day": "2026-09-17",
+ "model": "nemotron-ft-e1",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 3.6,
+ "model_calls": 2,
+ "input_tokens": 3321,
+ "output_tokens": 6,
+ "cost_usd": 0.000234,
+ "model_seconds": 0.3,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-840d7c9f-1cd6-420d-85a3-7051304b1a3d\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"B\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666136,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-17",
+   "close": 509.2,
+   "stock_pct": -2.04,
+   "index_pct": 1.13,
+   "vs_index_pts": -3.17,
+   "threshold_pts": 2.35,
+   "typical_daily_gap_pts": 1.18
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T20:08:54.518295-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_20-08-57.md"
+}

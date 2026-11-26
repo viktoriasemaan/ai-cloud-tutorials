@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-07",
+ "ideal": "Berkshire Hathaway's 8-K carries earnings (Item 2.02) plus an executive change and a charter/bylaws amendment \u2014 squarely the material news she asked for \u2014 so an alert covering that filing with a link is right. Eli Lilly's Item 5.07 shareholder-vote 8-K is routine paperwork and should be skipped. No price moves are in the evidence, so none should be reported.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Flags the material Berkshire items (earnings, executive/director change, bylaws amendment), calls it a current-events report, links it, and correctly dismisses Lilly's vote-results 8-K as routine. Accurate to the evidence; matches her style.",
+   "answer": "Berkshire Hathaway: filed an 8-K on 2026-05-07 with its quarterly results (earnings) plus an executive/director change and a bylaws amendment \u2014 current-events report: https://www.sec.gov/Archives/edgar/data/1067983/000119312526212148/d74313d8k.htm\n\nThat's the only one worth a look today; Eli Lilly's 8-K was just shareholder vote results (routine)."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 1,
+   "note": "Silence ignores the Berkshire 8-K with earnings (Item 2.02) plus an executive change \u2014 exactly the material news she wants. Wrong call.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Clean one-line alert, accurate items, proper plain-words framing and link. Listing the routine shareholder-vote item is slightly less filtered than needed, but all content is supported by the evidence.",
+   "answer": "Berkshire Hathaway filed a current\u2011events report (8\u2011K) covering earnings, executive changes, charter amendment and shareholder vote results \u2013 https://www.sec.gov/Archives/edgar/data/1067983/000119312526212148/d74313d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Covers the substance but omits the required link, adds 'financial statements' which the evidence does not state, and wraps the message in odd brackets with an unneeded no-price-move line. 'Quarterly' is also more specific than the evidence's 'quarterly or annual'.",
+   "answer": "[Berkshire Hathaway (BRK-B) filed an 8-K today covering quarterly results, an executive/director change, amended bylaws or charter, shareholder vote results, and financial statements. No notable price move today to compare.]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1291,
+  "output": 5738
+ }
+}

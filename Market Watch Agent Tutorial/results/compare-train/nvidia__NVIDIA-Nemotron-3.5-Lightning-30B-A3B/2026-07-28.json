@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-28",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "BRK-B rose 3.06% vs S&P 500's 0.24% gain, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 8.2,
+ "model_calls": 1,
+ "input_tokens": 3329,
+ "output_tokens": 1835,
+ "cost_usd": 0.0006,
+ "model_seconds": 5.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-07-28",
+   "close": 512.37,
+   "stock_pct": 3.06,
+   "index_pct": 0.24,
+   "vs_index_pts": 2.82,
+   "threshold_pts": 2.45,
+   "typical_daily_gap_pts": 1.23
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:26:51.607433-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-26-59.md"
+}

@@ -1,0 +1,59 @@
+{
+ "day": "2026-07-01",
+ "ideal": "Alert warranted: Meta gapped 8.94 pts vs the index (well past the 4.35 threshold), +8.81% vs -0.14%, with no filing in evidence. Best answers state the move, the index next to it, and the no-filing note, short and in her plain style.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Company, move, index comparison, all numbers from report, correct rose/fell wording, no-filing note \u2014 exactly her style, nothing extra.",
+   "answer": "Meta Platforms rose 8.81% while S&P\u202f500 fell 0.14%; no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Same solid content plus the 8.94-pt gap straight from the report; 'massive' is mild editorializing against her plain-short style but grounded in the data.",
+   "answer": "Meta Platforms rose 8.81% while the S&P 500 fell 0.14% \u2014 a massive 8.94 percentage point outperformance; no filing explains it yet."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 2,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Invents rounded numbers not in the report ('about 8.9', '~4.4-point bar'), leaks internal threshold jargon, redundant date, and an unneeded filler line about the rest of the watchlist.",
+   "answer": "Meta rose 8.81% on 2026-07-01 while the S&P 500 fell 0.14% \u2014 a swing of about 8.9 points versus the index, far past the ~4.4-point bar; no filing explains it yet.\n\nNothing else on the watchlist moved enough to flag."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Identical substance to A; 'vs S&P 500 fell' reads slightly clipped versus 'while', but fully serves her.",
+   "answer": "Meta Platforms rose 8.81% vs S&P 500 fell 0.14%, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1058,
+  "output": 6924
+ }
+}

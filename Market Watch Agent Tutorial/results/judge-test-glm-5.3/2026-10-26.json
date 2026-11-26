@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-26",
+ "ideal": "One line on the Tesla move \u2014 rose 5.21% vs the index's 0.71%, gap well past threshold, no explaining filing, so it ends with 'no filing explains it yet'. The Microsoft PX14A6G is proxy paperwork and the Meta S-3ASR is a routine shelf registration \u2014 neither belongs in an alert.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Exactly the one alert-worthy item, correct direction words for both stock and index, both numbers straight from the report, ends with the required 'no filing explains it yet', and smartly drops the proxy and shelf filings. best",
+   "answer": "Tesla rose 5.21% while the S&P 500 rose 0.71% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers Tesla well and the 4.5-point gap is legitimate evidence, but 'possibly' waters down the required closing phrase, and '(this is new)' is meta clutter that isn't grounded in the evidence.",
+   "answer": "Tesla rose 5.21% vs S&P 500 +0.71% \u2014 4.5 points over the index, possibly no filing explains it yet. (this is new)"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Clean and accurate, but 'vs S&P 500 0.71%' omits the direction word for the index, a slight miss on the required style compared with A.",
+   "answer": "Tesla rose 5.21% vs S&P 500 0.71%, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1208,
+  "output": 3504
+ }
+}

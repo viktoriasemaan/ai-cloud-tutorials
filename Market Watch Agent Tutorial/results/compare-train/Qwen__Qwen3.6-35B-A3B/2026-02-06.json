@@ -1,0 +1,75 @@
+{
+ "day": "2026-02-06",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "NVIDIA rose 7.87% while the S&P 500 rose 1.92% (outperformed by 5.95 pts); no filing explains it yet.\nAmazon fell 5.55% while the S&P 500 rose 1.92% (underperformed by 7.47 pts); filed 10-K (annual report): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm\nAlphabet fell 2.53% while the S&P 500 rose 1.92% (underperformed by 4.45 pts); no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 9.9,
+ "model_calls": 1,
+ "input_tokens": 4620,
+ "output_tokens": 854,
+ "cost_usd": 0.001222,
+ "model_seconds": 7.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-02-06",
+   "close": 185.41,
+   "stock_pct": 7.87,
+   "index_pct": 1.92,
+   "vs_index_pts": 5.95,
+   "threshold_pts": 3.48,
+   "typical_daily_gap_pts": 1.74
+  },
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-06",
+   "close": 210.32,
+   "stock_pct": -5.55,
+   "index_pct": 1.92,
+   "vs_index_pts": -7.47,
+   "threshold_pts": 2.52,
+   "typical_daily_gap_pts": 1.26
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-06",
+   "close": 322.86,
+   "stock_pct": -2.53,
+   "index_pct": 1.92,
+   "vs_index_pts": -4.45,
+   "threshold_pts": 2.73,
+   "typical_daily_gap_pts": 1.37
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-06",
+   "form": "S-3ASR",
+   "items": "",
+   "what_it_is": "",
+   "description": "S-3ASR",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926011240/tm262510-1_s3asr.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-06",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:02:20.949021-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-02-30.md"
+}

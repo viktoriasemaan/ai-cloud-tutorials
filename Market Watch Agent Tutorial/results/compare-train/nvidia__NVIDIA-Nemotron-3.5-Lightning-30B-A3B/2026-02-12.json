@@ -1,0 +1,40 @@
+{
+ "day": "2026-02-12",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Apple fell 5.0% vs S&P 500 fell 1.54%, no filing explains it yet\nEli Lilly 10-K annual report filing: https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+ "silent": false,
+ "run_seconds": 16.3,
+ "model_calls": 1,
+ "input_tokens": 3482,
+ "output_tokens": 5309,
+ "cost_usd": 0.001306,
+ "model_seconds": 13.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-12",
+   "close": 261.73,
+   "stock_pct": -5.0,
+   "index_pct": -1.54,
+   "vs_index_pts": -3.45,
+   "threshold_pts": 2.18,
+   "typical_daily_gap_pts": 1.09
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-12",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:02:41.462747-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-02-57.md"
+}

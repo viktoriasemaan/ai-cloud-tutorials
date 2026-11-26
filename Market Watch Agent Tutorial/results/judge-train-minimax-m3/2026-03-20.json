@@ -1,0 +1,59 @@
+{
+ "day": "2026-03-20",
+ "ideal": "[SILENT]",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: only LLY DEF 14A and DEFA14A (proxy materials), which are explicitly excluded.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: only LLY DEF 14A and DEFA14A (proxy materials), which are explicitly excluded.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: only LLY DEF 14A and DEFA14A (proxy materials), which are explicitly excluded.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: only LLY DEF 14A and DEFA14A (proxy materials), which are explicitly excluded.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1172,
+  "output": 371
+ }
+}

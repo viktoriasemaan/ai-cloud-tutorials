@@ -1,0 +1,39 @@
+{
+ "day": "2026-05-08",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA: an 8-K current-events report filed May 8 \u2014 an executive or director change. Leadership moves at a company this size are worth knowing. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000028/nvda-20260507.htm",
+ "silent": false,
+ "run_seconds": 11.8,
+ "model_calls": 3,
+ "input_tokens": 14225,
+ "output_tokens": 2263,
+ "cost_usd": 0.001763,
+ "model_seconds": 8.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-08",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000028/nvda-20260507.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-08",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000051/xslForm13F_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:11:05.715846-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-11-17.md"
+}

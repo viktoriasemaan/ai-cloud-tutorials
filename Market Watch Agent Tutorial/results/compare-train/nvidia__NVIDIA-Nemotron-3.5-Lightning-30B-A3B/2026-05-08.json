@@ -1,0 +1,39 @@
+{
+ "day": "2026-05-08",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "NVDA: 8-K current-events report, executive or director change (Item 5.02). https://www.sec.gov/Archives/edgar/data/1045810/000104581026000028/nvda-20260507.htm",
+ "silent": false,
+ "run_seconds": 22.3,
+ "model_calls": 1,
+ "input_tokens": 3490,
+ "output_tokens": 7675,
+ "cost_usd": 0.001779,
+ "model_seconds": 18.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-08",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000028/nvda-20260507.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-08",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000051/xslForm13F_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:15:28.733677-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-15-50.md"
+}

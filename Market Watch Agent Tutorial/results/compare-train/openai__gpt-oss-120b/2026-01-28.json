@@ -1,0 +1,61 @@
+{
+ "day": "2026-01-28",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft: 10\u2011Q quarterly report https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm  \nMicrosoft: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm  \nMeta Platforms: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm  \nTesla: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/tsla-20260128.htm",
+ "silent": false,
+ "run_seconds": 13.9,
+ "model_calls": 1,
+ "input_tokens": 3929,
+ "output_tokens": 549,
+ "cost_usd": 0.000211,
+ "model_seconds": 11.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-28",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-01-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/tsla-20260128.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:00:21.205891-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-00-34.md"
+}

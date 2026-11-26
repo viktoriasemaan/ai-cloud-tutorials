@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-11",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Berkshire Hathaway filed an 8-K (current-events report) on 2026-08-11 reporting quarterly or annual results (items 2.02, 9.01). No unusual price move was recorded that day to explain. Filing: https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4125,
+ "output_tokens": 457,
+ "cost_usd": 0.000819,
+ "model_seconds": 7.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-08-11",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:27:24.572124-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-27-34.md"
+}

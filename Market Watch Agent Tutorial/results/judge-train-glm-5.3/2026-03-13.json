@@ -1,0 +1,59 @@
+{
+ "day": "2026-03-13",
+ "ideal": "One short line flagging Amazon's 8-K as a current-events report with the link, and nothing about Berkshire's proxy-season paperwork, which she explicitly does not want.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 2,
+   "note": "Silence correctly swallows the Berkshire proxy paperwork (ARS/DEF 14A/DEFA14A), which she never wants to hear about. But it also swallows Amazon's 8-K, and 8-Ks are exactly the ",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers the Amazon 8-K with an accurate description of items 8.01/9.01 and a correct note that no price move was reported, all from the evidence. But it opens with confusing meta-commentary ('not an alert'), buries the alert in parentheses, and then spends a full line enumerating the Berkshire proxy paperwork she doesn't want \u2014 snippet-level form codes she'd have to decode. Covers the item, adds noise to it.",
+   "answer": "Amazon filed an 8-K (other events, items 8.01, 9.01) on Mar 13: https://www.sec.gov/Archives/edgar/data/1018724/000110465926027729/tm266670d8_8k.htm \u2014 no price move reported to explain. Berkshire Hathaway filed routine proxy materials (ARS, DEFA14A, DEF 14A)."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate one-liner on the Amazon 8-K: the item-8.01 gloss, the link, and 'no price move flagged today-ish' all state exactly what the report shows. Cuts off the meta-chatter from that first draft neatly. The leftover is 'routine annual-meeting paperwork' asserting a routine/proxy-season character the evidence doesn't literally spell out for the ARS, a minor stretch; and a half-line reminding her there was routine paperwork at all is very mild noise.",
+   "answer": "Amazon: filed an 8-K current-events report (item 8.01, \"other events\") \u2014 no price move flagged against the S&P 500 that day, so the detail is in the filing itself: https://www.sec.gov/Archives/edgar/data/1018724/000110465926027729/tm266670d8_8k.htm\n\nBerkshire's other filings that day (annual report to shareholders, DEF 14A and two DEFA14A proxy items) are the routine proxy/paperwork kind you skip, so no alert there."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "The clean version of the same correction: Amazon's 8-K as a current-events report with the link, nothing invented, nothing extra. Still omits the true detail that no price move was flagged today (the sentence order of the first draft wielded that fact slightly confusingly), which is why coverage is 4 rather than 5; otherwise exactly what she wants \u2014 she gets the filing she cares about and is spared the Berkshire paperwork entirely.",
+   "answer": "Amazon filed an 8\u2011K (current\u2011events report)\u202f\u2013\u202fhttps://www.sec.gov/Archives/edgar/data/1018724/000110465926027729/tm266670d8_8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1669,
+  "output": 7039
+ }
+}

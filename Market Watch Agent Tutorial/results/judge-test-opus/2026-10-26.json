@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-26",
+ "ideal": "A single line: Tesla rose 5.21% while the S&P 500 rose 0.71% (4.5 points ahead of the index), and no filing explains it yet. Skip the Microsoft proxy filing and the routine Meta shelf registration.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "A clean, accurate Tesla line that puts the index next to it and says no filing explains the move, while correctly leaving out the routine filings.",
+   "answer": "Tesla rose 5.21% while the S&P 500 rose 0.71% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 4,
+   "note": "The numbers are correct and the 4.5-point gap is useful, but 'possibly no filing explains it' is a confusing hedge and '(this is new)' adds clutter.",
+   "answer": "Tesla rose 5.21% vs S&P 500 +0.71% \u2014 4.5 points over the index, possibly no filing explains it yet. (this is new)"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is correct and short, but it doesn't say whether the S&P 500 rose and reads a bit terse.",
+   "answer": "Tesla rose 5.21% vs S&P 500 0.71%, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 2682,
+  "output": 633
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-22",
+ "ideal": "Alert: Meta fell 6.98% while the S&P 500 fell 1.18%, on the same day it filed its 10-Q quarterly report (link). Berkshire rose 1.48% while the S&P 500 fell 1.18%, and no filing explains it yet. Tesla filed its 10-Q quarterly report (link).",
+ "best_model": "nemotron-ft-e1",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Covers all four events with correct numbers and links, but it says no filing explains Meta's drop while listing Meta's same-day 10-Q right below, which contradicts itself.",
+   "answer": "Meta Platforms fell 6.98% (S&P 500 fell 1.18%); no filing explains it yet  \nBerkshire Hathaway rose 1.48% while the S&P 500 fell 1.18% \u2014 no filing explains it yet  \nMeta Platforms 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm  \nTesla 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Leaves out Berkshire's move and Tesla's 10-Q, gives no link, and contradicts itself by saying a 10-Q was filed yet no filing explains the drop.",
+   "answer": "Meta Platforms fell 6.98% while S&P 500 fell 1.18%. 10-Q filed. no filing explains it yet."
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Covers everything with links and correctly ties Meta's drop to its same-day 10-Q, but the wording ('earnings-lagging', 'current-quarter') is jargony and slightly off.",
+   "answer": "Meta fell 6.98% vs S&P\u202f500 fell 1.18% \u2014 earnings\u2011lagging filing: 10\u2011Q https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm\nBerkshire rose 1.48% vs S&P\u202f500 fell 1.18% \u2014 no material filing\nTesla filed current\u2011quarter 10\u2011Q https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3123,
+  "output": 1010
+ }
+}

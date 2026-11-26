@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-07",
+ "ideal": "[The ideal answer alerts (not silent) since the 4.46-pt gap far exceeds the 3.56-pt alert bar. It reads one line: who (Eli Lilly), what (rose 4.14% while the S&P 500 fell 0.32%), how big vs the index (4.46 pts) when it earns its place, and 'no filing explains it yet' since the report contains no filing. Style: short, plain words, numbers with the index beside them]",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "All numbers from the report, correct directions, 'no filing explains it yet' present. Docked only for sloppy style: stray spaces inside '4.14 %' and '0.32 %', and 'while S&P 500' reads clipped.",
+   "answer": "Eli Lilly rose\u202f4.14\u202f% while S&P\u202f500 fell\u202f0.32\u202f% \u2013 no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate and adds the 4.46-pt gap, but 'well past the 3.56-point threshold' drags the agent's internal alert-bar config into her message \u2014 meta she didn't ask for, in jargon she doesn't use.",
+   "answer": "Eli Lilly rose 4.14% while the S&P 500 fell 0.32% \u2014 a 4.46-point divergence, well past the 3.56-point threshold. No filing explains it yet."
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Exactly her style: index right next to the number, the vs-index size (4.46 pts, her core interest) stated in plain words, no filing caveat, nothing extra. All numbers from the report.",
+   "answer": "Eli Lilly rose 4.14% (S&P 500 fell 0.32%) \u2014 a 4.46 percentage point swing vs the index. No filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Clean, accurate, complete per the rules; minimal. Everything needed, nothing wasted, though it stops short of stating the size versus the index.",
+   "answer": "Eli Lilly rose 4.14% while the S&P 500 fell 0.32%, no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 1045,
+  "output": 6338
+ }
+}

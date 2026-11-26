@@ -1,0 +1,59 @@
+{
+ "day": "2026-07-28",
+ "ideal": "Alert warranted: Berkshire beat the index by 2.82 pts, well past its 2.45 threshold, with no filing.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Exactly her style: company, +3.06% next to the S&P 500's +0.24%, correct 'rose' signs, and 'no filing explains it yet.' Every number from the report.",
+   "answer": "Berkshire Hathaway rose 3.06% while the S&P 500 rose 0.24% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Substantively identical to A, but sloppy typography: stray spaces in '3.06 %' and '0.24 %', no ending punctuation. Content fully accurate.",
+   "answer": "Berkshire Hathaway rose\u202f3.06\u202f% (S&P\u202f500 up\u202f0.24\u202f%); no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate and all numbers are from the report, but pads the short line with the closing price and ticker she didn't ask for \u2014 mild clutter, not harm.",
+   "answer": "Berkshire Hathaway (BRK-B) closed at 512.37, up 3.06% while the S&P 500 rose 0.24%; no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Substance correct and compact, but leads with the ticker rather than the company name and runs the 'no filing' clause on with a comma. Slightly less plain.",
+   "answer": "BRK-B rose 3.06% vs S&P 500's 0.24% gain, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1036,
+  "output": 4679
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "day": "2026-04-10",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Broadcom rose\u202f4.69% (S&P fell\u202f0.07%); no filing explains it yet  \nAlphabet filed a current\u2011events 8\u2011K (executive or director change) https://www.sec.gov/Archives/edgar/data/1652044/000165204426000034/goog-20260407.htm",
+ "silent": false,
+ "run_seconds": 15.9,
+ "model_calls": 1,
+ "input_tokens": 3687,
+ "output_tokens": 573,
+ "cost_usd": 0.000208,
+ "model_seconds": 12.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-10",
+   "close": 371.55,
+   "stock_pct": 4.69,
+   "index_pct": -0.07,
+   "vs_index_pts": 4.75,
+   "threshold_pts": 4.2,
+   "typical_daily_gap_pts": 2.1
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-10",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000034/goog-20260407.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:10:19.759749-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-10-35.md"
+}

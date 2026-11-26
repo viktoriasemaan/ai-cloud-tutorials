@@ -1,0 +1,75 @@
+{
+ "day": "2026-02-06",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "NVIDIA rose 7.87% vs S&P 500 rose 1.92%, no filing explains it yet.\nAmazon fell 5.55% vs S&P 500 rose 1.92%, no filing explains it yet.\nAlphabet fell 2.53% vs S&P 500 rose 1.92%, no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 13.9,
+ "model_calls": 1,
+ "input_tokens": 3843,
+ "output_tokens": 3697,
+ "cost_usd": 0.001008,
+ "model_seconds": 11.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-02-06",
+   "close": 185.41,
+   "stock_pct": 7.87,
+   "index_pct": 1.92,
+   "vs_index_pts": 5.95,
+   "threshold_pts": 3.48,
+   "typical_daily_gap_pts": 1.74
+  },
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-06",
+   "close": 210.32,
+   "stock_pct": -5.55,
+   "index_pct": 1.92,
+   "vs_index_pts": -7.47,
+   "threshold_pts": 2.52,
+   "typical_daily_gap_pts": 1.26
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-06",
+   "close": 322.86,
+   "stock_pct": -2.53,
+   "index_pct": 1.92,
+   "vs_index_pts": -4.45,
+   "threshold_pts": 2.73,
+   "typical_daily_gap_pts": 1.37
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-06",
+   "form": "S-3ASR",
+   "items": "",
+   "what_it_is": "",
+   "description": "S-3ASR",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926011240/tm262510-1_s3asr.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-06",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:01:55.158566-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-02-08.md"
+}

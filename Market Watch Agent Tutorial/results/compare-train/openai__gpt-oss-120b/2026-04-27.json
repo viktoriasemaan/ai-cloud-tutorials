@@ -1,0 +1,62 @@
+{
+ "day": "2026-04-27",
+ "model": "openai/gpt-oss-120b",
+ "answer": "NVIDIA rose 4.0% (S&P up 0.17%); 8\u2011K executive or director change https://www.sec.gov/Archives/edgar/data/1045810/000104581026000026/nvda-20260424.htm",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 3898,
+ "output_tokens": 429,
+ "cost_usd": 0.00019,
+ "model_seconds": 4.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-04-27",
+   "close": 216.61,
+   "stock_pct": 4.0,
+   "index_pct": 0.17,
+   "vs_index_pts": 3.83,
+   "threshold_pts": 3.51,
+   "typical_daily_gap_pts": 1.75
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-04-27",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000026/nvda-20260424.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-27",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000121465926005129/o427262px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-27",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000121465926005093/z424260px14a6g.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:12:48.785970-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-12-56.md"
+}

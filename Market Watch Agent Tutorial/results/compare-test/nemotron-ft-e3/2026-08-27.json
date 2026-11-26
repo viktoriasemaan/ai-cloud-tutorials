@@ -1,0 +1,31 @@
+{
+ "day": "2026-08-27",
+ "model": "nemotron-ft-e3",
+ "answer": "NVIDIA rose 8.74% (S&P up 0.66%) \u2014 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.8,
+ "model_calls": 2,
+ "input_tokens": 3317,
+ "output_tokens": 27,
+ "cost_usd": 0.000238,
+ "model_seconds": 1.8,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-c4df8c9e-5c02-4f47-a87a-33fbf6f6aaad\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"N\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666303,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-27",
+   "close": 227.98,
+   "stock_pct": 8.74,
+   "index_pct": 0.66,
+   "vs_index_pts": 8.08,
+   "threshold_pts": 3.8,
+   "typical_daily_gap_pts": 1.9
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:11:40.321415-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-11-46.md"
+}

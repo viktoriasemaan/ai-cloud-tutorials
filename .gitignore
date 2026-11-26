@@ -16,3 +16,6 @@ __pycache__/
 
 # run logs (may contain local paths)
 *.log
+
+# local W&B run folders written by the training client (the runs themselves live in Forge)
+**/wandb/

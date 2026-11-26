@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-11",
+ "ideal": "A",
+ "best_model": "nemotron-ft-e1",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly alerts on a real move: Microsoft fell 2.26% vs the S&P 500 rising 1.32% \u2014 a 3.58-point gap, above the 2.48 threshold. Says fell (not lost), numbers match the report, no invented reason, ends with 'no filing explains it yet'. Short and plain exactly as she wants. This is the cleanest form of the correct alert.",
+   "answer": "Microsoft fell 2.26% while the S&P 500 rose 1.32% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Same right decision and all the right facts, but the phrasing 'fell 2.26% vs S&P 500 rose 1.32%' compares a number straight into a verb phrase, and the line runs the filing caveat in as a comma splice. Fully readable, just noticeably rougher and less plain than the style she asked for.",
+   "answer": "Microsoft fell 2.26% vs S&P 500 rose 1.32%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Same correct alert as A, and it adds one extra number: the 3.58-point underperformance. That number comes straight from the report (vs_index_pts -3.58), it's not invented, and it's exactly the kind of 'big move versus the index' measure she watches for. The word 'underperformance' also handles the negative sign correctly. The only slight wrinkle is that '3.58-point' isn't spelled out as percentage points, which could momentarily read as index points \u2014 but it sits right after two percentages, so the sense is recoverable. The redundant restating of numbers already given is a minor trade, not a flaw.",
+   "answer": "Microsoft fell 2.26% while the S&P 500 rose 1.32% \u2014 a 3.58\u2011point underperformance, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 982,
+  "output": 7879
+ }
+}

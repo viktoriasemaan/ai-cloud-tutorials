@@ -1,0 +1,40 @@
+{
+ "day": "2026-01-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple rose 2.97% on 2026-01-26 while the S&P 500 rose 0.51% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4133,
+ "output_tokens": 552,
+ "cost_usd": 0.000405,
+ "model_seconds": 2.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-26",
+   "close": 255.41,
+   "stock_pct": 2.97,
+   "index_pct": 0.51,
+   "vs_index_pts": 2.46,
+   "threshold_pts": 2.0,
+   "typical_daily_gap_pts": 0.9
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-01-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000008/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T12:59:37.600062-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_12-59-43.md"
+}

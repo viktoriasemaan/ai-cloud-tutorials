@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-16",
+ "ideal": "A short alert on Berkshire Hathaway rising 1.21% while the S&P 500 fell 1.11% (a 2.31-point gap, just over the threshold), with no filing to explain it yet. The Eli Lilly Schedule 13D is ownership paperwork and can be left out.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "The Berkshire line is accurate and labels the 13D correctly, but it includes the 13D ownership filing she likely sees as paperwork, and the first line is missing punctuation.",
+   "answer": "Berkshire Hathaway rose 1.21% vs S&P 500 fell 1.11%, outperformed by 2.31pts no filing explains it yet\nEli Lilly Schedule 13D: beneficial ownership report https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 3,
+   "note": "It wrongly calls the Schedule 13D a 'current-events report', which is the 8-K label, and it adds ownership-paperwork noise.",
+   "answer": "Berkshire Hathaway rose 1.21% while the S&P 500 fell 1.11% \u2014 a 2.31-point gap that exceeds the typical 1.12-point gap; no filing explains it yet\nEli Lilly filed a Schedule 13D current-events report: https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "A clean, accurate Berkshire alert with the index next to it that rightly drops the 13D, though it omits the size of the gap.",
+   "answer": "Berkshire Hathaway rose 1.21% vs S&P 500 fell 1.11% \u2013 no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 2756,
+  "output": 769
+ }
+}

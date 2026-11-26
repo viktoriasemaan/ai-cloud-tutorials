@@ -1,0 +1,40 @@
+{
+ "day": "2026-01-15",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Eli\u202fLilly fell 3.76% (S&P\u202f500 rose 0.27%)  \nEli\u202fLilly filed a Schedule\u202f13D (beneficial\u2011ownership report) https://www.sec.gov/Archives/edgar/data/59478/000119312526013469/xslSCHEDULE_13D_X01/primary_doc.xml",
+ "silent": false,
+ "run_seconds": 15.9,
+ "model_calls": 1,
+ "input_tokens": 3684,
+ "output_tokens": 658,
+ "cost_usd": 0.000222,
+ "model_seconds": 12.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-15",
+   "close": 1032.97,
+   "stock_pct": -3.76,
+   "index_pct": 0.27,
+   "vs_index_pts": -4.03,
+   "threshold_pts": 3.65,
+   "typical_daily_gap_pts": 1.82
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-15",
+   "form": "SCHEDULE 13D",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526013469/xslSCHEDULE_13D_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:58:43.538257-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-58-59.md"
+}

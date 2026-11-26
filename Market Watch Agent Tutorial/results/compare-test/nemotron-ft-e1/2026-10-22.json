@@ -1,0 +1,65 @@
+{
+ "day": "2026-10-22",
+ "model": "nemotron-ft-e1",
+ "answer": "Meta fell 6.98% vs S&P\u202f500 fell 1.18% \u2014 earnings\u2011lagging filing: 10\u2011Q https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm\nBerkshire rose 1.48% vs S&P\u202f500 fell 1.18% \u2014 no material filing\nTesla filed current\u2011quarter 10\u2011Q https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+ "silent": false,
+ "run_seconds": 6.9,
+ "model_calls": 2,
+ "input_tokens": 3708,
+ "output_tokens": 182,
+ "cost_usd": 0.000296,
+ "model_seconds": 2.4,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-de004ada-f6f9-4b40-8032-9a2b1c41e401\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"Meta\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666270,\\\"model\\\":\\\"nvidia/NVI"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-10-22",
+   "close": 648.85,
+   "stock_pct": -6.98,
+   "index_pct": -1.18,
+   "vs_index_pts": -5.8,
+   "threshold_pts": 5.59,
+   "typical_daily_gap_pts": 2.79
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-10-22",
+   "close": 546.97,
+   "stock_pct": 1.48,
+   "index_pct": -1.18,
+   "vs_index_pts": 2.66,
+   "threshold_pts": 2.19,
+   "typical_daily_gap_pts": 1.1
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-10-22",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-22",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T20:11:08.138401-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_20-11-14.md"
+}

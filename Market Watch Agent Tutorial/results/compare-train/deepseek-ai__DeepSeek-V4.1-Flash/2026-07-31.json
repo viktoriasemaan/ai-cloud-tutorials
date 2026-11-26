@@ -1,0 +1,86 @@
+{
+ "day": "2026-07-31",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple: fell 7.35% while the S&P 500 rose 0.72% \u2014 its quarterly report (10-Q) was filed the same day: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm\nAmazon: rose 15.32% while the S&P 500 rose 0.72% \u2014 quarterly report (10-Q) filed: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm ; also filed an S-4 registration statement: https://www.sec.gov/Archives/edgar/data/1018724/000110465926089294/tm2617924-1_s4.htm\nAlphabet: rose 6.73% while the S&P 500 rose 0.72% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4547,
+ "output_tokens": 841,
+ "cost_usd": 0.000646,
+ "model_seconds": 2.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-07-31",
+   "close": 308.91,
+   "stock_pct": -7.35,
+   "index_pct": 0.72,
+   "vs_index_pts": -8.07,
+   "threshold_pts": 3.63,
+   "typical_daily_gap_pts": 1.82
+  },
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-07-31",
+   "close": 271.58,
+   "stock_pct": 15.32,
+   "index_pct": 0.72,
+   "vs_index_pts": 14.6,
+   "threshold_pts": 3.16,
+   "typical_daily_gap_pts": 1.58
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-07-31",
+   "close": 356.13,
+   "stock_pct": 6.73,
+   "index_pct": 0.72,
+   "vs_index_pts": 6.01,
+   "threshold_pts": 3.75,
+   "typical_daily_gap_pts": 1.88
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-07-31",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-07-31",
+   "form": "S-4",
+   "items": "",
+   "what_it_is": "",
+   "description": "S-4",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926089294/tm2617924-1_s4.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-07-31",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:19:45.783025-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-19-51.md"
+}

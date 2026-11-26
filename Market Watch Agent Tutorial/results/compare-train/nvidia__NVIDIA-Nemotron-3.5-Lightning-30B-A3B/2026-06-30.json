@@ -1,0 +1,28 @@
+{
+ "day": "2026-06-30",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "NVIDIA 8-K shareholder vote results https://www.sec.gov/Archives/edgar/data/1045810/000104581026000056/nvda-20260624.htm",
+ "silent": false,
+ "run_seconds": 16.4,
+ "model_calls": 1,
+ "input_tokens": 3354,
+ "output_tokens": 3292,
+ "cost_usd": 0.000893,
+ "model_seconds": 12.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-06-30",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000056/nvda-20260624.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:23:00.955917-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-23-17.md"
+}

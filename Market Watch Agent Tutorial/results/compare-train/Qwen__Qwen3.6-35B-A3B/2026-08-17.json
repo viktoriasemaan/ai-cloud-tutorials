@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-17",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "NVIDIA filed an 8-K (current-events report) disclosing a material agreement, a new material financial obligation, and a Regulation FD disclosure. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4142,
+ "output_tokens": 544,
+ "cost_usd": 0.000898,
+ "model_seconds": 7.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-17",
+   "form": "8-K",
+   "items": "1.01,2.03,7.01",
+   "what_it_is": "entered a material agreement; took on a material financial obligation; Regulation FD disclosure (often a press release or presentation)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:27:51.183390-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-28-01.md"
+}

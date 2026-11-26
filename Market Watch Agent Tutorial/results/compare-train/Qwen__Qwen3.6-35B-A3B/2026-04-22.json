@@ -1,0 +1,28 @@
+{
+ "day": "2026-04-22",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Tesla filed an 8-K (current-events report) on earnings results (items 2.02, 9.01): https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/tsla-20260422.htm",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4112,
+ "output_tokens": 458,
+ "cost_usd": 0.000819,
+ "model_seconds": 5.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-04-22",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/tsla-20260422.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:11:23.935621-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-11-32.md"
+}

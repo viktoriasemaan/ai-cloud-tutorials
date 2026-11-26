@@ -1,0 +1,28 @@
+{
+ "day": "2026-05-21",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Alphabet filed an 8\u2011K current\u2011events report (material filing) \u2013 https://www.sec.gov/Archives/edgar/data/1652044/000119312526234488/d144566d8k.htm",
+ "silent": false,
+ "run_seconds": 5.8,
+ "model_calls": 1,
+ "input_tokens": 3570,
+ "output_tokens": 512,
+ "cost_usd": 0.000194,
+ "model_seconds": 3.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-21",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526234488/d144566d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:16:58.007353-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-17-03.md"
+}

@@ -1,0 +1,50 @@
+{
+ "day": "2026-04-14",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Amazon 8-K Regulation FD disclosure (items 7.01, 9.01) - material event press release. https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm\nMeta 8-K executive or director change (item 5.02) - leadership transition. https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm",
+ "silent": false,
+ "run_seconds": 16.3,
+ "model_calls": 1,
+ "input_tokens": 3658,
+ "output_tokens": 4168,
+ "cost_usd": 0.00109,
+ "model_seconds": 13.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-14",
+   "form": "425",
+   "items": "",
+   "what_it_is": "",
+   "description": "425",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-14",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "what_it_is": "Regulation FD disclosure (often a press release or presentation)",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-14",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:10:05.340719-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-10-21.md"
+}

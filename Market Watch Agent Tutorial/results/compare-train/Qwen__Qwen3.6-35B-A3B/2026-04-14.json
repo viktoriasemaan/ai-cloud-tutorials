@@ -1,0 +1,50 @@
+{
+ "day": "2026-04-14",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "The report covers filings from April 14, 2026 (replay mode). There are no price-move events, but three material filings landed:\n\n1. **AMZN** \u2014 Form 425 (business combination / merger filing) and an 8-K with items 7.01 & 9.01 (Regulation FD disclosure, typically a press release or presentation)\n2. **META** \u2014 8-K item 5.02 (executive or director change)\n\nNo price moves were reported for April 14, so I can't pair these with market reactions. Let me compose the alert.\n\nAmazon (AMZN) filed a Form 425 (typically a business combination or merger filing) https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm and an 8-K with items 7.01 & 9.01 \u2014 a Regulation FD disclosure, usually a press release or presentation https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm\nMeta Platforms (META) filed an 8-K with item 5.02 \u2014 an executive or director change https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm\nNo price moves were reported for April 14 to pair with these filings.",
+ "silent": false,
+ "run_seconds": 20.5,
+ "model_calls": 2,
+ "input_tokens": 10156,
+ "output_tokens": 1851,
+ "cost_usd": 0.002663,
+ "model_seconds": 17.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-14",
+   "form": "425",
+   "items": "",
+   "what_it_is": "",
+   "description": "425",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-14",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "what_it_is": "Regulation FD disclosure (often a press release or presentation)",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-14",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:10:04.277065-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-10-24.md"
+}

@@ -1,0 +1,51 @@
+{
+ "day": "2026-06-03",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Meta rose 4.24% while the S&P 500 fell 0.7% \u2014 no filing explains it yet.\nBroadcom filed an 8-K on quarterly results (current-events report): https://www.sec.gov/Archives/edgar/data/1730168/000173016826000051/avgo-20260603.htm",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4269,
+ "output_tokens": 991,
+ "cost_usd": 0.000708,
+ "model_seconds": 3.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-06-03",
+   "close": 622.98,
+   "stock_pct": 4.24,
+   "index_pct": -0.7,
+   "vs_index_pts": 4.94,
+   "threshold_pts": 4.29,
+   "typical_daily_gap_pts": 2.15
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-03",
+   "form": "8-A12B",
+   "items": "",
+   "what_it_is": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526255736/d129941d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-03",
+   "form": "8-K",
+   "items": "2.02,8.01,9.01",
+   "what_it_is": "quarterly or annual results (earnings); other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000051/avgo-20260603.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:13:57.506179-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-14-03.md"
+}

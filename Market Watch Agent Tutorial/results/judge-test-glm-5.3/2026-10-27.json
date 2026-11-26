@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-27",
+ "ideal": "Alert only on Broadcom's 8-K item 2.03 (a material new financial obligation, linked, in plain words). Exclude the MSFT PX14A6G (proxy paperwork) and the Tesla 13G/A (a fund-holding report) \u2014 she explicitly doesn't want either category. No numbers needed; no price events in evidence.",
+ "best_model": "nemotron-ft-e1",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Correctly alerts only on the Broadcom 8-K and drops the Microsoft proxy and Tesla 13G/A. Says the filing type in plain words ('8-K (current-events report)'), links it, invents nothing. The comma/arrow telegraphic format is clear but reads like a data record rather than a sentence \u2014 a hair less readable than C despite identical facts.",
+   "answer": "Broadcom, 8-K (current-events report): took on a material financial obligation \u2192 https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Right scope \u2014 Broadcom 8-K only, no proxy or 13G noise, no invented facts. But it just says '8-K filed' without explaining the filing type in plain words, which the rules (and her style) require. The repeated date is redundant filler. Accurate but thinner than it should be.",
+   "answer": "Broadcom 8-K filed 2026-10-27: took on a material financial obligation. https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Right scope, no noise, nothing invented. One clean plain-words sentence: company, filing type explained ('8-K current-events report'), the material obligation, and the link. Exactly matches her short, plain style.",
+   "answer": "Broadcom filed an 8-K current-events report on taking on a material financial obligation: https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1306,
+  "output": 4497
+ }
+}

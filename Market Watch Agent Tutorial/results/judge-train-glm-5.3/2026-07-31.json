@@ -1,0 +1,59 @@
+{
+ "day": "2026-07-31",
+ "ideal": "All three big moves belong in the alert (Apple down 7.35% vs S&P up 0.72%; Amazon up 15.32%; Alphabet up 6.73%), with same-day filings noted and linked for Apple (10-Q) and Amazon (10-Q, S-4), and 'no filing explains it yet' only for Alphabet.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All three moves with index numbers, all three filings identified in plain words and linked, and 'no filing explains it yet' used correctly only for Alphabet. Compact, matches her style, no invented reasons.",
+   "answer": "Apple fell\u202f7.35% (S&P\u202f500 up\u202f0.72%); 10\u2011Q quarterly report\u202fhttps://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm  \nAmazon rose\u202f15.32% (S&P\u202f500 up\u202f0.72%); S\u20114 registration statement\u202fhttps://www.sec.gov/Archives/edgar/data/1018724/000110465926089294/tm2617924-1_s4.htm and 10\u2011Q quarterly report\u202fhttps://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm  \nAlphabet rose\u202f6.73% (S&P\u202f500 up\u202f0.72%); no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Wrongly says 'no filing explains it yet' for Apple when a 10-Q was filed that day per the evidence. Surfaces Amazon's filings but links none, instead citing a raw filename. Numbers themselves are correct.",
+   "answer": "Apple fell 7.35% while S&P 500 rose 0.72% \u2014 no filing explains it yet. Amazon rose 15.32% while S&P 500 rose 0.72% \u2014 an S-4 filing was made (tm2617924-1_s4.htm); a 10-Q was also filed. Alphabet rose 6.73% while S&P 500 rose 0.72% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Gets the three moves vs the index right, but claims 'no filing explains it yet' for Apple and Amazon despite same-day 10-Qs in the evidence, and omits the filings entirely \u2014 material news she asked for. No links anywhere.",
+   "answer": "Apple fell 7.35% vs S&P 500 rose 0.72% no filing explains it yet\nAmazon rose 15.32% vs S&P 500 rose 0.72% no filing explains it yet\nAlphabet rose 6.73% vs S&P 500 rose 0.72% no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All three moves with index comparisons, same-day filings noted in plain words with correct links, 10-Q appropriately foregrounded over the S-4 for Amazon, and Alphabet correctly marked unexplained. No invented reasons, no advice.",
+   "answer": "Apple: fell 7.35% while the S&P 500 rose 0.72% \u2014 its quarterly report (10-Q) was filed the same day: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm\nAmazon: rose 15.32% while the S&P 500 rose 0.72% \u2014 quarterly report (10-Q) filed: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm ; also filed an S-4 registration statement: https://www.sec.gov/Archives/edgar/data/1018724/000110465926089294/tm2617924-1_s4.htm\nAlphabet: rose 6.73% while the S&P 500 rose 0.72% \u2014 no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 2010,
+  "output": 6023
+ }
+}

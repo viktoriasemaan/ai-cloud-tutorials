@@ -1,0 +1,28 @@
+{
+ "day": "2026-01-13",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Broadcom (AVGO): filed an 8-K (current-events report, items 8.01 and 9.01 \u2014 other events) \u2014 https://www.sec.gov/Archives/edgar/data/1730168/000119312526011731/d104560d8k.htm",
+ "silent": false,
+ "run_seconds": 28.0,
+ "model_calls": 2,
+ "input_tokens": 9314,
+ "output_tokens": 1633,
+ "cost_usd": 0.002385,
+ "model_seconds": 23.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-01-13",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526011731/d104560d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T12:58:27.922570-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_12-58-55.md"
+}

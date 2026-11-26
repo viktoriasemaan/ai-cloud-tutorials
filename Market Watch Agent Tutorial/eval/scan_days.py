@@ -15,6 +15,9 @@ ap.add_argument("--end", help="last day to include (YYYY-MM-DD); default: the la
 a = ap.parse_args()
 
 closes = json.loads((ROOT / "data" / "cache" / "prices" / "SPY.json").read_text())["closes"]
+hist = ROOT / "data" / "cache" / "history" / "SPY.json"   # older days, if the fine-tuning tutorial downloaded them
+if hist.exists():
+    closes = {**json.loads(hist.read_text())["closes"], **closes}
 days = [d for d in sorted(closes) if not a.end or d <= a.end][-a.days:]
 kinds, forms, skipped, wake = collections.Counter(), collections.Counter(), collections.Counter(), 0
 for d in days:

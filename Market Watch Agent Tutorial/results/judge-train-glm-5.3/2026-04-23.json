@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-23",
+ "ideal": "One line on the Tesla 10-Q (the quarterly report, which she explicitly wants), link included, no mention of the routine 13G/A. Alerting is correct here \u2014 silence would be wrong.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Clean, plain-words one-liner on the 10-Q with the correct link; the routine 13G/A correctly left out.",
+   "answer": "Tesla: quarterly report filed https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 4,
+   "note": "'Q1 2026' goes beyond the evidence (only the filing date and the 20260331 URL are given), which brushes against the rule that every number must come from the report. Otherwise accurate and short.",
+   "answer": "Tesla (TSLA) \u2014 filed a 10-Q quarterly report for Q1 2026 (period ending March 31). Link: https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Short, accurate, links the 10-Q and calls it a quarterly filing; correctly skips the 13G/A.",
+   "answer": "Tesla: 10-Q quarterly filing (https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm)"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "The 10-Q line is fine, but the extra line about the 13G/A is exactly the routine fund-holding paperwork she said she doesn't want to hear about, even if framed as not worth flagging.",
+   "answer": "Tesla filed its 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm\n(The day's other Tesla filing, a Schedule 13G/A, is routine fund-holding paperwork \u2014 no need to flag.)"
+  }
+ ],
+ "judge_usage": {
+  "input": 1248,
+  "output": 4635
+ }
+}

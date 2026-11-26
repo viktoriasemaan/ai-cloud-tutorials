@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-10",
+ "ideal": "Alert: NVIDIA fell 5.47% while the S&P 500 fell 0.37% (5.11 pts worse than the index); no filing explains it yet.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Correct, complete and terse, though the grammar is a bit clipped.",
+   "answer": "NVIDIA fell 5.47% vs S&P 500 fell 0.37%, underperformed by 5.11 pts, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct, complete and reads most plainly, with the index alongside and the gap stated.",
+   "answer": "NVIDIA fell 5.47% while the S&P 500 fell 0.37%, underperforming by 5.11 percentage points. No filing explains it yet."
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate, but it leaves out the 5.11-point gap versus the index and the phrasing is awkward.",
+   "answer": "NVIDIA fell 5.47% vs S&P\u202f500 slid 0.37% \u2014 no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 2419,
+  "output": 331
+ }
+}

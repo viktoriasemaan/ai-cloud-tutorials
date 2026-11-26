@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-28",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Berkshire Hathaway rose\u202f3.06\u202f% (S&P\u202f500 up\u202f0.24\u202f%); no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 3562,
+ "output_tokens": 423,
+ "cost_usd": 0.000179,
+ "model_seconds": 2.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-07-28",
+   "close": 512.37,
+   "stock_pct": 3.06,
+   "index_pct": 0.24,
+   "vs_index_pts": 2.82,
+   "threshold_pts": 2.45,
+   "typical_daily_gap_pts": 1.23
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:22:59.420227-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-23-05.md"
+}

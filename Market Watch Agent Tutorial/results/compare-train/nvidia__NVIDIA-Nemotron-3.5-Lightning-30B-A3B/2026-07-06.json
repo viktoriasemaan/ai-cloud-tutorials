@@ -1,0 +1,40 @@
+{
+ "day": "2026-07-06",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Tesla rose 6.69% vs S&P 0.87% no filing explains it yet\nBroadcom 8-K filing: other events https://www.sec.gov/Archives/edgar/data/1730168/000119312526295589/d84378d8k.htm",
+ "silent": false,
+ "run_seconds": 14.2,
+ "model_calls": 1,
+ "input_tokens": 3471,
+ "output_tokens": 3801,
+ "cost_usd": 0.001003,
+ "model_seconds": 10.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-06",
+   "close": 419.77,
+   "stock_pct": 6.69,
+   "index_pct": 0.87,
+   "vs_index_pts": 5.82,
+   "threshold_pts": 5.16,
+   "typical_daily_gap_pts": 2.58
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-07-06",
+   "form": "8-K",
+   "items": "8.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526295589/d84378d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:23:59.470495-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-24-13.md"
+}

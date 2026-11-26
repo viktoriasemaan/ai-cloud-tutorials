@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-16",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Alphabet (GOOGL) fell 4.44% on 2026-07-16 while the S&P 500 fell 0.54% \u2014 a 3.9-point gap versus the index, and no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4005,
+ "output_tokens": 876,
+ "cost_usd": 0.000615,
+ "model_seconds": 3.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-07-16",
+   "close": 354.46,
+   "stock_pct": -4.44,
+   "index_pct": -0.54,
+   "vs_index_pts": -3.9,
+   "threshold_pts": 3.83,
+   "typical_daily_gap_pts": 1.91
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:18:06.470291-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-18-12.md"
+}

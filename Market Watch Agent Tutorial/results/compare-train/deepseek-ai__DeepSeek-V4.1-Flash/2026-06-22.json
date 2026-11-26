@@ -1,0 +1,41 @@
+{
+ "day": "2026-06-22",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Amazon fell 4.75% while the S&P 500 fell 0.31% \u2014 no filing explains it yet.\nAlphabet fell 4.99% while the S&P 500 fell 0.31% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.4,
+ "model_calls": 2,
+ "input_tokens": 9351,
+ "output_tokens": 1072,
+ "cost_usd": 0.000799,
+ "model_seconds": 4.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-06-22",
+   "close": 232.79,
+   "stock_pct": -4.75,
+   "index_pct": -0.31,
+   "vs_index_pts": -4.43,
+   "threshold_pts": 2.98,
+   "typical_daily_gap_pts": 1.49
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-22",
+   "close": 349.68,
+   "stock_pct": -4.99,
+   "index_pct": -0.31,
+   "vs_index_pts": -4.67,
+   "threshold_pts": 3.6,
+   "typical_daily_gap_pts": 1.8
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:16:01.646836-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-16-09.md"
+}

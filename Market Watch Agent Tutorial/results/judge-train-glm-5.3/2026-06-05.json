@@ -1,0 +1,59 @@
+{
+ "day": "2026-06-05",
+ "ideal": "BRK-B move vs index (big gap, no filing), MSFT 8-K exec change, GOOGL 8-K material agreement/shareholder rights/charter change, GOOGL 8-K exec change; skip the 8-A12B (routine listing-style registration) and DEFA14A (proxy material). Max 5 lines.",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Correctly alerts on BRK-B and MSFT; skips the 8-A12B and DEFA14A noise. But it folds 'executive or director change' into the Alphabet 8-K whose items are 1.01/3.03/5.03/9.01 \u2014 that item belongs to the *other* Alphabet 8-K \u2014 and never separately reports that second filing. Mislabels one filing's contents and drops one.",
+   "answer": "Berkshire Hathaway rose 1.98% while the S&P\u202f500 fell\u202f2.58%; no filing explains it yet  \nMicrosoft filed an 8\u2011K (executive or director change) https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm  \nAlphabet filed an 8\u2011K (material agreement, shareholder\u2011rights change, charter amendment, executive or director change) https://www.sec.gov/Archives/edgar/data/1652044/000119312526259830/d36818d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All three alert-worthy filings, each on its own line with the correct link and correct contents; BRK-B line gives the move with the index and 'no filing explains it yet'; 4.57-pt outperformance is straight from the report. Omits the routine 8-A12B and DEFA14A. Numbers all sourced, no advice.",
+   "answer": "Berkshire Hathaway rose 1.98% while the S&P 500 fell 2.58%, outperforming by 4.57 percentage points \u2014 no filing explains it yet.\nMicrosoft filed an 8-K reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm\nAlphabet filed an 8-K covering a material agreement, a change to shareholder rights, and amendments to bylaws/charter: https://www.sec.gov/Archives/edgar/data/1652044/000119312526259830/d36818d8k.htm\nAlphabet also filed an 8-K reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000059/goog-20260602.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 2,
+   "clarity": 4,
+   "overall": 2,
+   "note": "BRK-B line is fine, but the Alphabet line describes the material-agreement/shareholder-rights/charter 8-K while linking the *executive-change* filing (goog-20260602.htm) \u2014 she clicks and sees the wrong document. Also drops the Microsoft 8-K and the Alphabet exec change entirely.",
+   "answer": "Berkshire Hathaway rose 1.98% vs S&P 500 fell 2.58% (4.57 pt diff). No filing explains it yet.\nAlphabet 8-K: entered material agreement; change to shareholder rights; bylaws or charter amended. https://www.sec.gov/Archives/edgar/data/1652044/000165204426000059/goog-20260602.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Covers everything that matters in 3 lines: BRK-B with the index and the 4.57-pt gap, Microsoft 8-K in plain words with the right link, and both Alphabet 8-Ks with their correct contents and both links. 'Amended bylaws' slightly narrows 'bylaws or charter amended,' and the two links at line-end force a small guess about which is which, but nothing is invented and the noise filings are excluded.",
+   "answer": "Berkshire Hathaway rose 1.98% while the S&P 500 fell 2.58% \u2014 a 4.57-point divergence, no filing explains it yet.\nMicrosoft filed a current-events report (8-K): an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm\nAlphabet filed current-events reports (8-K): a material agreement with a change to shareholder rights and amended bylaws, plus an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000119312526259830/d36818d8k.htm and https://www.sec.gov/Archives/edgar/data/1652044/000165204426000059/goog-20260602.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2132,
+  "output": 4671
+ }
+}

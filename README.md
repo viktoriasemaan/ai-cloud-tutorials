@@ -32,9 +32,9 @@ system, and check each new version before it ships. Production AI runs as a loop
 |---|---|---|---|
 | **1. Run** | a model or agent answers real requests | Serverless Inference, Dedicated Inference, Sandboxes | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): open models answer only when something happened |
 | **2. Observe** | every run is traced, so you see a failure before your users do | Agent Lens | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): a trace of every run, with its prompt, answer, time and cost |
-| **3. Curate** | failed and good runs are labeled and become datasets | Agent Lens tags and datasets | coming in a later project |
-| **4. Improve** | you fix the prompt or the harness first, then train the model's weights | Serverless SFT, Serverless RL, Model Distillation | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): prompt fixes found by the judges. Training comes in a later project |
-| **5. Evaluate** | a new version ships only after it passes your own tests | Agent Lens Insights, ARIA, your own AI judges | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): two AI judges score five models before one is chosen |
+| **3. Curate** | failed and good runs are labeled and become datasets | Agent Lens tags and datasets | [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): an AI judge keeps the best answers from four open models as 243 training examples |
+| **4. Improve** | you fix the prompt or the harness first, then train the model's weights | Serverless SFT, Serverless RL, Model Distillation | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): prompt fixes found by the judges. [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): a LoRA adapter trained on Serverless SFT |
+| **5. Evaluate** | a new version ships only after it passes your own tests | Agent Lens Insights, ARIA, your own AI judges | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): two AI judges score five models before one is chosen. [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): the same judges compare the base and fine-tuned models on 38 days they never saw |
 
 You don't need all five stages on day one. Start with one job, such as serving an open model, and add the next stage
 when you need it. Because each stage feeds the next, every new version starts from what the last one learned.
@@ -54,6 +54,19 @@ top 3, and the agent costs less than $1 a month to run.
 **Skills:** Always-On Agents • Hermes Agent • AI Gateway • Serverless Inference • Agent Lens • AI Judges • Prompt Injection Defense
 
 ![24/7 Market Watch Agent: how it works and where it runs](./Market%20Watch%20Agent%20Tutorial/visuals/where-it-runs.gif)
+
+### 🎯 [Fine-Tune an Open Model Tutorial](./Fine-Tune%20an%20Open%20Model%20Tutorial/)
+Make the market agent's open model better at its one job. Four open models answer 121 past market days, an **AI judge**
+keeps the best answers as 243 training examples, and **CoreWeave Serverless SFT** trains a 1.9 MB **LoRA adapter** on
+Nemotron 3.5 Lightning in about 9 minutes. CoreWeave hosts the adapter right away, so the agent only switches its model
+name. On 38 market days the model never saw, its wrong calls dropped from 5 to 2 and each run became three times
+cheaper. The training cost $0.57.
+
+**Stages:** Curate • Improve • Evaluate
+
+**Skills:** Fine-Tuning • LoRA • Serverless SFT • Synthetic Training Data • AI Judges • Model Evaluation
+
+![Fine-tuning explained: collect good examples, keep the base model, train an adapter, serve it, test before you switch](./Fine-Tune%20an%20Open%20Model%20Tutorial/visuals/fine-tuning-explained.gif)
 
 *More projects coming soon...*
 

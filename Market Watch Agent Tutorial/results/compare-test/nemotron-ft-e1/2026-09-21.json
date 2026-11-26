@@ -1,0 +1,43 @@
+{
+ "day": "2026-09-21",
+ "model": "nemotron-ft-e1",
+ "answer": "Meta Platforms rose 11.34% while the S&P 500 rose 1.55% \u2014 a 9.79\u2011point gap that outstrips the 5.58\u2011point threshold, no filing explains it yet.\n\nBerkshire Hathaway fell 1.52% while the S&P 500 rose 1.55% \u2014 a 3.07\u2011point gap that outstrips the 2.42\u2011point threshold, no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 2,
+ "input_tokens": 3453,
+ "output_tokens": 115,
+ "cost_usd": 0.000265,
+ "model_seconds": 2.8,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-2731f0b4-fcc9-43f3-8b5f-053fc20b8b6c\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"Meta\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666158,\\\"model\\\":\\\"nvidia/NVI"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-09-21",
+   "close": 741.25,
+   "stock_pct": 11.34,
+   "index_pct": 1.55,
+   "vs_index_pts": 9.79,
+   "threshold_pts": 5.58,
+   "typical_daily_gap_pts": 2.79
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-21",
+   "close": 502.01,
+   "stock_pct": -1.52,
+   "index_pct": 1.55,
+   "vs_index_pts": -3.07,
+   "threshold_pts": 2.42,
+   "typical_daily_gap_pts": 1.21
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T20:09:15.333304-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_20-09-21.md"
+}

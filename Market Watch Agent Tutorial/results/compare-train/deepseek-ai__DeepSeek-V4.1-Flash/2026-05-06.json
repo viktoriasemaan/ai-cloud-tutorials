@@ -1,0 +1,29 @@
+{
+ "day": "2026-05-06",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA rose 5.77% while the S&P 500 rose 1.39% \u2014 the biggest gap on the watchlist that day, and no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4036,
+ "output_tokens": 767,
+ "cost_usd": 0.000532,
+ "model_seconds": 3.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-06",
+   "close": 207.83,
+   "stock_pct": 5.77,
+   "index_pct": 1.39,
+   "vs_index_pts": 4.38,
+   "threshold_pts": 3.47,
+   "typical_daily_gap_pts": 1.73
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:10:44.581038-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-10-50.md"
+}

@@ -1,0 +1,42 @@
+{
+ "day": "2026-08-28",
+ "model": "nemotron-ft-e1",
+ "answer": "NVIDIA fell 4.57% against the S&P 500 index falling 0.23%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 5.7,
+ "model_calls": 2,
+ "input_tokens": 3441,
+ "output_tokens": 32,
+ "cost_usd": 0.000247,
+ "model_seconds": 1.7,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-3af96526-0854-483b-b7ec-582a96e2d54e\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"N\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666040,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-28",
+   "close": 217.55,
+   "stock_pct": -4.57,
+   "index_pct": -0.23,
+   "vs_index_pts": -4.35,
+   "threshold_pts": 4.34,
+   "typical_daily_gap_pts": 2.17
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-08-28",
+   "form": "N-PX",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526374341/xslN-PX_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T20:07:18.894352-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_20-07-24.md"
+}

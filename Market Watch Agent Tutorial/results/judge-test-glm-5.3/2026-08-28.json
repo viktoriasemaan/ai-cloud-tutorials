@@ -1,0 +1,47 @@
+{
+ "day": "2026-08-28",
+ "ideal": "One-line alert for NVIDIA: fell 4.57% vs the S&P 500's -0.23%, gap of 4.35 pts just cleared the 4.34 pt threshold (double the typical 2.17), no filing that day explains it. The Alphabet N-PX is a routine proxy-voting/paperwork filing she explicitly doesn't want, so it should be omitted.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Alerts the threshold-crossing NVIDIA move with correct signs and sizes, includes the required 'no filing explains it yet', and correctly skips the routine N-PX.",
+   "answer": "[NVDA] NVIDIA fell 4.57% vs S&P 500 fell 0.23%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Same correct facts and correct omission of the N-PX, but the phrasing 'against the S&P 500 index falling 0.23%' is a bit clunkier than A's cleaner line.",
+   "answer": "NVIDIA fell 4.57% against the S&P 500 index falling 0.23%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 1,
+   "clarity": 1,
+   "overall": 1,
+   "note": "Silence was wrong: NVIDIA's -4.35 pt gap vs the index crossed the 4.34 pt threshold and is about double its typical daily gap \u2014 exactly the move she wants to hear about.",
+   "answer": "[ SILENT ]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1065,
+  "output": 2121
+ }
+}

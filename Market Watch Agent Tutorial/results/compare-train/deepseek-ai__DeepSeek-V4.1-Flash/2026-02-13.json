@@ -1,0 +1,39 @@
+{
+ "day": "2026-02-13",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Alphabet (GOOGL): filed a current-events report (8-K, item 8.01 other events) \u2014 the only non-routine filing on the watchlist that day: https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm",
+ "silent": false,
+ "run_seconds": 9.9,
+ "model_calls": 1,
+ "input_tokens": 4137,
+ "output_tokens": 2197,
+ "cost_usd": 0.001474,
+ "model_seconds": 6.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-13",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-13",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000023/xslForm13F_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:01:57.562352-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-02-07.md"
+}

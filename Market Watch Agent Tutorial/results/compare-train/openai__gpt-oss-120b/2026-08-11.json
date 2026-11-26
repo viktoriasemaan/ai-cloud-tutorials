@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-11",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Berkshire Hathaway (BRK-B): 8\u2011K current\u2011events report (earnings) https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm",
+ "silent": false,
+ "run_seconds": 6.4,
+ "model_calls": 1,
+ "input_tokens": 3586,
+ "output_tokens": 469,
+ "cost_usd": 0.000187,
+ "model_seconds": 3.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-08-11",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:24:37.079183-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-24-43.md"
+}

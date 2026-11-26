@@ -1,0 +1,61 @@
+{
+ "day": "2026-01-28",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Earnings day for three on your watchlist (Jan 28):\n\n- Microsoft: quarterly report (10-Q) plus an earnings 8-K out \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm (10-Q: https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm)\n- Meta Platforms: earnings 8-K \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm\n- Tesla: earnings 8-K \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/tsla-20260128.htm\n- No unusual price moves flagged in the report, so no index comparisons to give.",
+ "silent": false,
+ "run_seconds": 8.0,
+ "model_calls": 3,
+ "input_tokens": 14607,
+ "output_tokens": 890,
+ "cost_usd": 0.000773,
+ "model_seconds": 3.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-28",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-01-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/tsla-20260128.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T12:59:48.008554-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_12-59-55.md"
+}

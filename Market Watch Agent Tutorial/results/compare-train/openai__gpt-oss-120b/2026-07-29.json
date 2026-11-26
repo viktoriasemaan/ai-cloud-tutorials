@@ -1,0 +1,50 @@
+{
+ "day": "2026-07-29",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft: 10\u2011K annual report, https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm  \nMicrosoft: 8\u2011K earnings report, https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm  \nMeta Platforms: 8\u2011K earnings report, https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 3800,
+ "output_tokens": 570,
+ "cost_usd": 0.000211,
+ "model_seconds": 3.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-07-29",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-07-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-07-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:23:10.086625-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-23-16.md"
+}

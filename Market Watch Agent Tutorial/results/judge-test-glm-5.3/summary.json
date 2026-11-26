@@ -1,0 +1,38 @@
+[
+ {
+  "model": "nemotron-ft-e3",
+  "days": 38,
+  "right_decision": "36/38",
+  "picked_best": 22,
+  "overall": 4.26,
+  "coverage": 4.53,
+  "no_noise": 4.71,
+  "accuracy": 4.5,
+  "clarity": 4.39,
+  "accuracy_below_4": 5
+ },
+ {
+  "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+  "days": 38,
+  "right_decision": "33/38",
+  "picked_best": 12,
+  "overall": 4.03,
+  "coverage": 4.13,
+  "no_noise": 4.84,
+  "accuracy": 4.47,
+  "clarity": 4.21,
+  "accuracy_below_4": 6
+ },
+ {
+  "model": "nemotron-ft-e1",
+  "days": 38,
+  "right_decision": "31/38",
+  "picked_best": 4,
+  "overall": 3.47,
+  "coverage": 3.89,
+  "no_noise": 4.18,
+  "accuracy": 3.84,
+  "clarity": 3.84,
+  "accuracy_below_4": 12
+ }
+]

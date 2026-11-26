@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-28",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Berkshire Hathaway (BRK-B) closed at 512.37, up 3.06% while the S&P 500 rose 0.24%; no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 22.4,
+ "model_calls": 2,
+ "input_tokens": 8671,
+ "output_tokens": 1515,
+ "cost_usd": 0.002215,
+ "model_seconds": 19.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-07-28",
+   "close": 512.37,
+   "stock_pct": 3.06,
+   "index_pct": 0.24,
+   "vs_index_pts": 2.82,
+   "threshold_pts": 2.45,
+   "typical_daily_gap_pts": 1.23
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:25:01.742839-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-25-23.md"
+}

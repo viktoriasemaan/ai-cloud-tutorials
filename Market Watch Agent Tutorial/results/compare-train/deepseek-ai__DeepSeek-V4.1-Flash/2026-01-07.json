@@ -1,0 +1,29 @@
+{
+ "day": "2026-01-07",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Eli Lilly rose 4.14% while the S&P 500 fell 0.32% \u2014 a 4.46-point divergence, well past the 3.56-point threshold. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4029,
+ "output_tokens": 663,
+ "cost_usd": 0.000955,
+ "model_seconds": 2.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-07",
+   "close": 1108.09,
+   "stock_pct": 4.14,
+   "index_pct": -0.32,
+   "vs_index_pts": 4.46,
+   "threshold_pts": 3.56,
+   "typical_daily_gap_pts": 1.78
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T12:57:55.059058-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_12-58-01.md"
+}

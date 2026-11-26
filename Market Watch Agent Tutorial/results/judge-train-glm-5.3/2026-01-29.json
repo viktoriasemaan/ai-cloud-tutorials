@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-29",
+ "ideal": "Raise scores across the board and keep best=A \u2014 this was an exceptionally active evidence day with two 10pt single-stock gaps vs a flat index plus three substantive filings, so nearly every candidate answer already does solid work on the only choices that really mattered.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All five events delivered: both big moves with index beside them, Apple's earnings 8-K and both 10-Ks, all in plain words. The two judged calls \u2014 guessing Meta filed at 08:00 before the close for a +10.4% print, and treating Apple 'quarterly or annual results' as earnings \u2014 are the right reads of ambiguous evidence.",
+   "answer": "Microsoft fell 9.99% on a day the S&P 500 fell 0.2% \u2014 no filing explains it yet.\nMeta rose 10.4% on a day the S&P 500 fell 0.2% \u2014 no filing explains it yet.\nApple filed its quarterly results (8-K): https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/aapl-20260129.htm\nMeta and Tesla filed their annual 10-K reports: https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm \u00b7 https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Faultless on the price moves, with index context and an honest 'no filing explains it yet' (the Meta 10-K is an annual report, not a same-day price driver and A already explains why). But it drops Apple's earnings 8-K and the two 10-Ks \u2014 exactly the material filings she says she wants \u2014 so completeness sustains the main penalty.",
+   "answer": "Microsoft fell 9.99% vs S&P 500 fell 0.2%, no filing explains it yet\nMeta rose 10.4% vs S&P 500 fell 0.2%, no filing explains it yet"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 4,
+   "note": "Covers everything and every number matches. Two genuine faults: the Meta line juxtaposes the 10-K with the +10.4% move in a way that asks to be read as cause when a 10-K alone does not explain a jump, and it never says anything about earnings for Apple while formatting the index as '-0.2%' with a raw minus sign instead of the words she asked for.",
+   "answer": "Microsoft fell 9.99% vs S&P\u202f500 -0.2%; no filing explains it yet  \nMeta Platforms rose 10.4% vs S&P\u202f500 -0.2%; 10\u2011K filing (annual report) https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm  \nApple 8\u2011K filing (earnings) https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/aapl-20260129.htm  \nTesla 10\u2011K filing (annual report) https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 3,
+   "accuracy": 4,
+   "clarity": 2,
+   "overall": 3,
+   "note": "The 'nearly 10 percentage points' read survives scrutiny as a fair rounding of vs_index_pts -9.79 rather than an invented number, and calling out Apple's 8-K as having no price move is useful. But it loses Meta's filing link, drops Tesla's 10-K entirely, and leans into editorial flourish ('massive') over her preferred bare numbers.",
+   "answer": "**Microsoft** dropped 9.99%, while the S&P 500 fell 0.2% \u2014 a massive underperformance of nearly 10 percentage points. No filing explains it yet.\n\n**Meta** surged 10.4%, vs. the S&P 500 down 0.2%. A 10-K (annual report) was filed the same day.\n\n**Apple** filed an 8-K reporting quarterly/annual earnings results. No price move in the report."
+  }
+ ],
+ "judge_usage": {
+  "input": 1843,
+  "output": 6778
+ }
+}

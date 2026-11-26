@@ -1,0 +1,10 @@
+{
+ "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "name": "market-alerts-sft-e1",
+ "project": "market-watch-agent",
+ "step": 1,
+ "inference_name": "wandb-artifact:///vsemaan-cloudup-one/market-watch-agent/market-alerts-sft-e1-run",
+ "epochs": 1,
+ "examples": 243,
+ "wall_seconds": 338.3
+}

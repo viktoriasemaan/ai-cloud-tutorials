@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-20",
+ "ideal": "Alert needed: NVDA's earnings 8-K and 10-Q are exactly the material news she asked for; the LLY 8-K (other events, no details) is an 8-K from a watchlist company and belongs too. One line per company, plain filing descriptions, links, no invented numbers.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Covers all three filings, correctly flags the NVDA 8-K as earnings, honestly notes LLY has no details. One line per company matches the style rule; only knock is slightly chatty phrasing ('the kind of news you watch').",
+   "answer": "NVIDIA filed its quarterly report (10-Q) plus a current-events report (8-K) with quarterly results \u2014 earnings, the kind of news you watch: 10-Q https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm \u00b7 8-K https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm\nEli Lilly filed an 8-K reporting other events (no details in the filing summary): https://www.sec.gov/Archives/edgar/data/59478/000119312526232707/d148580d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Solid on NVDA with both links, but drops the Eli Lilly 8-K entirely \u2014 a wanted filing type from a watchlist company. 'Items 2.02/9.01' is jargon she didn't ask for; 'quarter ending April 26' is inferred from the URL so borderline acceptable.",
+   "answer": "NVIDIA (NVDA) filed a quarterly earnings report (8-K, items 2.02/9.01) and the corresponding quarterly report (10-Q) for its quarter ending April 26. 8-K: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm \u2014 10-Q: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "All three filings, accurate plain descriptions, links, clean and scannable. Uses two lines for one company (NVDA), a minor style deviation, and gives slightly less 'why it matters' context than A.",
+   "answer": "NVIDIA \u2013 filed an 8\u2011K (current\u2011events earnings report): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm  \nNVIDIA \u2013 filed a 10\u2011Q (quarterly report): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm  \nEli\u202fLilly \u2013 filed an 8\u2011K (other events): https://www.sec.gov/Archives/edgar/data/59478/000119312526232707/d148580d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Gets the headline (NVDA earnings) out, but mentions the 10-Q without linking it and drops the Eli Lilly 8-K entirely. Ticker-only label and bare list feel thin for what she asked for.",
+   "answer": "NVDA: 8-K earnings and 10-Q quarterly report filed 2026-05-20; https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1656,
+  "output": 5779
+ }
+}

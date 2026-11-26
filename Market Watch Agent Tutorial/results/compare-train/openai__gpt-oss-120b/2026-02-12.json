@@ -1,0 +1,40 @@
+{
+ "day": "2026-02-12",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple fell 5.0% while S&P\u202f500 fell 1.54%; no filing explains it yet  \nEli\u202fLilly filed a 10\u2011K (annual report) https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+ "silent": false,
+ "run_seconds": 7.8,
+ "model_calls": 1,
+ "input_tokens": 3685,
+ "output_tokens": 557,
+ "cost_usd": 0.000205,
+ "model_seconds": 5.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-12",
+   "close": 261.73,
+   "stock_pct": -5.0,
+   "index_pct": -1.54,
+   "vs_index_pts": -3.45,
+   "threshold_pts": 2.18,
+   "typical_daily_gap_pts": 1.09
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-12",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:03:01.724825-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-03-09.md"
+}

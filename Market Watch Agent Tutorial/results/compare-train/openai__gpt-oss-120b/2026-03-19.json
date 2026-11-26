@@ -1,0 +1,28 @@
+{
+ "day": "2026-03-19",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 4.2,
+ "model_calls": 1,
+ "input_tokens": 3589,
+ "output_tokens": 158,
+ "cost_usd": 0.000135,
+ "model_seconds": 1.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-03-19",
+   "form": "8-A12B",
+   "items": "",
+   "what_it_is": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926031805/tm266670d10_8a12b.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:07:31.816741-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-07-35.md"
+}

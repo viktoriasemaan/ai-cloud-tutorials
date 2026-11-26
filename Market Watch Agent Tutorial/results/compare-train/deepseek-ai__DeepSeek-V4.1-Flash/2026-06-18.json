@@ -1,0 +1,39 @@
+{
+ "day": "2026-06-18",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 9.8,
+ "model_calls": 3,
+ "input_tokens": 14670,
+ "output_tokens": 1550,
+ "cost_usd": 0.001145,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-06-18",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-18",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526275077/d149683d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:15:47.559672-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-15-57.md"
+}

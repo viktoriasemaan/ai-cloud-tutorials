@@ -1,0 +1,40 @@
+{
+ "day": "2026-05-14",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Broadcom (AVGO) rose 5.52% on May 14 while the S&P 500 rose 0.79% \u2014 a 4.73-point gap, well past the 4.11-point trigger; no filing explains it yet.\n\nMicrosoft (MSFT) filed an 8-K, a current-events report, on an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm",
+ "silent": false,
+ "run_seconds": 8.5,
+ "model_calls": 1,
+ "input_tokens": 4136,
+ "output_tokens": 1634,
+ "cost_usd": 0.001108,
+ "model_seconds": 4.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-05-14",
+   "close": 439.79,
+   "stock_pct": 5.52,
+   "index_pct": 0.79,
+   "vs_index_pts": 4.73,
+   "threshold_pts": 4.11,
+   "typical_daily_gap_pts": 2.06
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-05-14",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:11:55.337632-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-12-03.md"
+}

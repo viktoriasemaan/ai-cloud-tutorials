@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-18",
+ "ideal": "One event: a PX14A6G filing by Alphabet \u2014 a notice of exempt solicitation, i.e., routine proxy paperwork she explicitly said she doesn't want. No price move, no material filing. The right answer is [SILENT].",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "[SILENT] was correct \u2014 PX14A6G is routine proxy paperwork she asked not to hear about.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 1,
+   "accuracy": 1,
+   "clarity": 3,
+   "overall": 1,
+   "note": "Alerted on exactly the routine proxy paperwork she doesn't want, and mischaracterizes the form \u2014 a PX14A6G is a notice of exempt solicitation, not a 'prospectus supplement' (a fabricated description, plus no plain-words explanation of what it is).",
+   "answer": "Alphabet filed a prospectus supplement (PX14A6G) \u2013 https://www.sec.gov/Archives/edgar/data/1652044/000121465926006524/d518261px14a6g.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "[SILENT] was correct.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "[SILENT] was correct.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 978,
+  "output": 3922
+ }
+}

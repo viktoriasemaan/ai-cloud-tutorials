@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-16",
+ "ideal": "Two events: Berkshire's unusual day (rose 1.21% vs S&P 500 fell 1.11%, a 2.31-pt gap over the ~1.12-pt typical gap, well past the 2.25-pt alert bar, with nothing in the day's filings explaining it) and an Eli Lilly Schedule 13D \u2014 a beneficial-ownership report, i.e., a 5%+ stake disclosure, which is the kind of material filing she'd want named and linked, not the routine paperwork she dislikes. A correct alert covers both, uses only the given numbers, gets the signs/words right ('rose', 'fell'), labels the 13D correctly, links it, ends the Berkshire line with 'no filing explains it yet', and stays short with no advice.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both events covered. BRK line got the words right (rose 1.21%, S&P 500 fell 1.11%) with the 2.31-pt gap, closed with 'no filing explains it yet'. LLY line correctly calls the Schedule 13D a beneficial-ownership report and links it. All numbers from evidence, no invented reasons, no advice, short. Only a fine nit: '2.31pts no filing explains it yet' runs together without punctuation.",
+   "answer": "Berkshire Hathaway rose 1.21% vs S&P 500 fell 1.11%, outperformed by 2.31pts no filing explains it yet\nEli Lilly Schedule 13D: beneficial ownership report https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Berkshire line is excellent and adds the legit 1.12-pt typical-gap context from the report. But it mislabels the Schedule 13D as a 'current-events report' \u2014 that's the plain-words description of an 8-K, not a 13D \u2014 which could mislead her about what the filing is. Numbers all check out and the link is there.",
+   "answer": "Berkshire Hathaway rose 1.21% while the S&P 500 fell 1.11% \u2014 a 2.31-point gap that exceeds the typical 1.12-point gap; no filing explains it yet\nEli Lilly filed a Schedule 13D current-events report: https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 3,
+   "note": "The Berkshire line is accurate and clean, but it drops the day's second event entirely \u2014 the Eli Lilly Schedule 13D, a 5%+ beneficial-ownership disclosure that is material news on its face, not the routine paperwork she excludes. Half the day's newsworthy events are missing.",
+   "answer": "Berkshire Hathaway rose 1.21% vs S&P 500 fell 1.11% \u2013 no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1234,
+  "output": 5323
+ }
+}

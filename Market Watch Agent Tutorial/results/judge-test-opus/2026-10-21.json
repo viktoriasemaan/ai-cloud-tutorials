@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-21",
+ "ideal": "Alert with two lines: Tesla 8-K with quarterly earnings results (link) and Meta 8-K with earnings plus a material agreement and other events (link); skip Microsoft's proxy/annual report paperwork and Meta's PRE 14C.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Covers both earnings 8-Ks accurately with links, skips the proxy paperwork, though it could say more plainly why they matter.",
+   "answer": "Tesla: filed a current-events report (8-K) covering quarterly results (earnings) \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm\n\nMeta Platforms: filed a current-events report (8-K) including a material agreement, quarterly results, and other events \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Alerting was right, but it misses Tesla's earnings and leaves out that Meta's 8-K contains earnings.",
+   "answer": "Meta Platforms: entered a material agreement via 8-K (https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm)"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 3,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 1,
+   "note": "Staying silent misses two earnings releases she explicitly wants to hear about.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 3258,
+  "output": 383
+ }
+}

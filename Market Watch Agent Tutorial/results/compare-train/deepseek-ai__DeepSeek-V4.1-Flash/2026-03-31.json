@@ -1,0 +1,28 @@
+{
+ "day": "2026-03-31",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 4.3,
+ "model_calls": 1,
+ "input_tokens": 4014,
+ "output_tokens": 220,
+ "cost_usd": 0.000173,
+ "model_seconds": 1.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-31",
+   "form": "DFAN14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DFAN14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526133360/d111268ddfan14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:06:20.326298-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-06-24.md"
+}

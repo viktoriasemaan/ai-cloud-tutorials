@@ -1,0 +1,47 @@
+{
+ "day": "2026-08-27",
+ "ideal": "Alert: NVIDIA rose 8.74% while the S&P 500 rose 0.66% (8.08 points above the index, well past the usual gap); no filing explains it yet.",
+ "best_model": "nemotron-ft-e1",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Correct and concise, but it leaves out the 8.08-point gap versus the index.",
+   "answer": "NVIDIA rose 8.74% vs S&P 500's 0.66%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers the move, the index and the 8.08-point gap, and notes the reason is unknown, all plainly.",
+   "answer": "NVIDIA rose 8.74% vs S&P 500 0.66% \u2014 8.08 points above it, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Accurate and clear, with the index direction stated, but it omits the size of the gap versus the index.",
+   "answer": "NVIDIA rose 8.74% (S&P up 0.66%) \u2014 no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 2390,
+  "output": 344
+ }
+}

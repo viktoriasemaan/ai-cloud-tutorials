@@ -1,0 +1,65 @@
+{
+ "day": "2026-06-02",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Apple rose 2.9% vs S&P 500 0.14%, no filing explains it yet\nMicrosoft fell 4.17% vs S&P 500 0.14%, no filing explains it yet\nAlphabet fell 3.86% vs S&P 500 0.14%, no filing explains it yet\nBroadcom rose 4.7% vs S&P 500 0.14%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3704,
+ "output_tokens": 2405,
+ "cost_usd": 0.00074,
+ "model_seconds": 6.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-02",
+   "close": 315.2,
+   "stock_pct": 2.9,
+   "index_pct": 0.14,
+   "vs_index_pts": 2.77,
+   "threshold_pts": 2.18,
+   "typical_daily_gap_pts": 1.09
+  },
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-06-02",
+   "close": 441.31,
+   "stock_pct": -4.17,
+   "index_pct": 0.14,
+   "vs_index_pts": -4.31,
+   "threshold_pts": 3.4,
+   "typical_daily_gap_pts": 1.7
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-02",
+   "close": 361.85,
+   "stock_pct": -3.86,
+   "index_pct": 0.14,
+   "vs_index_pts": -3.99,
+   "threshold_pts": 3.4,
+   "typical_daily_gap_pts": 1.7
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-02",
+   "close": 481.57,
+   "stock_pct": 4.7,
+   "index_pct": 0.14,
+   "vs_index_pts": 4.56,
+   "threshold_pts": 4.21,
+   "typical_daily_gap_pts": 2.1
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:19:20.766959-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-19-30.md"
+}

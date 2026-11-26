@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-30",
+ "ideal": "Monitor 10 watchlist stocks and alert on meaningful moves versus S&P 500. Provide concise alerts with stock direction, magnitude, and index performance. Follow rules: no trading advice, no fabricated reasons (state 'no filing explains it yet'), avoid minor filings (proxy, holdings, notices). Requested: plain language, numbers showing pair data, only significant matters.",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Correct trigger flagged with company, plain-language form, and accurate link. The closing tag 'the one you asked to hear about' is mildly chatty and reads like a sign-off flourish; the plain, terse style calls for less padding. Solid otherwise.",
+   "answer": "Apple filed its quarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm \u2014 the quarterly results update you asked to hear about."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 1,
+   "clarity": 1,
+   "overall": 1,
+   "note": "Wrong call. Apple's quarterly report (10-Q) is a needed trigger, not trap noise. Staying silent misses the single useful item; the noise judgment on Schedule 13G/A (institutional holdings, correctly ignored by the others) doesn't rescue the blank.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Exactly what the style asks: one line, company, plain-language form ('quarterly report'), clean link, zero padding. Ignores the 13G/A correctly. No invented numbers or reasons.",
+   "answer": "Apple\u202f\u2014\u202ffiled a 10\u2011Q quarterly report\u202f[link](https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm)"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same clean single-line alert as C, plus the AAPL ticker, which matches the desk style. Plain-language form, source link, and strict silence on the noise-side 13G/A. No invented facts.",
+   "answer": "Apple (AAPL) filed a 10-Q quarterly report \u2014 https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1176,
+  "output": 4538
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "day": "2026-03-16",
+ "ideal": "The only event on her watchlist today is a new Amazon 8-K (items 8.01/9.01, other events plus exhibits) \u2014 a current-events report from a top-10 holding, which is exactly the filing type she asked to hear about. The right move is a one-line filing alert naming the form in plain words with the link. No price moves appear in the evidence, so any numbers or reasons would be invented.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly alerts on the day's only in-scope event. Says what the filing is in plain words (current-events report), links it, claims nothing the evidence doesn't show. Complies with all style rules.",
+   "answer": "Amazon filed a current\u2011events report (8\u2011K) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926028556/tm266670d9_8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Silence withholds the only event of the day \u2014 an 8-K from a watchlist company, a form she explicitly said she wants. No noise, but she learns nothing about a filing she'd want.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Same wrong silence as B: misses the only in-scope event, an 8-K on her watchlist that meets her stated bar.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Same wrong silence as B and C: the Amazon 8-K is material-news-type filing she asked for, not routine paperwork.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 991,
+  "output": 6304
+ }
+}

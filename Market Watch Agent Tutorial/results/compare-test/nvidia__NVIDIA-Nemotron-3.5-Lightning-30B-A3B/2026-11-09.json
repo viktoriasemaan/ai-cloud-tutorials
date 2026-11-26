@@ -1,0 +1,96 @@
+{
+ "day": "2026-11-09",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "NVIDIA fell 4.27% vs S&P 500 rose 2.37%, no filing explains it yet\nBroadcom rose 8.78% vs S&P 500 rose 2.37%, no filing explains it yet\nBerkshire Hathaway 8-K for quarterly or annual results (earnings)",
+ "silent": false,
+ "run_seconds": 12.7,
+ "model_calls": 1,
+ "input_tokens": 4190,
+ "output_tokens": 2662,
+ "cost_usd": 0.000826,
+ "model_seconds": 8.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-09",
+   "close": 178.67,
+   "stock_pct": -4.27,
+   "index_pct": 2.37,
+   "vs_index_pts": -6.64,
+   "threshold_pts": 4.1,
+   "typical_daily_gap_pts": 2.05
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-09",
+   "close": 319.48,
+   "stock_pct": 8.78,
+   "index_pct": 2.37,
+   "vs_index_pts": 6.41,
+   "threshold_pts": 4.55,
+   "typical_daily_gap_pts": 2.27
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-09",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-09",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526453698/d136896ddefa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-09",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-20261107.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-09",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-11-09",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926124575/tm267596d11_defa14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:17:26.777600-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-17-39.md"
+}

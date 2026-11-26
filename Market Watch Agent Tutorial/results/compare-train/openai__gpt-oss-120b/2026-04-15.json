@@ -1,0 +1,41 @@
+{
+ "day": "2026-04-15",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft rose 4.61% (S&P up 0.79%); no filing explains it yet  \nTesla rose 7.62% (S&P up 0.79%); no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3667,
+ "output_tokens": 323,
+ "cost_usd": 0.000165,
+ "model_seconds": 7.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-04-15",
+   "close": 411.22,
+   "stock_pct": 4.61,
+   "index_pct": 0.79,
+   "vs_index_pts": 3.82,
+   "threshold_pts": 3.77,
+   "typical_daily_gap_pts": 1.88
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-04-15",
+   "close": 391.95,
+   "stock_pct": 7.62,
+   "index_pct": 0.79,
+   "vs_index_pts": 6.83,
+   "threshold_pts": 3.72,
+   "typical_daily_gap_pts": 1.86
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:10:54.486133-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-11-04.md"
+}

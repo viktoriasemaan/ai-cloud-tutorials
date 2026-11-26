@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-21",
+ "ideal": "Alphabet (GOOGL) filed an 8-K, a current-events report, covering ",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 2,
+   "note": "She explicitly asked for 8-Ks among the filings she wants to hear about, and an Alphabet 8-K (items 8.01/9.01, 'other events') is the only event today. Nothing in the evidence shows it's routine paperwork from her exclusion list, so silence risks missing a filing she asked for. Clean and accurate as far as it goes, but the coverage call looks wrong.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Alerts on the right thing, in her style: short, plain, one line, with the link. 'Material filing' is a small editorial stretch the evidence doesn't state outright, and it skips the 'other events' nature and the fact there was no price move. Otherwise solid.",
+   "answer": "Alphabet filed an 8\u2011K current\u2011events report (material filing) \u2013 https://www.sec.gov/Archives/edgar/data/1652044/000119312526234488/d144566d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Right decision and accurate content, but it omits the link the rules require for filings, which is the main way she'd act on it. 'Items 8.01 and 9.01' is jargon without a plain-words gloss (9.01 is just the boilerplate exhibits item), and the '[ALERT]' header plus the meta 'no price move reported to contextualize it' add clutter.",
+   "answer": "[ALERT]\nAlphabet (GOOGL) filed an 8-K (current-events report) \u2014 items 8.01 and 9.01; no price move reported to contextualize it."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Best answer. One line: company and ticker, plain-words filing type ('8-K, a current-events report'), what it covers ('other events') with items, the useful note that no unusual price move was flagged, and the required link. Every fact comes from the evidence. 'The day's only watchlist item' is mild filler but harmless; it's slightly long yet still short and in her style.",
+   "answer": "Alphabet (GOOGL): filed an 8-K, a current-events report, covering other events (items 8.01, 9.01) \u2014 the day's only watchlist item, with no unusual price move flagged. https://www.sec.gov/Archives/edgar/data/1652044/000119312526234488/d144566d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1104,
+  "output": 4563
+ }
+}

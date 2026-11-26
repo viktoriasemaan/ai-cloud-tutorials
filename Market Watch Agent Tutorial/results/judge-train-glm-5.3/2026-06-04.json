@@ -1,0 +1,59 @@
+{
+ "day": "2026-06-04",
+ "ideal": "[SILENT]",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both events covered correctly: Broadcom's 12.59% drop set against the S&P's 0.38% rise, correctly flagged as unexplained by any filing; Alphabet's 8-K described by substance (material agreement, Reg FD) and linked. Short, accurate, no advice, no invented numbers.",
+   "answer": "Broadcom fell 12.59% vs S&P up 0.38%, no filing explains it yet  \nAlphabet filed an 8\u2011K (material agreement, Regulation FD disclosure) https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Both events covered with accurate numbers and a good plain phrasing of the Alphabet 8-K ('entered a material agreement'). Line 1 runs together with no punctuation between '0.38%' and 'no filing explains it yet', blurring the stock-vs-index contrast; the Reg FD element of the filing is dropped.",
+   "answer": "Broadcom fell 12.59% vs S&P 500 rose 0.38% no filing explains it yet\nAlphabet entered a material agreement via 8-K https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both events, correct numbers with the index next to them, correct 'no filing explains it yet' tag, filing linked with its substance (material agreement, Reg FD). Cleanest punctuation of the four; fully within her style.",
+   "answer": "Broadcom fell 12.59% while the S&P 500 rose 0.38%; no filing explains it yet.\nAlphabet filed an 8-K (material agreement and Reg FD disclosure): https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": false,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Covers both events with correct core numbers, but 'a roughly 13-point gap' is a rounded derivative of the -12.96 vs_index_pts rather than a reported figure, and 'Reg FD press-release disclosure' overstates the hedged evidence ('often a press release or presentation'). Line 1 is also wordier than her short style; '8-K current-events report' is a nice plain-words touch.",
+   "answer": "Broadcom fell 12.59% on June 4 while the S&P 500 rose 0.38% \u2014 a roughly 13-point gap with no filing that day, so no filing explains it yet.\nAlphabet filed an 8-K current-events report: a material agreement plus a Reg FD press-release disclosure \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1371,
+  "output": 4587
+ }
+}

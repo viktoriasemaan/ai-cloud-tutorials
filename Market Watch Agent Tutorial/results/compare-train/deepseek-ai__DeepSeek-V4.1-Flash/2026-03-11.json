@@ -1,0 +1,28 @@
+{
+ "day": "2026-03-11",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Broadcom: filed its quarterly report (10-Q) \u2014 earnings and results for the quarter. https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/avgo-20260201.htm",
+ "silent": false,
+ "run_seconds": 4.3,
+ "model_calls": 1,
+ "input_tokens": 4026,
+ "output_tokens": 457,
+ "cost_usd": 0.000329,
+ "model_seconds": 1.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-03-11",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/avgo-20260201.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:04:27.980691-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-04-32.md"
+}

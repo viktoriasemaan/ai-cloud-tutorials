@@ -1,0 +1,28 @@
+{
+ "day": "2026-06-10",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Amazon filed an 8-K (current-events report) \u2014 entered a material agreement and took on a material financial obligation.",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4154,
+ "output_tokens": 290,
+ "cost_usd": 0.000674,
+ "model_seconds": 3.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-06-10",
+   "form": "8-K",
+   "items": "1.01,2.03,9.01",
+   "what_it_is": "entered a material agreement; took on a material financial obligation",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:19:43.337551-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-19-49.md"
+}

@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-04",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Meta: 8-K current-events report (items 8.01 other events, 9.01 exhibits) \u2014 a same-day company disclosure. https://www.sec.gov/Archives/edgar/data/1326801/000119312526204128/d134616d8k.htm\n\nBerkshire Hathaway: 10-Q quarterly report \u2014 its latest quarterly results. https://www.sec.gov/Archives/edgar/data/1067983/000119312526202243/brka-20260331.htm\n\n(Amazon's DEFA14A is proxy material \u2014 skipped.)",
+ "silent": false,
+ "run_seconds": 14.3,
+ "model_calls": 5,
+ "input_tokens": 27656,
+ "output_tokens": 2900,
+ "cost_usd": 0.00227,
+ "model_seconds": 10.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-05-04",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926054974/tm261382d4_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-05-04",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526204128/d134616d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-05-04",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526202243/brka-20260331.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:10:17.933349-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-10-32.md"
+}

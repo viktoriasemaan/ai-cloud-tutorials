@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-01",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Meta Platforms rose 8.81% while the S&P 500 fell 0.14% \u2014 a massive 8.94 percentage point outperformance; no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 10.2,
+ "model_calls": 1,
+ "input_tokens": 4088,
+ "output_tokens": 452,
+ "cost_usd": 0.000811,
+ "model_seconds": 8.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-07-01",
+   "close": 612.91,
+   "stock_pct": 8.81,
+   "index_pct": -0.14,
+   "vs_index_pts": 8.94,
+   "threshold_pts": 4.35,
+   "typical_daily_gap_pts": 2.18
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:22:07.220784-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-22-17.md"
+}

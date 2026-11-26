@@ -1,0 +1,73 @@
+{
+ "day": "2026-04-09",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Amazon rose 5.6% (S&P 500 up 0.58%) \u2014 filed an 8-K with items 7.01 and 9.01 (Regulation FD disclosure, often a press release or presentation)",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4687,
+ "output_tokens": 691,
+ "cost_usd": 0.001084,
+ "model_seconds": 7.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-09",
+   "close": 233.65,
+   "stock_pct": 5.6,
+   "index_pct": 0.58,
+   "vs_index_pts": 5.03,
+   "threshold_pts": 3.08,
+   "typical_daily_gap_pts": 1.54
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-09",
+   "form": "ARS",
+   "items": "",
+   "what_it_is": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-09",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "what_it_is": "Regulation FD disclosure (often a press release or presentation)",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041034/tm263815d2_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-09",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041030/tm261382d3_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-09",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041026/tm261382-1_def14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:09:37.317868-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-09-47.md"
+}

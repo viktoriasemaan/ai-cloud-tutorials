@@ -1,0 +1,41 @@
+{
+ "day": "2026-02-26",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "NVIDIA fell 5.46% vs S&P 500 fell 0.56%, underperformed by 4.9 pts, no filing explains it yet\nBerkshire Hathaway rose 1.76% vs S&P 500 fell 0.56%, outperformed by 2.31 pts, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 16.0,
+ "model_calls": 1,
+ "input_tokens": 3452,
+ "output_tokens": 4432,
+ "cost_usd": 0.001128,
+ "model_seconds": 13.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-02-26",
+   "close": 184.89,
+   "stock_pct": -5.46,
+   "index_pct": -0.56,
+   "vs_index_pts": -4.9,
+   "threshold_pts": 3.35,
+   "typical_daily_gap_pts": 1.68
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-26",
+   "close": 502.67,
+   "stock_pct": 1.76,
+   "index_pct": -0.56,
+   "vs_index_pts": 2.31,
+   "threshold_pts": 2.12,
+   "typical_daily_gap_pts": 1.06
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:04:22.927956-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-04-38.md"
+}

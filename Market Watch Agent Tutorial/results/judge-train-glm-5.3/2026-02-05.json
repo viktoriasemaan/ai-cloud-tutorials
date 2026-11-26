@@ -1,0 +1,59 @@
+{
+ "day": "2026-02-05",
+ "ideal": "Alert on all three big down-moves (MSFT -4.95%, AMZN -4.42%, LLY -7.79% vs S&P 500 -1.25%), link Amazon's same-day 8-K earnings, note no filing for MSFT/LLY, and include Alphabet's 10-K (she explicitly wants 10-Ks). Exclude Berkshire's 13G/A as fund-holding paperwork.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All three big moves, index next to each, Amazon's 8-K tied in with link, 'no filing explains it yet' where needed, and includes the Alphabet 10-K she explicitly wants. Correctly skips Berkshire's 13G/A. 4 lines, everything sourced from the report.",
+   "answer": "Microsoft fell 4.95% while the S&P 500 fell 1.25% \u2014 no filing explains it yet.\nEli Lilly fell 7.79% while the S&P 500 fell 1.25% \u2014 no filing explains it yet.\nAmazon fell 4.42% while the S&P 500 fell 1.25%; its 8-K current-events report on quarterly results is here: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20260205.htm\nAlphabet filed its 10-K annual report: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Clean, accurate, links the Amazon 8-K, skips Berkshire. But omits Alphabet's 10-K, which her preferences list as wanted material news. 'Quarterly earnings' is consistent with the evidence's 'quarterly or annual results (earnings)'.",
+   "answer": "Microsoft fell 4.95% while the S&P 500 fell 1.25%, no filing explains it yet.\nAmazon fell 4.42% while the S&P 500 fell 1.25%, filed quarterly earnings (8-K) \u2014 https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20260205.htm\nEli Lilly fell 7.79% while the S&P 500 fell 1.25%, no filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Same solid three price-move lines with correct numbers and the Amazon link, '8-K (earnings)' is a bit terse but plain enough. Omits the Alphabet 10-K.",
+   "answer": "Microsoft fell 4.95% (S&P\u202f500 fell\u202f1.25%); no filing explains it yet  \nAmazon fell 4.42% (S&P\u202f500 fell\u202f1.25%); 8\u2011K (earnings) https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20260205.htm  \nEli\u202fLilly fell 7.79% (S&P\u202f500 fell\u202f1.25%); no filing explains it yet"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers the three moves but omits the Alphabet 10-K, gives no link for the Amazon 8-K (rules require linking filings), and writes the index change as '-1.25%' with a minus sign instead of 'fell 1.25%. Terse and unpunctuated but readable.",
+   "answer": "Microsoft fell 4.95% vs S&P 500 -1.25% no filing explains it yet\nAmazon fell 4.42% vs S&P 500 -1.25% 8-K earnings filing\nEli Lilly fell 7.79% vs S&P 500 -1.25% no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1915,
+  "output": 3938
+ }
+}

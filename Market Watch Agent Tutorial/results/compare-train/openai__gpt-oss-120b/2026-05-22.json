@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-22",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Amazon: 8\u2011K current\u2011events report (shareholder vote results) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926065717/tm2614288d1_8k.htm",
+ "silent": false,
+ "run_seconds": 8.2,
+ "model_calls": 1,
+ "input_tokens": 3776,
+ "output_tokens": 509,
+ "cost_usd": 0.0002,
+ "model_seconds": 4.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-05-22",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926065717/tm2614288d1_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-05-22",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026037717/formsd-12312025.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-05-22",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526236936/d26136dsd.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:17:08.072869-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-17-16.md"
+}

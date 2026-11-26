@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-02",
+ "ideal": "Alert warranted: Microsoft fell 2.83% vs S&P 500 -0.48% (gap ~2.35 pts, well above its ~1.06 typical), Berkshire rose 2.51% vs -0.48%, and Apple filed an earnings 8-K (items 2.02) \u2014 all with the index next to the numbers. Meta's DEF 14C/DEFA14C and Tesla's DEFA14A are proxy paperwork she explicitly doesn't want, so omitting them is correct. Neither price move has an explaining filing, so 'no filing explains it yet' is right.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 2,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "All three important items are there with correct numbers and explanations, but it appends a line of Meta proxy paperwork (DEF 14C/DEFA14C) she explicitly said she doesn't want, with an odd made-up-sounding description ('proxy/curated insight report', 'DF 14C' typo) and two URLs crammed into one line.",
+   "answer": "Microsoft fell 2.83% while the S&P 500 fell 0.48%: no filing explains it yet.\nBerkshire Hathaway rose 2.51% while the S&P 500 fell 0.48%: no filing explains it yet.\nApple filed a quarterly or annual earnings report (8-K): https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm\nMeta filed a proxy/curated insight report (DEFA14C/DF 14C): https://www.sec.gov/Archives/edgar/data/1326801/000162828026068939/meta2026informationstateme.htm and https://www.sec.gov/Archives/edgar/data/1326801/000162828026068935/meta-20261102.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Exactly the three items worth her attention, correct numbers with the index next to them, correct 'no filing explains it yet' tags, proxy noise correctly dropped. Style is a bit list-like (stray commas after company names) but short and plain.",
+   "answer": "Microsoft, fell 2.83% vs S&P 500 fell 0.48%, no filing explains it yet\nBerkshire Hathaway, rose 2.51% vs S&P 500 fell 0.48%, no filing explains it yet\nApple, 8-K filing for quarterly/annual results (earnings), https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct content as B in the cleanest prose: each line reads naturally, numbers match the report, signs handled right, Apple's filing described plainly and linked, and the proxy filings correctly left out. The model answer.",
+   "answer": "Microsoft fell 2.83% while S&P 500 fell 0.48% \u2014 no filing explains it yet.\nBerkshire Hathaway rose 2.51% while S&P 500 fell 0.48% \u2014 no filing explains it yet.\nApple 8-K (quarterly results/earnings) https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1864,
+  "output": 2619
+ }
+}

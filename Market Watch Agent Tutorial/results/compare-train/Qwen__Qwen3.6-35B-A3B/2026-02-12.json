@@ -1,0 +1,40 @@
+{
+ "day": "2026-02-12",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Apple fell 5.0% vs S&P 500's 1.54% drop, underperforming by 3.45 percentage points; no filing explains it yet. Eli Lilly filed its annual 10-K report: https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+ "silent": false,
+ "run_seconds": 12.2,
+ "model_calls": 1,
+ "input_tokens": 4249,
+ "output_tokens": 539,
+ "cost_usd": 0.000905,
+ "model_seconds": 8.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-12",
+   "close": 261.73,
+   "stock_pct": -5.0,
+   "index_pct": -1.54,
+   "vs_index_pts": -3.45,
+   "threshold_pts": 2.18,
+   "typical_daily_gap_pts": 1.09
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-12",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:03:05.214999-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-03-17.md"
+}

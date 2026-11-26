@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-12",
+ "ideal": "Alert: Broadcom rose 5.54% while the S&P 500 fell 0.35%, with no filing explaining it yet. NVIDIA filed a current-events report (8-K) on an executive or director change, with a link. The Amazon 13G and Meta 8-A12B are routine and should be skipped.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "It has the right content, but it omits the filing link and doesn't explain in plain words what an 8-K is.",
+   "answer": "Broadcom rose 5.54% vs S&P 500 fell 0.35%, no filing explains it yet\nNVIDIA 8-K: executive or director change"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "It covers both items correctly, explains the 8-K in plain words, includes the link and leaves out the routine paperwork.",
+   "answer": "Broadcom rose 5.54% vs S&P 500 fell 0.35% \u2014 no filing explains it yet\nNVIDIA filed a current-events report (8\u2011K) on an executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 4,
+   "note": "It includes the link, but 'decline of \u22120.35%' breaks the no-minus-sign rule and the 8-K isn't explained in plain words.",
+   "answer": "Broadcom rose 5.54% against S&P 500 decline of \u22120.35%, no filing explains it yet\nNVIDIA filed an 8-K on an executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 3132,
+  "output": 599
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-10",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Meta Platforms rose 5.97% vs S&P up 0.43%; no filing explains it yet",
+ "silent": false,
+ "run_seconds": 4.2,
+ "model_calls": 1,
+ "input_tokens": 3565,
+ "output_tokens": 266,
+ "cost_usd": 0.000152,
+ "model_seconds": 2.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-07-10",
+   "close": 669.21,
+   "stock_pct": 5.97,
+   "index_pct": 0.43,
+   "vs_index_pts": 5.54,
+   "threshold_pts": 5.16,
+   "typical_daily_gap_pts": 2.58
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:21:37.271322-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-21-41.md"
+}

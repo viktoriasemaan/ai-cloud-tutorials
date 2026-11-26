@@ -1,0 +1,29 @@
+{
+ "day": "2026-07-27",
+ "model": "openai/gpt-oss-120b",
+ "answer": "NVIDIA fell 4.99% as the S&P\u202f500 rose 0.02%; no filing explains it yet",
+ "silent": false,
+ "run_seconds": 5.8,
+ "model_calls": 1,
+ "input_tokens": 3566,
+ "output_tokens": 485,
+ "cost_usd": 0.000189,
+ "model_seconds": 3.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-07-27",
+   "close": 196.51,
+   "stock_pct": -4.99,
+   "index_pct": 0.02,
+   "vs_index_pts": -5.02,
+   "threshold_pts": 4.26,
+   "typical_daily_gap_pts": 2.13
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:22:49.379329-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-22-55.md"
+}

@@ -1,0 +1,41 @@
+{
+ "day": "2026-04-15",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft rose 4.61% versus S&P 500's 0.79% gain, outperformance of 3.82 pts. No filing explains it yet.\nTesla rose 7.62% versus S&P 500's 0.79% gain, outperformance of 6.83 pts. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 3455,
+ "output_tokens": 1214,
+ "cost_usd": 0.000485,
+ "model_seconds": 3.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-04-15",
+   "close": 411.22,
+   "stock_pct": 4.61,
+   "index_pct": 0.79,
+   "vs_index_pts": 3.82,
+   "threshold_pts": 3.77,
+   "typical_daily_gap_pts": 1.88
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-04-15",
+   "close": 391.95,
+   "stock_pct": 7.62,
+   "index_pct": 0.79,
+   "vs_index_pts": 6.83,
+   "threshold_pts": 3.72,
+   "typical_daily_gap_pts": 1.86
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:10:25.818024-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-10-31.md"
+}

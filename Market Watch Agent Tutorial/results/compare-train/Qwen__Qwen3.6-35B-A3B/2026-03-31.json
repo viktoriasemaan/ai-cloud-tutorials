@@ -1,0 +1,28 @@
+{
+ "day": "2026-03-31",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 8.2,
+ "model_calls": 1,
+ "input_tokens": 4099,
+ "output_tokens": 226,
+ "cost_usd": 0.000611,
+ "model_seconds": 4.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-31",
+   "form": "DFAN14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DFAN14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526133360/d111268ddfan14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:08:27.532068-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-08-35.md"
+}

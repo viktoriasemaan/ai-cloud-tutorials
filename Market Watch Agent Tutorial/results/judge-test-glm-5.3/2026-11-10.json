@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-10",
+ "ideal": "One-line alert: NVIDIA fell 5.47% vs the S&P 500's 0.37% drop (a 5.11-pt gap, well past the 4.42-pt alert threshold noted in the evidence), ending with \"no filing explains it yet\" since no filing came in. Silence would be wrong \u2014 this is exactly the big-vs-index move she asked for.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Alerts on a real 5.11-pt gap vs index, includes every relevant number (5.47, 0.37, 5.11), ends with the required 'no filing explains it yet', and is the tersest full version \u2014 closest to her style.",
+   "answer": "NVIDIA fell 5.47% vs S&P 500 fell 0.37%, underperformed by 5.11 pts, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Complete and correct: all numbers from the evidence, explicit 5.11-point underperformance, required no-filing tag. Slightly wordier than her preferred clipped style ('while', 'underperforming by 5.11 percentage points'), but still one short line.",
+   "answer": "NVIDIA fell 5.47% while the S&P 500 fell 0.37%, underperforming by 5.11 percentage points. No filing explains it yet."
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Accurate, shortest, and correctly flags no filing \u2014 nothing wrong. But it drops the 5.11-pt gap vs the index, which is the actual 'why it matters' (the move beat the evidence's 4.42-pt alert threshold). Meets the minimum, less informative than A or B.",
+   "answer": "NVIDIA fell 5.47% vs S&P\u202f500 slid 0.37% \u2014 no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 994,
+  "output": 3383
+ }
+}

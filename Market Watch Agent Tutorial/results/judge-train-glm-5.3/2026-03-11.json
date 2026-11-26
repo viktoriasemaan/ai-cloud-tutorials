@@ -1,0 +1,59 @@
+{
+ "day": "2026-03-11",
+ "ideal": "One alert line: Broadcom filed its 10-Q (call it the quarterly report in plain words), with the link \u2013 because a 10-Q is explicitly on her wants list (earnings/material filings), so silence is wrong here.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Correct call to alert; names the filing in plain words with the link, though '10-Q quarterly report filed with SEC' is slightly clunky and adds nothing on why it matters.",
+   "answer": "Broadcom: 10-Q quarterly report filed with SEC. https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/avgo-20260201.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 2,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 1,
+   "note": "Wrong call: a 10-Q is one of the filing types she explicitly asked for (8-K, 10-Q, 10-K), and it is not on her routine-paperwork exclusion list. Silence misses wanted material.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Alerts in one short line, plain words, link, and ties the filing to earnings/results \u2014 the reason it matters to her. The gloss matches what a 10-Q is; no invented numbers or reasons.",
+   "answer": "Broadcom: filed its quarterly report (10-Q) \u2014 earnings and results for the quarter. https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/avgo-20260201.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Accurate, short, linked, but bare-minimum: names the form without saying why it matters to her, so slightly less useful than C.",
+   "answer": "Broadcom: filed a 10\u2011Q (quarterly report) https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/avgo-20260201.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1069,
+  "output": 2612
+ }
+}

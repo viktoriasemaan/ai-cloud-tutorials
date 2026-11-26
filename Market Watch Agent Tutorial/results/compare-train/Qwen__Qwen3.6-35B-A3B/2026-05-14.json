@@ -1,0 +1,40 @@
+{
+ "day": "2026-05-14",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Broadcom (AVGO) rose 5.52%, outpacing the S&P 500 which gained 0.79%; no filing explains it yet.\nMicrosoft (MSFT) filed an 8-K (executive/director change): https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4242,
+ "output_tokens": 356,
+ "cost_usd": 0.000741,
+ "model_seconds": 4.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-05-14",
+   "close": 439.79,
+   "stock_pct": 5.52,
+   "index_pct": 0.79,
+   "vs_index_pts": 4.73,
+   "threshold_pts": 4.11,
+   "typical_daily_gap_pts": 2.06
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-05-14",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:16:12.334402-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-16-20.md"
+}

@@ -1,0 +1,29 @@
+{
+ "day": "2026-01-21",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft fell\u202f2.29% (S&P\u202fup\u202f1.15%) \u2013 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3565,
+ "output_tokens": 336,
+ "cost_usd": 0.000164,
+ "model_seconds": 6.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-21",
+   "close": 444.11,
+   "stock_pct": -2.29,
+   "index_pct": 1.15,
+   "vs_index_pts": -3.44,
+   "threshold_pts": 2.23,
+   "typical_daily_gap_pts": 1.11
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:59:19.818850-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-59-29.md"
+}

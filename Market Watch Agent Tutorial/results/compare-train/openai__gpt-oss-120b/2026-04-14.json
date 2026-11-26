@@ -1,0 +1,50 @@
+{
+ "day": "2026-04-14",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Amazon: filed Form\u202f425 (tender\u2011offer filing) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm  \nAmazon: filed 8\u2011K (Regulation\u202fFD disclosure) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm  \nMeta Platforms: filed 8\u2011K (executive/director change) \u2013 https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm",
+ "silent": false,
+ "run_seconds": 10.4,
+ "model_calls": 1,
+ "input_tokens": 3814,
+ "output_tokens": 987,
+ "cost_usd": 0.000282,
+ "model_seconds": 7.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-14",
+   "form": "425",
+   "items": "",
+   "what_it_is": "",
+   "description": "425",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-14",
+   "form": "8-K",
+   "items": "7.01,9.01",
+   "what_it_is": "Regulation FD disclosure (often a press release or presentation)",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-14",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:10:39.813208-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-10-50.md"
+}

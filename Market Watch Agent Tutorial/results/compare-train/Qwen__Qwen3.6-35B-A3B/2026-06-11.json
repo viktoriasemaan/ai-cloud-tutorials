@@ -1,0 +1,39 @@
+{
+ "day": "2026-06-11",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Alphabet (GOOGL) filed an 8-K today reporting executive/director changes and shareholder vote results. https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm\nBroadcom (AVGO) filed an 8-K reporting other events. https://www.sec.gov/Archives/edgar/data/1730168/000119312526266777/d152717d8k.htm",
+ "silent": false,
+ "run_seconds": 14.4,
+ "model_calls": 1,
+ "input_tokens": 4269,
+ "output_tokens": 702,
+ "cost_usd": 0.001052,
+ "model_seconds": 10.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-11",
+   "form": "8-K",
+   "items": "5.02,5.07,9.01",
+   "what_it_is": "executive or director change; shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-11",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526266777/d152717d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:19:53.944766-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-20-08.md"
+}

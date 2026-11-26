@@ -1,0 +1,41 @@
+{
+ "day": "2026-06-25",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple fell 6.12% while S&P rose 0.14% \u2013 no filing explains it yet  \nAmazon fell 3.1% while S&P rose 0.14% \u2013 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 5.9,
+ "model_calls": 1,
+ "input_tokens": 3668,
+ "output_tokens": 479,
+ "cost_usd": 0.000191,
+ "model_seconds": 2.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-25",
+   "close": 275.15,
+   "stock_pct": -6.12,
+   "index_pct": 0.14,
+   "vs_index_pts": -6.26,
+   "threshold_pts": 2.58,
+   "typical_daily_gap_pts": 1.29
+  },
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-06-25",
+   "close": 227.01,
+   "stock_pct": -3.1,
+   "index_pct": 0.14,
+   "vs_index_pts": -3.24,
+   "threshold_pts": 3.15,
+   "typical_daily_gap_pts": 1.58
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:20:08.176689-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-20-13.md"
+}

@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-09",
+ "ideal": "Two items merit alerts: Meta's large outperformance vs the index with no explanatory filing, and Amazon's 8-K (executive or director change), which is material news she asked for. The Microsoft PX14A6G is routine proxy paperwork and should be left out.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers both newsworthy items \u2014 the Meta move with the index next to it, correctly flagged as unexplained, and the Amazon 8-K with a link \u2014 while leaving out the routine Microsoft proxy filing. Numbers all match the evidence; tone and length fit her style.",
+   "answer": "META rose 6.55% while S&P 500 fell 0.46%, no filing explains it yet\nAMZN 8-K executive or director change https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 3,
+   "note": "Handles the Meta move correctly and adds the 7.02-point gap, and correctly skips the proxy paperwork, but omits the Amazon 8-K executive/director change \u2014 a material filing she wants to hear about.",
+   "answer": "Meta Platforms rose 6.55% while the S&P 500 fell 0.46% \u2014 a 7.02\u2011point outperformance, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both items covered: Meta move with index comparison and the unexplained-filing note, plus Amazon's 8-K described plainly and linked. Routine Microsoft proxy filing excluded. Numbers all come from the report; clean two-line format.",
+   "answer": "Meta Platforms: rose 6.55% vs S&P 500 fell 0.46%, no filing explains it yet  \nAmazon: filed an 8-K (executive or director change) https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1303,
+  "output": 1938
+ }
+}

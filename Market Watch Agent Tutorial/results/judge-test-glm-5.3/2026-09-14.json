@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-14",
+ "ideal": "A short line: Amazon filed an 8-K (a current-events report), items report as generic 'other events' with no detail given, plus the link. She explicitly wants 8-Ks, so alerting is right; silence is wrong. No price context exists in the evidence, so none should be mentioned.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 3,
+   "note": "Right to alert and it links the filing, but 'an 8-K current-events report, current events' is garbled and duplicated; it also never tells her the items are generic 'other events', so she can't judge importance.",
+   "answer": "Amazon: filed an 8-K current-events report, current events https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct decision to alert: she wants 8-Ks and this is not routine paperwork. Clean, short, plain-words, accurate, linked, no invention. Adding that the items are generic 'other events' would have been perfect.",
+   "answer": "Amazon 8-K (current-events report) filed with SEC. https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 3,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Wrong call. The only event is an 8-K, which she explicitly listed as material news she wants; it is not in her 'routine paperwork' list. Silence hides a filing she'd want.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1031,
+  "output": 5464
+ }
+}

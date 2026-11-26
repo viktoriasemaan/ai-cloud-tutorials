@@ -1,0 +1,59 @@
+{
+ "day": "2026-06-25",
+ "ideal": "Non-silence required. Apple fell 6.12% vs S&P 500 +0.14% (gap -6.26 pts, ~2.4x typical) and Amazon fell 3.1% vs +0.14% (gap -3.24 pts, just past its 3.15 threshold) \u2014 both are unusual moves worth alerting, and the evidence contains no filings, so each line should end 'no filing explains it yet'. Two lines, numbers straight from the report, no advice, no invented reasons.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Both moves, correct numbers, correct 'no filing' phrasing. Padding the Apple line with 'on 2026-06-25' adds nothing \u2014 she's reading it today \u2014 and works against her short, plain style. Otherwise sound.",
+   "answer": "Apple fell 6.12% on 2026-06-25 while the S&P 500 rose 0.14% \u2014 no filing explains it yet.\nAmazon fell 3.10% while the S&P 500 rose 0.14% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both moves, correct numbers, clean two-line layout, natural 'while S&P rose' phrasing. Only nit is 'S&P' shorthand instead of 'S&P 500', which is trivial.",
+   "answer": "Apple fell 6.12% while S&P rose 0.14% \u2013 no filing explains it yet  \nAmazon fell 3.1% while S&P rose 0.14% \u2013 no filing explains it yet"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both moves, correct numbers, one line per company, tightest wording. 'vs S&P 500 rose' matches her 'numbers with the index next to them' habit exactly; slightly clipped grammar is the only nit.",
+   "answer": "Apple fell 6.12% vs S&P 500 rose 0.14%, no filing explains it yet\nAmazon fell 3.1% vs S&P 500 rose 0.14%, no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Content is accurate and complete, but cramming both companies onto a single line breaks the one-line-per-company format, which hurts scanability in Telegram.",
+   "answer": "Apple fell 6.12% (S&P 500 rose 0.14%), no filing explains it yet. Amazon fell 3.10% (S&P 500 rose 0.14%), no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 1205,
+  "output": 5273
+ }
+}

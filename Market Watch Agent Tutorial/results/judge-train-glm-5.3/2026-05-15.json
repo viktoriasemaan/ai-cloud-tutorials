@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-15",
+ "ideal": "One line on the Microsoft move only (up 3.05% vs the S&P 500 down 1.2%, no filing that day explains it); all the other filings (SD, 13Fs, PX14A6G, Schedule 13Gs) are routine paperwork she said she doesn't want, so they correctly stay out.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Right alert, one clean line. Includes the 4.25-pt gap and the 1.51 typical day, both from the report, which shows exactly why the divergence is worth her attention.",
+   "answer": "Microsoft rose 3.05% while the S&P 500 fell 1.2% \u2014 a 4.25-point gap versus the index, well above its usual 1.51. No filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Correct call and numbers, but the phrasing 'versus S&P 500 fell 1.2%' is clunky and drops the comparison size; slightly below the others in polish.",
+   "answer": "Microsoft rose 3.05% versus S&P 500 fell 1.2%, no filing explains it yet"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Right call, accurate, clean minimal line with the index next to the move and the required 'no filing explains it yet'.",
+   "answer": "Microsoft rose\u202f3.05% as the S&P\u202f500 fell\u202f1.2% \u2013 no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Right call, accurate, quantifies the 4.25-point outperformance straight from the report; concise and clear.",
+   "answer": "Microsoft rose 3.05% (S&P 500 fell 1.2%) \u2014 outperformed the index by 4.25 percentage points; no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 2400,
+  "output": 3764
+ }
+}

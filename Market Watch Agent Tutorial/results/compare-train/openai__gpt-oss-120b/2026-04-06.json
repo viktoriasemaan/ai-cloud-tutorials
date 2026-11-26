@@ -1,0 +1,28 @@
+{
+ "day": "2026-04-06",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Broadcom filed an 8\u2011K (other events) \u2013 material news https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 3558,
+ "output_tokens": 357,
+ "cost_usd": 0.000167,
+ "model_seconds": 3.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-06",
+   "form": "8-K",
+   "items": "8.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:09:44.131915-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-09-50.md"
+}

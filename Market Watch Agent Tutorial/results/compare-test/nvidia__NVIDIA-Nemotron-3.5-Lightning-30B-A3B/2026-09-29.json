@@ -1,0 +1,28 @@
+{
+ "day": "2026-09-29",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Tesla 8-K: entered a material agreement, ended a material agreement, took on a material financial obligation. https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+ "silent": false,
+ "run_seconds": 16.9,
+ "model_calls": 1,
+ "input_tokens": 3373,
+ "output_tokens": 3952,
+ "cost_usd": 0.001027,
+ "model_seconds": 11.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-09-29",
+   "form": "8-K",
+   "items": "1.01,1.02,2.03,9.01",
+   "what_it_is": "entered a material agreement; ended a material agreement; took on a material financial obligation",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:11:12.943183-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-11-29.md"
+}
