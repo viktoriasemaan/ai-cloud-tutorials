@@ -1,0 +1,20 @@
+{"step": 1, "reward": 0.5, "tries": 24, "mixed_groups": 5, "rollout_s": 31.2, "train_s": 197.2, "errors": 8}
+{"step": 2, "reward": 0.4483, "tries": 29, "mixed_groups": 4, "rollout_s": 23.2, "train_s": 35.3, "errors": 3}
+{"step": 3, "reward": 0.4815, "tries": 27, "mixed_groups": 3, "rollout_s": 26.8, "train_s": 193.9, "errors": 5}
+{"step": 4, "reward": 0.6296, "tries": 27, "mixed_groups": 5, "rollout_s": 16.9, "train_s": 172.7, "errors": 5}
+{"step": 5, "reward": 0.36, "tries": 25, "mixed_groups": 2, "rollout_s": 26.3, "train_s": 179.3, "errors": 7, "val_reward": 0.55}
+{"step": 6, "reward": 0.6875, "tries": 32, "mixed_groups": 5, "rollout_s": 17.0, "train_s": 179.2, "errors": 0}
+{"step": 7, "reward": 0.5806, "tries": 31, "mixed_groups": 4, "rollout_s": 14.0, "train_s": 175.7, "errors": 1}
+{"step": 8, "reward": 0.6, "tries": 30, "mixed_groups": 4, "rollout_s": 10.1, "train_s": 178.6, "errors": 2}
+{"step": 9, "reward": 0.6296, "tries": 27, "mixed_groups": 5, "rollout_s": 6.9, "train_s": 195.6, "errors": 5}
+{"step": 10, "reward": 0.6071, "tries": 28, "mixed_groups": 6, "rollout_s": 11.4, "train_s": 182.1, "errors": 4, "val_reward": 0.5}
+{"step": 11, "reward": 0.8125, "tries": 32, "mixed_groups": 4, "rollout_s": 6.7, "train_s": 29.1, "errors": 0}
+{"step": 12, "reward": 0.5517, "tries": 29, "mixed_groups": 2, "rollout_s": 9.3, "train_s": 175.6, "errors": 3}
+{"step": 13, "reward": 0.7308, "tries": 26, "mixed_groups": 6, "rollout_s": 9.3, "train_s": 174.3, "errors": 6}
+{"step": 14, "reward": 0.7037, "tries": 27, "mixed_groups": 3, "rollout_s": 8.3, "train_s": 177.5, "errors": 5}
+{"step": 15, "reward": 0.8077, "tries": 26, "mixed_groups": 4, "rollout_s": 9.7, "train_s": 29.3, "errors": 6, "val_reward": 0.5}
+{"step": 16, "reward": 0.72, "tries": 25, "mixed_groups": 3, "rollout_s": 11.5, "train_s": 180.6, "errors": 7}
+{"step": 17, "reward": 0.5926, "tries": 27, "mixed_groups": 4, "rollout_s": 13.6, "train_s": 30.0, "errors": 5}
+{"step": 18, "reward": 0.5938, "tries": 32, "mixed_groups": 7, "rollout_s": 11.5, "train_s": 31.8, "errors": 0}
+{"step": 19, "reward": 0.6429, "tries": 28, "mixed_groups": 3, "rollout_s": 10.2, "train_s": 183.8, "errors": 4}
+{"step": 20, "reward": 0.6562, "tries": 32, "mixed_groups": 1, "rollout_s": 8.1, "train_s": 32.5, "errors": 0, "val_reward": 0.6}
