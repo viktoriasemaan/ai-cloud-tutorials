@@ -6,7 +6,7 @@ model on CoreWeave Serverless Inference. On 38 past market days it made 5 wrong 
 have stayed quiet, or stayed quiet when something mattered. After fine-tuning with CoreWeave Serverless SFT, the same
 model made 2 wrong calls on those days, and each run became three times cheaper.
 
-![Fine-tuning explained: collect good examples, keep the base model, train an adapter, serve it, test before you switch](./visuals/fine-tuning-explained.gif)
+<p align="center"><img src="./visuals/fine-tuning-explained.gif" alt="Fine-tuning explained: collect good examples, keep the base model, train an adapter, serve it, test before you switch" width="640"></p>
 
 ## What you'll learn
 
@@ -22,7 +22,7 @@ model made 2 wrong calls on those days, and each run became three times cheaper.
 The same agent (Hermes), the same instructions and the same 38 market days (Aug 24 to Nov 16, 2026). None of these
 days were used for training. Two AI judges scored every answer without seeing which model wrote it.
 
-![The results table: wrong calls, scores, tokens, seconds and cost per model](./visuals/results-table.png)
+<p align="center"><img src="./visuals/results-table.png" alt="The results table: wrong calls, scores, tokens, seconds and cost per model" width="760"></p>
 
 | Model | Wrong calls (Claude Opus judge) | Wrong calls (GLM 5.3 judge) | Picked as best answer (Opus / GLM) | Output tokens per run | Seconds per run | Cost of 38 runs |
 |---|---|---|---|---|---|---|
@@ -55,7 +55,7 @@ the trained adapter is billed at base Nemotron's price, because Forge publishes 
 
 ## How it works
 
-![Fine-tune an open model in four steps](./visuals/four-steps.png)
+<p align="center"><img src="./visuals/four-steps.png" alt="Fine-tune an open model in four steps" width="460"></p>
 
 1. **Pick a base model.** In the first tutorial, five models answered the same 38 days and two judges scored them.
    Nemotron 3.5 Lightning was the best open model. We keep it, and teach it with examples.
@@ -178,11 +178,11 @@ example. The 1-epoch job took about 6 minutes and the 3-epoch job about 9.
 Follow the run in Forge: Weights & Biases → your project → Workspace → the run. Search the charts for `loss`:
 `sft/loss/train` starts near 0.9 and falls toward 0.1 (it's noisy, because every batch holds only 2 examples).
 
-![Both training runs in Forge: the training loss, the learning-rate schedule and the gradient norm](./visuals/forge-loss-curves.png)
+<p align="center"><img src="./visuals/forge-loss-curves.png" alt="Both training runs in Forge: the training loss, the learning-rate schedule and the gradient norm" width="640"></p>
 
 The trained adapter appears under the run's **Artifacts** tab, with its model name and a "Try in playground" button:
 
-![The trained LoRA adapter in Forge: 1.9 MB, with its Model URI](./visuals/forge-trained-adapter.png)
+<p align="center"><img src="./visuals/forge-trained-adapter.png" alt="The trained LoRA adapter in Forge: 1.9 MB, with its Model URI" width="640"></p>
 
 ## Step 5 · Switch the agent to the new model
 

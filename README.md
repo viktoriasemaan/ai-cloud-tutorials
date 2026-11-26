@@ -26,7 +26,7 @@ A pilot proves that an idea works once. Production has to keep working with real
 A better model alone doesn't get you there. You need to see what every run does, turn failures into data, improve the
 system, and check each new version before it ships. Production AI runs as a loop of five stages:
 
-![CoreWeave Forge explained: run, observe, curate, improve and evaluate](./visuals/coreweave-forge-explained.png)
+<p align="center"><img src="./visuals/coreweave-forge-explained.png" alt="CoreWeave Forge explained: run, observe, curate, improve and evaluate" width="720"></p>
 
 | Stage | What happens | On CoreWeave | In these projects |
 |---|---|---|---|
@@ -53,7 +53,7 @@ top 3, and the agent costs less than $1 a month to run.
 
 **Skills:** Always-On Agents • Hermes Agent • AI Gateway • Serverless Inference • Agent Lens • AI Judges • Prompt Injection Defense
 
-![24/7 Market Watch Agent: how it works and where it runs](./Market%20Watch%20Agent%20Tutorial/visuals/where-it-runs.gif)
+<p align="center"><img src="./Market%20Watch%20Agent%20Tutorial/visuals/where-it-runs.gif" alt="24/7 Market Watch Agent: how it works and where it runs" width="640"></p>
 
 ### 🎯 [Fine-Tune an Open Model Tutorial](./Fine-Tune%20an%20Open%20Model%20Tutorial/)
 Make the market agent's open model better at its one job. Four open models answer 121 past market days, an **AI judge**
@@ -66,7 +66,7 @@ cheaper. The training cost $0.57.
 
 **Skills:** Fine-Tuning • LoRA • Serverless SFT • Synthetic Training Data • AI Judges • Model Evaluation
 
-![Fine-tuning explained: collect good examples, keep the base model, train an adapter, serve it, test before you switch](./Fine-Tune%20an%20Open%20Model%20Tutorial/visuals/fine-tuning-explained.gif)
+<p align="center"><img src="./Fine-Tune%20an%20Open%20Model%20Tutorial/visuals/fine-tuning-explained.gif" alt="Fine-tuning explained: collect good examples, keep the base model, train an adapter, serve it, test before you switch" width="640"></p>
 
 *More projects coming soon...*
 
