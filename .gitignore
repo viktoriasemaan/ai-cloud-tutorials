@@ -19,3 +19,6 @@ __pycache__/
 
 # local W&B run folders written by the training client (the runs themselves live in Forge)
 **/wandb/
+
+# local ART client cache (trajectories and state; the runs themselves live in Forge)
+**/.art/

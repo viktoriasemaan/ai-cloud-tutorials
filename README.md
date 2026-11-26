@@ -33,8 +33,8 @@ system, and check each new version before it ships. Production AI runs as a loop
 | **1. Run** | a model or agent answers real requests | Serverless Inference, Dedicated Inference, Sandboxes | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): open models answer only when something happened |
 | **2. Observe** | every run is traced, so you see a failure before your users do | Agent Lens | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): a trace of every run, with its prompt, answer, time and cost |
 | **3. Curate** | failed and good runs are labeled and become datasets | Agent Lens tags and datasets | [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): an AI judge keeps the best answers from four open models as 243 training examples |
-| **4. Improve** | you fix the prompt or the harness first, then train the model's weights | Serverless SFT, Serverless RL, Model Distillation | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): prompt fixes found by the judges. [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): a LoRA adapter trained on Serverless SFT |
-| **5. Evaluate** | a new version ships only after it passes your own tests | Agent Lens Insights, ARIA, your own AI judges | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): two AI judges score five models before one is chosen. [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): the same judges compare the base and fine-tuned models on 38 days they never saw |
+| **4. Improve** | you fix the prompt or the harness first, then train the model's weights | Serverless SFT, Serverless RL, Model Distillation | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): prompt fixes found by the judges. [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): a LoRA adapter trained on Serverless SFT. [Reinforcement Learning for AI Agents](./Reinforcement%20Learning%20for%20AI%20Agents%20Tutorial/): a SQL agent trained by practice on Serverless RL |
+| **5. Evaluate** | a new version ships only after it passes your own tests | Agent Lens Insights, ARIA, your own AI judges | [Market Watch Agent](./Market%20Watch%20Agent%20Tutorial/): two AI judges score five models before one is chosen. [Fine-Tune an Open Model](./Fine-Tune%20an%20Open%20Model%20Tutorial/): the same judges compare the base and fine-tuned models on 38 days they never saw. [Reinforcement Learning for AI Agents](./Reinforcement%20Learning%20for%20AI%20Agents%20Tutorial/): a reward in code checks 61 questions the agent never trained on |
 
 You don't need all five stages on day one. Start with one job, such as serving an open model, and add the next stage
 when you need it. Because each stage feeds the next, every new version starts from what the last one learned.
@@ -67,6 +67,19 @@ cheaper. The training cost $0.57.
 **Skills:** Fine-Tuning • LoRA • Serverless SFT • Synthetic Training Data • AI Judges • Model Evaluation
 
 <p align="center"><img src="./Fine-Tune%20an%20Open%20Model%20Tutorial/visuals/fine-tuning-explained.gif" alt="Fine-tuning explained: collect good examples, keep the base model, train an adapter, serve it, test before you switch" width="640"></p>
+
+### 🧠 [Reinforcement Learning for AI Agents Tutorial](./Reinforcement%20Learning%20for%20AI%20Agents%20Tutorial/)
+Train an agent through practice instead of examples. A small **data analyst agent** answers business questions about a
+coffee and tea store by writing SQL. In each round it tries 8 questions 4 times, a **reward written in code** scores
+every try, and **CoreWeave Serverless RL** updates Nemotron 3.5 Lightning so the tries that scored well happen more
+often. After 20 rounds, the agent went from 52% to 70% correct on 61 questions it never trained on, and tries that
+never submitted an answer fell from 31 to 12. Training took 51 minutes and cost about $1.94.
+
+**Stages:** Improve • Evaluate
+
+**Skills:** Reinforcement Learning • GRPO • Serverless RL • OpenPipe ART • Reward Functions • Tool-Using Agents • Model Evaluation
+
+<p align="center"><img src="./Reinforcement%20Learning%20for%20AI%20Agents%20Tutorial/visuals/rl-loop.png" alt="Reinforcement learning as a loop with four parts: task, tries, reward, update" width="460"></p>
 
 *More projects coming soon...*
 

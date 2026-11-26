@@ -1,0 +1,226 @@
+{
+ "base-first": {
+  "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+  "correct": 2.0,
+  "episodes": 6,
+  "accuracy": 0.3333,
+  "by_kind": {
+   "category_quarter": [
+    0.0,
+    1
+   ],
+   "country_customers": [
+    1.0,
+    1
+   ],
+   "last_month_orders": [
+    1.0,
+    1
+   ],
+   "units_category": [
+    0.0,
+    1
+   ],
+   "year_to_date_revenue": [
+    0.0,
+    2
+   ]
+  },
+  "failed_calls": 0
+ },
+ "base": {
+  "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+  "correct": 73.0,
+  "episodes": 122,
+  "accuracy": 0.5984,
+  "by_kind": {
+   "avg_order_value": [
+    4.0,
+    8
+   ],
+   "category_quarter": [
+    4.0,
+    10
+   ],
+   "country_customers": [
+    6.0,
+    6
+   ],
+   "last_month_orders": [
+    7.0,
+    10
+   ],
+   "last_month_revenue": [
+    6.0,
+    10
+   ],
+   "last_quarter_revenue": [
+    4.0,
+    10
+   ],
+   "month_over_month": [
+    5.0,
+    8
+   ],
+   "new_customer_revenue": [
+    4.0,
+    8
+   ],
+   "refunded_orders": [
+    7.0,
+    8
+   ],
+   "revenue_month": [
+    5.0,
+    8
+   ],
+   "top_product": [
+    7.0,
+    8
+   ],
+   "two_months_ago_revenue": [
+    8.0,
+    10
+   ],
+   "units_category": [
+    5.0,
+    8
+   ],
+   "year_to_date_revenue": [
+    1.0,
+    10
+   ]
+  },
+  "failed_calls": 0
+ },
+ "rl": {
+  "model": "wandb-artifact:///vsemaan-cloudup-one/store-analytics-agent/store-agent-rl-run:step20",
+  "correct": 85.0,
+  "episodes": 122,
+  "accuracy": 0.6967,
+  "by_kind": {
+   "avg_order_value": [
+    8.0,
+    8
+   ],
+   "category_quarter": [
+    10.0,
+    10
+   ],
+   "country_customers": [
+    6.0,
+    6
+   ],
+   "last_month_orders": [
+    10.0,
+    10
+   ],
+   "last_month_revenue": [
+    6.0,
+    10
+   ],
+   "last_quarter_revenue": [
+    3.0,
+    10
+   ],
+   "month_over_month": [
+    2.0,
+    8
+   ],
+   "new_customer_revenue": [
+    6.0,
+    8
+   ],
+   "refunded_orders": [
+    8.0,
+    8
+   ],
+   "revenue_month": [
+    7.0,
+    8
+   ],
+   "top_product": [
+    8.0,
+    8
+   ],
+   "two_months_ago_revenue": [
+    0.0,
+    10
+   ],
+   "units_category": [
+    7.0,
+    8
+   ],
+   "year_to_date_revenue": [
+    4.0,
+    10
+   ]
+  },
+  "failed_calls": 0
+ },
+ "step0": {
+  "model": "wandb-artifact:///vsemaan-cloudup-one/store-analytics-agent/store-agent-rl-run:step0",
+  "correct": 64.0,
+  "episodes": 122,
+  "accuracy": 0.5246,
+  "by_kind": {
+   "avg_order_value": [
+    8.0,
+    8
+   ],
+   "category_quarter": [
+    5.0,
+    10
+   ],
+   "country_customers": [
+    4.0,
+    6
+   ],
+   "last_month_orders": [
+    5.0,
+    10
+   ],
+   "last_month_revenue": [
+    7.0,
+    10
+   ],
+   "last_quarter_revenue": [
+    3.0,
+    10
+   ],
+   "month_over_month": [
+    2.0,
+    8
+   ],
+   "new_customer_revenue": [
+    3.0,
+    8
+   ],
+   "refunded_orders": [
+    4.0,
+    8
+   ],
+   "revenue_month": [
+    8.0,
+    8
+   ],
+   "top_product": [
+    8.0,
+    8
+   ],
+   "two_months_ago_revenue": [
+    0.0,
+    10
+   ],
+   "units_category": [
+    4.0,
+    8
+   ],
+   "year_to_date_revenue": [
+    3.0,
+    10
+   ]
+  },
+  "failed_calls": 0
+ }
+}

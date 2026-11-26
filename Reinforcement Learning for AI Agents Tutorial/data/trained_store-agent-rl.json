@@ -1,0 +1,8 @@
+{
+ "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "name": "store-agent-rl",
+ "project": "store-analytics-agent",
+ "step": 20,
+ "inference_name": "wandb-artifact:///vsemaan-cloudup-one/store-analytics-agent/store-agent-rl-run:step20",
+ "wall_seconds": 3071.8
+}
