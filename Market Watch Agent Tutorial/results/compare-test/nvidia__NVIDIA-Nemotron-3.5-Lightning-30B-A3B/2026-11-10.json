@@ -1,0 +1,29 @@
+{
+ "day": "2026-11-10",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "NVIDIA fell 5.47% vs S&P 500 fell 0.37%, underperformed by 5.11 pts, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.6,
+ "model_calls": 1,
+ "input_tokens": 3326,
+ "output_tokens": 882,
+ "cost_usd": 0.000409,
+ "model_seconds": 3.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-10",
+   "close": 168.89,
+   "stock_pct": -5.47,
+   "index_pct": -0.37,
+   "vs_index_pts": -5.11,
+   "threshold_pts": 4.42,
+   "typical_daily_gap_pts": 2.21
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:17:45.823554-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-17-52.md"
+}

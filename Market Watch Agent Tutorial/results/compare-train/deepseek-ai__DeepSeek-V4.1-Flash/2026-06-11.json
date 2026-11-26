@@ -1,0 +1,39 @@
+{
+ "day": "2026-06-11",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Alphabet (GOOGL): current-events report (8-K) \u2014 an executive or director change plus shareholder vote results. https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm\nBroadcom (AVGO): current-events report (8-K) on other events. https://www.sec.gov/Archives/edgar/data/1730168/000119312526266777/d152717d8k.htm",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4147,
+ "output_tokens": 2499,
+ "cost_usd": 0.001688,
+ "model_seconds": 7.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-11",
+   "form": "8-K",
+   "items": "5.02,5.07,9.01",
+   "what_it_is": "executive or director change; shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-11",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526266777/d152717d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:15:04.536576-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-15-14.md"
+}

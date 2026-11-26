@@ -1,0 +1,51 @@
+{
+ "day": "2026-05-01",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple rose 3.24% (S&P 0.28%); 10\u2011Q filing https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm",
+ "silent": false,
+ "run_seconds": 5.8,
+ "model_calls": 1,
+ "input_tokens": 3784,
+ "output_tokens": 474,
+ "cost_usd": 0.000194,
+ "model_seconds": 3.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-05-01",
+   "close": 280.14,
+   "stock_pct": 3.24,
+   "index_pct": 0.28,
+   "vs_index_pts": 2.96,
+   "threshold_pts": 2.59,
+   "typical_daily_gap_pts": 1.29
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-05-01",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-05-01",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000210011926001290/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:13:41.204817-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-13-46.md"
+}

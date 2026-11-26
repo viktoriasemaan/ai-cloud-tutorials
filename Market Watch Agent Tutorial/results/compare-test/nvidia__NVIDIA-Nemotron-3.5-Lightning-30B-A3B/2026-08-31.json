@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-31",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 8.7,
+ "model_calls": 1,
+ "input_tokens": 3341,
+ "output_tokens": 911,
+ "cost_usd": 0.000416,
+ "model_seconds": 4.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-31",
+   "form": "N-PX",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000110465926103913/xslN-PX_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:07:42.259739-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-07-50.md"
+}

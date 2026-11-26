@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-17",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA: filed an 8-K (current-events report) covering a material agreement, a material financial obligation, and a Reg FD disclosure (press release).\nhttps://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 3,
+ "input_tokens": 13072,
+ "output_tokens": 1464,
+ "cost_usd": 0.001127,
+ "model_seconds": 5.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-17",
+   "form": "8-K",
+   "items": "1.01,2.03,7.01",
+   "what_it_is": "entered a material agreement; took on a material financial obligation; Regulation FD disclosure (often a press release or presentation)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:21:02.511579-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-21-10.md"
+}

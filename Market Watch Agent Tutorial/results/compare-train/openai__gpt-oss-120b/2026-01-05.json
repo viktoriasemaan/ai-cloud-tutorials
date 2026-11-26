@@ -1,0 +1,46 @@
+{
+ "day": "2026-01-05",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple fell 1.38% while S&P rose 0.67% \u2013 no filing explains it yet  \nEli\u202fLilly fell 3.6% while S&P rose 0.67% \u2013 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 49.4,
+ "model_calls": 5,
+ "input_tokens": 3670,
+ "output_tokens": 485,
+ "cost_usd": 0.000193,
+ "model_seconds": 19.7,
+ "errors": [
+  "ext_proc failed: no more response messages",
+  "ext_proc failed: no more response messages",
+  "ext_proc failed: no more response messages",
+  "ext_proc failed: no more response messages"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-05",
+   "close": 267.26,
+   "stock_pct": -1.38,
+   "index_pct": 0.67,
+   "vs_index_pts": -2.05,
+   "threshold_pts": 2.0,
+   "typical_daily_gap_pts": 0.91
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-05",
+   "close": 1041.51,
+   "stock_pct": -3.6,
+   "index_pct": 0.67,
+   "vs_index_pts": -4.26,
+   "threshold_pts": 3.36,
+   "typical_daily_gap_pts": 1.68
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:54:23.196371-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-55-12.md"
+}

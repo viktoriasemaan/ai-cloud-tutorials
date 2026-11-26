@@ -1,0 +1,40 @@
+{
+ "day": "2026-05-14",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Broadcom rose\u202f5.52\u202f% while the S&P\u202f500 rose\u202f0.79\u202f%; no filing explains it yet  \nMicrosoft filed an\u202f8\u2011K (executive or director change): https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm",
+ "silent": false,
+ "run_seconds": 9.8,
+ "model_calls": 1,
+ "input_tokens": 3681,
+ "output_tokens": 563,
+ "cost_usd": 0.000206,
+ "model_seconds": 6.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-05-14",
+   "close": 439.79,
+   "stock_pct": 5.52,
+   "index_pct": 0.79,
+   "vs_index_pts": 4.73,
+   "threshold_pts": 4.11,
+   "typical_daily_gap_pts": 2.06
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-05-14",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:15:48.361490-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-15-57.md"
+}

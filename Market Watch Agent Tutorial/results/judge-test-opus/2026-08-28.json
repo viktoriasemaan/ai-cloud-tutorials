@@ -1,0 +1,47 @@
+{
+ "day": "2026-08-28",
+ "ideal": "Alert: NVIDIA fell 4.57% while the S&P 500 fell 0.23%, no filing explains it yet. Skip the Alphabet N-PX (fund-holding/proxy vote report, routine paperwork).",
+ "best_model": "nemotron-ft-e1",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Correct alert with accurate numbers and index alongside, omits the routine N-PX; the [NVDA] tag is slightly cluttered but fine.",
+   "answer": "[NVDA] NVIDIA fell 4.57% vs S&P 500 fell 0.23%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct, accurate, plain-language alert on NVIDIA's move versus the index, skipping the routine N-PX.",
+   "answer": "NVIDIA fell 4.57% against the S&P 500 index falling 0.23%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 3,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 1,
+   "note": "Stays silent despite a threshold-crossing NVIDIA drop she would want to know about, and the silent token is malformed.",
+   "answer": "[ SILENT ]"
+  }
+ ],
+ "judge_usage": {
+  "input": 2514,
+  "output": 396
+ }
+}

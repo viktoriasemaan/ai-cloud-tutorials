@@ -1,0 +1,62 @@
+{
+ "day": "2026-04-24",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "NVIDIA rose 4.32% while the S&P 500 rose 0.77% \u2014 nearly double its typical daily move. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.6,
+ "model_calls": 1,
+ "input_tokens": 4536,
+ "output_tokens": 391,
+ "cost_usd": 0.000802,
+ "model_seconds": 4.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-04-24",
+   "close": 208.27,
+   "stock_pct": 4.32,
+   "index_pct": 0.77,
+   "vs_index_pts": 3.55,
+   "threshold_pts": 3.42,
+   "typical_daily_gap_pts": 1.71
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-24",
+   "form": "ARS",
+   "items": "",
+   "what_it_is": "",
+   "description": "ANNUAL REPORT TO SECURITY HOLDERS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000344/goog014907-ars.pdf"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-24",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFINITIVE ADDITIONAL PROXY SOLICITING MATERIALS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000343/a2026alphabetnps_noticeand.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-24",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFINITIVE PROXY STATEMENT",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:11:55.194369-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-12-03.md"
+}

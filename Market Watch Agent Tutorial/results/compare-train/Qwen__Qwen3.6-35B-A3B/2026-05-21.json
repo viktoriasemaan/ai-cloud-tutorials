@@ -1,0 +1,28 @@
+{
+ "day": "2026-05-21",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[ALERT]\nAlphabet (GOOGL) filed an 8-K (current-events report) \u2014 items 8.01 and 9.01; no price move reported to contextualize it.",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4108,
+ "output_tokens": 470,
+ "cost_usd": 0.000829,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-21",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526234488/d144566d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:17:17.720936-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-17-25.md"
+}

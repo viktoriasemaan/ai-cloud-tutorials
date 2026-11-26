@@ -1,0 +1,39 @@
+{
+ "day": "2026-04-20",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple: current-events report (8-K) filed on an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/320193/000114036126015711/ef20071035_8k.htm",
+ "silent": false,
+ "run_seconds": 7.8,
+ "model_calls": 1,
+ "input_tokens": 4133,
+ "output_tokens": 1222,
+ "cost_usd": 0.00084,
+ "model_seconds": 4.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-04-20",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126015711/ef20071035_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-04-20",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000031601126000011/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:08:25.888235-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-08-33.md"
+}

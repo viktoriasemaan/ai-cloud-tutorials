@@ -1,0 +1,95 @@
+{
+ "day": "2026-02-17",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Apple rose 3.17% while the S&P 500 rose 0.16% \u2014 a 3.01 percentage point outperformance. no filing explains it yet",
+ "silent": false,
+ "run_seconds": 8.2,
+ "model_calls": 1,
+ "input_tokens": 4982,
+ "output_tokens": 319,
+ "cost_usd": 0.000782,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-17",
+   "close": 263.88,
+   "stock_pct": 3.17,
+   "index_pct": 0.16,
+   "vs_index_pts": 3.01,
+   "threshold_pts": 2.42,
+   "typical_daily_gap_pts": 1.21
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-02-17",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000011/xslForm13F_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-17",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526055590/xslSCHEDULE_13G_X01/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-17",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526054685/xslSCHEDULE_13G_X01/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-17",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526054609/xslSCHEDULE_13G_X01/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-17",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526054580/xslForm13F_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-17",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526054571/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:03:35.754486-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-03-43.md"
+}

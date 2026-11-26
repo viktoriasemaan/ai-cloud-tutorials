@@ -1,0 +1,59 @@
+{
+ "day": "2026-08-05",
+ "ideal": "Alert, not silence: Eli Lilly rose 4.86% against a -0.2% index day - a 5.06pt gap versus a 2.39pt typical - with a same-day earnings 8-K (items 2.02) and a 10-Q. Perfect answer covers the move with index context, names the earnings 8-K as the reason, links it, and also mentions the 10-Q in plain words, all short.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Terse and clean: right move, right numbers, right reason, links the earnings 8-K. Only misses the same-day 10-Q, which is largely duplicative of the 8-K news.",
+   "answer": "Eli\u202fLilly rose 4.86% while S&P\u202f500 fell 0.2%; earnings 8\u2011K https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/lly-20260805.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Notes both filings and uses the real close price, but calls it 'Q2 earnings' (quarter not stated in evidence) and links the 10-Q while never linking the 8-K it names as the reason.",
+   "answer": "Eli Lilly rose 4.86% to $1,169.86 (S&P 500 fell 0.2%). The stock's Q2 earnings, filed today as an 8-K, explains the move. [10-Q also filed](https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm)."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Both filings linked and described plainly, but 'biggest gap versus the index in a while' is invented - evidence only shows 5.06 vs 2.39 typical and the threshold. Also writes 0.20% where evidence says 0.2.",
+   "answer": "Eli Lilly rose 4.86% while the S&P 500 fell 0.20% \u2014 its biggest gap versus the index in a while, and today's earnings filing points to the reason.\nCurrent-events report (8-K, quarterly results): https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/lly-20260805.htm\nQuarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 2,
+   "note": "'S&P 500 fell -0.2%' is a double-sign error the rules explicitly forbid (should be 'fell 0.2%'), making the line read as a rise. Also omits the 10-Q and any plain-words filing description.",
+   "answer": "Eli Lilly: rose 4.86% vs S&P 500 fell -0.2%, 8-K earnings filing: https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/lly-20260805.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1482,
+  "output": 5868
+ }
+}

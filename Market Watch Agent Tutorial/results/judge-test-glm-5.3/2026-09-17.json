@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-17",
+ "ideal": "Alert on Berkshire Hathaway: a 3.17-point gap vs the S&P 500 cleared the 2.35-point threshold and was ~2.7x the typical 1.18-point daily gap \u2014 exactly the kind of big-vs-index move she wants, with \\",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct call to alert. One line, company + move + index context, both numbers verbatim from the evidence and signs rendered correctly (fell 2.04% / rose 1.13%), ends with the required 'no filing explains it yet', no advice. Clean complete sentence.",
+   "answer": "Berkshire Hathaway fell 2.04% while the S&P 500 rose 1.13%; no filing explains it yet"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Same correct call and content: accurate numbers from the evidence, required no-filing tag, no advice. 'vs S&P 500 rose 1.13%' and the comma splice read slightly clipped next to A, but fully within her short plain style.",
+   "answer": "Berkshire Hathaway fell 2.04% vs S&P 500 rose 1.13%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 2,
+   "accuracy": 1,
+   "clarity": 5,
+   "overall": 1,
+   "note": "Silence with no vigilance. The move cleared the alert threshold (3.17 vs 2.35 pts) and was ~2.7x the typical daily gap, on a watchlist company. This clearly passes her bar.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 962,
+  "output": 2691
+ }
+}

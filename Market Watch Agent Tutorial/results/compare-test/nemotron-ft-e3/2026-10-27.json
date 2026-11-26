@@ -1,0 +1,52 @@
+{
+ "day": "2026-10-27",
+ "model": "nemotron-ft-e3",
+ "answer": "Broadcom, 8-K (current-events report): took on a material financial obligation \u2192 https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm",
+ "silent": false,
+ "run_seconds": 5.6,
+ "model_calls": 2,
+ "input_tokens": 3609,
+ "output_tokens": 71,
+ "cost_usd": 0.000267,
+ "model_seconds": 2.5,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-7a7a48ba-bf65-4e0e-ba08-7521c2d4ccb8\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"B\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666582,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-27",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926013276/y1027263px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-10-27",
+   "form": "8-K",
+   "items": "2.03",
+   "what_it_is": "took on a material financial obligation",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-10-27",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:16:20.368167-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-16-25.md"
+}

@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-21",
+ "ideal": "[SILENT] \u2014 the Broadcom 8-K (Item 5.07 shareholder vote results) is routine annual-meeting paperwork, and the Meta PX14A6G is proxy material she explicitly doesn't want. Nothing today meets her bar.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 1,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 2,
+   "note": "Line itself is accurate and linked, but the 8-K is just shareholder vote results (Item 5.07) \u2014 routine paperwork, not material news. Alerting her to it is noise.",
+   "answer": "Broadcom 8-K shareholder vote results https://www.sec.gov/Archives/edgar/data/1730168/000173016826000039/avgo-20260420.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: the only non-proxy event is a routine vote-results 8-K she doesn't want.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct silence \u2014 nothing in today's evidence rises to her bar.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct silence \u2014 same reasoning as B and C.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1084,
+  "output": 1497
+ }
+}

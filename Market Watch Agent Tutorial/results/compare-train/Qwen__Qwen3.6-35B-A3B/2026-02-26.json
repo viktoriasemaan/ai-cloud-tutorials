@@ -1,0 +1,41 @@
+{
+ "day": "2026-02-26",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "NVIDIA fell 5.46% while the S&P 500 fell 0.56% \u2014 no filing explains it yet.\nBerkshire Hathaway rose 1.76% while the S&P 500 fell 0.56% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4208,
+ "output_tokens": 364,
+ "cost_usd": 0.000745,
+ "model_seconds": 4.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-02-26",
+   "close": 184.89,
+   "stock_pct": -5.46,
+   "index_pct": -0.56,
+   "vs_index_pts": -4.9,
+   "threshold_pts": 3.35,
+   "typical_daily_gap_pts": 1.68
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-26",
+   "close": 502.67,
+   "stock_pct": 1.76,
+   "index_pct": -0.56,
+   "vs_index_pts": 2.31,
+   "threshold_pts": 2.12,
+   "typical_daily_gap_pts": 1.06
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:04:46.373201-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-04-54.md"
+}

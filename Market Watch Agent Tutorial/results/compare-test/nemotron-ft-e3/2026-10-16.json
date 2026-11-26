@@ -1,0 +1,42 @@
+{
+ "day": "2026-10-16",
+ "model": "nemotron-ft-e3",
+ "answer": "Berkshire Hathaway rose 1.21% vs S&P 500 fell 1.11% \u2013 no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 2,
+ "input_tokens": 3452,
+ "output_tokens": 34,
+ "cost_usd": 0.000248,
+ "model_seconds": 1.9,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-e52c9245-9bbd-4b15-8c11-2fcb25bbe522\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"B\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666522,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-10-16",
+   "close": 532.02,
+   "stock_pct": 1.21,
+   "index_pct": -1.11,
+   "vs_index_pts": 2.31,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.12
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-16",
+   "form": "SCHEDULE 13D",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000095/xslSCHEDULE_13D_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:15:19.479331-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-15-26.md"
+}

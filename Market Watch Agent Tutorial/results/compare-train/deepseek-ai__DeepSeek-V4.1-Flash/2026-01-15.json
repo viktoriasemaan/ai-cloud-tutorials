@@ -1,0 +1,40 @@
+{
+ "day": "2026-01-15",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Eli Lilly (LLY), Jan 15: fell 3.76% while the S&P 500 rose 0.27% \u2014 no filing explains it yet.\nEli Lilly filing, Jan 15: a Schedule 13D, the disclosure someone files when they own more than 5% of a company \u2014 https://www.sec.gov/Archives/edgar/data/59478/000119312526013469/xslSCHEDULE_13D_X01/primary_doc.xml",
+ "silent": false,
+ "run_seconds": 11.8,
+ "model_calls": 3,
+ "input_tokens": 14718,
+ "output_tokens": 2464,
+ "cost_usd": 0.001745,
+ "model_seconds": 8.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-15",
+   "close": 1032.97,
+   "stock_pct": -3.76,
+   "index_pct": 0.27,
+   "vs_index_pts": -4.03,
+   "threshold_pts": 3.65,
+   "typical_daily_gap_pts": 1.82
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-15",
+   "form": "SCHEDULE 13D",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526013469/xslSCHEDULE_13D_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T12:58:35.988453-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_12-58-47.md"
+}

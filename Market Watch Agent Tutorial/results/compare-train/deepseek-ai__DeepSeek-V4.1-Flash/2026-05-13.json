@@ -1,0 +1,40 @@
+{
+ "day": "2026-05-13",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Alphabet rose 3.94% while the S&P 500 rose 0.56% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.4,
+ "model_calls": 3,
+ "input_tokens": 13909,
+ "output_tokens": 765,
+ "cost_usd": 0.000683,
+ "model_seconds": 4.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-13",
+   "close": 402.62,
+   "stock_pct": 3.94,
+   "index_pct": 0.56,
+   "vs_index_pts": 3.38,
+   "threshold_pts": 3.31,
+   "typical_daily_gap_pts": 1.66
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-13",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000121465926006075/b513262px14a6g.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:11:41.995928-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-11-50.md"
+}

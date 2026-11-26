@@ -1,0 +1,74 @@
+{
+ "day": "2026-10-28",
+ "model": "nemotron-ft-e3",
+ "answer": "Microsoft: 8-K current-events report (same-day as its quarterly report / 10-Q earnings) \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm\nMicrosoft: 8-K quarterly earnings (item 2.02): https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm\nAlphabet: 8-K earnings (item 2.02) \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 2,
+ "input_tokens": 3911,
+ "output_tokens": 215,
+ "cost_usd": 0.000317,
+ "model_seconds": 3.3,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-15cbc3e0-3a52-4e18-8925-8eb14256d803\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"Microsoft\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666594,\\\"model\\\":\\\"nvidi"
+ ],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000092189526002869/px14a6g14098012_10282026.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-10-28",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:16:32.179231-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-16-38.md"
+}

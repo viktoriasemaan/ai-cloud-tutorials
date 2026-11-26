@@ -1,0 +1,51 @@
+{
+ "day": "2026-01-02",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft fell 2.21% while S&P 500 rose 0.18% no filing explains it yet\nTesla: 8-K earnings current-events report https://www.sec.gov/Archives/edgar/data/1318605/000162828026000016/tsla-20260102.htm",
+ "silent": false,
+ "run_seconds": 28.6,
+ "model_calls": 1,
+ "input_tokens": 3635,
+ "output_tokens": 2327,
+ "cost_usd": 0.00072,
+ "model_seconds": 25.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-02",
+   "close": 472.94,
+   "stock_pct": -2.21,
+   "index_pct": 0.18,
+   "vs_index_pts": -2.39,
+   "threshold_pts": 2.04,
+   "typical_daily_gap_pts": 1.02
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-02",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126000199/ef20060722_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-01-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026000016/tsla-20260102.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:52:25.997999-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-52-54.md"
+}

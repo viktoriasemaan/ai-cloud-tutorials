@@ -1,0 +1,40 @@
+{
+ "day": "2026-07-15",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple rose 4.01% while the S&P 500 rose 0.40% \u2014 no filing explains it yet.\n\nBerkshire Hathaway filed a Schedule 13D/A (an updated report of a large stake in another company): https://www.sec.gov/Archives/edgar/data/1067983/000119312526304838/xslSCHEDULE_13D_X02/primary_doc.xml",
+ "silent": false,
+ "run_seconds": 7.9,
+ "model_calls": 1,
+ "input_tokens": 4137,
+ "output_tokens": 1343,
+ "cost_usd": 0.000919,
+ "model_seconds": 4.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-07-15",
+   "close": 327.5,
+   "stock_pct": 4.01,
+   "index_pct": 0.4,
+   "vs_index_pts": 3.62,
+   "threshold_pts": 3.45,
+   "typical_daily_gap_pts": 1.73
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-07-15",
+   "form": "SCHEDULE 13D/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526304838/xslSCHEDULE_13D_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:17:54.210251-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-18-02.md"
+}

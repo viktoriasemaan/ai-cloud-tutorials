@@ -1,0 +1,84 @@
+{
+ "day": "2026-06-05",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Berkshire Hathaway rose 1.98% while the S&P 500 fell 2.58%, outperforming by 4.57 percentage points \u2014 no filing explains it yet.\nMicrosoft filed an 8-K reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm\nAlphabet filed an 8-K covering a material agreement, a change to shareholder rights, and amendments to bylaws/charter: https://www.sec.gov/Archives/edgar/data/1652044/000119312526259830/d36818d8k.htm\nAlphabet also filed an 8-K reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000059/goog-20260602.htm",
+ "silent": false,
+ "run_seconds": 12.2,
+ "model_calls": 1,
+ "input_tokens": 4862,
+ "output_tokens": 758,
+ "cost_usd": 0.001161,
+ "model_seconds": 8.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-06-05",
+   "close": 488.13,
+   "stock_pct": 1.98,
+   "index_pct": -2.58,
+   "vs_index_pts": 4.57,
+   "threshold_pts": 2.03,
+   "typical_daily_gap_pts": 1.01
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-06-05",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-05",
+   "form": "8-A12B",
+   "items": "",
+   "what_it_is": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526259954/d136863d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-05",
+   "form": "8-K",
+   "items": "1.01,3.03,5.03,9.01",
+   "what_it_is": "entered a material agreement; change to shareholder rights; bylaws or charter amended",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526259830/d36818d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-05",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000059/goog-20260602.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-05",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526258001/d36803ddefa14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:19:08.728726-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-19-20.md"
+}

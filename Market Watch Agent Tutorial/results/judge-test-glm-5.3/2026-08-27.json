@@ -1,0 +1,47 @@
+{
+ "day": "2026-08-27",
+ "ideal": "",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "All numbers from the report, correct sign wording ('rose'), index sits next to the stock number, and it correctly flags that no filing explains the move. Clean and within her style.",
+   "answer": "NVIDIA rose 8.74% vs S&P 500's 0.66%, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Accurate \u2014 '8.08 points' is the report's vs_index_pts \u2014 and the size of the gap is exactly what she cares about. But '8.08 points above it' is less plain wording (percent vs. points ambiguity) and the extra figure clutters a line that is already derivable from the two percentages.",
+   "answer": "NVIDIA rose 8.74% vs S&P 500 0.66% \u2014 8.08 points above it, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Accurate, shortest, and clearest: stock number with the index next to it, the index's direction stated plainly ('S&P up 0.66%'), and the required 'no filing explains it yet'. Matches her style exactly.",
+   "answer": "NVIDIA rose 8.74% (S&P up 0.66%) \u2014 no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 979,
+  "output": 3698
+ }
+}

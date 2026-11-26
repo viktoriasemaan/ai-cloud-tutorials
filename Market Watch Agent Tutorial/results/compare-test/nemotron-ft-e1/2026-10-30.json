@@ -1,0 +1,42 @@
+{
+ "day": "2026-10-30",
+ "model": "nemotron-ft-e1",
+ "answer": "Eli Lilly rose 3.19% while the S&P fell 1.77% \u2014 no filing explains it yet.\nAmazon filed its quarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+ "silent": false,
+ "run_seconds": 6.8,
+ "model_calls": 2,
+ "input_tokens": 3460,
+ "output_tokens": 93,
+ "cost_usd": 0.000261,
+ "model_seconds": 2.6,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-c3d46c44-b813-4035-86e5-7e2645abaf29\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"E\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666317,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-10-30",
+   "close": 1417.54,
+   "stock_pct": 3.19,
+   "index_pct": -1.77,
+   "vs_index_pts": 4.96,
+   "threshold_pts": 4.08,
+   "typical_daily_gap_pts": 2.04
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-10-30",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T20:11:55.321335-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_20-12-01.md"
+}

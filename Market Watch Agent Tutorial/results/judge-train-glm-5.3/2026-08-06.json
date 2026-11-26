@@ -1,0 +1,59 @@
+{
+ "day": "2026-08-06",
+ "ideal": "[SILENT] \u2014 the report holds only routine paperwork for Amazon (an N-PX proxy voting record, a Schedule 13G, and a 13F-HR holding report) plus a Meta Schedule 13G/A. These are exactly the proxy/fund-holding filings she said she doesn't want; no 8-K/10-Q/10-K, no price moves, nothing worth an alert.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: every filing in the report is routine paperwork she explicitly excluded.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly stayed silent on routine 13G/13F/N-PX filings and the Meta 13G/A.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Nothing in the report meets her bar; [SILENT] is the right call.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All filings are proxy or fund-holding reports she doesn't want; silence is right.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1259,
+  "output": 875
+ }
+}

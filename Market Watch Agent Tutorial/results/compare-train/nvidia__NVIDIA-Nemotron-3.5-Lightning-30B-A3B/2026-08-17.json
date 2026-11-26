@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-17",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 18.5,
+ "model_calls": 1,
+ "input_tokens": 3383,
+ "output_tokens": 4949,
+ "cost_usd": 0.001227,
+ "model_seconds": 14.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-17",
+   "form": "8-K",
+   "items": "1.01,2.03,7.01",
+   "what_it_is": "entered a material agreement; took on a material financial obligation; Regulation FD disclosure (often a press release or presentation)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:29:49.091801-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-30-07.md"
+}

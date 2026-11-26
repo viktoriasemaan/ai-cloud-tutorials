@@ -1,0 +1,28 @@
+{
+ "day": "2026-06-30",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 12.2,
+ "model_calls": 1,
+ "input_tokens": 4114,
+ "output_tokens": 692,
+ "cost_usd": 0.001027,
+ "model_seconds": 8.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-06-30",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000056/nvda-20260624.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:21:50.536719-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-22-02.md"
+}

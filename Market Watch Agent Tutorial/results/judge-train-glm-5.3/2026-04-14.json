@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-14",
+ "ideal": "Alert on Amazon's Form 425 plus matching 8-K Reg FD disclosure (the pairing suggests deal/merger-related news, which she wants, and it is not routine paperwork), plus optionally Meta's 8-K exec change; short lines, links, no meta-commentary. Silence would be wrong here; a Form 425 is not routine paperwork.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "All three filings, correct plain-language identification of the Form 425 as a merger/business-combination communication (the key signal in today's evidence), links included, no invented reasons, no meta noise. Minor: repeats the full date unnecessarily and drops the evidence's 'often' hedge on the 8-K contents.",
+   "answer": "Amazon filed a Form 425 (a business-combination/merger communication) plus an 8-K disclosing a press release or presentation the same day, 2026-04-14 \u2014 https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm (8-K: https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm)\n\nMeta Platforms filed an 8-K reporting an executive or director change, 2026-04-14 \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 3,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Covers all three filings with links and short lines, but mislabels the Form 425 as a 'tender-offer filing' (it is a business-combination/merger communication), and gives no sense of why the filings matter.",
+   "answer": "Amazon: filed Form\u202f425 (tender\u2011offer filing) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm  \nAmazon: filed 8\u2011K (Regulation\u202fFD disclosure) \u2013 https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm  \nMeta Platforms: filed 8\u2011K (executive/director change) \u2013 https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 2,
+   "note": "Clean and linkable, but omits Amazon's Form 425 entirely, which is the most significant filing in the evidence and the one that suggests deal-related news. Also asserts 'material event press release' beyond the evidence's 'often a press release or presentation'.",
+   "answer": "Amazon 8-K Regulation FD disclosure (items 7.01, 9.01) - material event press release. https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm\nMeta 8-K executive or director change (item 5.02) - leadership transition. https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 1,
+   "accuracy": 3,
+   "clarity": 1,
+   "overall": 2,
+   "note": "Substance is complete (identifies the 425 as a merger filing, both Amazon filings, Meta 5.02), but the output is broken: visible meta-commentary ('Let me compose the alert'), duplicated content, invented framing ('replay mode' not in evidence), and far exceeds the short Telegram format she asked for.",
+   "answer": "The report covers filings from April 14, 2026 (replay mode). There are no price-move events, but three material filings landed:\n\n1. **AMZN** \u2014 Form 425 (business combination / merger filing) and an 8-K with items 7.01 & 9.01 (Regulation FD disclosure, typically a press release or presentation)\n2. **META** \u2014 8-K item 5.02 (executive or director change)\n\nNo price moves were reported for April 14, so I can't pair these with market reactions. Let me compose the alert.\n\nAmazon (AMZN) filed a Form 425 (typically a business combination or merger filing) https://www.sec.gov/Archives/edgar/data/1018724/000110465926042891/tm2611746d2_425.htm and an 8-K with items 7.01 & 9.01 \u2014 a Regulation FD disclosure, usually a press release or presentation https://www.sec.gov/Archives/edgar/data/1018724/000110465926042880/tm2611746d1_8k.htm\nMeta Platforms (META) filed an 8-K with item 5.02 \u2014 an executive or director change https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm\nNo price moves were reported for April 14 to pair with these filings."
+  }
+ ],
+ "judge_usage": {
+  "input": 1950,
+  "output": 6172
+ }
+}

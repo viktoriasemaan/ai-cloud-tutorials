@@ -1,0 +1,50 @@
+{
+ "day": "2026-03-06",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "NVIDIA: 8-K current-events report \u2014 an executive or director change. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/nvda-20260302.htm\nAlphabet: 8-K current-events report \u2014 an executive or director change. https://www.sec.gov/Archives/edgar/data/1652044/000165204426000026/goog-20260304.htm\n(No unusual price moves against the S&P 500 that day. Eli Lilly filed only a proxy statement, nothing to flag.)",
+ "silent": false,
+ "run_seconds": 18.0,
+ "model_calls": 5,
+ "input_tokens": 28321,
+ "output_tokens": 4038,
+ "cost_usd": 0.002865,
+ "model_seconds": 15.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-03-06",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/nvda-20260302.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-03-06",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000026/goog-20260304.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-06",
+   "form": "PRE 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "PRE 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000021/lly-20260306.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:04:05.607724-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-04-23.md"
+}

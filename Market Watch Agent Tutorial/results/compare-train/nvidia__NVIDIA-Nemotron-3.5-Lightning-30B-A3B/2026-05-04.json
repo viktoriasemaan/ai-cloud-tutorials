@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-04",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Meta Platforms: 8-K current-events report filed, items 8.01 and 9.01. https://www.sec.gov/Archives/edgar/data/1326801/000119312526204128/d134616d8k.htm",
+ "silent": false,
+ "run_seconds": 17.9,
+ "model_calls": 1,
+ "input_tokens": 3632,
+ "output_tokens": 5861,
+ "cost_usd": 0.001426,
+ "model_seconds": 14.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-05-04",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926054974/tm261382d4_defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-05-04",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526204128/d134616d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-05-04",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526202243/brka-20260331.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:14:17.730292-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-14-35.md"
+}

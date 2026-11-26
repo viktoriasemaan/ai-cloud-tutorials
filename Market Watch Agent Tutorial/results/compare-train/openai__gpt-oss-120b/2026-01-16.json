@@ -1,0 +1,28 @@
+{
+ "day": "2026-01-16",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Meta Platforms \u2013 8\u2011K filing reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/1326801/000162828026002429/meta-20260112.htm",
+ "silent": false,
+ "run_seconds": 12.3,
+ "model_calls": 1,
+ "input_tokens": 3559,
+ "output_tokens": 434,
+ "cost_usd": 0.000181,
+ "model_seconds": 9.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-16",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026002429/meta-20260112.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:59:03.667165-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-59-15.md"
+}

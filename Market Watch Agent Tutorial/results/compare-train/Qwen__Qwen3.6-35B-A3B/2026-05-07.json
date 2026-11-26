@@ -1,0 +1,39 @@
+{
+ "day": "2026-05-07",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[Berkshire Hathaway (BRK-B) filed an 8-K today covering quarterly results, an executive/director change, amended bylaws or charter, shareholder vote results, and financial statements. No notable price move today to compare.]",
+ "silent": false,
+ "run_seconds": 16.3,
+ "model_calls": 1,
+ "input_tokens": 4305,
+ "output_tokens": 802,
+ "cost_usd": 0.001144,
+ "model_seconds": 13.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-05-07",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000048/lly-20260504.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-05-07",
+   "form": "8-K",
+   "items": "2.02,5.02,5.03,5.07,9.01",
+   "what_it_is": "quarterly or annual results (earnings); executive or director change; bylaws or charter amended; shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526212148/d74313d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:14:58.676451-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-15-14.md"
+}

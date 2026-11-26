@@ -1,0 +1,28 @@
+{
+ "day": "2026-03-31",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 5.7,
+ "model_calls": 1,
+ "input_tokens": 3338,
+ "output_tokens": 764,
+ "cost_usd": 0.000386,
+ "model_seconds": 2.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-31",
+   "form": "DFAN14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DFAN14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526133360/d111268ddfan14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:08:25.322328-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-08-30.md"
+}

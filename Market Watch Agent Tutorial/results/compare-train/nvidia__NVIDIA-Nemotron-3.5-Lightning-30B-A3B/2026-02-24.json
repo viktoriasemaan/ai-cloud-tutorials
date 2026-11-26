@@ -1,0 +1,28 @@
+{
+ "day": "2026-02-24",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 12.3,
+ "model_calls": 1,
+ "input_tokens": 3357,
+ "output_tokens": 2329,
+ "cost_usd": 0.000701,
+ "model_seconds": 8.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-24",
+   "form": "8-K",
+   "items": "5.07,9.01",
+   "what_it_is": "shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126006577/ef20060722_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:03:50.101438-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-04-02.md"
+}

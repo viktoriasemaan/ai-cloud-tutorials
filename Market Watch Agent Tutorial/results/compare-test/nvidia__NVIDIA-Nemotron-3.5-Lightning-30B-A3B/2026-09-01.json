@@ -1,0 +1,28 @@
+{
+ "day": "2026-09-01",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 12.6,
+ "model_calls": 1,
+ "input_tokens": 3363,
+ "output_tokens": 3310,
+ "cost_usd": 0.000897,
+ "model_seconds": 8.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-09-01",
+   "form": "8-K/A",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K/A",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126035325/ef20081427_8ka.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:07:55.765157-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-08-08.md"
+}

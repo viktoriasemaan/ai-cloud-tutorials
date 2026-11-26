@@ -1,0 +1,86 @@
+{
+ "day": "2026-07-23",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Amazon fell 4.57% vs S&P\u202f500 fell 1.23% \u2013 no filing explains it yet  \nAlphabet fell 7.13% vs S&P\u202f500 fell 1.23% \u2013 10\u2011Q filing https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm  \nTesla fell 14.52% vs S&P\u202f500 fell 1.23% \u2013 10\u2011Q filing https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+ "silent": false,
+ "run_seconds": 10.2,
+ "model_calls": 1,
+ "input_tokens": 4095,
+ "output_tokens": 808,
+ "cost_usd": 0.00026,
+ "model_seconds": 7.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-07-23",
+   "close": 233.66,
+   "stock_pct": -4.57,
+   "index_pct": -1.23,
+   "vs_index_pts": -3.34,
+   "threshold_pts": 3.08,
+   "typical_daily_gap_pts": 1.54
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-07-23",
+   "close": 317.69,
+   "stock_pct": -7.13,
+   "index_pct": -1.23,
+   "vs_index_pts": -5.9,
+   "threshold_pts": 4.02,
+   "typical_daily_gap_pts": 2.01
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-23",
+   "close": 319.69,
+   "stock_pct": -14.52,
+   "index_pct": -1.23,
+   "vs_index_pts": -13.29,
+   "threshold_pts": 5.11,
+   "typical_daily_gap_pts": 2.56
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-07-23",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-07-23",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000031601126000029/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-23",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:22:26.592394-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-22-36.md"
+}

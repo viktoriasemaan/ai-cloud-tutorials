@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-23",
+ "ideal": "Alert on the big Microsoft move vs the index with \u201cno filing explains it yet,\u201d note the NVIDIA 8-K executive change briefly with a link, and skip the Eli Lilly 13G/A entirely since it's the routine paperwork she said she doesn't want. Two short lines.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Numbers, sign-words, and filing facts all correct, but the extra parenthetical about the skipped Eli Lilly 13G/A (and the redundant date) is noise on a filing she explicitly doesn't want to hear about.",
+   "answer": "Microsoft rose 3.28% on 2026-01-23 while the S&P 500 rose 0.04% \u2014 no filing explains it yet.\nNVIDIA filed an 8-K (current-events report) on an executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000003/nvda-20260120.htm\n(Skipped Eli Lilly's Schedule 13G/A \u2014 a routine fund-holding report.)"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Terse, accurate, no noise. Minor miss: doesn't say in plain words what kind of filing an 8-K is, though 'executive/director change' conveys the substance.",
+   "answer": "Microsoft: rose 3.28% vs S&P 500 rose 0.04%, no filing explains it yet\nNVIDIA: 8-K executive/director change https://www.sec.gov/Archives/edgar/data/1045810/000104581026000003/nvda-20260120.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Two clean lines: correct move and index numbers with the right words, what the NVIDIA filing is in plain words, link, no stray details. Best fit for her style.",
+   "answer": "Microsoft rose 3.28% vs S&P\u202f500 up 0.04%; no filing explains it yet  \nNVIDIA filed an 8\u2011K (executive or director change) https://www.sec.gov/Archives/edgar/data/1045810/000104581026000003/nvda-20260120.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Accurate and clean, but writes the index move as '+0.04%' with a sign instead of words ('rose/up'), a small deviation from the required style.",
+   "answer": "Microsoft rose 3.28% (S&P 500 +0.04%) \u2014 no filing explains it yet.\nNVIDIA filed an 8-K \u2014 executive or director change. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000003/nvda-20260120.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1463,
+  "output": 4217
+ }
+}

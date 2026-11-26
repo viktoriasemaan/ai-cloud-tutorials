@@ -10,6 +10,11 @@ Every run and every score behind this tutorial. Each file is one day, saved as J
 | `judge-kimi-k2.6/` | Kimi K2.6 on CoreWeave as the second judge, on the 18 days where its output was valid | `eval/judge.py --judge moonshotai/Kimi-K2.6` |
 | `local/qwen3.5_4b/` | the same requests sent to Qwen3.5 4B in Ollama on a laptop | `eval/local_replay.py` |
 | `compare-recorded/`, `judge-recorded/`, `local-recorded/` | a smaller 3-day run of the same scripts | the same scripts |
+| `compare-train/<model>/` | for the [fine-tuning tutorial](../../Fine-Tune%20an%20Open%20Model%20Tutorial/): four open models on 121 earlier market days (Jan 2 to Aug 21, 2026), 484 runs | `eval/compare.py` with `COMPARE_OUT=results/compare-train` |
+| `judge-train-glm-5.3/` | GLM 5.3 on CoreWeave scoring those 484 answers; the 5 out of 5 answers became the training data | `eval/judge.py --judge zai-org/GLM-5.3 --tries 4` |
+| `judge-train-kimi/`, `judge-train-minimax-m3/` | the judges we tested on 4 training days before picking GLM 5.3 (Kimi returned no scores or all 5s) | the same script |
+| `compare-test/<model>/` | base Nemotron and the two fine-tuned checkpoints on the 38 test days | `eval/compare.py` with `COMPARE_OUT=results/compare-test` |
+| `judge-test-opus/`, `judge-test-glm-5.3/` | both judges scoring the test runs blind: wrong calls 5 → 2 with the 3-epoch checkpoint | `eval/judge.py` |
 | `archive/` | earlier versions, kept so you can see what changed (see below) | |
 
 ## The numbers

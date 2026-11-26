@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-01",
+ "ideal": "The move is worth an alert: Alphabet beat its 2.62-pt threshold by outperforming the index 2.66 pts. Ideal alert: one line, company, direction and size, the index move next to it, numbers only from the report, ending with the no-filing phrase.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "All numbers correct and required phrase present, but it's a run-on: no separation between '0.75%' and 'no filing explains it yet' makes it sloppy for a chat message.",
+   "answer": "Alphabet rose 3.42% vs S&P 500 rose 0.75% no filing explains it yet"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Compact, every number from the report, index right next to the stock number, ends with the required phrase. Matches her style exactly.",
+   "answer": "Alphabet rose 3.42% (S&P\u202f500 up 0.75%); no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All numbers from the report (2.66 is vs_index_pts), and the gap size is genuinely useful given her focus on moves vs the index. A touch longer than needed, so barely under B and D on style.",
+   "answer": "Alphabet rose 3.42% while the S&P 500 rose 0.75% (outperformed by 2.66 percentage points); no filing explains it yet."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Exactly the required shape: company, rose 3.42%, S&P 500 rose 0.75% beside it, ends with the required phrase. Nothing extra, nothing invented.",
+   "answer": "Alphabet rose 3.42% while the S&P 500 rose 0.75% \u2014 no filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 1020,
+  "output": 3951
+ }
+}

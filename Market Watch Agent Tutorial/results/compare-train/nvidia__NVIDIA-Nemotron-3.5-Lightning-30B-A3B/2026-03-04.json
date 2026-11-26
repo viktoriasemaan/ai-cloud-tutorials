@@ -1,0 +1,40 @@
+{
+ "day": "2026-03-04",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Amazon rose 3.88% vs S&P 500 0.71%, no filing explains it yet\nBroadcom 8-K filing: quarterly or annual results (earnings) or other events https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-20260304.htm",
+ "silent": false,
+ "run_seconds": 18.2,
+ "model_calls": 1,
+ "input_tokens": 3493,
+ "output_tokens": 4430,
+ "cost_usd": 0.001131,
+ "model_seconds": 14.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-03-04",
+   "close": 216.82,
+   "stock_pct": 3.88,
+   "index_pct": 0.71,
+   "vs_index_pts": 3.17,
+   "threshold_pts": 3.08,
+   "typical_daily_gap_pts": 1.54
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-03-04",
+   "form": "8-K",
+   "items": "2.02,8.01,9.01",
+   "what_it_is": "quarterly or annual results (earnings); other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-20260304.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:05:13.512435-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-05-31.md"
+}

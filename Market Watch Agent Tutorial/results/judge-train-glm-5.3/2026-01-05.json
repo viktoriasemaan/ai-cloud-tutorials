@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-05",
+ "ideal": "An alert covering both moves: Apple down 1.38% vs the S&P's +0.67%, Eli Lilly down 3.6% vs +0.67%, each noted with 'no filing explains it yet.' Silence is wrong here \u2014 both moves crossed the alert thresholds.",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both moves, correct numbers, index next to each, ends each line with 'no filing explains it yet.' Short and plain, exactly her style. Nothing invented.",
+   "answer": "Apple fell 1.38% while S&P rose 0.67% \u2013 no filing explains it yet  \nEli\u202fLilly fell 3.6% while S&P rose 0.67% \u2013 no filing explains it yet"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 2,
+   "accuracy": 1,
+   "clarity": 4,
+   "overall": 2,
+   "note": "The two alert lines are accurate and the close prices are from the report. But the third line invents filings that are nowhere in the evidence ('a Form 4 and a Form 144'), asserts their contents, and adds the routine-paperwork noise she said she doesn't want. Fabricated content is disqualifying.",
+   "answer": "Apple fell 1.38% (close $267.26) while the S&P 500 rose 0.67% \u2014 2.05 points behind the index; no filing explains it yet.\nEli Lilly fell 3.6% (close $1,041.51) against the S&P's +0.67% \u2014 4.26 points behind; no filing explains it yet.\nOnly routine filings today (a Form 4 and a Form 144); nothing material in them."
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both moves, correct numbers, quantifies the gap versus the index (2.05 and 4.26 pts, both from the report), and flags no filing. Clean and complete.",
+   "answer": "- **Apple** fell 1.38% while the S&P 500 rose 0.67% (underperformed by 2.05 pts); no filing explains it yet.\n- **Eli Lilly** fell 3.6% while the S&P 500 rose 0.67% (underperformed by 4.26 pts); no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 3,
+   "note": "The Lilly line is accurate and well-formed. But it omits Apple, which crossed its 2.0-pt threshold (2.05 pts behind, more than double its typical 0.91-pt gap) and is the largest name on her list. Half the day's reportable moves go unreported.",
+   "answer": "Eli Lilly fell 3.6% vs S&P 500 rose 0.67%, underperforming by 4.26 pts, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1277,
+  "output": 3054
+ }
+}

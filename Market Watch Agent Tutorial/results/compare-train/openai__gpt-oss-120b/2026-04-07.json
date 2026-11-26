@@ -1,0 +1,29 @@
+{
+ "day": "2026-04-07",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 3551,
+ "output_tokens": 162,
+ "cost_usd": 0.000134,
+ "model_seconds": 4.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-07",
+   "close": 333.97,
+   "stock_pct": 6.21,
+   "index_pct": 0.04,
+   "vs_index_pts": 6.17,
+   "threshold_pts": 4.03,
+   "typical_daily_gap_pts": 2.01
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:09:54.791604-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-10-00.md"
+}

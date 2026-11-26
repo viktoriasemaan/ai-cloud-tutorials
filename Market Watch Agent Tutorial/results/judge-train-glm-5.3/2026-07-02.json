@@ -1,0 +1,59 @@
+{
+ "day": "2026-07-02",
+ "ideal": "Apple and Tesla big moves with the S&P next to them (Apple +4.84% vs index -0.13%, Tesla -7.49% vs -0.13%), Tesla's same-day earnings 8-K linked as the likely reason, Apple's move flagged with 'no filing explains it yet', NVIDIA's 8-K executive-change linked, and Microsoft's PX14A6G (routine proxy paperwork) left out.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Both big moves covered correctly, Tesla earnings 8-K linked, Apple correctly flagged as unexplained, Microsoft proxy rightly dropped. Omits the NVIDIA 8-K executive change, which she asked for. Otherwise clean and in style.",
+   "answer": "Apple rose\u202f4.84% while the S&P\u202f500 fell\u202f0.13%; no filing explains it yet  \nTesla fell\u202f7.49% while the S&P\u202f500 fell\u202f0.13%; 8\u2011K earnings report\u202fhttps://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers both moves and links the Tesla 8-K, but writes '-0.13%' with a minus sign (formatting rule says drop it), and adds rounded numbers '~5 pts' and '~7.4 pts' that aren't literally the report's 4.97/7.36. Also omits the NVIDIA 8-K and reads clunkier than A.",
+   "answer": "Apple rose 4.84% while the S&P 500 fell 0.13% (outperformed by ~5 pts); no filing explains it yet.\nTesla fell 7.49% vs the S&P's -0.13% drop (underperformed by ~7.4 pts); filed 8-K reporting quarterly results: https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Best coverage (includes NVIDIA's 8-K, drops the Microsoft proxy), but the Tesla earnings 8-K is mentioned without the required link, and the 8-Ks aren't described as current-events reports in plain words. Format is a bit list-like.",
+   "answer": "Tesla - fell 7.49% vs S&P fell 0.13%, earnings 8-K explains it\nApple - rose 4.84% vs S&P fell 0.13%, no filing explains it yet\nNVIDIA - 8-K executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Gets everything right: both moves with exact index figures, Tesla's earnings 8-K linked in plain words as same-day, Apple flagged 'no filing explains it yet', NVIDIA's 8-K exec change linked, and the Microsoft proxy paperwork correctly excluded. All numbers come straight from the report.",
+   "answer": "Apple rose 4.84% while the S&P 500 fell 0.13% \u2014 no filing explains it yet.\nTesla fell 7.49% while the S&P 500 fell 0.13%; its 8-K current-events report the same day carried quarterly results \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm\nNVIDIA filed an 8-K current-events report about an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1795,
+  "output": 4671
+ }
+}

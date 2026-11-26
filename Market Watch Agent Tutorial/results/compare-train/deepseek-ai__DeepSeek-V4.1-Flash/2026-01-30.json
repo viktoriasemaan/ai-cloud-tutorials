@@ -1,0 +1,39 @@
+{
+ "day": "2026-01-30",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple filed its quarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm \u2014 the quarterly results update you asked to hear about.",
+ "silent": false,
+ "run_seconds": 9.9,
+ "model_calls": 1,
+ "input_tokens": 4122,
+ "output_tokens": 1716,
+ "cost_usd": 0.001176,
+ "model_seconds": 6.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-30",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-01-30",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000010290926000226/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:00:20.513380-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-00-30.md"
+}

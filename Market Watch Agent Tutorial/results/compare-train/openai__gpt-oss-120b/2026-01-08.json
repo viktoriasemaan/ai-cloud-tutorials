@@ -1,0 +1,39 @@
+{
+ "day": "2026-01-08",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 3690,
+ "output_tokens": 105,
+ "cost_usd": 0.000129,
+ "model_seconds": 2.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-08",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFINITIVE ADDITIONAL PROXY SOLICITING MATERIALS",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000009/aapl014016-defa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-08",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFINITIVE PROXY STATEMENT",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:58:16.807165-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-58-22.md"
+}

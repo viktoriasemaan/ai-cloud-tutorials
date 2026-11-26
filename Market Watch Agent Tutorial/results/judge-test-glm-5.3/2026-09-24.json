@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-24",
+ "ideal": "Only one event today: an Amazon 8-A12B, which is a listing/registration notice \u2014 routine paperwork she explicitly said she doesn't want. No big moves vs the index, no material filings. The right call was [SILENT], and all three answers made it.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly stayed silent on a routine listing notice. Nothing met her bar today.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly stayed silent on a routine listing notice. Nothing met her bar today.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correctly stayed silent on a routine listing notice. Nothing met her bar today.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 924,
+  "output": 709
+ }
+}

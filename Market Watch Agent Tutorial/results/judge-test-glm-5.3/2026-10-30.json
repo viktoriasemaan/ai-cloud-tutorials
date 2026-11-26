@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-30",
+ "ideal": "Both events merit an alert: Eli Lilly beat the S&P 500 by 4.96 pts (over the 4.08 threshold) with no explaining filing, and Amazon's 10-Q is a filing type she explicitly wants (quarterly report, with link). Two lines, plain language, correct numbers and signs.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers both events, all numbers from the report, correct rise/fall wording, correct 10-Q description with link.",
+   "answer": "Eli Lilly rose 3.19% vs S&P 500 fell 1.77% \u2014 no filing explains it yet.\nAmazon filed a 10-Q (quarterly report): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Good Lilly line (adding the 4.96-pt gap is fine), but omits the Amazon 10-Q, a filing type she explicitly wants.",
+   "answer": "Eli Lilly rose 3.19% vs S&P 500 fell 1.77%, outperformance 4.96pts; no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Covers both events accurately and plainly; essentially equal to A.",
+   "answer": "Eli Lilly rose 3.19% while the S&P fell 1.77% \u2014 no filing explains it yet.\nAmazon filed its quarterly report (10-Q): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1183,
+  "output": 2258
+ }
+}

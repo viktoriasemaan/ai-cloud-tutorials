@@ -1,0 +1,74 @@
+{
+ "day": "2026-07-02",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Apple rose 4.84% while the S&P 500 fell 0.13% \u2014 no filing explains it yet.\nTesla fell 7.49% while the S&P 500 fell 0.13%; its 8-K current-events report the same day carried quarterly results \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm\nNVIDIA filed an 8-K current-events report about an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4464,
+ "output_tokens": 1428,
+ "cost_usd": 0.001033,
+ "model_seconds": 3.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-07-02",
+   "close": 308.63,
+   "stock_pct": 4.84,
+   "index_pct": -0.13,
+   "vs_index_pts": 4.97,
+   "threshold_pts": 3.33,
+   "typical_daily_gap_pts": 1.66
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-02",
+   "close": 393.45,
+   "stock_pct": -7.49,
+   "index_pct": -0.13,
+   "vs_index_pts": -7.36,
+   "threshold_pts": 4.81,
+   "typical_daily_gap_pts": 2.4
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-07-02",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926008121/j72261px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-07-02",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:17:08.173998-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-17-14.md"
+}

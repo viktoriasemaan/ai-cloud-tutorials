@@ -1,0 +1,40 @@
+{
+ "day": "2026-01-26",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple rose 2.97% (S&P\u202f500 up 0.51%); no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3675,
+ "output_tokens": 313,
+ "cost_usd": 0.000163,
+ "model_seconds": 7.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-26",
+   "close": 255.41,
+   "stock_pct": 2.97,
+   "index_pct": 0.51,
+   "vs_index_pts": 2.46,
+   "threshold_pts": 2.0,
+   "typical_daily_gap_pts": 0.9
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-01-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000008/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:00:06.754272-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-00-16.md"
+}

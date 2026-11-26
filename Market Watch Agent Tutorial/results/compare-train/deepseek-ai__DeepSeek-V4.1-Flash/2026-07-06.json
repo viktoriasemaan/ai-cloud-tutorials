@@ -1,0 +1,40 @@
+{
+ "day": "2026-07-06",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Tesla rose 6.69% on 2026-07-06 while the S&P 500 rose 0.87% \u2014 a 5.82-point gap over the index; no filing explains it yet.\nBroadcom filed a current-events report (8-K, item 8.01 \"other events\"): https://www.sec.gov/Archives/edgar/data/1730168/000119312526295589/d84378d8k.htm",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 4,
+ "input_tokens": 19723,
+ "output_tokens": 1800,
+ "cost_usd": 0.001341,
+ "model_seconds": 8.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-06",
+   "close": 419.77,
+   "stock_pct": 6.69,
+   "index_pct": 0.87,
+   "vs_index_pts": 5.82,
+   "threshold_pts": 5.16,
+   "typical_daily_gap_pts": 2.58
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-07-06",
+   "form": "8-K",
+   "items": "8.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526295589/d84378d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:17:18.681803-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-17-28.md"
+}

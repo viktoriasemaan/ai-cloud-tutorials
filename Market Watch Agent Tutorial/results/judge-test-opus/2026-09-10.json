@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-10",
+ "ideal": "A short alert that Broadcom filed its 10-Q quarterly report, with the link. It could optionally note that Broadcom also filed an S-4, a registration form often used for deals or share exchanges, without guessing at the details.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 3,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 1,
+   "note": "She explicitly wants 10-Q filings, so staying silent missed Broadcom's quarterly report.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 1,
+   "clarity": 3,
+   "overall": 2,
+   "note": "It wrongly calls the S-4 a 'material event 8-K', which misstates what the filing is, and the 10-Q label 'quarterly 10-Q current filing' is muddled.",
+   "answer": "Broadcom (AVGO): quarterly 10-Q current filing  \nhttps://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm\n\nBroadcom (AVGO): material event 8-K current-events report  \nhttps://www.sec.gov/Archives/edgar/data/1730168/000119312526387881/d154803ds4.htm"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It correctly flags the 10-Q with its link, though it doesn't mention the S-4, which may signal a deal.",
+   "answer": "Broadcom 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2609,
+  "output": 590
+ }
+}

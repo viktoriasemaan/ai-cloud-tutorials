@@ -1,0 +1,29 @@
+{
+ "day": "2026-04-07",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Broadcom rose 6.21% vs S&P 500 rose 0.04%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 5.9,
+ "model_calls": 1,
+ "input_tokens": 3317,
+ "output_tokens": 682,
+ "cost_usd": 0.000369,
+ "model_seconds": 2.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-07",
+   "close": 333.97,
+   "stock_pct": 6.21,
+   "index_pct": 0.04,
+   "vs_index_pts": 6.17,
+   "threshold_pts": 4.03,
+   "typical_daily_gap_pts": 2.01
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:09:25.552562-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-09-31.md"
+}

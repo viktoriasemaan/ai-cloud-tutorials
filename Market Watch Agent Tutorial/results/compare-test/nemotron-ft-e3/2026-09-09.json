@@ -1,0 +1,53 @@
+{
+ "day": "2026-09-09",
+ "model": "nemotron-ft-e3",
+ "answer": "Meta Platforms: rose 6.55% vs S&P 500 fell 0.46%, no filing explains it yet  \nAmazon: filed an 8-K (executive or director change) https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm",
+ "silent": false,
+ "run_seconds": 7.7,
+ "model_calls": 2,
+ "input_tokens": 3618,
+ "output_tokens": 101,
+ "cost_usd": 0.000273,
+ "model_seconds": 2.5,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-e9b4fa35-75c1-4d40-96e1-8d662973ea53\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"Meta\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666379,\\\"model\\\":\\\"nvidia/NVI"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-09-09",
+   "close": 653.69,
+   "stock_pct": 6.55,
+   "index_pct": -0.46,
+   "vs_index_pts": 7.02,
+   "threshold_pts": 5.41,
+   "typical_daily_gap_pts": 2.71
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-09-09",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926011511/o91268px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-09",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:12:54.774766-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-13-02.md"
+}

@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-26",
+ "ideal": "One short line on Apple's move vs the index with 'no filing explains it yet'; the NVDA 13G/A is a fund-holding report (routine paperwork she doesn't want) and must be left out.",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Correct alert on Apple with accurate numbers, correct fallback line, and correctly skips the NVDA 13G/A. The date is harmless filler but slightly pads a message she wants short.",
+   "answer": "Apple rose 2.97% on 2026-01-26 while the S&P 500 rose 0.51% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 2,
+   "accuracy": 4,
+   "clarity": 2,
+   "overall": 3,
+   "note": "The Apple facts are accurate and NVDA is correctly excluded, but the answer opens with spurious '[OUT-OF-BAND USER MESSAGE]' tags the agent should never emit \u2014 noise that reads like injected or echoed content and would confuse her. Run-on phrasing also hurts clarity.",
+   "answer": "[OUT-OF-BAND USER MESSAGE]\n[/OUT-OF-BAND USER MESSAGE]\n\nApple rose 2.97% versus S&P 500 rose 0.51%, outperformance 2.46 pts no filing explains it yet"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Exactly her style: one plain line, stock move next to the index move, honest 'no filing explains it yet,' and the routine NVDA filing correctly left out. Every number traces to the report.",
+   "answer": "Apple rose 2.97% (S&P\u202f500 up 0.51%); no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Accurate line with the stock and index moves plus the 2.46-point outperformance (straight from the report), which is the very measure she cares about. NVDA correctly omitted. Clean and plain.",
+   "answer": "Apple: rose 2.97% vs S&P 500's 0.51% \u2014 outperformed by 2.46 points. No filing explains it yet."
+  }
+ ],
+ "judge_usage": {
+  "input": 1158,
+  "output": 2388
+ }
+}

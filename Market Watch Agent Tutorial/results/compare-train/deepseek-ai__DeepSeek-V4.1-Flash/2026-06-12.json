@@ -1,0 +1,28 @@
+{
+ "day": "2026-06-12",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Amazon: 8-K current-events report filed today (item 8.01, \"other events\") \u2014 its only SEC filing of the day \u2014 https://www.sec.gov/Archives/edgar/data/1018724/000110465926073562/tm2613616d5_8k.htm",
+ "silent": false,
+ "run_seconds": 15.8,
+ "model_calls": 1,
+ "input_tokens": 4032,
+ "output_tokens": 4085,
+ "cost_usd": 0.002704,
+ "model_seconds": 12.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-06-12",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926073562/tm2613616d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:15:19.108777-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-15-34.md"
+}

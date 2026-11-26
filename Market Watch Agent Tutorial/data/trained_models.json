@@ -1,0 +1,4 @@
+{
+ "nemotron-ft-e1": "wandb-artifact:///vsemaan-cloudup-one/market-watch-agent/market-alerts-sft-e1-run:v1",
+ "nemotron-ft-e3": "wandb-artifact:///vsemaan-cloudup-one/market-watch-agent/market-alerts-sft-e3-run:v1"
+}

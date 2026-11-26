@@ -1,0 +1,39 @@
+{
+ "day": "2026-05-05",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 8.4,
+ "model_calls": 1,
+ "input_tokens": 4275,
+ "output_tokens": 267,
+ "cost_usd": 0.000665,
+ "model_seconds": 4.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-05-05",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926055638/xslForm13F_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-05",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000121465926005597/o55262px14a6g.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:14:33.859655-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-14-42.md"
+}

@@ -1,0 +1,149 @@
+{
+ "day": "2026-04-29",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft: 10\u2011Q quarterly report https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm and 8\u2011K earnings release https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-20260429.htm  \nAmazon: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260429.htm  \nAlphabet: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/goog-20260429.htm  \nMeta Platforms: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm",
+ "silent": false,
+ "run_seconds": 7.9,
+ "model_calls": 1,
+ "input_tokens": 4799,
+ "output_tokens": 843,
+ "cost_usd": 0.000287,
+ "model_seconds": 5.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-04-29",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000210011926000139/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-04-29",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-04-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-20260429.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-29",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000210011926000133/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-04-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260429.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-29",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000210011926000161/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-29",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000210011926000137/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/goog-20260429.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-29",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000210011926000179/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-04-29",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000121465926005225/o429263px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-04-29",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000210011926000227/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:13:12.271394-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-13-19.md"
+}

@@ -1,0 +1,29 @@
+{
+ "day": "2026-03-17",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Eli Lilly fell 5.94% while the S&P 500 rose 0.26% \u2014 a 6.2-point divergence with no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4089,
+ "output_tokens": 302,
+ "cost_usd": 0.000678,
+ "model_seconds": 3.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-17",
+   "close": 930.35,
+   "stock_pct": -5.94,
+   "index_pct": 0.26,
+   "vs_index_pts": -6.2,
+   "threshold_pts": 5.04,
+   "typical_daily_gap_pts": 2.52
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:07:02.357848-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-07-08.md"
+}

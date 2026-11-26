@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-02",
+ "ideal": "Alert Tesla (fell 5.42% vs S&P 500 rose 0.09%, same-day earnings 8-K) with link, plus brief plain-word lines with links for the Alphabet and Broadcom executive-change 8-Ks, 4 lines max, no advice.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Covers the Tesla move with correct numbers and the right reason, but violates the rule to link the filing and skips the Alphabet and Broadcom 8-Ks.",
+   "answer": "Tesla fell 5.42% vs S&P 500 rose 0.09%. Earnings 8-K explains it."
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "All three events, links included, numbers accurate. Minor rule deviations: 'up' instead of 'rose', and filing kind not stated in plain words.",
+   "answer": "Tesla fell 5.42% vs S&P\u202f500 up 0.09%; 8\u2011K earnings filing explains it (https://www.sec.gov/Archives/edgar/data/1318605/000162828026022956/tsla-20260402.htm)  \nAlphabet filed an 8\u2011K (executive/director change) (https://www.sec.gov/Archives/edgar/data/1652044/000165204426000031/goog-20260330.htm)  \nBroadcom filed an 8\u2011K (executive/director change) (https://www.sec.gov/Archives/edgar/data/1730168/000119312526140574/d109450d8k.htm)"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Accurate Tesla line with link and plain filing description, but odd bracket formatting and it omits the Alphabet and Broadcom 8-Ks.",
+   "answer": "[Tesla (TSLA) fell 5.42% while S&P 500 rose 0.09% \u2014 quarterly earnings report (8-K) explains the move: https://www.sec.gov/Archives/edgar/data/1318605/000162828026022956/tsla-20260402.htm]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Best: Tesla move with index next to it, the earnings 8-K linked and called a quarterly report, and the two executive-change 8-Ks in plain words with links, all within 5 lines.",
+   "answer": "Tesla fell 5.42% while the S&P 500 rose 0.09% \u2014 a same-day 8-K reports quarterly results, which lines up: https://www.sec.gov/Archives/edgar/data/1318605/000162828026022956/tsla-20260402.htm\nAlphabet filed an 8-K current-events report for an executive or director change: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000031/goog-20260330.htm\nBroadcom filed an 8-K current-events report for an executive or director change: https://www.sec.gov/Archives/edgar/data/1730168/000119312526140574/d109450d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1700,
+  "output": 4709
+ }
+}

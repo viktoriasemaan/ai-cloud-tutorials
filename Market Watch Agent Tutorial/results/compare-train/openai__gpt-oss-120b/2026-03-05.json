@@ -1,0 +1,52 @@
+{
+ "day": "2026-03-05",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Broadcom rose\u202f4.8%\u202f(S&P\u202f500 fell\u202f0.56%); no filing explains it yet  \nBerkshire Hathaway rose\u202f2.65%\u202f(S&P\u202f500 fell\u202f0.56%); 8\u2011K filing (other events) https://www.sec.gov/Archives/edgar/data/1067983/000119312526092557/d82599d8k.htm",
+ "silent": false,
+ "run_seconds": 18.3,
+ "model_calls": 1,
+ "input_tokens": 3782,
+ "output_tokens": 627,
+ "cost_usd": 0.00022,
+ "model_seconds": 14.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-03-05",
+   "close": 332.77,
+   "stock_pct": 4.8,
+   "index_pct": -0.56,
+   "vs_index_pts": 5.36,
+   "threshold_pts": 4.75,
+   "typical_daily_gap_pts": 2.37
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-05",
+   "close": 500.4,
+   "stock_pct": 2.65,
+   "index_pct": -0.56,
+   "vs_index_pts": 3.21,
+   "threshold_pts": 2.57,
+   "typical_daily_gap_pts": 1.28
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-05",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526092557/d82599d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:05:44.064419-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-06-02.md"
+}

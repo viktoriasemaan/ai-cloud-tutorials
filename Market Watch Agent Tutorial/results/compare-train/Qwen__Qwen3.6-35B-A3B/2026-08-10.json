@@ -1,0 +1,39 @@
+{
+ "day": "2026-08-10",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 21.7,
+ "model_calls": 3,
+ "input_tokens": 14782,
+ "output_tokens": 1346,
+ "cost_usd": 0.002676,
+ "model_seconds": 18.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-08-10",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526342390/d171253d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-08-10",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526341032/brka-20260630.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:26:58.506727-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-27-20.md"
+}

@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-28",
+ "ideal": "Microsoft and Alphabet both filed earnings 8-Ks today (plus Microsoft's 10-Q) \u2014 clearly alert-worthy. Alert should name each company, say earnings are out, give plain-word filing types, and link them; skip the PX14A6G proxy paperwork.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 1,
+   "accuracy": 1,
+   "clarity": 1,
+   "overall": 1,
+   "note": "Silence is wrong today: two of her ten companies (Microsoft, Alphabet) filed quarterly-earnings 8-Ks, exactly what she asked to hear about. Missing both headline events fails her completely, even though the PX14A6G was rightly not worth a mention and there were no price moves.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Correctly picks the two events that matter \u2014 Microsoft and Alphabet earnings 8-Ks \u2014 with accurate links and item numbers, filters out the proxy paperwork, no noise or invented reasons. Docked one point for not mentioning Microsoft's same-day 10-Q (the quarterly report itself, which she explicitly wants) or the other-events 8-K.",
+   "answer": "Microsoft: 8-K earnings results (2.02, 9.01) \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm\nAlphabet: 8-K earnings results (2.02, 9.01) \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Attempts broader coverage (touches both Microsoft 8-Ks) but the links are swapped: the 'current-events report' line points to the earnings 8-K URL, and the 'quarterly earnings (item 2.02)' line points to the other-events 8-K (items 8.01, 9.01). The '10-Q earnings' phrasing is muddled and the 10-Q is never linked. The Alphabet line is fine, but the mislabeled Microsoft links would actively mislead her.",
+   "answer": "Microsoft: 8-K current-events report (same-day as its quarterly report / 10-Q earnings) \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm\nMicrosoft: 8-K quarterly earnings (item 2.02): https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm\nAlphabet: 8-K earnings (item 2.02) \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1646,
+  "output": 5990
+ }
+}

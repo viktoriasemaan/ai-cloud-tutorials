@@ -1,0 +1,42 @@
+{
+ "day": "2026-08-28",
+ "model": "nemotron-ft-e3",
+ "answer": "[ SILENT ]",
+ "silent": false,
+ "run_seconds": 4.7,
+ "model_calls": 2,
+ "input_tokens": 3441,
+ "output_tokens": 6,
+ "cost_usd": 0.000242,
+ "model_seconds": 1.8,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-fae9d266-9dfa-45d0-83af-9bb2b8b15d79\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"N\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666316,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-28",
+   "close": 217.55,
+   "stock_pct": -4.57,
+   "index_pct": -0.23,
+   "vs_index_pts": -4.35,
+   "threshold_pts": 4.34,
+   "typical_daily_gap_pts": 2.17
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-08-28",
+   "form": "N-PX",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526374341/xslN-PX_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:11:53.441873-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-11-57.md"
+}

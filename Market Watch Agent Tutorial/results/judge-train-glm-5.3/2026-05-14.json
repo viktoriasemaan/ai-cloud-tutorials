@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-14",
+ "ideal": "Both events warrant an alert: a 4.73-pt Broadcom gap vs a 4.11-pt threshold (no filing explains it), and a Microsoft 8-K on an executive change \u2014 a material, non-routine filing. Ideal: one short line per company, numbers with the index next to them, 'no filing explains it yet' on Broadcom, and the 8-K described in plain words with its content and a link.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Terse and correct, and the only line pairing numbers tightly ('5.52% vs S&P 500 +0.79%'). But the Microsoft line gives the filing type and link without saying what it's about \u2014 she wants the reason when it's known, and the 8-K's content (executive change) is in the evidence.",
+   "answer": "Broadcom rose 5.52% vs S&P 500 +0.79%, no filing explains it yet\nMicrosoft: 8-K current-events report https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Both events covered accurately, including the executive/director change \u2014 the known substance of the 8-K. Slightly wordy ('outpacing the S&P 500 which gained'), and '8-K' is left untranslated, though the parenthetical carries the meaning.",
+   "answer": "Broadcom (AVGO) rose 5.52%, outpacing the S&P 500 which gained 0.79%; no filing explains it yet.\nMicrosoft (MSFT) filed an 8-K (executive/director change): https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Most complete: correct move with index beside it, a sourced gap context (4.73 pts vs 4.11-pt bar) showing how unusual the move was, and a Microsoft line that both translates the 8-K ('current-events report') and states what it covers, with the link. The 'trigger' wording is mildly agent-internal, but every number comes from the report.",
+   "answer": "Broadcom (AVGO) rose 5.52% on May 14 while the S&P 500 rose 0.79% \u2014 a 4.73-point gap, well past the 4.11-point trigger; no filing explains it yet.\n\nMicrosoft (MSFT) filed an 8-K, a current-events report, on an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Short, plain, and accurate, with the executive-change detail included. Small dings: '8-K' isn't translated into plain words (parenthetical mostly compensates), and sloppy spacing ('5.52 %') makes the numbers read oddly.",
+   "answer": "Broadcom rose\u202f5.52\u202f% while the S&P\u202f500 rose\u202f0.79\u202f%; no filing explains it yet  \nMicrosoft filed an\u202f8\u2011K (executive or director change): https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1367,
+  "output": 4170
+ }
+}

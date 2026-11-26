@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-20",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "NVIDIA (NVDA) filed a quarterly earnings report (8-K, items 2.02/9.01) and the corresponding quarterly report (10-Q) for its quarter ending April 26. 8-K: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm \u2014 10-Q: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm",
+ "silent": false,
+ "run_seconds": 19.9,
+ "model_calls": 2,
+ "input_tokens": 10252,
+ "output_tokens": 1791,
+ "cost_usd": 0.00262,
+ "model_seconds": 17.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-20",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-20",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-05-20",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526232707/d148580d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:16:53.633069-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-17-13.md"
+}

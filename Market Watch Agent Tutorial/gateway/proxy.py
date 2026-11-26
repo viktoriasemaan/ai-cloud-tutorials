@@ -22,6 +22,8 @@ LOG = ROOT / "data" / "calls.jsonl"
 LOCK = threading.Lock()
 
 COREWEAVE = "https://api.inference.wandb.ai/v1"
+COREWEAVE_TRAINED = "https://api.training.wandb.ai/v1"  # where Serverless SFT/RL checkpoints are served
+TRAINED_BASE = os.environ.get("TRAINED_BASE_MODEL", "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B")
 ANTHROPIC = "https://api.anthropic.com/v1"  # Anthropic's OpenAI-compatible endpoint
 
 # USD per 1M tokens: input, cached input, output (list prices checked 2026-11-17)
@@ -30,7 +32,7 @@ PRICES = {
     "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B": (0.07, None, 0.20),
     "Qwen/Qwen3.6-35B-A3B": (0.10, None, 0.89), "Qwen/Qwen3.8-27B": (0.40, None, 3.00),
     "google/gemma-4-26B-A4B-it": (0.10, None, 0.30), "deepseek-ai/DeepSeek-V4.1-Flash": (0.13, 0.002, 0.65),
-    "zai-org/GLM-5.3-Flash": (0.12, 0.02, 0.38), "moonshotai/Kimi-K2.6": (0.65, None, 3.41),
+    "zai-org/GLM-5.3-Flash": (0.12, 0.02, 0.38), "zai-org/GLM-5.3": (0.75, None, 3.00), "MiniMaxAI/MiniMax-M3": (0.23, None, 0.96), "moonshotai/Kimi-K2.6": (0.65, None, 3.41),
     "claude-opus-5-5": (4.00, 0.20, 20.00),
 }
 
@@ -52,8 +54,15 @@ ANTHROPIC_KEY = secret("ANTHROPIC_API_KEY", "~/.config/anthropic/api_key", requi
 PROJECT = os.environ.get("AGENT_LENS_PROJECT", f"{os.environ.get('FORGE_TEAM', 'your-forge-team')}/market-agent")
 
 
+def trained_aliases():
+    """Short names for fine-tuned checkpoints: {"nemotron-ft": "wandb-artifact:///team/project/name:step3"}."""
+    f = ROOT / "data" / "trained_models.json"
+    return json.loads(f.read_text()) if f.exists() else {}
+
+
 def cost(model, usage):
-    p = PRICES.get(model)
+    # a fine-tuned adapter is priced here at its base model's rate (no separate list price published, Nov 2026)
+    p = PRICES.get(model) or (PRICES.get(TRAINED_BASE) if model.startswith("wandb-artifact:") or model in trained_aliases() else None)
     if not p or not usage:
         return None
     inp = usage.get("prompt_tokens", 0) or 0
@@ -210,6 +219,8 @@ class Handler(BaseHTTPRequestHandler):
             if not ANTHROPIC_KEY:
                 raise ValueError("no ANTHROPIC_API_KEY for a claude-* model")
             return "anthropic", ANTHROPIC, ANTHROPIC_KEY
+        if model.startswith("wandb-artifact:"):  # a model you fine-tuned with Serverless SFT or RL (W&B artifact)
+            return "coreweave-trained", COREWEAVE_TRAINED, FORGE_KEY
         return "coreweave", COREWEAVE, FORGE_KEY
 
     def do_GET(self):
@@ -229,11 +240,14 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_error(404, "only /v1/chat/completions is relayed")
         body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
         model = body.get("model", "")
+        trained = trained_aliases().get(model)
+        if trained:  # a short name for your fine-tuned checkpoint, e.g. "nemotron-ft" (see data/trained_models.json)
+            body["model"] = trained
         try:
-            provider, base, key = self._upstream(model)
+            provider, base, key = self._upstream(body["model"] if trained else model)
         except ValueError as e:
             return self.send_error(400, str(e))
-        if provider == "coreweave" and spent_this_month() >= MONTHLY_LIMIT:
+        if provider.startswith("coreweave") and spent_this_month() >= MONTHLY_LIMIT:
             msg = json.dumps({"error": {"code": "gateway_budget_reached", "message":
                   f"Gateway budget reached: ${spent_this_month():.2f} of ${MONTHLY_LIMIT:.2f} this month. "
                   "Raise GATEWAY_MONTHLY_LIMIT_USD to continue."}}).encode()
@@ -255,7 +269,8 @@ class Handler(BaseHTTPRequestHandler):
                or hashlib.sha1(json.dumps(first_user).encode()).hexdigest()[:16],
                "request": body, "fixes": fixes}
         req = urllib.request.Request(base + "/chat/completions", data=json.dumps(body).encode(), method="POST",
-                                     headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
+                                     headers={"Authorization": "Bearer " + key, "Content-Type": "application/json",
+                                              "User-Agent": "market-watch-gateway/1.0"})  # Cloudflare blocks the default Python-urllib agent on the training endpoint (error 1010)
         try:
             up = urllib.request.urlopen(req, timeout=600)
         except urllib.error.HTTPError as e:

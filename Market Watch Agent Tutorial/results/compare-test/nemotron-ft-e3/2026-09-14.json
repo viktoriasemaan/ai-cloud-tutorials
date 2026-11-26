@@ -1,0 +1,30 @@
+{
+ "day": "2026-09-14",
+ "model": "nemotron-ft-e3",
+ "answer": "Amazon: filed an 8-K current-events report, current events https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 2,
+ "input_tokens": 3336,
+ "output_tokens": 69,
+ "cost_usd": 0.000247,
+ "model_seconds": 2.2,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-68f2dc5c-6c1d-486d-b3d8-2f6e561acafc\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"Amazon\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666402,\\\"model\\\":\\\"nvidia/N"
+ ],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:13:20.104949-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-13-26.md"
+}

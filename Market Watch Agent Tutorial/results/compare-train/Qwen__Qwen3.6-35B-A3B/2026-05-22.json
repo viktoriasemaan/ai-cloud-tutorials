@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-22",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[AMZN] Filed an 8-K on shareholder vote results \u2014 see [here](https://www.sec.gov/Archives/edgar/data/1018724/000110465926065717/tm2614288d1_8k.htm). No price move or other filing to explain it yet. META and BRK-B both filed routine proxy materials (SD), not worth alerting on.",
+ "silent": false,
+ "run_seconds": 9.8,
+ "model_calls": 1,
+ "input_tokens": 4385,
+ "output_tokens": 556,
+ "cost_usd": 0.000933,
+ "model_seconds": 7.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-05-22",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926065717/tm2614288d1_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-05-22",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026037717/formsd-12312025.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-05-22",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526236936/d26136dsd.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:17:30.392134-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-17-40.md"
+}

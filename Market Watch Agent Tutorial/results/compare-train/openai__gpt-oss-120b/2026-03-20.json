@@ -1,0 +1,39 @@
+{
+ "day": "2026-03-20",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 3682,
+ "output_tokens": 224,
+ "cost_usd": 0.000149,
+ "model_seconds": 1.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-20",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000031/llydefa14a2026_additionalm.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-20",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:07:40.213304-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-07-46.md"
+}

@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-09",
+ "ideal": "Alert: Meta rose 6.55% while the S&P 500 fell 0.46%, with no filing explaining it yet; Amazon filed an 8-K (current-events report) on an executive or director change, with the link. Skip the Microsoft proxy filing.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Covers both items accurately and skips the proxy, but it is terse with tickers only and doesn't explain what an 8-K is or why it matters.",
+   "answer": "META rose 6.55% while S&P 500 fell 0.46%, no filing explains it yet\nAMZN 8-K executive or director change https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "The Meta line is accurate and clear, but it misses the Amazon 8-K on an executive or director change, which is material news she wants.",
+   "answer": "Meta Platforms rose 6.55% while the S&P 500 fell 0.46% \u2014 a 7.02\u2011point outperformance, no filing explains it yet"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Covers both items with full company names, the index next to the move and the filing link, though it could say plainly what an 8-K is.",
+   "answer": "Meta Platforms: rose 6.55% vs S&P 500 fell 0.46%, no filing explains it yet  \nAmazon: filed an 8-K (executive or director change) https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2800,
+  "output": 402
+ }
+}

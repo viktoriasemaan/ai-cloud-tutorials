@@ -1,0 +1,51 @@
+{
+ "day": "2026-05-01",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Apple rose 3.24% vs S&P 500 0.28% no filing explains it yet",
+ "silent": false,
+ "run_seconds": 16.3,
+ "model_calls": 1,
+ "input_tokens": 3613,
+ "output_tokens": 5121,
+ "cost_usd": 0.001277,
+ "model_seconds": 13.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-05-01",
+   "close": 280.14,
+   "stock_pct": 3.24,
+   "index_pct": 0.28,
+   "vs_index_pts": 2.96,
+   "threshold_pts": 2.59,
+   "typical_daily_gap_pts": 1.29
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-05-01",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-05-01",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000210011926001290/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:13:57.112066-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-14-13.md"
+}

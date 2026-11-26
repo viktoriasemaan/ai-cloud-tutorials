@@ -1,0 +1,59 @@
+{
+ "day": "2026-02-04",
+ "ideal": "Alert with 4 lines: Eli Lilly rose 10.33% vs S&P 500 -0.48%, tied to its same-day earnings 8-K with link; Alphabet earnings 8-K with link; Apple rose 2.6% vs index -0.48%, no filing explains it yet; Berkshire rose 2.04% vs index -0.48% (its 2.53-pt gap cleared its 2.25-pt threshold), no filing explains it yet.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "All four events covered; accurate numbers with the index beside each; filings described in plain words (earnings 8-K) and linked; 'no filing explains it yet' used correctly for Apple and Berkshire. Clean and within limits.",
+   "answer": "Eli Lilly rose 10.33% while the S&P 500 fell 0.48% \u2014 8-K current-events report with quarterly results (earnings): https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/lly-20260204.htm\nAlphabet filed an 8-K current-events report with quarterly results (earnings): https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/goog-20260204.htm\nApple rose 2.6% while the S&P 500 fell 0.48% \u2014 no filing explains it yet.\nBerkshire Hathaway rose 2.04% while the S&P 500 fell 0.48% \u2014 no filing explains it yet."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Misses Alphabet's earnings 8-K, which she explicitly wants, and skips Berkshire's above-threshold move. Tickers instead of names and no link context are slightly less plain, but what it does say is accurate.",
+   "answer": "LLY rose 10.33% while the S&P 500 fell 0.48%. 8-K filing: quarterly or annual results (earnings) https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/lly-20260204.htm\nAAPL rose 2.6% while the S&P 500 fell 0.48%. no filing explains it yet"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "All four events, correct numbers and links, but the 8-K lines only say 'current-events report' without noting they contain earnings \u2014 so the Alphabet filing's substance and the likely driver of Lilly's 10.33% move are left unstated.",
+   "answer": "Apple rose 2.6% while S&P\u202f500 fell 0.48%, no filing explains it yet  \nEli\u202fLilly rose 10.33% while S&P\u202f500 fell 0.48%; 8\u2011K (current\u2011events report) https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/lly-20260204.htm  \nBerkshire Hathaway rose 2.04% while S&P\u202f500 fell 0.48%, no filing explains it yet  \nAlphabet filed an 8\u2011K (current\u2011events report) https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/goog-20260204.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Covers all four events with correct numbers, and links Alphabet's 8-K, but omits the required link for Eli Lilly's 8-K. 'Surged' is a flourish where 'rose' is plainer, though still acceptable.",
+   "answer": "Eli Lilly (LLY) surged 10.33% while the S&P 500 fell 0.48%; earnings filing (8-K) explains the move.\nApple (AAPL) rose 2.6% while the S&P 500 fell 0.48%; no filing explains it yet.\nBerkshire Hathaway (BRK-B) rose 2.04% while the S&P 500 fell 0.48%; no filing explains it yet.\nAlphabet (GOOGL) filed an 8-K (quarterly results/earnings): https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/goog-20260204.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1952,
+  "output": 2631
+ }
+}

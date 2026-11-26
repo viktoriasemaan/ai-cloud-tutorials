@@ -1,0 +1,28 @@
+{
+ "day": "2026-04-06",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Broadcom: filed a current-events report (8-K), flagged under \"other events\" \u2014 no stock move on the day, so nothing in it shows up as a price driver yet. https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4007,
+ "output_tokens": 1745,
+ "cost_usd": 0.001164,
+ "model_seconds": 6.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-06",
+   "form": "8-K",
+   "items": "8.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:06:53.180235-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-07-03.md"
+}

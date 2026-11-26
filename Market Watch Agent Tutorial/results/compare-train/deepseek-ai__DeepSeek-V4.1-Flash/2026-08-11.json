@@ -1,0 +1,28 @@
+{
+ "day": "2026-08-11",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Berkshire Hathaway: filed an 8-K current-events report carrying its quarterly earnings results (items 2.02, 9.01) \u2014 https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm\n\nNo price moves on the watchlist that day; that filing is the only item worth your attention.",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4036,
+ "output_tokens": 867,
+ "cost_usd": 0.000613,
+ "model_seconds": 3.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-08-11",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:20:43.526097-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-20-49.md"
+}

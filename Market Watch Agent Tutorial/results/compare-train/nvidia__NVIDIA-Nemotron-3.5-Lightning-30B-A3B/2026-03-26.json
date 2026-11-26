@@ -1,0 +1,117 @@
+{
+ "day": "2026-03-26",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Meta Platforms fell 7.96% versus S&P 500 fell 1.79%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 7.6,
+ "model_calls": 1,
+ "input_tokens": 4437,
+ "output_tokens": 1622,
+ "cost_usd": 0.000635,
+ "model_seconds": 3.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-03-26",
+   "close": 547.54,
+   "stock_pct": -7.96,
+   "index_pct": -1.79,
+   "vs_index_pts": -6.17,
+   "threshold_pts": 3.97,
+   "typical_daily_gap_pts": 1.99
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000010290926000630/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000010290926000426/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000010290926000582/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000010290926000584/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000010290926000583/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000010290926000847/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000010290926001113/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-26",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000010290926000775/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:07:50.557013-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-07-57.md"
+}

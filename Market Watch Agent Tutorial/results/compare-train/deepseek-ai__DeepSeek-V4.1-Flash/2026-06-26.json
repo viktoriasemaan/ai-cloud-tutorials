@@ -1,0 +1,65 @@
+{
+ "day": "2026-06-26",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Four watchlist names moved sharply against the index on 2026-06-26, with no substantive filings that day:\n\n- Apple rose 3.14% while the S&P 500 fell 0.72% \u2014 no filing explains it yet.\n- Microsoft rose 5.71% while the S&P 500 fell 0.72% \u2014 no filing explains it yet.\n- Eli Lilly rose 7.13% while the S&P 500 fell 0.72% \u2014 no filing explains it yet.\n- Berkshire Hathaway rose 2.22% while the S&P 500 fell 0.72% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 11.9,
+ "model_calls": 5,
+ "input_tokens": 27077,
+ "output_tokens": 2404,
+ "cost_usd": 0.001953,
+ "model_seconds": 9.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-26",
+   "close": 283.78,
+   "stock_pct": 3.14,
+   "index_pct": -0.72,
+   "vs_index_pts": 3.86,
+   "threshold_pts": 3.04,
+   "typical_daily_gap_pts": 1.52
+  },
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-06-26",
+   "close": 372.97,
+   "stock_pct": 5.71,
+   "index_pct": -0.72,
+   "vs_index_pts": 6.43,
+   "threshold_pts": 4.03,
+   "typical_daily_gap_pts": 2.01
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-06-26",
+   "close": 1208.12,
+   "stock_pct": 7.13,
+   "index_pct": -0.72,
+   "vs_index_pts": 7.86,
+   "threshold_pts": 4.49,
+   "typical_daily_gap_pts": 2.24
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-06-26",
+   "close": 498.66,
+   "stock_pct": 2.22,
+   "index_pct": -0.72,
+   "vs_index_pts": 2.95,
+   "threshold_pts": 2.36,
+   "typical_daily_gap_pts": 1.18
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:16:22.918516-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-16-34.md"
+}

@@ -1,0 +1,39 @@
+{
+ "day": "2026-06-11",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Alphabet (GOOGL): 8-K filed on 2026-06-11 reporting executive or director change and shareholder vote results at this major tech company; could signal strategic shifts or policy changes. https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm",
+ "silent": false,
+ "run_seconds": 17.8,
+ "model_calls": 1,
+ "input_tokens": 3501,
+ "output_tokens": 4677,
+ "cost_usd": 0.00118,
+ "model_seconds": 14.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-11",
+   "form": "8-K",
+   "items": "5.02,5.07,9.01",
+   "what_it_is": "executive or director change; shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-11",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526266777/d152717d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:20:58.649042-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-21-16.md"
+}

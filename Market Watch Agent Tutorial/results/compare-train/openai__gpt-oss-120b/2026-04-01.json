@@ -1,0 +1,29 @@
+{
+ "day": "2026-04-01",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Alphabet rose 3.42% (S&P\u202f500 up 0.75%); no filing explains it yet",
+ "silent": false,
+ "run_seconds": 11.9,
+ "model_calls": 1,
+ "input_tokens": 3559,
+ "output_tokens": 372,
+ "cost_usd": 0.00017,
+ "model_seconds": 7.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-01",
+   "close": 297.39,
+   "stock_pct": 3.42,
+   "index_pct": 0.75,
+   "vs_index_pts": 2.66,
+   "threshold_pts": 2.62,
+   "typical_daily_gap_pts": 1.31
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:08:55.589356-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-09-07.md"
+}

@@ -1,0 +1,28 @@
+{
+ "day": "2026-01-13",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 3347,
+ "output_tokens": 1703,
+ "cost_usd": 0.000575,
+ "model_seconds": 5.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-01-13",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526011731/d104560d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T12:58:25.980426-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_12-58-34.md"
+}

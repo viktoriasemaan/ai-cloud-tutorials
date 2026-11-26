@@ -1,0 +1,86 @@
+{
+ "day": "2026-02-05",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft fell 4.95% vs S&P 500 -1.25% no filing explains it yet\nAmazon fell 4.42% vs S&P 500 -1.25% 8-K earnings filing\nEli Lilly fell 7.79% vs S&P 500 -1.25% no filing explains it yet",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 3997,
+ "output_tokens": 1562,
+ "cost_usd": 0.000592,
+ "model_seconds": 4.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-02-05",
+   "close": 393.67,
+   "stock_pct": -4.95,
+   "index_pct": -1.25,
+   "vs_index_pts": -3.71,
+   "threshold_pts": 3.56,
+   "typical_daily_gap_pts": 1.78
+  },
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-05",
+   "close": 222.69,
+   "stock_pct": -4.42,
+   "index_pct": -1.25,
+   "vs_index_pts": -3.17,
+   "threshold_pts": 2.4,
+   "typical_daily_gap_pts": 1.2
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-05",
+   "close": 1020.84,
+   "stock_pct": -7.79,
+   "index_pct": -1.25,
+   "vs_index_pts": -6.54,
+   "threshold_pts": 4.57,
+   "typical_daily_gap_pts": 2.28
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-02-05",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20260205.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-05",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-05",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000031506626000368/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:01:42.622530-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-01-50.md"
+}

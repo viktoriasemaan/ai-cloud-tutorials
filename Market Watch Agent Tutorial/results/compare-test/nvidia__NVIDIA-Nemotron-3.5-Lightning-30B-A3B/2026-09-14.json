@@ -1,0 +1,28 @@
+{
+ "day": "2026-09-14",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Amazon 8-K (current-events report) filed with SEC. https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm",
+ "silent": false,
+ "run_seconds": 12.6,
+ "model_calls": 1,
+ "input_tokens": 3352,
+ "output_tokens": 2875,
+ "cost_usd": 0.00081,
+ "model_seconds": 8.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-09-14",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:09:40.499754-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-09-52.md"
+}

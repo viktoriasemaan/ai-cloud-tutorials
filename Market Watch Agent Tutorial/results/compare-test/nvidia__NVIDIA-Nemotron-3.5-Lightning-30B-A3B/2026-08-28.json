@@ -1,0 +1,40 @@
+{
+ "day": "2026-08-28",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[NVDA] NVIDIA fell 4.57% vs S&P 500 fell 0.23%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.6,
+ "model_calls": 1,
+ "input_tokens": 3457,
+ "output_tokens": 2243,
+ "cost_usd": 0.000691,
+ "model_seconds": 7.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-08-28",
+   "close": 217.55,
+   "stock_pct": -4.57,
+   "index_pct": -0.23,
+   "vs_index_pts": -4.35,
+   "threshold_pts": 4.34,
+   "typical_daily_gap_pts": 2.17
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-08-28",
+   "form": "N-PX",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526374341/xslN-PX_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:07:25.355527-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-07-35.md"
+}

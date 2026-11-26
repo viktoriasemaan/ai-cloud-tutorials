@@ -1,0 +1,39 @@
+{
+ "day": "2026-04-21",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Broadcom 8-K shareholder vote results https://www.sec.gov/Archives/edgar/data/1730168/000173016826000039/avgo-20260420.htm",
+ "silent": false,
+ "run_seconds": 16.2,
+ "model_calls": 1,
+ "input_tokens": 3479,
+ "output_tokens": 4985,
+ "cost_usd": 0.001241,
+ "model_seconds": 12.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-21",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000039/avgo-20260420.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-21",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000121465926004859/o421260px14a6g.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:11:12.190954-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-11-28.md"
+}

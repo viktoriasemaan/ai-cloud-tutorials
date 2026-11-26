@@ -1,0 +1,61 @@
+{
+ "day": "2026-04-16",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Berkshire Hathaway: 8-K current-events report citing \"other events\" \u2014 worth a look since it's a current-events filing, though the summary gives no details beyond that. https://www.sec.gov/Archives/edgar/data/1067983/000119312526159326/d903301d8k.htm\n\n(Meta's three filings today were proxy materials \u2014 annual report to shareholders and the DEF 14A/DEFA14A proxy \u2014 routine, per your preferences.)",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4351,
+ "output_tokens": 2163,
+ "cost_usd": 0.001496,
+ "model_seconds": 7.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-16",
+   "form": "ARS",
+   "items": "",
+   "what_it_is": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025534/meta-12312025x10kars.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-16",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025533/meta2026proxydefa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-16",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-04-16",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526159326/d903301d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:08:11.192739-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-08-21.md"
+}

@@ -1,0 +1,61 @@
+{
+ "day": "2026-04-16",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3758,
+ "output_tokens": 2962,
+ "cost_usd": 0.000855,
+ "model_seconds": 7.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-16",
+   "form": "ARS",
+   "items": "",
+   "what_it_is": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025534/meta-12312025x10kars.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-16",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025533/meta2026proxydefa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-04-16",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-04-16",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526159326/d903301d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:10:35.706266-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-10-45.md"
+}

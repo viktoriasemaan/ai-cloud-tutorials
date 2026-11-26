@@ -1,0 +1,40 @@
+{
+ "day": "2026-05-13",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 3671,
+ "output_tokens": 178,
+ "cost_usd": 0.00014,
+ "model_seconds": 2.4,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-05-13",
+   "close": 402.62,
+   "stock_pct": 3.94,
+   "index_pct": 0.56,
+   "vs_index_pts": 3.38,
+   "threshold_pts": 3.31,
+   "typical_daily_gap_pts": 1.66
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-13",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000121465926006075/b513262px14a6g.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:15:37.745368-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-15-43.md"
+}

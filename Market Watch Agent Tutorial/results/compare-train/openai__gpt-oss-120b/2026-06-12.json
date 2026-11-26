@@ -1,0 +1,28 @@
+{
+ "day": "2026-06-12",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Amazon filed an 8\u2011K (other events) https://www.sec.gov/Archives/edgar/data/1018724/000110465926073562/tm2613616d5_8k.htm",
+ "silent": false,
+ "run_seconds": 8.2,
+ "model_calls": 1,
+ "input_tokens": 3583,
+ "output_tokens": 379,
+ "cost_usd": 0.000172,
+ "model_seconds": 5.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-06-12",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926073562/tm2613616d5_8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:19:18.207105-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-19-26.md"
+}

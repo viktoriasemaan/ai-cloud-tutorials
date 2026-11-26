@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-05",
+ "ideal": "Alert on the big three drops (Tesla fell 10.77%, Broadcom fell 10.43%, NVIDIA fell 9.26%, each versus the S&P 500 falling 4.41%, with no filing explaining them yet), plus Microsoft's 8-K leadership change with its link. Apple and Berkshire holding up better than the index, and the Alphabet and Meta other-events 8-Ks, are optional. Keep it to 5 lines or fewer.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 2,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 2,
+   "note": "It has 8 lines, a garbled Alphabet line with a broken 'www.www' link and stray text, and the confusing phrase 'rose 2.88 points better' when Apple actually fell.",
+   "answer": "NVIDIA fell 9.26% while the S&P 500 fell 4.41%, no filing explains it yet\nBroadcom fell 10.43% while the S&P 500 fell 4.41%, no filing explains it yet\nTesla fell 10.77% while the S&P 500 fell 4.41%, no filing explains it yet\nApple fell 1.53% while the S&P 500 fell 4.41% (rose 2.88 points better than the index), no filing explains it yet\nBerkshire Hathaway fell 1.17% while the S&P 500 fell 4.41% (rose 3.24 points better than the index), no filing explains it yet\nMicrosoft: current-events report (8-K / leadership change) \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm\nAlphabet: other events report (8-K) \u2014 https://www.www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm \"8-K\" appears twice for Alphabet \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm\nMeta Platforms: other events report (8-K) \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "It is accurate, concise and covers the key moves and the Microsoft leadership 8-K, though it uses tickers and does not explain the filing in plain words.",
+   "answer": "NVDA fell 9.26% vs S&P 500 fell 4.41% no filing explains it yet\nAVGO fell 10.43% vs S&P 500 fell 4.41% no filing explains it yet\nTSLA fell 10.77% vs S&P 500 fell 4.41% no filing explains it yet\nMSFT: 8-K executive or director change https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "It is accurate and complete but runs 8 lines against the 5-line limit, and lists Apple and Berkshire beside the index-wide fall without saying they did better than it.",
+   "answer": "Apple fell 1.53% while S&P\u202f500 fell 4.41% \u2014 no filing explains it yet.\nNVIDIA fell 9.26% (S&P\u202f500 fell 4.41%) \u2014 no filing explains it yet.\nBroadcom fell 10.43% (S&P\u202f500 fell 4.41%) \u2014 no filing explains it yet.\nBerkshire Hathaway fell 1.17% while S&P\u202f500 fell 4.41% \u2014 no filing explains it yet.\nTesla fell 10.77% (S&P\u202f500 fell 4.41%) \u2014 no filing explains it yet.\nMicrosoft filed a current\u2011events 8\u2011K reporting an executive or director change: https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm\nAlphabet filed a current\u2011events 8\u2011K (other events): https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm\nMeta filed a current\u2011events 8\u2011K (other events): https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 4268,
+  "output": 515
+ }
+}

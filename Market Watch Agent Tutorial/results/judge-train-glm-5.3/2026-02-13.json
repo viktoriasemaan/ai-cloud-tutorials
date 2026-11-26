@@ -1,0 +1,59 @@
+{
+ "day": "2026-02-13",
+ "ideal": "A one-line alert on the Alphabet 8-K: company, plain-words filing type (current-events report), what it covers (item 8.01 other events), linked. The 13F-HR is a fund-holding report she explicitly doesn't want, so it must be omitted. Two nearly identical days-in, the discriminating item is the 8-K, which is a form she explicitly asked to hear about.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": false,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "The 8-K is a form she explicitly listed as wanted, and this line flags it in plain words (current-events report, item 8.01 other events) with the correct link, while the 13F-HR fund-holding report is correctly left out. The framing 'the only non-routine filing on the watchlist that day' is accurate and tells her why she's hearing about it. Compliant in every rule: one line, no invented reason, no advice.",
+   "answer": "Alphabet (GOOGL): filed a current-events report (8-K, item 8.01 other events) \u2014 the only non-routine filing on the watchlist that day: https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 2,
+   "note": "Silence fails coverage here: an 8-K from a top-10 name is exactly the kind of material-news filing she asked for, so [SILENT] misses the one thing worth telling her. It does no harm and adds no noise, but for a watch agent whose job is to surface filings like this, missing it is a real failure, not a borderline call.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Alerts on the right item in the right way: Alphabet, plain-words filing type, correct link, and correctly skips the 13F-HR. It's thinner than ideal \u2014 no ticker, no item detail, and it doesn't convey why this filing matters while a bare 'other events' 8-K benefits from context \u2014 but it's accurate, short, and links the source.",
+   "answer": "Alphabet \u2013 8\u2011K current events filing https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 2,
+   "note": "Identical to B. Silence is the wrong decision for this evidence: the Alphabet 8-K is a same-day current-events filing on her watchlist and she explicitly listed 8-Ks as something she wants. Staying silent misses it entirely; the only credit is for adding no noise about the routine 13F-HR.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1159,
+  "output": 5284
+ }
+}

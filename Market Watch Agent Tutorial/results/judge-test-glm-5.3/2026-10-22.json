@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-22",
+ "ideal": "Alert on Meta\u2019s 6.98% drop vs the index (1.18% down) with the same-day 10-Q flagged, plus Berkshire\u2019s unusual 1.48% up day vs a down index, plus the Tesla 10-Q, all with correct signs, no invention, and links on filings.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Gets all four events: Meta's big drop vs the index, Berkshire's unusual up day, and both 10-Qs with plain-word labels and links. Numbers match the report, signs are written correctly, and it correctly declines to blame the 10-Q for the drop (\u201cno filing explains it yet\u201d) while still surfacing the filing. Within 5 lines, no advice.",
+   "answer": "Meta Platforms fell 6.98% (S&P 500 fell 1.18%); no filing explains it yet  \nBerkshire Hathaway rose 1.48% while the S&P 500 fell 1.18% \u2014 no filing explains it yet  \nMeta Platforms 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm  \nTesla 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 3,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Only covers Meta. Misses Berkshire's flagged move and Tesla's 10-Q, gives no link for the Meta 10-Q, and crams move and filing into one confusing line where \u201c10-Q filed\u201d sits right next to \u201cno filing explains it yet.\u201d The headline item is handled, but thinly.",
+   "answer": "Meta Platforms fell 6.98% while S&P 500 fell 1.18%. 10-Q filed. no filing explains it yet."
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 2,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers all four events, but \u201cearnings-lagging filing\u201d is invented \u2014 the evidence never ties the 10-Q to the drop or to earnings, and the rule says to say \u201cno filing explains it yet\u201d instead. \u201cCurrent-quarter\u201d is also an unsupported descriptor for the Tesla 10-Q. The numbers themselves are right.",
+   "answer": "Meta fell 6.98% vs S&P\u202f500 fell 1.18% \u2014 earnings\u2011lagging filing: 10\u2011Q https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm\nBerkshire rose 1.48% vs S&P\u202f500 fell 1.18% \u2014 no material filing\nTesla filed current\u2011quarter 10\u2011Q https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1526,
+  "output": 4101
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "day": "2026-11-02",
+ "model": "nemotron-ft-e1",
+ "answer": "Microsoft fell 2.83% while the S&P 500 fell 0.48%: no filing explains it yet.\nBerkshire Hathaway rose 2.51% while the S&P 500 fell 0.48%: no filing explains it yet.\nApple filed a quarterly or annual earnings report (8-K): https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm\nMeta filed a proxy/curated insight report (DEFA14C/DF 14C): https://www.sec.gov/Archives/edgar/data/1326801/000162828026068939/meta2026informationstateme.htm and https://www.sec.gov/Archives/edgar/data/1326801/000162828026068935/meta-20261102.htm",
+ "silent": false,
+ "run_seconds": 7.7,
+ "model_calls": 2,
+ "input_tokens": 4028,
+ "output_tokens": 257,
+ "cost_usd": 0.000333,
+ "model_seconds": 4.0,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-c557dd36-179d-4ee9-9fba-686757fad069\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"Microsoft\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666330,\\\"model\\\":\\\"nvidi"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-02",
+   "close": 507.12,
+   "stock_pct": -2.83,
+   "index_pct": -0.48,
+   "vs_index_pts": -2.35,
+   "threshold_pts": 2.11,
+   "typical_daily_gap_pts": 1.06
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-11-02",
+   "close": 556.11,
+   "stock_pct": 2.51,
+   "index_pct": -0.48,
+   "vs_index_pts": 2.99,
+   "threshold_pts": 2.29,
+   "typical_daily_gap_pts": 1.14
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-11-02",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/aapl-20261102.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-02",
+   "form": "DEFA14C",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14C",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026068939/meta2026informationstateme.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-02",
+   "form": "DEF 14C",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14C",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026068935/meta-20261102.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-11-02",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926121458/tm267596d9_defa14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T20:12:08.369590-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_20-12-15.md"
+}

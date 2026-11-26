@@ -22,6 +22,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 RUNS = pathlib.Path(os.environ.get("COMPARE_OUT", ROOT / "results" / "compare"))
 ap = argparse.ArgumentParser()
 ap.add_argument("--judge", default="claude-opus-5-5")
+ap.add_argument("--tries", type=int, default=2, help="attempts per day when the judge returns missing or malformed verdicts")
+ap.add_argument("--shard", default="0/1", help="i/n: judge only every n-th day starting at i, to run n judges in parallel")
 ARGS = ap.parse_args()
 JUDGE_MODEL = ARGS.judge
 OUT = pathlib.Path(os.environ["JUDGE_OUT"]) if os.environ.get("JUDGE_OUT") else ROOT / "results" / ("judge" if JUDGE_MODEL.startswith("claude-")
@@ -72,13 +74,21 @@ def ask(prompt):
     gw = os.environ.get("GATEWAY_URL", "http://127.0.0.1:8787/v1")
     req = urllib.request.Request(gw + "/chat/completions", data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json", "X-Run-Tag": "judge"})
-    r = json.load(urllib.request.urlopen(req, timeout=600))
-    u = r.get("usage", {})
     try:
-        return DayJudgment.model_validate_json(r["choices"][0]["message"]["content"]), \
-            Usage(u.get("prompt_tokens", 0), u.get("completion_tokens", 0))
-    except Exception:
-        return None, Usage(u.get("prompt_tokens", 0), u.get("completion_tokens", 0))
+        r = json.load(urllib.request.urlopen(req, timeout=600))
+    except (urllib.error.URLError, TimeoutError) as e:  # a server error counts as a failed try
+        print(f"  judge call failed ({str(e)[:60]}), retrying", flush=True)
+        __import__("time").sleep(20)
+        return None, Usage(0, 0)
+    u = r.get("usage", {})
+    usage = Usage(u.get("prompt_tokens", 0), u.get("completion_tokens", 0))
+    text = (r["choices"][0]["message"].get("content") or "").strip()
+    for candidate in (text, text[text.find("{"):text.rfind("}") + 1]):  # some models wrap the JSON in prose
+        try:
+            return DayJudgment.model_validate_json(candidate), usage
+        except Exception:
+            pass
+    return None, usage
 
 
 def main():
@@ -92,7 +102,10 @@ def main():
                 by_day.setdefault(r["day"], []).append(r)
     OUT.mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
+    shard, shards = (int(x) for x in ARGS.shard.split("/"))
     for day in sorted(by_day):
+        if sorted(by_day).index(day) % shards != shard:
+            continue  # another judge process takes this day
         f = OUT / f"{day}.json"
         if f.exists():
             continue
@@ -113,9 +126,11 @@ def main():
             "number from 1 (poor) to 5 (excellent). For a [SILENT] answer, score coverage, no_noise, accuracy and "
             "clarity as you would for the decision itself (5 if silence was right). 'best' is one of those letters."
         )
-        j, u = ask(prompt)
-        if j is None or sorted(v.letter.strip().upper()[:1] for v in j.verdicts) != list(letters):
-            j, u = ask(prompt)  # one retry on missing or malformed verdicts
+        ok = lambda j: j is not None and sorted(v.letter.strip().upper()[:1] for v in j.verdicts) == list(letters)
+        for attempt in range(ARGS.tries):  # retry on missing or malformed verdicts
+            j, u = ask(prompt)
+            if ok(j):
+                break
         if j is not None and sorted(v.letter.strip().upper()[:1] for v in j.verdicts) != list(letters):
             j = None
         if j is None:

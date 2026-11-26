@@ -1,0 +1,75 @@
+{
+ "day": "2026-11-12",
+ "model": "nemotron-ft-e3",
+ "answer": "Broadcom rose 5.54% vs S&P 500 fell 0.35% \u2014 no filing explains it yet\nNVIDIA filed a current-events report (8\u2011K) on an executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+ "silent": false,
+ "run_seconds": 5.6,
+ "model_calls": 2,
+ "input_tokens": 3895,
+ "output_tokens": 105,
+ "cost_usd": 0.000294,
+ "model_seconds": 2.0,
+ "errors": [
+  "{\"error\":{\"message\":\"Failed to parse response from inference API: data: {\\\"id\\\":\\\"chatcmpl-526c362f-f051-42d5-af22-aeb987856b66\\\",\\\"choices\\\":[{\\\"index\\\":0,\\\"delta\\\":{\\\"content\\\":\\\"B\\\",\\\"role\\\":\\\"assistant\\\"},\\\"finish_reason\\\":null,\\\"logprobs\\\":null}],\\\"created\\\":1795666736,\\\"model\\\":\\\"nvidia/NVIDIA"
+ ],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-11-12",
+   "close": 364.36,
+   "stock_pct": 5.54,
+   "index_pct": -0.35,
+   "vs_index_pts": 5.9,
+   "threshold_pts": 4.83,
+   "typical_daily_gap_pts": 2.41
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "5.02,9.01",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-11-12",
+   "form": "SCHEDULE 13G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926126255/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-A12B",
+   "items": "",
+   "what_it_is": "",
+   "description": "8-A12B",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458695/d193866d8a12b.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-11-12",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T20:18:54.442599-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_20-18-59.md"
+}

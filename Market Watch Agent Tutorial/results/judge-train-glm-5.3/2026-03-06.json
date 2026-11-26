@@ -1,0 +1,59 @@
+{
+ "day": "2026-03-06",
+ "ideal": "The two 8-Ks (NVIDIA, Alphabet executive/director changes) are material news she asked for; the Eli Lilly PRE 14A is proxy paperwork she explicitly does not want. An alert naming both 8-Ks in plain words with links, excluding the proxy, is the right answer; [SILENT] would be wrong here.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Flags both 8-Ks, correctly drops the Lilly proxy, no invented details. Ticker-only labels and clipped phrasing read a bit like raw data, but accurate and clean.",
+   "answer": "[NVDA] 8-K current-events report, executive or director change - https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/nvda-20260302.htm\n[GOOGL] 8-K current-events report, executive or director change - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000026/goog-20260304.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 1,
+   "accuracy": 1,
+   "clarity": 1,
+   "overall": 1,
+   "note": "[SKILL_DELETE] is not a valid response; if delivered it is pure noise. Fails the task entirely.",
+   "answer": "[SKILL_DELETE]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both 8-Ks in plain words with links, correct exclusion of the proxy, and a fair closing note that nothing else moved. The third line is optional commentary, a minor style cost.",
+   "answer": "NVIDIA: 8-K current-events report \u2014 an executive or director change. https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/nvda-20260302.htm\nAlphabet: 8-K current-events report \u2014 an executive or director change. https://www.sec.gov/Archives/edgar/data/1652044/000165204426000026/goog-20260304.htm\n(No unusual price moves against the S&P 500 that day. Eli Lilly filed only a proxy statement, nothing to flag.)"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Covers both 8-Ks and skips the proxy, but names the form without the plain-words gloss she was promised; reads like shorthand.",
+   "answer": "NVIDIA\u202f8\u2011K\u202fexecutive/director change\u202fhttps://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/nvda-20260302.htm  \nAlphabet\u202f8\u2011K\u202fexecutive/director change\u202fhttps://www.sec.gov/Archives/edgar/data/1652044/000165204426000026/goog-20260304.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1486,
+  "output": 7215
+ }
+}

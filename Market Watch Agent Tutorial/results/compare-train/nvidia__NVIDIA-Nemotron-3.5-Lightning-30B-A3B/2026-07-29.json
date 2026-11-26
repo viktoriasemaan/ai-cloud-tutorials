@@ -1,0 +1,50 @@
+{
+ "day": "2026-07-29",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft 8-K earnings 2026-07-29. https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm\nMeta 8-K earnings 2026-07-29. https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm",
+ "silent": false,
+ "run_seconds": 29.9,
+ "model_calls": 1,
+ "input_tokens": 3640,
+ "output_tokens": 10557,
+ "cost_usd": 0.002366,
+ "model_seconds": 27.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-07-29",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-07-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-07-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:27:04.032370-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-27-33.md"
+}

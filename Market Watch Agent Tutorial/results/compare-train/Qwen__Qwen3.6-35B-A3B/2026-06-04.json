@@ -1,0 +1,40 @@
+{
+ "day": "2026-06-04",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Broadcom fell 12.59% while the S&P 500 rose 0.38%; no filing explains it yet.\nAlphabet filed an 8-K (material agreement and Reg FD disclosure): https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm",
+ "silent": false,
+ "run_seconds": 12.2,
+ "model_calls": 1,
+ "input_tokens": 4289,
+ "output_tokens": 637,
+ "cost_usd": 0.000996,
+ "model_seconds": 9.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-04",
+   "close": 418.91,
+   "stock_pct": -12.59,
+   "index_pct": 0.38,
+   "vs_index_pts": -12.96,
+   "threshold_pts": 4.26,
+   "typical_daily_gap_pts": 2.13
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-04",
+   "form": "8-K",
+   "items": "1.01,7.01,8.01,9.01",
+   "what_it_is": "entered a material agreement; Regulation FD disclosure (often a press release or presentation); other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:18:52.584331-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-19-04.md"
+}

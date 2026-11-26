@@ -1,0 +1,40 @@
+{
+ "day": "2026-02-12",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Feb 12: Apple fell 5.00% while the S&P 500 fell 1.54% \u2014 3.45 points worse. No filing explains it yet.\nEli Lilly filed its annual report (10-K): https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+ "silent": false,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4140,
+ "output_tokens": 997,
+ "cost_usd": 0.000695,
+ "model_seconds": 4.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-12",
+   "close": 261.73,
+   "stock_pct": -5.0,
+   "index_pct": -1.54,
+   "vs_index_pts": -3.45,
+   "threshold_pts": 2.18,
+   "typical_daily_gap_pts": 1.09
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-12",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:01:47.228162-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-01-53.md"
+}

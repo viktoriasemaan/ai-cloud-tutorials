@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-12",
+ "model": "openai/gpt-oss-120b",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 3785,
+ "output_tokens": 295,
+ "cost_usd": 0.000164,
+ "model_seconds": 2.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-12",
+   "form": "ARS",
+   "items": "",
+   "what_it_is": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000038/a2026-annualxreportxwebxfi.pdf"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-12",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000037/noticeof2026annualmeeting.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-12",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:15:27.382659-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-15-33.md"
+}

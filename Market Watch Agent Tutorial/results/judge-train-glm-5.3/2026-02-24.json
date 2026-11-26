@@ -1,0 +1,59 @@
+{
+ "day": "2026-02-24",
+ "ideal": "[SILENT] \u2014 the only event is Apple's 8-K with items 5.07/9.01, which is just shareholder vote results: routine annual-meeting paperwork, no price move, nothing material. Silence is the right call.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct: shareholder vote results are routine paperwork she said she doesn't want, and there is no price move to report.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct for the same reason: an item 5.07 vote-results filing is not material news and there is nothing else in the evidence.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct; the single filing is routine and nothing else happened.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Silence is correct; no unusual moves and only routine vote-result paperwork.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 937,
+  "output": 1271
+ }
+}

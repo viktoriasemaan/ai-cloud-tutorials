@@ -1,0 +1,65 @@
+{
+ "day": "2026-06-26",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Apple rose 3.14% vs S&P 500 fell 0.72%, no filing explains it yet\nMicrosoft rose 5.71% vs S&P 500 fell 0.72%, no filing explains it yet\nEli Lilly rose 7.13% vs S&P 500 fell 0.72%, no filing explains it yet\nBerkshire Hathaway rose 2.22% vs S&P 500 fell 0.72%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3705,
+ "output_tokens": 1827,
+ "cost_usd": 0.000625,
+ "model_seconds": 6.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-26",
+   "close": 283.78,
+   "stock_pct": 3.14,
+   "index_pct": -0.72,
+   "vs_index_pts": 3.86,
+   "threshold_pts": 3.04,
+   "typical_daily_gap_pts": 1.52
+  },
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-06-26",
+   "close": 372.97,
+   "stock_pct": 5.71,
+   "index_pct": -0.72,
+   "vs_index_pts": 6.43,
+   "threshold_pts": 4.03,
+   "typical_daily_gap_pts": 2.01
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-06-26",
+   "close": 1208.12,
+   "stock_pct": 7.13,
+   "index_pct": -0.72,
+   "vs_index_pts": 7.86,
+   "threshold_pts": 4.49,
+   "typical_daily_gap_pts": 2.24
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-06-26",
+   "close": 498.66,
+   "stock_pct": 2.22,
+   "index_pct": -0.72,
+   "vs_index_pts": 2.95,
+   "threshold_pts": 2.36,
+   "typical_daily_gap_pts": 1.18
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:22:36.449551-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-22-46.md"
+}

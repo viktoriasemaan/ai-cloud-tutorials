@@ -1,0 +1,75 @@
+{
+ "day": "2026-02-04",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Eli Lilly rose 10.33% while the S&P 500 fell 0.48% \u2014 8-K current-events report with quarterly results (earnings): https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/lly-20260204.htm\nAlphabet filed an 8-K current-events report with quarterly results (earnings): https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/goog-20260204.htm\nApple rose 2.6% while the S&P 500 fell 0.48% \u2014 no filing explains it yet.\nBerkshire Hathaway rose 2.04% while the S&P 500 fell 0.48% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 9.8,
+ "model_calls": 1,
+ "input_tokens": 4487,
+ "output_tokens": 1924,
+ "cost_usd": 0.001359,
+ "model_seconds": 6.0,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-02-04",
+   "close": 276.49,
+   "stock_pct": 2.6,
+   "index_pct": -0.48,
+   "vs_index_pts": 3.09,
+   "threshold_pts": 2.09,
+   "typical_daily_gap_pts": 1.04
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-04",
+   "close": 1107.12,
+   "stock_pct": 10.33,
+   "index_pct": -0.48,
+   "vs_index_pts": 10.81,
+   "threshold_pts": 3.7,
+   "typical_daily_gap_pts": 1.85
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-04",
+   "close": 503.83,
+   "stock_pct": 2.04,
+   "index_pct": -0.48,
+   "vs_index_pts": 2.53,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.13
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-04",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/goog-20260204.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-02-04",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/lly-20260204.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:00:45.449508-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-00-55.md"
+}

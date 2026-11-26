@@ -1,0 +1,65 @@
+{
+ "day": "2026-06-26",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Apple rose 3.14% to $283.78 vs S&P 500 down 0.72%; no filing explains it yet. Microsoft rose 5.71% to $372.97 vs S&P 500 down 0.72%; no filing explains it yet. Eli Lilly rose 7.13% to $1,208.12 vs S&P 500 down 0.72%; no filing explains it yet. Berkshire Hathaway rose 2.22% to $498.66 vs S&P 500 down 0.72%; no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4471,
+ "output_tokens": 536,
+ "cost_usd": 0.000924,
+ "model_seconds": 5.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-26",
+   "close": 283.78,
+   "stock_pct": 3.14,
+   "index_pct": -0.72,
+   "vs_index_pts": 3.86,
+   "threshold_pts": 3.04,
+   "typical_daily_gap_pts": 1.52
+  },
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-06-26",
+   "close": 372.97,
+   "stock_pct": 5.71,
+   "index_pct": -0.72,
+   "vs_index_pts": 6.43,
+   "threshold_pts": 4.03,
+   "typical_daily_gap_pts": 2.01
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-06-26",
+   "close": 1208.12,
+   "stock_pct": 7.13,
+   "index_pct": -0.72,
+   "vs_index_pts": 7.86,
+   "threshold_pts": 4.49,
+   "typical_daily_gap_pts": 2.24
+  },
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-06-26",
+   "close": 498.66,
+   "stock_pct": 2.22,
+   "index_pct": -0.72,
+   "vs_index_pts": 2.95,
+   "threshold_pts": 2.36,
+   "typical_daily_gap_pts": 1.18
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:21:18.005329-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-21-26.md"
+}

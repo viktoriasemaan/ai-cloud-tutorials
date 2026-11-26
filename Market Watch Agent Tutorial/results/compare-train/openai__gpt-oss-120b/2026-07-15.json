@@ -1,0 +1,40 @@
+{
+ "day": "2026-07-15",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple rose 4.01% while the S&P\u202f500 rose 0.4%; no filing explains it yet",
+ "silent": false,
+ "run_seconds": 5.8,
+ "model_calls": 1,
+ "input_tokens": 3678,
+ "output_tokens": 463,
+ "cost_usd": 0.000189,
+ "model_seconds": 3.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-07-15",
+   "close": 327.5,
+   "stock_pct": 4.01,
+   "index_pct": 0.4,
+   "vs_index_pts": 3.62,
+   "threshold_pts": 3.45,
+   "typical_daily_gap_pts": 1.73
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-07-15",
+   "form": "SCHEDULE 13D/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526304838/xslSCHEDULE_13D_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:21:45.621658-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-21-51.md"
+}

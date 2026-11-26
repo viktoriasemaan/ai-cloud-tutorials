@@ -1,0 +1,29 @@
+{
+ "day": "2026-11-11",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft fell 2.26% vs S&P 500 rose 1.32%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.7,
+ "model_calls": 1,
+ "input_tokens": 3315,
+ "output_tokens": 1119,
+ "cost_usd": 0.000456,
+ "model_seconds": 3.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-11-11",
+   "close": 521.12,
+   "stock_pct": -2.26,
+   "index_pct": 1.32,
+   "vs_index_pts": -3.58,
+   "threshold_pts": 2.48,
+   "typical_daily_gap_pts": 1.24
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:17:57.820607-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-18-04.md"
+}

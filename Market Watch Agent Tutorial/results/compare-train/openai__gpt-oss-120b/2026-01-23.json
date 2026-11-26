@@ -1,0 +1,51 @@
+{
+ "day": "2026-01-23",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Microsoft rose 3.28% vs S&P\u202f500 up 0.04%; no filing explains it yet  \nNVIDIA filed an 8\u2011K (executive or director change) https://www.sec.gov/Archives/edgar/data/1045810/000104581026000003/nvda-20260120.htm",
+ "silent": false,
+ "run_seconds": 12.3,
+ "model_calls": 1,
+ "input_tokens": 3782,
+ "output_tokens": 456,
+ "cost_usd": 0.000191,
+ "model_seconds": 9.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-23",
+   "close": 465.95,
+   "stock_pct": 3.28,
+   "index_pct": 0.04,
+   "vs_index_pts": 3.25,
+   "threshold_pts": 2.4,
+   "typical_daily_gap_pts": 1.2
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-01-23",
+   "form": "8-K",
+   "items": "5.02",
+   "what_it_is": "executive or director change",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000003/nvda-20260120.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-23",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000031601126000007/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:59:50.210940-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-00-02.md"
+}

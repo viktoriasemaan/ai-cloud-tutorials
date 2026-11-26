@@ -1,0 +1,59 @@
+{
+ "day": "2026-08-11",
+ "ideal": "shortest, quietest, cited answer",
+ "best_model": "Qwen/Qwen3.6-35B-A3B",
+ "verdicts": [
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Alert-worthy event, correctly identified as earnings report and linked; but three flat sentences with dangling 'to be briefed' and 'For detail' is wordy and low-utility.",
+   "answer": "Berkshire Hathaway filed an 8-K (current-events report) on 2026-08-11 reporting quarterly or annual results (items 2.02, 9.01). No unusual price move was recorded that day to explain. Filing: https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Best alert: states Berkshire's quarterly results are out with operating earnings, gives the link, everything traced to the evidence.",
+   "answer": "Berkshire Hathaway: filed an 8-K current-events report carrying its quarterly earnings results (items 2.02, 9.01) \u2014 https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm\n\nNo price moves on the watchlist that day; that filing is the only item worth your attention."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 1,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 1,
+   "note": "An earnings 8-K on a watchlist name crosses her stated bar, so silence is the wrong call; the two framed lines that follow are minute-by-minute filler, not a real alert.",
+   "answer": "Berkshire Hathaway: 8-K filing of quarterly/annual results (earnings) - https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Correct to alert, but 'new 8-K drop' is vague, the '[omitted]' placeholder is filler, and it never says what the filing contains despite the evidence listing earnings.",
+   "answer": "Berkshire Hathaway (BRK-B): 8\u2011K current\u2011events report (earnings) https://www.sec.gov/Archives/edgar/data/1067983/000119312526344495/d159922d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1226,
+  "output": 6132
+ }
+}

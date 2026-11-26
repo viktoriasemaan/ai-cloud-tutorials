@@ -1,0 +1,41 @@
+{
+ "day": "2026-06-25",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Apple fell 6.12% vs S&P 500 rose 0.14%, no filing explains it yet\nAmazon fell 3.1% vs S&P 500 rose 0.14%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 12.3,
+ "model_calls": 1,
+ "input_tokens": 3456,
+ "output_tokens": 2345,
+ "cost_usd": 0.000711,
+ "model_seconds": 8.8,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-25",
+   "close": 275.15,
+   "stock_pct": -6.12,
+   "index_pct": 0.14,
+   "vs_index_pts": -6.26,
+   "threshold_pts": 2.58,
+   "typical_daily_gap_pts": 1.29
+  },
+  {
+   "type": "price_move",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-06-25",
+   "close": 227.01,
+   "stock_pct": -3.1,
+   "index_pct": 0.14,
+   "vs_index_pts": -3.24,
+   "threshold_pts": 3.15,
+   "typical_daily_gap_pts": 1.58
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:22:19.856848-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-22-32.md"
+}

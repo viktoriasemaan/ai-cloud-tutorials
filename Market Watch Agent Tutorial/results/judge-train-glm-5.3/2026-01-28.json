@@ -1,0 +1,59 @@
+{
+ "day": "2026-01-28",
+ "ideal": "Alert: earnings 8-Ks from Microsoft, Meta, and Tesla, plus Microsoft's 10-Q; links for each; note that no unusual price moves vs the S&P 500 were flagged.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct call: three earnings 8-Ks and a 10-Q are exactly the material news she wants. All companies covered, filing types in plain words, links included, notes no price moves so no index numbers \u2014 accurate and in format (5 lines).",
+   "answer": "Earnings day for three on your watchlist (Jan 28):\n\n- Microsoft: quarterly report (10-Q) plus an earnings 8-K out \u2014 https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm (10-Q: https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm)\n- Meta Platforms: earnings 8-K \u2014 https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm\n- Tesla: earnings 8-K \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/tsla-20260128.htm\n- No unusual price moves flagged in the report, so no index comparisons to give."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 2,
+   "accuracy": 2,
+   "clarity": 2,
+   "overall": 1,
+   "note": "Silence was wrong: earnings filings from Microsoft, Meta, and Tesla are core watchlist material, not routine paperwork. Missed everything she asked for.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Right call and all filings covered with links and plain descriptions. Minor format frictions: Microsoft takes two lines instead of one per company, and no line tells her why it matters or that no price moves were flagged.",
+   "answer": "Microsoft: 10\u2011Q quarterly report https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm  \nMicrosoft: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm  \nMeta Platforms: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm  \nTesla: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/tsla-20260128.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Covers all three companies in plain words with accurate dates. But it omits the filing links, which the format requires, and the '[ALERT]' header isn't part of the message style.",
+   "answer": "[ALERT]\n\nMicrosoft filed its quarterly report (10-Q) and an 8-K with quarterly results on Jan. 28.\nMeta filed an 8-K with quarterly results on Jan. 28.\nTesla filed an 8-K with quarterly results on Jan. 28."
+  }
+ ],
+ "judge_usage": {
+  "input": 1727,
+  "output": 4042
+ }
+}

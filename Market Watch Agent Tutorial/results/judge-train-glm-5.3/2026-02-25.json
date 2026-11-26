@@ -1,0 +1,59 @@
+{
+ "day": "2026-02-25",
+ "ideal": "NVIDIA filed its 10-K annual report (https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm) and an 8-K with quarterly results (https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/nvda-20260225.htm).",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both filings covered in plain words with correct links; short and well-laid-out.",
+   "answer": "NVIDIA: 10\u2011K annual report filed \u2013 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm\nNVIDIA: 8\u2011K earnings results filed \u2013 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/nvda-20260225.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": false,
+   "coverage": 1,
+   "no_noise": 1,
+   "accuracy": 1,
+   "clarity": 1,
+   "overall": 1,
+   "note": "Silence is wrong here: an earnings 8-K and a 10-K are exactly the material news she asked for.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Accurate and complete, but 'items 2.02/9.01' is jargon she didn't ask for and the no-price-move note is filler.",
+   "answer": "NVIDIA filed a 10-K annual report and an 8-K with items 2.02/9.01 (quarterly earnings results) on Feb 25: [10-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm), [8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/nvda-20260225.htm). No price-move events in the report."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Correct, plain, links both filings; slightly clunky cramming two filings and URLs on one line.",
+   "answer": "NVIDIA \u2014 8-K current-events report with quarterly results: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/nvda-20260225.htm and its 10-K annual report: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1353,
+  "output": 6766
+ }
+}

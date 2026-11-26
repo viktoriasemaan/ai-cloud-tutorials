@@ -1,0 +1,39 @@
+{
+ "day": "2026-02-13",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 4258,
+ "output_tokens": 555,
+ "cost_usd": 0.00092,
+ "model_seconds": 7.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-13",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-13",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000023/xslForm13F_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:03:21.650050-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-03-31.md"
+}

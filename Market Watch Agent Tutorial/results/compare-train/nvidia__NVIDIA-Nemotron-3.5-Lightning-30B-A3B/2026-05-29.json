@@ -1,0 +1,74 @@
+{
+ "day": "2026-05-29",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft rose 5.45% vs S&P 500 +0.25%, no filing explains it yet\nBroadcom rose 4.73% vs S&P 500 +0.25%, no filing explains it yet\nMeta Platforms: 8-K filed with shareholder vote results https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm",
+ "silent": false,
+ "run_seconds": 10.3,
+ "model_calls": 1,
+ "input_tokens": 3867,
+ "output_tokens": 2508,
+ "cost_usd": 0.000772,
+ "model_seconds": 7.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-05-29",
+   "close": 450.24,
+   "stock_pct": 5.45,
+   "index_pct": 0.25,
+   "vs_index_pts": 5.2,
+   "threshold_pts": 3.12,
+   "typical_daily_gap_pts": 1.56
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-05-29",
+   "close": 446.77,
+   "stock_pct": 4.73,
+   "index_pct": 0.25,
+   "vs_index_pts": 4.48,
+   "threshold_pts": 4.23,
+   "typical_daily_gap_pts": 2.11
+  },
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-05-29",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "FORM SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926068254/tm2615281d1_sd.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-05-29",
+   "form": "8-K",
+   "items": "5.07",
+   "what_it_is": "shareholder vote results",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-05-29",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "FORM SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926068275/tm2615395d1_sd.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:18:48.071269-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-18-58.md"
+}

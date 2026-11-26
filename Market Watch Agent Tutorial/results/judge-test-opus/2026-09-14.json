@@ -1,0 +1,47 @@
+{
+ "day": "2026-09-14",
+ "ideal": "A one-line alert that Amazon filed an 8-K current-events report (items 8.01 other events and 9.01 exhibits), with the link. It should note there was no unusual price move, since she lists 8-Ks as material news she wants.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 4,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 3,
+   "note": "Correctly flags the 8-K with a link, but the wording repeats 'current events' awkwardly and says nothing about what kind of event it is.",
+   "answer": "Amazon: filed an 8-K current-events report, current events https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "A clean, accurate one-liner that explains the 8-K in plain words and links it, though it doesn't mention the 'other events' item.",
+   "answer": "Amazon 8-K (current-events report) filed with SEC. https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": false,
+   "coverage": 2,
+   "no_noise": 3,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 2,
+   "note": "Stays silent on an 8-K, a filing type she explicitly said she wants to hear about.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 2425,
+  "output": 700
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "day": "2026-01-05",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Eli Lilly fell 3.6% vs S&P 500 rose 0.67%, underperforming by 4.26 pts, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 17.8,
+ "model_calls": 1,
+ "input_tokens": 3457,
+ "output_tokens": 2247,
+ "cost_usd": 0.000691,
+ "model_seconds": 12.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-05",
+   "close": 267.26,
+   "stock_pct": -1.38,
+   "index_pct": 0.67,
+   "vs_index_pts": -2.05,
+   "threshold_pts": 2.0,
+   "typical_daily_gap_pts": 0.91
+  },
+  {
+   "type": "price_move",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-01-05",
+   "close": 1041.51,
+   "stock_pct": -3.6,
+   "index_pct": 0.67,
+   "vs_index_pts": -4.26,
+   "threshold_pts": 3.36,
+   "typical_daily_gap_pts": 1.68
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T12:55:16.523284-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_12-55-34.md"
+}

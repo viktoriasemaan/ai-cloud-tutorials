@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-29",
+ "ideal": "Alert covering Microsoft (8-K earnings plus 10-Q, linked), Amazon (8-K earnings, linked), Alphabet (8-K earnings, linked), Meta (8-K earnings, linked), in ~4 short lines; omit the Schedule 13Gs and the Lilly PX14A6G as routine paperwork; no numbers since the report has no price moves.",
+ "best_model": "openai/gpt-oss-120b",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Alerts all four earnings names, keeps Microsoft's 10-Q with its own link, names each filing plainly, links everything straight from the report, excludes the routine 13Gs and proxy filing, and invents nothing.",
+   "answer": "Microsoft: 10\u2011Q quarterly report https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm and 8\u2011K earnings release https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-20260429.htm  \nAmazon: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260429.htm  \nAlphabet: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/goog-20260429.htm  \nMeta Platforms: 8\u2011K earnings report https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 2,
+   "overall": 3,
+   "note": "Correct companies and substance, and it mentions Microsoft's 10-Q, but no links at all and no form names \u2014 the required links are missing entirely.",
+   "answer": "MSFT: quarterly earnings results and 10-Q quarterly report filed.\nAMZN: quarterly earnings results filed.\nGOOGL: quarterly earnings results filed.\nMETA: quarterly earnings results filed."
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Clean and linked with plain-words form naming, omits routine paperwork, but drops Microsoft's 10-Q, which her stated watch explicitly includes.",
+   "answer": "Microsoft: 8-K current-events report with earnings results https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-20260429.htm\nAmazon: 8-K current-events report with earnings results https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260429.htm\nAlphabet: 8-K current-events report with earnings results https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/goog-20260429.htm\nMeta: 8-K current-events report with earnings results https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Complete, plain, reads naturally, links the earnings 8-Ks; only slip is mentioning the 10-Q without linking it unlike A.",
+   "answer": "Microsoft reported quarterly earnings (8-K, current-events report) and filed its 10-Q quarterly report: https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-20260429.htm\nAmazon reported quarterly earnings (8-K): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260429.htm\nAlphabet reported quarterly earnings (8-K): https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/goog-20260429.htm\nMeta reported quarterly earnings (8-K): https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2814,
+  "output": 7408
+ }
+}

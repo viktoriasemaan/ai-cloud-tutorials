@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-29",
+ "ideal": "Alert: Alphabet fell 12.64% vs S&P 500 down 0.38% with its 10-Q filed (quarterly report, link); Amazon fell 4.25% vs S&P down 0.38% on the day it filed an earnings 8-K (link); Eli Lilly rose 6.63% vs S&P down 0.38% with earnings 8-K and 10-Q (link); Meta 8-K reporting a material agreement, shareholder-rights change and bylaw amendment (link). Skip the Tesla DEFA14A and Meta 8-A12B.",
+ "best_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 2,
+   "no_noise": 4,
+   "accuracy": 1,
+   "clarity": 2,
+   "overall": 1,
+   "note": "It says no filing explains Amazon's drop even though an earnings 8-K was filed, invents a 4.25% Meta drop, and leaves out Meta's material 8-K.",
+   "answer": "Amazon fell 4.25% vs S&P 500 down 0.38%\nno filing explains it yet\nAlphabet fell 12.64% vs S&P 500 down 0.38%\nquarterly report https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm\nEli Lilly rose 6.63% vs S&P 500 down 0.38%\nquarterly results https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/lly-20261029.htm\nMeta fell 4.25% vs S&P 500 down 0.38% (no filing explains it yet)"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 2,
+   "clarity": 4,
+   "overall": 2,
+   "note": "It is short and clean, but it says no filing explains Alphabet's move despite the 10-Q, gives no links, and states that earnings caused the moves more firmly than the evidence supports.",
+   "answer": "Alphabet fell 12.64% vs S&P 500 fell 0.38% no filing explains it yet\nAmazon fell 4.25% vs S&P 500 fell 0.38% earnings explain the drop\nEli Lilly rose 6.63% vs S&P 500 fell 0.38% earnings explain the rise\nMeta Platforms 8-K entered a material agreement"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 1,
+   "clarity": 2,
+   "overall": 2,
+   "note": "It covers the main events with links, but invents a 4.5% Meta rise, contradicts itself on Alphabet (says no filing explains it while linking the 10-Q), and is cluttered with item codes and raw field names.",
+   "answer": "Amazon fell 4.25%, S&P 500 fell 0.38% \u2014 an 8-K earnings report was filed that day, covering 2.02 and 9.01 items; the move is explained by earnings: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm\nAlphabet fell 12.64%, S&P 500 fell 0.38% \u2014 no filing explains it yet: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm\nEli Lilly rose 6.63%, S&P 500 fell 0.38% \u2014 an 8-K earnings report was filed the same day, covering 2.02 and 9.01 items; the move is explained by earnings: https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/lly-20261029.htm\nMeta Platforms rose 4.5% (stock_pct = 4.5, index_pct = -0.38) \u2014 a material agreement, a change to shareholder rights, and an amended charter or bylaws were reported via 8-K: https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 4379,
+  "output": 567
+ }
+}

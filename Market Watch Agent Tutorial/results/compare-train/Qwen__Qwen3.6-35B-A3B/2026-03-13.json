@@ -1,0 +1,72 @@
+{
+ "day": "2026-03-13",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Amazon filed an 8-K (other events, items 8.01, 9.01) on Mar 13: https://www.sec.gov/Archives/edgar/data/1018724/000110465926027729/tm266670d8_8k.htm \u2014 no price move reported to explain. Berkshire Hathaway filed routine proxy materials (ARS, DEFA14A, DEF 14A).",
+ "silent": false,
+ "run_seconds": 17.8,
+ "model_calls": 2,
+ "input_tokens": 10257,
+ "output_tokens": 1042,
+ "cost_usd": 0.001953,
+ "model_seconds": 14.2,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "date": "2026-03-13",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926027729/tm266670d8_8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-13",
+   "form": "ARS",
+   "items": "",
+   "what_it_is": "",
+   "description": "ARS",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106284/d948018dars.pdf"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-13",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106273/d97126ddefa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-13",
+   "form": "DEFA14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEFA14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106263/d942071ddefa14a.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-03-13",
+   "form": "DEF 14A",
+   "items": "",
+   "what_it_is": "",
+   "description": "DEF 14A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:06:30.108615-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-06-47.md"
+}

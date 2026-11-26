@@ -1,0 +1,47 @@
+{
+ "day": "2026-10-27",
+ "ideal": "One line flagging Broadcom's 8-K (current-events report) saying it took on a material financial obligation, with the link; skip the Microsoft proxy filing and the Tesla 13G/A as routine paperwork.",
+ "best_model": "nemotron-ft-e1",
+ "verdicts": [
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Covers the one material filing, explains what an 8-K is in plain words, links it, and leaves out the routine filings.",
+   "answer": "Broadcom, 8-K (current-events report): took on a material financial obligation \u2192 https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Correct and concise, but it doesn't explain in plain words that an 8-K is a current-events report.",
+   "answer": "Broadcom 8-K filed 2026-10-27: took on a material financial obligation. https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "A plain-language sentence that names the filing type, says what happened, and links it, with no noise.",
+   "answer": "Broadcom filed an 8-K current-events report on taking on a material financial obligation: https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 2788,
+  "output": 360
+ }
+}

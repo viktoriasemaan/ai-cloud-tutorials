@@ -1,0 +1,29 @@
+{
+ "day": "2026-04-01",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Alphabet rose 3.42% vs S&P 500 rose 0.75% no filing explains it yet",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 3325,
+ "output_tokens": 784,
+ "cost_usd": 0.00039,
+ "model_seconds": 2.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-04-01",
+   "close": 297.39,
+   "stock_pct": 3.42,
+   "index_pct": 0.75,
+   "vs_index_pts": 2.66,
+   "threshold_pts": 2.62,
+   "typical_daily_gap_pts": 1.31
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:08:35.509265-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-08-41.md"
+}

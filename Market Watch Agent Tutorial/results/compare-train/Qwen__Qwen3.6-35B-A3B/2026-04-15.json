@@ -1,0 +1,41 @@
+{
+ "day": "2026-04-15",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Microsoft rose 4.61% while S&P 500 was up 0.79% \u2014 no filing explains it yet.\nTesla rose 7.62% while S&P 500 was up 0.79% \u2014 no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 7.8,
+ "model_calls": 1,
+ "input_tokens": 4214,
+ "output_tokens": 336,
+ "cost_usd": 0.00072,
+ "model_seconds": 4.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-04-15",
+   "close": 411.22,
+   "stock_pct": 4.61,
+   "index_pct": 0.79,
+   "vs_index_pts": 3.82,
+   "threshold_pts": 3.77,
+   "typical_daily_gap_pts": 1.88
+  },
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-04-15",
+   "close": 391.95,
+   "stock_pct": 7.62,
+   "index_pct": 0.79,
+   "vs_index_pts": 6.83,
+   "threshold_pts": 3.72,
+   "typical_daily_gap_pts": 1.86
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:10:28.897918-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-10-36.md"
+}

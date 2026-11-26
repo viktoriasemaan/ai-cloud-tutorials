@@ -1,0 +1,28 @@
+{
+ "day": "2026-03-30",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.2,
+ "model_calls": 1,
+ "input_tokens": 4097,
+ "output_tokens": 201,
+ "cost_usd": 0.000589,
+ "model_seconds": 2.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-03-30",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000121465926003974/o330262px14a6g.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:08:17.526913-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-08-23.md"
+}

@@ -1,0 +1,29 @@
+{
+ "day": "2026-06-29",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Tesla rose 8.46% while the S&P\u202f500 rose 1.65%; no filing explains it yet",
+ "silent": false,
+ "run_seconds": 4.2,
+ "model_calls": 1,
+ "input_tokens": 3573,
+ "output_tokens": 186,
+ "cost_usd": 0.000139,
+ "model_seconds": 1.6,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-06-29",
+   "close": 411.84,
+   "stock_pct": 8.46,
+   "index_pct": 1.65,
+   "vs_index_pts": 6.81,
+   "threshold_pts": 4.75,
+   "typical_daily_gap_pts": 2.37
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:20:30.844573-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-20-34.md"
+}

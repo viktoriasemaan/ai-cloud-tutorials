@@ -1,0 +1,59 @@
+{
+ "day": "2026-03-05",
+ "ideal": "Alert both big movers versus the index; Broadcom has no filing ('no filing explains it yet'), Berkshire pairs its move with the same-day 8-K (an Item 8.01 'other events' current-events report) plus the link. Numbers: AVGO +4.8% vs -0.56%, BRK +2.65% vs -0.56%.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Both moves covered, correct signs and numbers, Broadcom correctly flagged as unexplained, Berkshire's 8-K linked with 'other events'. Slightly less plain-words gloss on the filing than the rules suggest, but fully accurate and clean.",
+   "answer": "Broadcom rose\u202f4.8%\u202f(S&P\u202f500 fell\u202f0.56%); no filing explains it yet  \nBerkshire Hathaway rose\u202f2.65%\u202f(S&P\u202f500 fell\u202f0.56%); 8\u2011K filing (other events) https://www.sec.gov/Archives/edgar/data/1067983/000119312526092557/d82599d8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 2,
+   "accuracy": 3,
+   "clarity": 2,
+   "overall": 2,
+   "note": "Numbers (5.36 and 3.21 pts) are real, but the Berkshire line is garbled and self-contradictory: notes an 8-K was filed, then says 'no filing explains it yet' on the same line, and omits the required link. Fails the filing rule and confuses rather than informs.",
+   "answer": "Broadcom rose 4.8% vs S&P 500 fell 0.56%, outperformance of 5.36 pts; no filing explains it yet\nBerkshire Hathaway rose 2.65% vs S&P 500 fell 0.56%, outperformance of 3.21 pts; 8-K filed (other events) no filing explains it yet"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Both moves covered with correct numbers, Broadcom unexplained-flagged, Berkshire's 8-K described and linked. The raw item numbers (8.01, 9.01) are slightly technical but come straight from the evidence, not invented. Solid.",
+   "answer": "- Broadcom rose 4.8% while the S&P 500 fell 0.56%. No filing explains it yet.\n- Berkshire Hathaway rose 2.65% while the S&P 500 fell 0.56%. An 8-K was filed for other events (items 8.01, 9.01): https://www.sec.gov/Archives/edgar/data/1067983/000119312526092557/d82599d8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Best version: both big-versus-index moves stated plainly with the S&P next to them, Broadcom correctly ends with 'no filing explains it yet', and Berkshire's 8-K is linked and translated into plain words exactly as the rules prescribe ('current-events report on other events'). No invented reasons, no advice, two lines.",
+   "answer": "Broadcom rose 4.8% while the S&P 500 fell 0.56% \u2014 no filing explains it yet.\nBerkshire Hathaway rose 2.65% (S&P 500 fell 0.56%) and filed an 8-K current-events report on other events: https://www.sec.gov/Archives/edgar/data/1067983/000119312526092557/d82599d8k.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1510,
+  "output": 3753
+ }
+}

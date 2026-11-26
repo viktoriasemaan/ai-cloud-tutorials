@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-28",
+ "ideal": "No price moves and no material filings today. The three filings are exactly what she excluded: a Schedule 13G (fund-holding report) on NVIDIA, and PX14A6G proxy-material notices on Alphabet and Meta. Silence was right.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Correct silence: 13G is a fund-holding report and PX14A6G is proxy material, both explicitly unwanted routine paperwork; no price moves or 8-K/10-Q/10-K in evidence.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct call; nothing in the evidence met her bar.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct call; alerting on these filings would have been noise she asked to avoid.",
+   "answer": "[SILENT]"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same correct call; all answers identical and equally right.",
+   "answer": "[SILENT]"
+  }
+ ],
+ "judge_usage": {
+  "input": 1160,
+  "output": 1088
+ }
+}

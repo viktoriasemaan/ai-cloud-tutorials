@@ -1,0 +1,29 @@
+{
+ "day": "2026-02-09",
+ "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "answer": "Berkshire Hathaway fell 1.97% on 2026-02-09 while the S&P 500 rose 0.48% \u2014 a 2.45-point gap versus the index, with no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 6.3,
+ "model_calls": 1,
+ "input_tokens": 4025,
+ "output_tokens": 925,
+ "cost_usd": 0.000633,
+ "model_seconds": 3.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-02-09",
+   "close": 498.08,
+   "stock_pct": -1.97,
+   "index_pct": 0.48,
+   "vs_index_pts": -2.45,
+   "threshold_pts": 2.25,
+   "typical_daily_gap_pts": 1.13
+  }
+ ],
+ "run_log": "Triggered job: model-compare (1745c10e3636)\n  Next run: 2029-08-21T13:01:27.961431-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwc/cron/output/1745c10e3636/2026-11-25_13-01-34.md"
+}

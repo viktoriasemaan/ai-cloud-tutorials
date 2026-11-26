@@ -1,0 +1,29 @@
+{
+ "day": "2026-01-21",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Microsoft fell 2.29% while the S&P 500 rose 1.15% \u2014 3.44 points worse than the index. No filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4088,
+ "output_tokens": 332,
+ "cost_usd": 0.000704,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-21",
+   "close": 444.11,
+   "stock_pct": -2.29,
+   "index_pct": 1.15,
+   "vs_index_pts": -3.44,
+   "threshold_pts": 2.23,
+   "typical_daily_gap_pts": 1.11
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T12:59:28.449539-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_12-59-36.md"
+}

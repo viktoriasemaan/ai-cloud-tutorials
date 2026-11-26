@@ -1,0 +1,39 @@
+{
+ "day": "2026-01-30",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Apple\u202f\u2014\u202ffiled a 10\u2011Q quarterly report\u202f[link](https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm)",
+ "silent": false,
+ "run_seconds": 10.2,
+ "model_calls": 1,
+ "input_tokens": 3667,
+ "output_tokens": 348,
+ "cost_usd": 0.000169,
+ "model_seconds": 7.3,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-30",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-01-30",
+   "form": "SCHEDULE 13G/A",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000010290926000226/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:01:11.796896-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-01-21.md"
+}

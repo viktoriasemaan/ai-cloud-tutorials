@@ -1,0 +1,59 @@
+{
+ "day": "2026-04-20",
+ "ideal": "One short line on the Apple 8-K (a current-events report) about an executive or director change, with the link, in plain words. The Eli Lilly Schedule 13G/A is a fund-holding report, the exact routine paperwork she said she doesn't want, so it should be left out. No price moves are in the evidence, so nothing else belongs.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Alerts only on the Apple 8-K, calls it a current-events report in plain words, states the executive/director change, and links it. Leaves the Lilly 13G/A out, which is right since she doesn't want fund-holding paperwork. Clean and correct.",
+   "answer": "Apple: current-events report (8-K) filed on an executive or director change \u2014 https://www.sec.gov/Archives/edgar/data/320193/000114036126015711/ef20071035_8k.htm"
+  },
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Correct company, correct substance, link included, no noise. Slightly weaker than A because it never says what an 8-K is in plain words, as the rules ask.",
+   "answer": "Apple filed an 8\u2011K (executive or director change) \u2013 https://www.sec.gov/Archives/edgar/data/320193/000114036126015711/ef20071035_8k.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Same job done: Apple only, plain-words filing type, the change, the link, no mention of the Lilly paperwork. Wording is a bit more clipped than A but everything is there.",
+   "answer": "Apple 8-K: executive or director change, current-events report. https://www.sec.gov/Archives/edgar/data/320193/000114036126015711/ef20071035_8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 3,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "The Apple line itself is fine, but the alert drags in the Lilly 13G/A even while dismissing it, plus a filler line that no price moves happened. She said she doesn't want routine paperwork, so a line about it is noise, and neither filing is linked, which the rules require. Three lines where one would do.",
+   "answer": "Apple filed an 8-K today reporting an executive or director change (item 5.02). No price move to link it to.\n\nEli Lilly filed a Schedule 13G/A (amended ownership report) \u2014 routine paperwork, not material.\n\nNo price moves versus the S&P 500 today."
+  }
+ ],
+ "judge_usage": {
+  "input": 1250,
+  "output": 3526
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "day": "2026-01-29",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Microsoft fell 9.99% vs S&P 500 fell 0.2%, no filing explains it yet\nMeta rose 10.4% vs S&P 500 fell 0.2%, no filing explains it yet",
+ "silent": false,
+ "run_seconds": 10.5,
+ "model_calls": 1,
+ "input_tokens": 3870,
+ "output_tokens": 1786,
+ "cost_usd": 0.000628,
+ "model_seconds": 6.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-29",
+   "close": 433.5,
+   "stock_pct": -9.99,
+   "index_pct": -0.2,
+   "vs_index_pts": -9.79,
+   "threshold_pts": 2.53,
+   "typical_daily_gap_pts": 1.27
+  },
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-29",
+   "close": 738.31,
+   "stock_pct": 10.4,
+   "index_pct": -0.2,
+   "vs_index_pts": 10.6,
+   "threshold_pts": 2.94,
+   "typical_daily_gap_pts": 1.47
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/aapl-20260129.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-29",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-01-29",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:00:28.901588-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-00-39.md"
+}

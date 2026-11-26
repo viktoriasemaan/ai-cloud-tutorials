@@ -1,0 +1,50 @@
+{
+ "day": "2026-07-22",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "Alphabet 8-K current-events report: quarterly or annual results (earnings) - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm\nTesla 8-K current-events report: quarterly or annual results (earnings) - https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm",
+ "silent": false,
+ "run_seconds": 24.3,
+ "model_calls": 1,
+ "input_tokens": 3635,
+ "output_tokens": 8301,
+ "cost_usd": 0.001915,
+ "model_seconds": 20.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-07-22",
+   "form": "PX14A6G",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000121465926008806/w721267px14a6g.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-07-22",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-07-22",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T13:25:32.072856-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_13-25-56.md"
+}

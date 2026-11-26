@@ -47,6 +47,18 @@ def get_json(url, headers=None, tries=3):
 
 
 def daily_closes(symbol, today):
+    """{date: close}: the ~100 recent trading days, plus older days from data/cache/history if that exists
+    (the fine-tuning tutorial downloads it with fetch_history.py). Recent prices always win."""
+    closes = _recent_closes(symbol, today)
+    h = CACHE / "history" / f"{symbol}.json"
+    if h.exists():
+        first = min(closes)
+        older = {d: c for d, c in json.loads(h.read_text())["closes"].items() if d < first}
+        closes = {**older, **closes}
+    return closes
+
+
+def _recent_closes(symbol, today):
     """{date: close} for ~100 trading days, cached once per calendar day."""
     f = CACHE / "prices" / f"{symbol}.json"
     if f.exists():

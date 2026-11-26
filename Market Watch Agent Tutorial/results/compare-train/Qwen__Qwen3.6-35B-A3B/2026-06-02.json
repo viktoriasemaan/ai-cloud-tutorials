@@ -1,0 +1,65 @@
+{
+ "day": "2026-06-02",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "Apple +2.9% (S&P +0.14%), no filing explains it yet. Microsoft \u22124.17% (S&P +0.14%), no filing explains it yet. Alphabet \u22123.86% (S&P +0.14%), no filing explains it yet. Broadcom +4.7% (S&P +0.14%), no filing explains it yet.",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 4471,
+ "output_tokens": 472,
+ "cost_usd": 0.000867,
+ "model_seconds": 5.9,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-06-02",
+   "close": 315.2,
+   "stock_pct": 2.9,
+   "index_pct": 0.14,
+   "vs_index_pts": 2.77,
+   "threshold_pts": 2.18,
+   "typical_daily_gap_pts": 1.09
+  },
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-06-02",
+   "close": 441.31,
+   "stock_pct": -4.17,
+   "index_pct": 0.14,
+   "vs_index_pts": -4.31,
+   "threshold_pts": 3.4,
+   "typical_daily_gap_pts": 1.7
+  },
+  {
+   "type": "price_move",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-06-02",
+   "close": 361.85,
+   "stock_pct": -3.86,
+   "index_pct": 0.14,
+   "vs_index_pts": -3.99,
+   "threshold_pts": 3.4,
+   "typical_daily_gap_pts": 1.7
+  },
+  {
+   "type": "price_move",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-06-02",
+   "close": 481.57,
+   "stock_pct": 4.7,
+   "index_pct": 0.14,
+   "vs_index_pts": 4.56,
+   "threshold_pts": 4.21,
+   "typical_daily_gap_pts": 2.1
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:18:23.804460-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-18-31.md"
+}

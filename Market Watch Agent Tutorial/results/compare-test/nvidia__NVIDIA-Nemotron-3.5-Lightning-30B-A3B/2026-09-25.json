@@ -1,0 +1,28 @@
+{
+ "day": "2026-09-25",
+ "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 7.8,
+ "model_calls": 1,
+ "input_tokens": 3332,
+ "output_tokens": 998,
+ "cost_usd": 0.000433,
+ "model_seconds": 4.5,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "BRK-B",
+   "company": "Berkshire Hathaway",
+   "date": "2026-09-25",
+   "form": "SD",
+   "items": "",
+   "what_it_is": "",
+   "description": "SD",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526402798/d44118dsd.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (2009cbc7d23b)\n  Next run: 2029-08-21T20:10:58.881916-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwa/cron/output/2009cbc7d23b/2026-11-25_20-11-06.md"
+}

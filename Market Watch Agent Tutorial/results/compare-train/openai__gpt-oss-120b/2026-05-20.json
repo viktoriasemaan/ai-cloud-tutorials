@@ -1,0 +1,50 @@
+{
+ "day": "2026-05-20",
+ "model": "openai/gpt-oss-120b",
+ "answer": "NVIDIA \u2013 filed an 8\u2011K (current\u2011events earnings report): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm  \nNVIDIA \u2013 filed a 10\u2011Q (quarterly report): https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm  \nEli\u202fLilly \u2013 filed an 8\u2011K (other events): https://www.sec.gov/Archives/edgar/data/59478/000119312526232707/d148580d8k.htm",
+ "silent": false,
+ "run_seconds": 8.3,
+ "model_calls": 1,
+ "input_tokens": 3802,
+ "output_tokens": 636,
+ "cost_usd": 0.000222,
+ "model_seconds": 4.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-20",
+   "form": "10-Q",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "NVDA",
+   "company": "NVIDIA",
+   "date": "2026-05-20",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/nvda-20260520.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "LLY",
+   "company": "Eli Lilly",
+   "date": "2026-05-20",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312526232707/d148580d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:16:45.371992-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-16-53.md"
+}

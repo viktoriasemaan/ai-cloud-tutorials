@@ -1,0 +1,39 @@
+{
+ "day": "2026-02-13",
+ "model": "openai/gpt-oss-120b",
+ "answer": "Alphabet \u2013 8\u2011K current events filing https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm",
+ "silent": false,
+ "run_seconds": 10.6,
+ "model_calls": 1,
+ "input_tokens": 3683,
+ "output_tokens": 361,
+ "cost_usd": 0.000172,
+ "model_seconds": 6.7,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-13",
+   "form": "8-K",
+   "items": "8.01,9.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "GOOGL",
+   "company": "Alphabet",
+   "date": "2026-02-13",
+   "form": "13F-HR",
+   "items": "",
+   "what_it_is": "",
+   "description": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000023/xslForm13F_X02/primary_doc.xml"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (9159e43b7b85)\n  Next run: 2029-08-21T13:03:13.927887-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/marketwatch/cron/output/9159e43b7b85/2026-11-25_13-03-24.md"
+}

@@ -1,0 +1,59 @@
+{
+ "day": "2026-05-11",
+ "ideal": "One short line for Alphabet: fell 3.03% vs S&P 500 up 0.23%, and since the same-day 8-K (item 8.01, other events) doesn't show any reason for the drop, say so and link the filing. Skip the Meta PX14A6G (proxy paperwork) and the Lilly SD (routine disclosure).",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 3,
+   "no_noise": 5,
+   "accuracy": 1,
+   "clarity": 4,
+   "overall": 1,
+   "note": "Breaks the core honesty rule: it claims the 8-K 'explains' the drop, but the evidence shows only a generic item 8.01 'other events' filing with no indicated content. That is an invented causal link, presented as fact with a link that lends it false authority. Correctly skips the Meta proxy and Lilly SD.",
+   "answer": "Alphabet fell\u202f3.03% while S&P\u202f500 rose\u202f0.23%; 8\u2011K filing explains it\u202fhttps://www.sec.gov/Archives/edgar/data/1652044/000119312526216986/d109021d8k.htm"
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 5,
+   "note": "Best answer. Reports the move with the index next to it, honestly says the filing shows no clear reason rather than inventing one, quantifies the gap against the alert threshold (all numbers are in the report), and flags the 8-K in plain words with a link, which is exactly the material-news context she wants after a 3-point drop. The threshold detail is mild agent-speak but harmless.",
+   "answer": "Alphabet fell 3.03% while the S&P 500 rose 0.23% \u2014 a 3.26-point gap vs. the index, past the 3.2-point alert threshold, with no clear reason in the filing itself.\nAlphabet also filed an 8-K current-events report that day (item 8.01, other events): https://www.sec.gov/Archives/edgar/data/1652044/000119312526216986/d109021d8k.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 4,
+   "note": "Clean and fully rule-compliant: correct numbers, correct words for both directions, exact required closing phrase, no noise. Loses a point only for sitting on the same-day 8-K, which on a day with a 3-point drop is worth a plain-words mention and link even though it doesn't explain the move.",
+   "answer": "Alphabet fell 3.03% (S&P 500 rose 0.23%) \u2014 no filing explains it yet"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 3,
+   "clarity": 3,
+   "overall": 2,
+   "note": "The index rose 0.23%, but D calls it 'flat', which the rules explicitly forbid: a positive index_pct means it rose. That misstates the comparison the whole alert exists to make. Otherwise it is short, uses the required closing phrase, and skips the noise.",
+   "answer": "Alphabet fell 3.03% versus S&P 500 flat at 0.23%, no filing explains it yet"
+  }
+ ],
+ "judge_usage": {
+  "input": 1458,
+  "output": 3947
+ }
+}

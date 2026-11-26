@@ -1,0 +1,74 @@
+{
+ "day": "2026-01-29",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "**Microsoft** dropped 9.99%, while the S&P 500 fell 0.2% \u2014 a massive underperformance of nearly 10 percentage points. No filing explains it yet.\n\n**Meta** surged 10.4%, vs. the S&P 500 down 0.2%. A 10-K (annual report) was filed the same day.\n\n**Apple** filed an 8-K reporting quarterly/annual earnings results. No price move in the report.",
+ "silent": false,
+ "run_seconds": 19.9,
+ "model_calls": 1,
+ "input_tokens": 4651,
+ "output_tokens": 1713,
+ "cost_usd": 0.00199,
+ "model_seconds": 16.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "price_move",
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "date": "2026-01-29",
+   "close": 433.5,
+   "stock_pct": -9.99,
+   "index_pct": -0.2,
+   "vs_index_pts": -9.79,
+   "threshold_pts": 2.53,
+   "typical_daily_gap_pts": 1.27
+  },
+  {
+   "type": "price_move",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-29",
+   "close": 738.31,
+   "stock_pct": 10.4,
+   "index_pct": -0.2,
+   "vs_index_pts": 10.6,
+   "threshold_pts": 2.94,
+   "typical_daily_gap_pts": 1.47
+  },
+  {
+   "type": "filing",
+   "symbol": "AAPL",
+   "company": "Apple",
+   "date": "2026-01-29",
+   "form": "8-K",
+   "items": "2.02,9.01",
+   "what_it_is": "quarterly or annual results (earnings)",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/aapl-20260129.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "date": "2026-01-29",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+  },
+  {
+   "type": "filing",
+   "symbol": "TSLA",
+   "company": "Tesla",
+   "date": "2026-01-29",
+   "form": "10-K",
+   "items": "",
+   "what_it_is": "",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:00:43.320659-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-01-03.md"
+}

@@ -1,0 +1,28 @@
+{
+ "day": "2026-04-06",
+ "model": "Qwen/Qwen3.6-35B-A3B",
+ "answer": "[SILENT]",
+ "silent": true,
+ "run_seconds": 6.4,
+ "model_calls": 1,
+ "input_tokens": 4090,
+ "output_tokens": 173,
+ "cost_usd": 0.000563,
+ "model_seconds": 3.1,
+ "errors": [],
+ "events": [
+  {
+   "type": "filing",
+   "symbol": "AVGO",
+   "company": "Broadcom",
+   "date": "2026-04-06",
+   "form": "8-K",
+   "items": "8.01",
+   "what_it_is": "other events",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm"
+  }
+ ],
+ "run_log": "Triggered job: model-compare (7b20326e2103)\n  Next run: 2029-08-21T13:09:09.304211-08:00\n  Ran now: succeeded.\n",
+ "output_doc": "~/.hermes/profiles/mwb/cron/output/7b20326e2103/2026-11-25_13-09-15.md"
+}

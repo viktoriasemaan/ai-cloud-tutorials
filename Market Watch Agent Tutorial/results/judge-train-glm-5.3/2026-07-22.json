@@ -1,0 +1,59 @@
+{
+ "day": "2026-07-22",
+ "ideal": "Alert covering both earnings 8-Ks (Alphabet, Tesla) in plain words with links; exclude the MSFT PX14A6G proxy filing as routine paperwork she said she doesn't want. A sample: 'Alphabet: filed an 8-K (current-events report) with earnings results \u2014 [link]' and the same for Tesla.",
+ "best_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "verdicts": [
+  {
+   "model": "openai/gpt-oss-120b",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 4,
+   "note": "Covers both earnings 8-Ks, skips the Microsoft proxy filing, links correct. Slightly telegraphic ('8-K earnings report', no verb) and omits the plain-words gloss, but accurate and clean.",
+   "answer": "Alphabet, 8\u2011K earnings report \u2013 https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm  \nTesla, 8\u2011K earnings report \u2013 https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm"
+  },
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Both key filings, no Microsoft noise, faithful to evidence, includes the 'current-events report' gloss. Reads like a database row ('quarterly or annual results (earnings)') \u2014 clunky but serviceable.",
+   "answer": "Alphabet 8-K current-events report: quarterly or annual results (earnings) - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm\nTesla 8-K current-events report: quarterly or annual results (earnings) - https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm"
+  },
+  {
+   "model": "Qwen/Qwen3.6-35B-A3B",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 2,
+   "accuracy": 4,
+   "clarity": 4,
+   "overall": 3,
+   "note": "The Alphabet and Tesla lines are good, but the third line delivers exactly the routine proxy paperwork she said she doesn't want, and 'no alert needed' inside an alert is contradictory noise. 'Quarterly' is a small unsupported disambiguation of 'quarterly or annual'.",
+   "answer": "Alphabet filed an 8-K (current-events report) with quarterly earnings results \u2014 https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm\nTesla filed an 8-K (current-events report) with quarterly earnings results \u2014 https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm\nMicrosoft filed a PX14A6G (proxy-related); routine, no alert needed."
+  },
+  {
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "letter": "D",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 4,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both earnings filings, Microsoft correctly excluded, plain words with the 'current-events report' gloss, links included, short and readable. Minor nit: says 'quarterly' where evidence says 'quarterly or annual' \u2014 not enough to matter.",
+   "answer": "Alphabet: filed its quarterly results (8-K, current-events report covering earnings). https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm\nTesla: filed its quarterly results (8-K, current-events report covering earnings). https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1576,
+  "output": 4834
+ }
+}

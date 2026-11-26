@@ -1,0 +1,47 @@
+{
+ "day": "2026-11-12",
+ "ideal": "Cover the two real items: Broadcom's 5.54% jump against a 0.35% index fall with a 'no filing explains it yet' note, and NVIDIA's 8-K described in plain words with a link. Omit the 13G, the 8-A12B, and arguably the vague Meta 8.01 8-K. Two short lines, no advice.",
+ "best_model": "nemotron-ft-e3",
+ "verdicts": [
+  {
+   "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+   "letter": "A",
+   "right_decision": true,
+   "coverage": 4,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 4,
+   "overall": 3,
+   "note": "Gets both news items and skips all the noise, but breaks the rules for filings: no link for the NVIDIA 8-K and no plain-words gloss of what an 8-K is. She can't follow up on it.",
+   "answer": "Broadcom rose 5.54% vs S&P 500 fell 0.35%, no filing explains it yet\nNVIDIA 8-K: executive or director change"
+  },
+  {
+   "model": "nemotron-ft-e3",
+   "letter": "B",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 5,
+   "overall": 5,
+   "note": "Both lines are exactly right: Broadcom move with the index figure and the 'no filing explains it yet' tag, and the NVIDIA 8-K explained in plain words and linked. Short, accurate, fully compliant.",
+   "answer": "Broadcom rose 5.54% vs S&P 500 fell 0.35% \u2014 no filing explains it yet\nNVIDIA filed a current-events report (8\u2011K) on an executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  },
+  {
+   "model": "nemotron-ft-e1",
+   "letter": "C",
+   "right_decision": true,
+   "coverage": 5,
+   "no_noise": 5,
+   "accuracy": 5,
+   "clarity": 3,
+   "overall": 4,
+   "note": "Same good content, but 'S&P 500 decline of \u22120.35%' keeps the minus sign the writing rules explicitly forbid, and '8-K' is left untranslated. Readable but sloppy against the stated style.",
+   "answer": "Broadcom rose 5.54% against S&P 500 decline of \u22120.35%, no filing explains it yet\nNVIDIA filed an 8-K on an executive or director change: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+  }
+ ],
+ "judge_usage": {
+  "input": 1556,
+  "output": 2883
+ }
+}
