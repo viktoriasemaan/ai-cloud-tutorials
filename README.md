@@ -79,7 +79,7 @@ never submitted an answer fell from 31 to 12. Training took 51 minutes and cost 
 
 **Skills:** Reinforcement Learning • GRPO • Serverless RL • OpenPipe ART • Reward Functions • Tool-Using Agents • Model Evaluation
 
-<p align="center"><img src="./Reinforcement%20Learning%20for%20AI%20Agents%20Tutorial/visuals/rl-loop.png" alt="Reinforcement learning as a loop with four parts: task, tries, reward, update" width="460"></p>
+<p align="center"><img src="./Reinforcement%20Learning%20for%20AI%20Agents%20Tutorial/visuals/rl-explained.gif" alt="How to train an AI agent with reinforcement learning: task, 4 tries, a reward in Python, a GRPO update, serve and go again" width="640"></p>
 
 *More projects coming soon...*
 

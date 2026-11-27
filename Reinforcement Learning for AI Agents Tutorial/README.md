@@ -5,7 +5,7 @@ a check scores each try, and the model changes so the tries that scored well hap
 right answer for it. This tutorial trains a small data analyst agent that answers business questions by writing SQL,
 with NVIDIA Nemotron 3.5 Lightning as the model and CoreWeave Forge Serverless RL doing the training.
 
-<p align="center"><img src="./visuals/rl-loop.png" alt="Reinforcement learning as a loop with four parts: task, tries, reward, update" width="460"></p>
+<p align="center"><img src="./visuals/rl-explained.gif" alt="How to train an AI agent with reinforcement learning: give it a task, let it try 4 times, score every attempt with a reward in Python, update the LoRA with GRPO, serve it and go again" width="720"></p>
 
 On 61 held-out business questions, 2 tries each, the agent answered **52% correctly before training and 70% after
 20 rounds of practice**, on the same CoreWeave endpoint. The biggest change was a habit: tries that never submitted an
@@ -218,6 +218,8 @@ correct                          60%         52%         70%
 | Correct answers | 64 of 122 (52%) | **85 of 122 (70%)** |
 | Tries that never submitted an answer | 31 | **12** |
 | Output tokens per try | 221 | 214 |
+
+<p align="center"><img src="./visuals/rl-results.png" alt="What 20 rounds of reinforcement learning changed: right answers 64 to 85 and no-answer tries 31 to 12 on the held-out test, the reward per training round, and the change for each question type" width="720"></p>
 
 How to read it:
 
